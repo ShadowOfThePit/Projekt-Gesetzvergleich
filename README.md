@@ -1,2 +1,2 @@
 # Projekt-Gesetzvergleich
-Ein persönliches Repository zum Demonstireren eines Projektes
+Ein persönliches Repository zum Demonstrieren eines Projektes
