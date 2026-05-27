@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vergleichen</title>
+  <link rel="stylesheet" href="/css/main.css">
+  <script src="/js/dropdownLogic.js"></script>
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <a href="/" class="home-link"><img src="/images/LawIcon.png" alt="Recht und Gesetz" width="50" height="50">
+        <span class="home-text">Startseite</span>
+      </a>
+      <a href="/Strafgesetzbuch">Gesetzesansicht</a>
+      <a href="/Strafgesetzbuch/2024-01-01/2024-03-03" class="current-page">Dokumentenvergleich</a>
+    </nav>
+    <div class="header-titel">Dokumentenvergleich</div>
+  </header>
+
+  <main>
+
+    <h1>Dokumentvergleich <br />Schweizerisches Strafgesetzbuch</h1>
+    <h2>2022-11-22 ↔ 2022-06-01</h2>
+
+    <form class="change-form">
+      <div class="dropdown-selectors">
+        <label for="viewSelect">Dokument wechseln</label>
+        <select class="doc-select" id="viewSelect">
+          <option value="2020-02-01" selected>2020-02-01</option>
+<option value="2020-07-01">2020-07-01</option>
+<option value="2021-07-01">2021-07-01</option>
+<option value="2022-01-01">2022-01-01</option>
+<option value="2022-06-01">2022-06-01</option>
+<option value="2022-11-22">2022-11-22</option>
+<option value="2023-01-01">2023-01-01</option>
+<option value="2023-01-23">2023-01-23</option>
+<option value="2023-07-01">2023-07-01</option>
+<option value="2023-08-01">2023-08-01</option>
+<option value="2023-09-01">2023-09-01</option>
+<option value="2023-12-06">2023-12-06</option>
+<option value="2024-01-01">2024-01-01</option>
+<option value="2024-07-01">2024-07-01</option>
+<option value="2025-01-01">2025-01-01</option>
+<option value="2025-08-01">2025-08-01</option>
+<option value="2026-01-01">2026-01-01</option>
+
+        </select>
+      </div>
+
+      <a class="dropdown-submitter" id="submit-doc-change">
+        Wechseln
+      </a>
+    </form>
+
+    <form class="compare-form">
+
+      <div class="dropdown-selectors">
+        <label for="leftSelect">Dokument links</label>
+        <select class="doc-select" id="leftSelect">
+          <option value="2020-02-01">2020-02-01</option>
+<option value="2020-07-01">2020-07-01</option>
+<option value="2021-07-01">2021-07-01</option>
+<option value="2022-01-01">2022-01-01</option>
+<option value="2022-06-01">2022-06-01</option>
+<option value="2022-11-22" selected>2022-11-22</option>
+<option value="2023-01-01">2023-01-01</option>
+<option value="2023-01-23">2023-01-23</option>
+<option value="2023-07-01">2023-07-01</option>
+<option value="2023-08-01">2023-08-01</option>
+<option value="2023-09-01">2023-09-01</option>
+<option value="2023-12-06">2023-12-06</option>
+<option value="2024-01-01">2024-01-01</option>
+<option value="2024-07-01">2024-07-01</option>
+<option value="2025-01-01">2025-01-01</option>
+<option value="2025-08-01">2025-08-01</option>
+<option value="2026-01-01">2026-01-01</option>
+
+        </select>
+      </div>
+
+      <div class="dropdown-selectors">
+        <label for="rightSelect">Dokument rechts</label>
+        <select class="doc-select" id="rightSelect">
+          <option value="2020-02-01">2020-02-01</option>
+<option value="2020-07-01">2020-07-01</option>
+<option value="2021-07-01">2021-07-01</option>
+<option value="2022-01-01">2022-01-01</option>
+<option value="2022-06-01" selected>2022-06-01</option>
+<option value="2022-11-22">2022-11-22</option>
+<option value="2023-01-01">2023-01-01</option>
+<option value="2023-01-23">2023-01-23</option>
+<option value="2023-07-01">2023-07-01</option>
+<option value="2023-08-01">2023-08-01</option>
+<option value="2023-09-01">2023-09-01</option>
+<option value="2023-12-06">2023-12-06</option>
+<option value="2024-01-01">2024-01-01</option>
+<option value="2024-07-01">2024-07-01</option>
+<option value="2025-01-01">2025-01-01</option>
+<option value="2025-08-01">2025-08-01</option>
+<option value="2026-01-01">2026-01-01</option>
+
+        </select>
+      </div>
+      
+      <a class="dropdown-submitter" id="submit-comparison-change">
+        Vergleichen
+      </a>
+    </form>
+
+    <div class="change-revision button-container">
+      <a href="/Strafgesetzbuch/2022-06-01/2022-01-01">← Vorherige Versionen vergleichen</a>
+<a href="/Strafgesetzbuch/2022-06-01/2022-11-22">← Versionen tauschen →</a>
+<a href="/Strafgesetzbuch/2023-01-01/2022-11-22">Nächste Versionen vergleichen →</a>
+
+    </div>
+
+    <div class="change-doc-version-comparing button-container">
+      <a class="disabled">Aktuelle Version</a>
+<a href="/Strafgesetzbuch/2023-01-01/2022-06-01">Nächste Version →</a>
+<a href="/Strafgesetzbuch/2022-11-22/2022-01-01">← Vorherige Version</a>
+<a class="disabled">Aktuelle Version</a>
+
+    </div>
+
+    <table class="diff-table">
+      <thead><tr><th>2022-11-22</th>
+<th>2022-06-01</th>
+</tr>
+</thead>
+<tbody><tr class="article-title"><td><p class="artikel-name">Art. 354</p></td>
+<td><p class="artikel-name">Art. 354</p></td>
+</tr>
+<tr><td><div class="paragraph-text">1. Das zuständige Departement registriert und speichert erkennungsdienstliche Daten, die von Behörden der Kantone, des Bundes und des Auslandes bei Strafverfolgungen oder bei Erfüllung anderer gesetzlicher Aufgaben erhoben und ihm übermittelt worden sind. Diese Daten können zur Identifizierung einer gesuchten oder unbekannten Person miteinander verglichen werden.</div></td>
+<td><div class="paragraph-text">1. Das zuständige Departement registriert und speichert erkennungsdienstliche Daten, die von Behörden der Kantone, des Bundes und des Auslandes bei Strafverfolgungen oder bei Erfüllung anderer gesetzlicher Aufgaben erhoben und ihm übermittelt worden sind. Diese Daten können zur Identifizierung einer gesuchten oder unbekannten Person miteinander verglichen werden.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">2. Folgende Behörden können Daten im Rahmen von Absatz 1 vergleichen und bearbeiten:</div></td>
+<td><div class="paragraph-text">2. Folgende Behörden können Daten im Rahmen von Absatz 1 vergleichen und bearbeiten:</div></td>
+</tr>
+<tr><td><div class="buchstabe">a. das Rechenzentrum des Eidgenössischen Justiz- und Polizeidepartementes;</div></td>
+<td><div class="buchstabe">a. das Rechenzentrum des Eidgenössischen Justiz- und Polizeidepartementes;</div></td>
+</tr>
+<tr><td><div class="buchstabe">b. das Bundesamt für Polizei;</div></td>
+<td><div class="buchstabe">b. das Bundesamt für Polizei;</div></td>
+</tr>
+<tr><td><div class="buchstabe">c. die Grenzstellen;</div></td>
+<td><div class="buchstabe">c. die Grenzstellen;</div></td>
+</tr>
+<tr><td class="changed"><div class="buchstabe">d. die Polizeibehörden der Kantone<del>;</del></div></td>
+<td class="changed"><div class="buchstabe">d. die Polizeibehörden der Kantone<ins>.</ins></div></td>
+</tr>
+<tr><td class="deleted"><del><div class="buchstabe">e. das Staatssekretariat für Migration (SEM).</div></del></td>
+<td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+</tr>
+<tr><td><div class="paragraph-text">3. Die Personendaten, die sich auf erkennungsdienstliche Daten nach Absatz 1 beziehen, werden in getrennten Informationssystemen bearbeitet; dabei gelten die Bestimmungen des Bundesgesetzes vom 13. Juni 2008 über die polizeilichen Informationssysteme des Bundes, des Asylgesetzes vom 26. Juni 1998 und des Bundesgesetzes vom 16. Dezember 2005 über die Ausländerinnen und Ausländer. Das DNA-Profil-Informationssystem unterliegt den Bestimmungen des DNA-Profil-Gesetzes vom 20. Juni 2003.</div></td>
+<td><div class="paragraph-text">3. Die Personendaten, die sich auf erkennungsdienstliche Daten nach Absatz 1 beziehen, werden in getrennten Informationssystemen bearbeitet; dabei gelten die Bestimmungen des Bundesgesetzes vom 13. Juni 2008 über die polizeilichen Informationssysteme des Bundes, des Asylgesetzes vom 26. Juni 1998 und des Bundesgesetzes vom 16. Dezember 2005 über die Ausländerinnen und Ausländer. Das DNA-Profil-Informationssystem unterliegt den Bestimmungen des DNA-Profil-Gesetzes vom 20. Juni 2003.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">4. Der Bundesrat:</div></td>
+<td><div class="paragraph-text">4. Der Bundesrat:</div></td>
+</tr>
+<tr><td><div class="buchstabe">a. regelt die Einzelheiten, insbesondere die Verantwortung für die Datenbearbeitung, die Kategorien der zu erfassenden Daten, die Aufbewahrungsdauer der Daten und die Zusammenarbeit mit den Kantonen;</div></td>
+<td><div class="buchstabe">a. regelt die Einzelheiten, insbesondere die Verantwortung für die Datenbearbeitung, die Kategorien der zu erfassenden Daten, die Aufbewahrungsdauer der Daten und die Zusammenarbeit mit den Kantonen;</div></td>
+</tr>
+<tr><td><div class="buchstabe">b. bestimmt die Behörden, welche Personendaten im Abrufverfahren eingeben und abfragen oder denen Personendaten im Einzelfall bekannt gegeben werden können;</div></td>
+<td><div class="buchstabe">b. bestimmt die Behörden, welche Personendaten im Abrufverfahren eingeben und abfragen oder denen Personendaten im Einzelfall bekannt gegeben werden können;</div></td>
+</tr>
+<tr><td class="changed"><div class="buchstabe">c. regelt die Verfahrensrechte der betroffenen Personen, insbesondere die Einsicht in ihre Daten sowie deren Berichtigung, Archivierung und Vernichtung<del>;</del></div></td>
+<td class="changed"><div class="buchstabe">c. regelt die Verfahrensrechte der betroffenen Personen, insbesondere die Einsicht in ihre Daten sowie deren Berichtigung, Archivierung und Vernichtung<ins>.</ins></div></td>
+</tr>
+<tr><td class="deleted"><del><div class="buchstabe">d. regelt die Übermittlung der erkennungsdienstlichen Daten durch die zuständigen Bundesbehörden und die Kantone.</div></del></td>
+<td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+</tr>
+<tr><td><div class="paragraph-text">5. Das SEM oder das Bundesamt für Polizei (fedpol) können die Daten zwecks SIS-Ausschreibungen im Schengener Informationssystem (SIS) in einem automatisierten Verfahren in den nationalen Teil des Schengener Informationssystems (N-SIS) und das SIS überführen.</div></td>
+<td><div class="paragraph-text">5. Das SEM oder das Bundesamt für Polizei (fedpol) können die Daten zwecks SIS-Ausschreibungen im Schengener Informationssystem (SIS) in einem automatisierten Verfahren in den nationalen Teil des Schengener Informationssystems (N-SIS) und das SIS überführen.</div></td>
+</tr>
+<tr class="article-title"><td><p class="artikel-name">Art. 355a</p></td>
+<td><p class="artikel-name">Art. 355a</p></td>
+</tr>
+<tr><td class="changed"><div class="paragraph-text">1. Das fedpol und der Nachrichtendienst des Bundes (NDB) können dem Europäischen Polizeiamt (Europol) Personendaten, einschliesslich besonders schützenswerter Personendaten und Persönlichkeitsprofile, weitergeben.</div></td>
+<td class="changed"><div class="paragraph-text">1. Das <ins>Bundesamt für Polizei (</ins>fedpol<ins>)</ins> und der Nachrichtendienst des Bundes (NDB) können dem Europäischen Polizeiamt (Europol) Personendaten, einschliesslich besonders schützenswerter Personendaten und Persönlichkeitsprofile, weitergeben.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">2. Für die Weitergabe dieser Daten gelten insbesondere die Voraussetzungen nach den Artikeln 3 und 10–13 des Abkommens vom 24. September 2004 zwischen der Schweizerischen Eidgenossenschaft und dem Europäischen Polizeiamt.</div></td>
+<td><div class="paragraph-text">2. Für die Weitergabe dieser Daten gelten insbesondere die Voraussetzungen nach den Artikeln 3 und 10–13 des Abkommens vom 24. September 2004 zwischen der Schweizerischen Eidgenossenschaft und dem Europäischen Polizeiamt.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">3. Gleichzeitig mit der Weitergabe von Daten unterrichtet das Bundesamt für Polizei Europol über die Zweckbestimmung der Daten sowie über alle Beschränkungen hinsichtlich ihrer Bearbeitung, die ihm selbst nach Massgabe der eidgenössischen oder der kantonalen Gesetzgebung auferlegt sind.</div></td>
+<td><div class="paragraph-text">3. Gleichzeitig mit der Weitergabe von Daten unterrichtet das Bundesamt für Polizei Europol über die Zweckbestimmung der Daten sowie über alle Beschränkungen hinsichtlich ihrer Bearbeitung, die ihm selbst nach Massgabe der eidgenössischen oder der kantonalen Gesetzgebung auferlegt sind.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">4. Der Austausch von Personendaten mit Europol wird dem Austausch mit einer zuständigen Behörde eines Schengen-Staates gleichgesetzt (Art. 349b).</div></td>
+<td><div class="paragraph-text">4. Der Austausch von Personendaten mit Europol wird dem Austausch mit einer zuständigen Behörde eines Schengen-Staates gleichgesetzt (Art. 349b).</div></td>
+</tr>
+<tr class="article-title"><td><p class="artikel-name">Art. 355e</p></td>
+<td><p class="artikel-name">Art. 355e</p></td>
+</tr>
+<tr><td class="changed"><div class="paragraph-text">1. Das <del>fedpol</del> führt <del>die</del> zentrale Stelle <del>für</del> <del>den</del> <del>Austausch</del> <del>von Zusatzinformationen mit </del>den <del>Schengen</del> <del>Staaten</del> <del>(SIRENE-Büro)</del>.</div></td>
+<td class="changed"><div class="paragraph-text">1. Das <ins>Bundesamt</ins> <ins>für Polizei </ins>führt <ins>eine</ins> zentrale Stelle <ins>(SIRENE-Büro),</ins> <ins>die</ins> <ins>für</ins> den <ins>N-SIS</ins> <ins>zuständig</ins> <ins>ist</ins>.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">2. Das SIRENE-Büro ist Anlauf-, Koordinations- und Konsultationsstelle für den Informationsaustausch im Zusammenhang mit den Ausschreibungen im SIS. Es überprüft die formelle Zulässigkeit der in- und ausländischen Ausschreibungen im SIS.</div></td>
+<td><div class="paragraph-text">2. Das SIRENE-Büro ist Anlauf-, Koordinations- und Konsultationsstelle für den Informationsaustausch im Zusammenhang mit den Ausschreibungen im SIS. Es überprüft die formelle Zulässigkeit der in- und ausländischen Ausschreibungen im SIS.</div></td>
+</tr>
+</tbody>
+
+    </table>
+
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Vergleichswebseite</p>
+  </footer>
+
+</body>
+
+</html>

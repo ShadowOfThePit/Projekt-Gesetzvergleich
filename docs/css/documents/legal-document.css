@@ -1,0 +1,99 @@
+.legal-document {
+    max-width: 1280px;
+    margin: 0;
+    padding: 25px;
+    background: var(--primary-lightest);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 12px;
+    box-sizing: border-box;
+}
+
+/* Artikel Containers */
+
+.buch-name,
+.abteilung-name,
+.titel-name,
+.preamble-title {
+    margin: 1em 0;
+    font-size: 2em;
+}
+
+.kapitel-name {
+    margin: 1em 0;
+    font-size: 1.6em;
+}
+
+.abschnitt-name {
+    margin: 1em 0;
+    font-size: 1.3em;
+}
+
+.level-name {
+    margin: 1em 0;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+/* Text Containers */
+
+.artikel-text,
+.paragraph-text,
+.buchstabe {
+    margin-bottom: 0.5em;
+}
+
+.artikel-name {
+    margin: 1em 0;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.artikel-name,
+.artikel-name * {
+    color: var(--secondary-color);
+}
+
+.paragraph-text > span,
+.buchstabe > span {
+    padding-right: 0.3em;
+}
+
+.buchstabe {
+    margin-left: 1em;
+}
+
+.buchstaben-liste {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding: 0px;
+    list-style: none;
+}
+
+p.p-list {
+    margin: 0.25rem 0;
+    padding-left: 1rem;
+}
+
+/* Collapser Button */
+
+.is-collapsed {
+    display: none;
+}
+
+.section-collapser {
+    color: var(--secondary-color);
+    font-weight: bold;
+    background: transparent;
+    border: none;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-right: 0px;
+    padding-right: 0px;
+    cursor: pointer;
+
+    font-size: 1em;
+    line-height: 1;
+}

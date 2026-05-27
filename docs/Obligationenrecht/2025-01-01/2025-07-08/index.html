@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vergleichen</title>
+  <link rel="stylesheet" href="/css/main.css">
+  <script src="/js/dropdownLogic.js"></script>
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <a href="/" class="home-link"><img src="/images/LawIcon.png" alt="Recht und Gesetz" width="50" height="50">
+        <span class="home-text">Startseite</span>
+      </a>
+      <a href="/Obligationenrecht">Gesetzesansicht</a>
+      <a href="/Obligationenrecht/2024-01-01/2024-03-03" class="current-page">Dokumentenvergleich</a>
+    </nav>
+    <div class="header-titel">Dokumentenvergleich</div>
+  </header>
+
+  <main>
+
+    <h1>Dokumentvergleich <br />Bundesgesetz betreffend die Ergänzung des Schweizerischen Zivilgesetzbuches (Fünfter Teil: Obligationenrecht)</h1>
+    <h2>2025-01-01 ↔ 2025-07-08</h2>
+
+    <form class="change-form">
+      <div class="dropdown-selectors">
+        <label for="viewSelect">Dokument wechseln</label>
+        <select class="doc-select" id="viewSelect">
+          <option value="2021-01-01" selected>2021-01-01</option>
+<option value="2021-02-01">2021-02-01</option>
+<option value="2021-05-01">2021-05-01</option>
+<option value="2021-07-01">2021-07-01</option>
+<option value="2022-01-01">2022-01-01</option>
+<option value="2023-01-01">2023-01-01</option>
+<option value="2023-02-09">2023-02-09</option>
+<option value="2023-09-01">2023-09-01</option>
+<option value="2024-01-01">2024-01-01</option>
+<option value="2025-01-01">2025-01-01</option>
+<option value="2025-07-08">2025-07-08</option>
+<option value="2025-10-01">2025-10-01</option>
+<option value="2026-01-01">2026-01-01</option>
+
+        </select>
+      </div>
+
+      <a class="dropdown-submitter" id="submit-doc-change">
+        Wechseln
+      </a>
+    </form>
+
+    <form class="compare-form">
+
+      <div class="dropdown-selectors">
+        <label for="leftSelect">Dokument links</label>
+        <select class="doc-select" id="leftSelect">
+          <option value="2021-01-01">2021-01-01</option>
+<option value="2021-02-01">2021-02-01</option>
+<option value="2021-05-01">2021-05-01</option>
+<option value="2021-07-01">2021-07-01</option>
+<option value="2022-01-01">2022-01-01</option>
+<option value="2023-01-01">2023-01-01</option>
+<option value="2023-02-09">2023-02-09</option>
+<option value="2023-09-01">2023-09-01</option>
+<option value="2024-01-01">2024-01-01</option>
+<option value="2025-01-01" selected>2025-01-01</option>
+<option value="2025-07-08">2025-07-08</option>
+<option value="2025-10-01">2025-10-01</option>
+<option value="2026-01-01">2026-01-01</option>
+
+        </select>
+      </div>
+
+      <div class="dropdown-selectors">
+        <label for="rightSelect">Dokument rechts</label>
+        <select class="doc-select" id="rightSelect">
+          <option value="2021-01-01">2021-01-01</option>
+<option value="2021-02-01">2021-02-01</option>
+<option value="2021-05-01">2021-05-01</option>
+<option value="2021-07-01">2021-07-01</option>
+<option value="2022-01-01">2022-01-01</option>
+<option value="2023-01-01">2023-01-01</option>
+<option value="2023-02-09">2023-02-09</option>
+<option value="2023-09-01">2023-09-01</option>
+<option value="2024-01-01">2024-01-01</option>
+<option value="2025-01-01">2025-01-01</option>
+<option value="2025-07-08" selected>2025-07-08</option>
+<option value="2025-10-01">2025-10-01</option>
+<option value="2026-01-01">2026-01-01</option>
+
+        </select>
+      </div>
+      
+      <a class="dropdown-submitter" id="submit-comparison-change">
+        Vergleichen
+      </a>
+    </form>
+
+    <div class="change-revision button-container">
+      <a href="/Obligationenrecht/2024-01-01/2025-01-01">← Vorherige Versionen vergleichen</a>
+<a href="/Obligationenrecht/2025-07-08/2025-01-01">← Versionen tauschen →</a>
+<a href="/Obligationenrecht/2025-07-08/2025-10-01">Nächste Versionen vergleichen →</a>
+
+    </div>
+
+    <div class="change-doc-version-comparing button-container">
+      <a href="/Obligationenrecht/2024-01-01/2025-07-08">← Vorherige Version</a>
+<a class="disabled">Aktuelle Version</a>
+<a class="disabled">Aktuelle Version</a>
+<a href="/Obligationenrecht/2025-01-01/2025-10-01">Nächste Version →</a>
+
+    </div>
+
+    <table class="diff-table">
+      <thead><tr><th>2025-01-01</th>
+<th>2025-07-08</th>
+</tr>
+</thead>
+<div class="diff-message">Beide Dokumente sind beim Text exakt gleich. Sie Unterscheiden sich nur bei den Referenzen, Metadaten oder bei der internen Datenanordnung</div>
+
+    </table>
+
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Vergleichswebseite</p>
+  </footer>
+
+</body>
+
+</html>

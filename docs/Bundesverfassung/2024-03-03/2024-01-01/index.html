@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vergleichen</title>
+  <link rel="stylesheet" href="/css/main.css">
+  <script src="/js/dropdownLogic.js"></script>
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <a href="/" class="home-link"><img src="/images/LawIcon.png" alt="Recht und Gesetz" width="50" height="50">
+        <span class="home-text">Startseite</span>
+      </a>
+      <a href="/Bundesverfassung">Gesetzesansicht</a>
+      <a href="/Bundesverfassung/2024-01-01/2024-03-03" class="current-page">Dokumentenvergleich</a>
+    </nav>
+    <div class="header-titel">Dokumentenvergleich</div>
+  </header>
+
+  <main>
+
+    <h1>Dokumentvergleich <br />Bundesverfassung der Schweizerischen Eidgenossenschaft</h1>
+    <h2>2024-03-03 ↔ 2024-01-01</h2>
+
+    <form class="change-form">
+      <div class="dropdown-selectors">
+        <label for="viewSelect">Dokument wechseln</label>
+        <select class="doc-select" id="viewSelect">
+          <option value="2021-01-01" selected>2021-01-01</option>
+<option value="2021-03-07">2021-03-07</option>
+<option value="2021-11-28">2021-11-28</option>
+<option value="2022-02-13">2022-02-13</option>
+<option value="2024-01-01">2024-01-01</option>
+<option value="2024-03-03">2024-03-03</option>
+
+        </select>
+      </div>
+
+      <a class="dropdown-submitter" id="submit-doc-change">
+        Wechseln
+      </a>
+    </form>
+
+    <form class="compare-form">
+
+      <div class="dropdown-selectors">
+        <label for="leftSelect">Dokument links</label>
+        <select class="doc-select" id="leftSelect">
+          <option value="2021-01-01">2021-01-01</option>
+<option value="2021-03-07">2021-03-07</option>
+<option value="2021-11-28">2021-11-28</option>
+<option value="2022-02-13">2022-02-13</option>
+<option value="2024-01-01">2024-01-01</option>
+<option value="2024-03-03" selected>2024-03-03</option>
+
+        </select>
+      </div>
+
+      <div class="dropdown-selectors">
+        <label for="rightSelect">Dokument rechts</label>
+        <select class="doc-select" id="rightSelect">
+          <option value="2021-01-01">2021-01-01</option>
+<option value="2021-03-07">2021-03-07</option>
+<option value="2021-11-28">2021-11-28</option>
+<option value="2022-02-13">2022-02-13</option>
+<option value="2024-01-01" selected>2024-01-01</option>
+<option value="2024-03-03">2024-03-03</option>
+
+        </select>
+      </div>
+      
+      <a class="dropdown-submitter" id="submit-comparison-change">
+        Vergleichen
+      </a>
+    </form>
+
+    <div class="change-revision button-container">
+      <a href="/Bundesverfassung/2024-01-01/2022-02-13">← Vorherige Versionen vergleichen</a>
+<a href="/Bundesverfassung/2024-01-01/2024-03-03">← Versionen tauschen →</a>
+<a class="disabled">Keine weitere Versionen</a>
+
+    </div>
+
+    <div class="change-doc-version-comparing button-container">
+      <a class="disabled">Aktuelle Version</a>
+<a class="disabled">Keine weitere Version</a>
+<a href="/Bundesverfassung/2024-03-03/2022-02-13">← Vorherige Version</a>
+<a class="disabled">Aktuelle Version</a>
+
+    </div>
+
+    <table class="diff-table">
+      <thead><tr><th>2024-03-03</th>
+<th>2024-01-01</th>
+</tr>
+</thead>
+<tbody><tr class="article-title"><td class="changed"><p class="artikel-name">Art. 112: Alters-, Hinterlassenen- und Invalidenversicherung<del>*</del></p></td>
+<td class="changed"><p class="artikel-name">Art. 112: Alters-, Hinterlassenen- und Invalidenversicherung</p></td>
+</tr>
+<tr><td><div class="paragraph-text">1. Der Bund erlässt Vorschriften über die Alters-, Hinterlassenen- und Invalidenversicherung.</div></td>
+<td><div class="paragraph-text">1. Der Bund erlässt Vorschriften über die Alters-, Hinterlassenen- und Invalidenversicherung.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">2. Er beachtet dabei folgende Grundsätze:</div></td>
+<td><div class="paragraph-text">2. Er beachtet dabei folgende Grundsätze:</div></td>
+</tr>
+<tr><td><div class="buchstabe">a. Die Versicherung ist obligatorisch.</div></td>
+<td><div class="buchstabe">a. Die Versicherung ist obligatorisch.</div></td>
+</tr>
+<tr><td><div class="buchstabe">bis. Sie gewährt Geld- und Sachleistungen.</div></td>
+<td><div class="buchstabe">bis. Sie gewährt Geld- und Sachleistungen.</div></td>
+</tr>
+<tr><td><div class="buchstabe">b. Die Renten haben den Existenzbedarf angemessen zu decken.</div></td>
+<td><div class="buchstabe">b. Die Renten haben den Existenzbedarf angemessen zu decken.</div></td>
+</tr>
+<tr><td><div class="buchstabe">c. Die Höchstrente beträgt maximal das Doppelte der Mindestrente.</div></td>
+<td><div class="buchstabe">c. Die Höchstrente beträgt maximal das Doppelte der Mindestrente.</div></td>
+</tr>
+<tr><td><div class="buchstabe">d. Die Renten werden mindestens der Preisentwicklung angepasst.</div></td>
+<td><div class="buchstabe">d. Die Renten werden mindestens der Preisentwicklung angepasst.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">3. Die Versicherung wird finanziert:</div></td>
+<td><div class="paragraph-text">3. Die Versicherung wird finanziert:</div></td>
+</tr>
+<tr><td><div class="buchstabe">a. durch Beiträge der Versicherten, wobei die Arbeitgeberinnen und Arbeitgeber für ihre Arbeitnehmerinnen und Arbeitnehmer die Hälfte der Beiträge bezahlen;</div></td>
+<td><div class="buchstabe">a. durch Beiträge der Versicherten, wobei die Arbeitgeberinnen und Arbeitgeber für ihre Arbeitnehmerinnen und Arbeitnehmer die Hälfte der Beiträge bezahlen;</div></td>
+</tr>
+<tr><td><div class="buchstabe">b. durch Leistungen des Bundes.</div></td>
+<td><div class="buchstabe">b. durch Leistungen des Bundes.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">4. Die Leistungen des Bundes betragen höchstens die Hälfte der Ausgaben.</div></td>
+<td><div class="paragraph-text">4. Die Leistungen des Bundes betragen höchstens die Hälfte der Ausgaben.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">5. Die Leistungen des Bundes werden in erster Linie aus dem Reinertrag der Tabaksteuer, der Steuer auf gebrannten Wassern und der Abgabe aus dem Betrieb von Spielbanken gedeckt.</div></td>
+<td><div class="paragraph-text">5. Die Leistungen des Bundes werden in erster Linie aus dem Reinertrag der Tabaksteuer, der Steuer auf gebrannten Wassern und der Abgabe aus dem Betrieb von Spielbanken gedeckt.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">6. ...</div></td>
+<td><div class="paragraph-text">6. ...</div></td>
+</tr>
+</tbody>
+
+    </table>
+
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Vergleichswebseite</p>
+  </footer>
+
+</body>
+
+</html>

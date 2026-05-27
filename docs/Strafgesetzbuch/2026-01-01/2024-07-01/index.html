@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vergleichen</title>
+  <link rel="stylesheet" href="/css/main.css">
+  <script src="/js/dropdownLogic.js"></script>
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <a href="/" class="home-link"><img src="/images/LawIcon.png" alt="Recht und Gesetz" width="50" height="50">
+        <span class="home-text">Startseite</span>
+      </a>
+      <a href="/Strafgesetzbuch">Gesetzesansicht</a>
+      <a href="/Strafgesetzbuch/2024-01-01/2024-03-03" class="current-page">Dokumentenvergleich</a>
+    </nav>
+    <div class="header-titel">Dokumentenvergleich</div>
+  </header>
+
+  <main>
+
+    <h1>Dokumentvergleich <br />Schweizerisches Strafgesetzbuch</h1>
+    <h2>2026-01-01 ↔ 2024-07-01</h2>
+
+    <form class="change-form">
+      <div class="dropdown-selectors">
+        <label for="viewSelect">Dokument wechseln</label>
+        <select class="doc-select" id="viewSelect">
+          <option value="2020-02-01" selected>2020-02-01</option>
+<option value="2020-07-01">2020-07-01</option>
+<option value="2021-07-01">2021-07-01</option>
+<option value="2022-01-01">2022-01-01</option>
+<option value="2022-06-01">2022-06-01</option>
+<option value="2022-11-22">2022-11-22</option>
+<option value="2023-01-01">2023-01-01</option>
+<option value="2023-01-23">2023-01-23</option>
+<option value="2023-07-01">2023-07-01</option>
+<option value="2023-08-01">2023-08-01</option>
+<option value="2023-09-01">2023-09-01</option>
+<option value="2023-12-06">2023-12-06</option>
+<option value="2024-01-01">2024-01-01</option>
+<option value="2024-07-01">2024-07-01</option>
+<option value="2025-01-01">2025-01-01</option>
+<option value="2025-08-01">2025-08-01</option>
+<option value="2026-01-01">2026-01-01</option>
+
+        </select>
+      </div>
+
+      <a class="dropdown-submitter" id="submit-doc-change">
+        Wechseln
+      </a>
+    </form>
+
+    <form class="compare-form">
+
+      <div class="dropdown-selectors">
+        <label for="leftSelect">Dokument links</label>
+        <select class="doc-select" id="leftSelect">
+          <option value="2020-02-01">2020-02-01</option>
+<option value="2020-07-01">2020-07-01</option>
+<option value="2021-07-01">2021-07-01</option>
+<option value="2022-01-01">2022-01-01</option>
+<option value="2022-06-01">2022-06-01</option>
+<option value="2022-11-22">2022-11-22</option>
+<option value="2023-01-01">2023-01-01</option>
+<option value="2023-01-23">2023-01-23</option>
+<option value="2023-07-01">2023-07-01</option>
+<option value="2023-08-01">2023-08-01</option>
+<option value="2023-09-01">2023-09-01</option>
+<option value="2023-12-06">2023-12-06</option>
+<option value="2024-01-01">2024-01-01</option>
+<option value="2024-07-01">2024-07-01</option>
+<option value="2025-01-01">2025-01-01</option>
+<option value="2025-08-01">2025-08-01</option>
+<option value="2026-01-01" selected>2026-01-01</option>
+
+        </select>
+      </div>
+
+      <div class="dropdown-selectors">
+        <label for="rightSelect">Dokument rechts</label>
+        <select class="doc-select" id="rightSelect">
+          <option value="2020-02-01">2020-02-01</option>
+<option value="2020-07-01">2020-07-01</option>
+<option value="2021-07-01">2021-07-01</option>
+<option value="2022-01-01">2022-01-01</option>
+<option value="2022-06-01">2022-06-01</option>
+<option value="2022-11-22">2022-11-22</option>
+<option value="2023-01-01">2023-01-01</option>
+<option value="2023-01-23">2023-01-23</option>
+<option value="2023-07-01">2023-07-01</option>
+<option value="2023-08-01">2023-08-01</option>
+<option value="2023-09-01">2023-09-01</option>
+<option value="2023-12-06">2023-12-06</option>
+<option value="2024-01-01">2024-01-01</option>
+<option value="2024-07-01" selected>2024-07-01</option>
+<option value="2025-01-01">2025-01-01</option>
+<option value="2025-08-01">2025-08-01</option>
+<option value="2026-01-01">2026-01-01</option>
+
+        </select>
+      </div>
+      
+      <a class="dropdown-submitter" id="submit-comparison-change">
+        Vergleichen
+      </a>
+    </form>
+
+    <div class="change-revision button-container">
+      <a href="/Strafgesetzbuch/2025-08-01/2024-01-01">← Vorherige Versionen vergleichen</a>
+<a href="/Strafgesetzbuch/2024-07-01/2026-01-01">← Versionen tauschen →</a>
+<a class="disabled">Keine weitere Versionen</a>
+
+    </div>
+
+    <div class="change-doc-version-comparing button-container">
+      <a href="/Strafgesetzbuch/2025-08-01/2024-07-01">← Vorherige Version</a>
+<a class="disabled">Keine weitere Version</a>
+<a href="/Strafgesetzbuch/2026-01-01/2024-01-01">← Vorherige Version</a>
+<a href="/Strafgesetzbuch/2026-01-01/2025-01-01">Nächste Version →</a>
+
+    </div>
+
+    <table class="diff-table">
+      <thead><tr><th>2026-01-01</th>
+<th>2024-07-01</th>
+</tr>
+</thead>
+<tbody><tr class="article-title"><td><p class="artikel-name">Art. 36</p></td>
+<td><p class="artikel-name">Art. 36</p></td>
+</tr>
+<tr><td><div class="paragraph-text">1. Soweit der Verurteilte die Geldstrafe nicht bezahlt und sie auf dem Betreibungsweg (Art. 35 Abs. 3) uneinbringlich ist, tritt an die Stelle der Geldstrafe eine Freiheitsstrafe. Ein Tagessatz entspricht einem Tag Freiheitsstrafe. Die Ersatzfreiheitsstrafe entfällt, soweit die Geldstrafe nachträglich bezahlt wird.</div></td>
+<td><div class="paragraph-text">1. Soweit der Verurteilte die Geldstrafe nicht bezahlt und sie auf dem Betreibungsweg (Art. 35 Abs. 3) uneinbringlich ist, tritt an die Stelle der Geldstrafe eine Freiheitsstrafe. Ein Tagessatz entspricht einem Tag Freiheitsstrafe. Die Ersatzfreiheitsstrafe entfällt, soweit die Geldstrafe nachträglich bezahlt wird.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">2. Wurde die Geldstrafe durch eine Verwaltungsbehörde verhängt, so entscheidet das Gericht über die Ersatzfreiheitsstrafe.</div></td>
+<td><div class="paragraph-text">2. Wurde die Geldstrafe durch eine Verwaltungsbehörde verhängt, so entscheidet das Gericht über die Ersatzfreiheitsstrafe.</div></td>
+</tr>
+<tr><td class="changed"><div class="paragraph-text"><del>35</del>. ...</div></td>
+<td class="changed"><div class="paragraph-text"><ins>3–5</ins>. ...</div></td>
+</tr>
+<tr class="article-title"><td><p class="artikel-name">Art. 67a</p></td>
+<td><p class="artikel-name">Art. 67a</p></td>
+</tr>
+<tr><td><div class="paragraph-text">1. Als berufliche Tätigkeiten im Sinne von Artikel 67 gelten Tätigkeiten in Ausübung eines Haupt- oder Nebenberufs oder -gewerbes oder eines Handelsgeschäfts. Als organisierte ausserberufliche Tätigkeiten gelten Tätigkeiten, die nicht oder nicht primär zu Erwerbszwecken und die im Rahmen eines Vereins oder einer anderen Organisation ausgeübt werden.</div></td>
+<td><div class="paragraph-text">1. Als berufliche Tätigkeiten im Sinne von Artikel 67 gelten Tätigkeiten in Ausübung eines Haupt- oder Nebenberufs oder -gewerbes oder eines Handelsgeschäfts. Als organisierte ausserberufliche Tätigkeiten gelten Tätigkeiten, die nicht oder nicht primär zu Erwerbszwecken und die im Rahmen eines Vereins oder einer anderen Organisation ausgeübt werden.</div></td>
+</tr>
+<tr><td class="changed"><div class="paragraph-text">2. Das Tätigkeitsverbot nach Artikel 67 umfasst die Tätigkeiten, die der Täter selbstständig, als Organ einer juristischen Person oder Handelsgesellschaft<del> oder in einer anderen Funktion</del>, <del>die im Handelsregister einzutragen ist, </del>als Beauftragter oder als Vertreter einer anderen Person ausübt oder durch eine von seinen Weisungen abhängige Person ausüben lässt.</div></td>
+<td class="changed"><div class="paragraph-text">2. Das Tätigkeitsverbot nach Artikel 67 umfasst die Tätigkeiten, die der Täter selbstständig, als Organ einer juristischen Person oder Handelsgesellschaft, als Beauftragter oder als Vertreter einer anderen Person ausübt oder durch eine von seinen Weisungen abhängige Person ausüben lässt.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">3. Besteht die Gefahr, dass der Täter seine Tätigkeit auch zur Begehung von Straftaten missbraucht, wenn er sie nach Weisung und unter Kontrolle eines Vorgesetzten oder einer Aufsichtsperson ausübt, so ist ihm die Tätigkeit ganz zu untersagen.</div></td>
+<td><div class="paragraph-text">3. Besteht die Gefahr, dass der Täter seine Tätigkeit auch zur Begehung von Straftaten missbraucht, wenn er sie nach Weisung und unter Kontrolle eines Vorgesetzten oder einer Aufsichtsperson ausübt, so ist ihm die Tätigkeit ganz zu untersagen.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">4. Die Verbote nach Artikel 67 Absätze 3 und 4 umfassen immer die ganze Tätigkeit.</div></td>
+<td><div class="paragraph-text">4. Die Verbote nach Artikel 67 Absätze 3 und 4 umfassen immer die ganze Tätigkeit.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">5. Als Tätigkeiten mit regelmässigem Kontakt zu Minderjährigen oder zu anderen besonders schutzbedürftigen Personen gelten:</div></td>
+<td><div class="paragraph-text">5. Als Tätigkeiten mit regelmässigem Kontakt zu Minderjährigen oder zu anderen besonders schutzbedürftigen Personen gelten:</div></td>
+</tr>
+<tr><td><div class="buchstabe">a. Tätigkeiten, die direkt und spezifisch gegenüber Minderjährigen oder anderen besonders schutzbedürftigen Personen ausgeübt werden, namentlich:</div></td>
+<td><div class="buchstabe">a. Tätigkeiten, die direkt und spezifisch gegenüber Minderjährigen oder anderen besonders schutzbedürftigen Personen ausgeübt werden, namentlich:</div></td>
+</tr>
+<tr><td><div class="buchstabe">1. Lehren oder Unterrichten,</div></td>
+<td><div class="buchstabe">1. Lehren oder Unterrichten,</div></td>
+</tr>
+<tr><td><div class="buchstabe">2. Erziehung oder Beratung,</div></td>
+<td><div class="buchstabe">2. Erziehung oder Beratung,</div></td>
+</tr>
+<tr><td><div class="buchstabe">3. Betreuung oder Aufsicht,</div></td>
+<td><div class="buchstabe">3. Betreuung oder Aufsicht,</div></td>
+</tr>
+<tr><td><div class="buchstabe">4. Pflege,</div></td>
+<td><div class="buchstabe">4. Pflege,</div></td>
+</tr>
+<tr><td><div class="buchstabe">5. körperliche Untersuchung oder Behandlung,</div></td>
+<td><div class="buchstabe">5. körperliche Untersuchung oder Behandlung,</div></td>
+</tr>
+<tr><td><div class="buchstabe">6. psychologische Untersuchung oder Behandlung,</div></td>
+<td><div class="buchstabe">6. psychologische Untersuchung oder Behandlung,</div></td>
+</tr>
+<tr><td><div class="buchstabe">7. Verpflegung,</div></td>
+<td><div class="buchstabe">7. Verpflegung,</div></td>
+</tr>
+<tr><td><div class="buchstabe">8. Transport,</div></td>
+<td><div class="buchstabe">8. Transport,</div></td>
+</tr>
+<tr><td><div class="buchstabe">9. direkter Verkauf oder Verleih oder direkte Vermittlung von spezifisch für die Bedürfnisse von Minderjährigen oder anderen besonders schutzbedürftigen Personen bestimmten Objekten, sofern dies die Haupttätigkeit der betreffenden Person darstellt;</div></td>
+<td><div class="buchstabe">9. direkter Verkauf oder Verleih oder direkte Vermittlung von spezifisch für die Bedürfnisse von Minderjährigen oder anderen besonders schutzbedürftigen Personen bestimmten Objekten, sofern dies die Haupttätigkeit der betreffenden Person darstellt;</div></td>
+</tr>
+<tr><td><div class="buchstabe">b. andere Tätigkeiten, die vor allem oder wiederholt in Einrichtungen ausgeübt werden, die Dienstleistungen nach Buchstabe a anbieten; ausgenommen sind Tätigkeiten, bei denen örtlich oder zeitlich sichergestellt ist, dass kein Kontakt zu Minderjährigen oder anderen besonders schutzbedürften Personen stattfinden kann.</div></td>
+<td><div class="buchstabe">b. andere Tätigkeiten, die vor allem oder wiederholt in Einrichtungen ausgeübt werden, die Dienstleistungen nach Buchstabe a anbieten; ausgenommen sind Tätigkeiten, bei denen örtlich oder zeitlich sichergestellt ist, dass kein Kontakt zu Minderjährigen oder anderen besonders schutzbedürften Personen stattfinden kann.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">6. Als besonders schutzbedürftig gelten Personen, die aufgrund ihres Alters, einer Krankheit oder einer langfristigen körperlichen, geistigen oder psychischen Beeinträchtigung bei alltäglichen Verrichtungen oder in ihrer Lebensführung auf fremde Hilfe angewiesen sind.</div></td>
+<td><div class="paragraph-text">6. Als besonders schutzbedürftig gelten Personen, die aufgrund ihres Alters, einer Krankheit oder einer langfristigen körperlichen, geistigen oder psychischen Beeinträchtigung bei alltäglichen Verrichtungen oder in ihrer Lebensführung auf fremde Hilfe angewiesen sind.</div></td>
+</tr>
+<tr class="article-title"><td><p class="artikel-name">Art. 181a</p></td>
+<td><p class="artikel-name">Art. 181a</p></td>
+</tr>
+<tr><td class="changed"><div class="paragraph-text">1. Wer jemanden durch Gewalt oder Androhung ernstlicher Nachteile oder durch andere Beschränkung seiner Handlungsfreiheit nötigt, eine <del>zivile oder religiöse </del>Ehe einzugehen oder eine Partnerschaft eintragen zu lassen, wird mit Freiheitsstrafe bis zu fünf Jahren oder Geldstrafe bestraft.</div></td>
+<td class="changed"><div class="paragraph-text">1. Wer jemanden durch Gewalt oder Androhung ernstlicher Nachteile oder durch andere Beschränkung seiner Handlungsfreiheit nötigt, eine Ehe einzugehen oder eine Partnerschaft eintragen zu lassen, wird mit Freiheitsstrafe bis zu fünf Jahren oder Geldstrafe bestraft.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">2. Strafbar ist auch, wer die Tat im Ausland begeht, sich in der Schweiz befindet und nicht ausgeliefert wird. Artikel 7 Absätze 4 und 5 ist anwendbar.</div></td>
+<td><div class="paragraph-text">2. Strafbar ist auch, wer die Tat im Ausland begeht, sich in der Schweiz befindet und nicht ausgeliefert wird. Artikel 7 Absätze 4 und 5 ist anwendbar.</div></td>
+</tr>
+<tr class="article-title"><td class="deleted"><del><p class="artikel-name">Art. 181b</p></del></td>
+<td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+</tr>
+<tr><td class="deleted"><del><div class="artikel-text">Wer jemanden auf eine Weise beharrlich verfolgt, belästigt oder bedroht, die geeignet ist, seine Lebensgestaltungsfreiheit erheblich zu beschränken, wird, auf Antrag, mit Freiheitsstrafe bis zu drei Jahren oder Geldstrafe bestraft.</div></del></td>
+<td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+</tr>
+<tr class="article-title"><td class="deleted"><del><p class="artikel-name">Art. 356</p></del></td>
+<td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+</tr>
+<tr><td class="deleted"><del><div class="paragraph-text">1. Der Bund und die Kantone unterstützen mittels Abgleich von Informationssystemen, die daktyloskopische Daten, Fahrzeug- und Fahrzeughalterdaten enthalten, und mittels des Austauschs von Informationen die teilnehmenden Staaten insbesondere bei der Bekämpfung des Terrorismus und der grenzüberschreitenden Kriminalität.</div></del></td>
+<td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+</tr>
+<tr><td class="deleted"><del><div class="paragraph-text">2. Die nationalen Kontaktstellen der teilnehmenden Staaten können nach Artikel 9 Absatz 1 des Beschlusses 2008/615/JI im Einzelfall zur Verhinderung und Verfolgung von Straftaten, daktyloskopische Daten mit den Fundstellendatensätzen in den Informationssystemen der Schweiz abgleichen.</div></del></td>
+<td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+</tr>
+<tr><td class="deleted"><del><div class="paragraph-text">3. Zur Verfolgung strafbarer Handlungen nimmt die nationale Kontaktstelle nach Artikel 357 Absatz 1 aufgrund eines Antrags den Abgleich mit den daktyloskopischen Daten in den Informationssystemen der Vertragsstaaten vor.</div></del></td>
+<td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+</tr>
+<tr class="article-title"><td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+<td class="inserted"><ins><p class="artikel-name">Art. 356-361</p></ins></td>
+</tr>
+<tr><td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+<td class="inserted"><ins><div class="artikel-text">...</div></ins></td>
+</tr>
+<tr class="article-title"><td class="deleted"><del><p class="artikel-name">Art. 357</p></del></td>
+<td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+</tr>
+<tr><td class="deleted"><del><div class="paragraph-text">1. Fedpol ist die nationale Kontaktstelle für den Austausch von daktyloskopischen Daten und Personendaten nach den Artikeln 6, 11, 15 sowie 16 Absatz 3 des Beschlusses 2008/615/JI.</div></del></td>
+<td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+</tr>
+<tr><td class="deleted"><del><div class="paragraph-text">2. Als Kontaktstelle nimmt fedpol namentlich folgende Aufgaben wahr:</div></del></td>
+<td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+</tr>
+<tr><td class="deleted"><del><div class="buchstabe">a. Es nimmt den Abgleich mit den daktyloskopischen Daten vor, die im Informationssystem anderer teilnehmender Staaten enthalten sind.</div></del></td>
+<td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+</tr>
+<tr><td class="deleted"><del><div class="buchstabe">b. Es überprüft Treffer, die aufgrund eines Abgleichs der Schweiz im Informationssystem für Fingerabdrücke eines teilnehmenden Staates erzielt worden sind.</div></del></td>
+<td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+</tr>
+<tr><td class="deleted"><del><div class="buchstabe">c. Es übermittelt dem abfragenden teilnehmenden Staat auf Ersuchen die personenbezogenen Daten und, soweit dies nach schweizerischem Recht vorgesehen ist, weitere verfügbare Angaben gemäss Artikel 10 des Beschlusses 2008/615/JI.</div></del></td>
+<td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+</tr>
+<tr><td class="deleted"><del><div class="buchstabe">d. Es übermittelt auf Ersuchen oder von sich aus personenbezogene und nicht personenbezogene Daten gemäss den Artikeln 13 und 14 (Grossveranstaltungen) sowie 16 (Verhinderung terroristischer Straftaten) des Beschlusses 2008/615/JI.</div></del></td>
+<td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+</tr>
+<tr><td class="deleted"><del><div class="buchstabe">e. Es legt maximale Abrufkapazitäten für daktyloskopische Daten fest.</div></del></td>
+<td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+</tr>
+<tr><td class="deleted"><del><div class="paragraph-text">3. Die folgenden Behörden können im Rahmen ihrer gesetzlichen Aufgaben einen Abgleich gemäss Absatz 2 beantragen:</div></del></td>
+<td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+</tr>
+<tr><td class="deleted"><del><div class="buchstabe">a. fedpol;</div></del></td>
+<td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+</tr>
+<tr><td class="deleted"><del><div class="buchstabe">b. Bundesanwaltschaft;</div></del></td>
+<td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+</tr>
+<tr><td class="deleted"><del><div class="buchstabe">c. die kantonalen Polizei- und Strafverfolgungsbehörden.</div></del></td>
+<td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+</tr>
+<tr><td class="deleted"><del><div class="paragraph-text">4. Das Bundesamt für Strassen ist die nationale Kontaktstelle für den Austausch von Daten über Eigentümer oder Halter von Fahrzeugen sowie von Fahrzeugdaten nach Artikel 12 Absatz 2 des Beschlusses 2008/615/JI. Als Kontaktstelle gewährt das ASTRA dem ersuchenden Vertragsstaat Zugang auf die Fahrzeug- und Fahrzeughalterdaten im Subsystem IVZ-Fahrzeuge zu den Zwecken nach Artikel 12 Absatz 1 des Beschlusses 2008/615/JI. Der Zugang zu den Daten erfolgt gemäss Artikel 15 sowie Kapitel 3 des Anhangs des Beschlusses 2008/616/JI.</div></del></td>
+<td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+</tr>
+<tr><td class="deleted"><del><div class="paragraph-text">5. Als terroristische Straftaten im Sinne von Artikel 16 des Beschlusses 2008/615/JI gelten die in Artikel 111j Absatz 6 Buchstabe a des Ausländer- und Integrationsgesetzes vom 16. Dezember 2005 genannten Verbrechen und Vergehen.</div></del></td>
+<td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+</tr>
+<tr class="article-title"><td class="deleted"><del><p class="artikel-name">Art. 358-361</p></del></td>
+<td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+</tr>
+<tr><td class="deleted"><del><div class="artikel-text">...</div></del></td>
+<td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+</tr>
+</tbody>
+
+    </table>
+
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Vergleichswebseite</p>
+  </footer>
+
+</body>
+
+</html>

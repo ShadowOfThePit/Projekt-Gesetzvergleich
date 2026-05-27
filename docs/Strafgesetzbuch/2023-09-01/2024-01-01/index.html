@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vergleichen</title>
+  <link rel="stylesheet" href="/css/main.css">
+  <script src="/js/dropdownLogic.js"></script>
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <a href="/" class="home-link"><img src="/images/LawIcon.png" alt="Recht und Gesetz" width="50" height="50">
+        <span class="home-text">Startseite</span>
+      </a>
+      <a href="/Strafgesetzbuch">Gesetzesansicht</a>
+      <a href="/Strafgesetzbuch/2024-01-01/2024-03-03" class="current-page">Dokumentenvergleich</a>
+    </nav>
+    <div class="header-titel">Dokumentenvergleich</div>
+  </header>
+
+  <main>
+
+    <h1>Dokumentvergleich <br />Schweizerisches Strafgesetzbuch</h1>
+    <h2>2023-09-01 ↔ 2024-01-01</h2>
+
+    <form class="change-form">
+      <div class="dropdown-selectors">
+        <label for="viewSelect">Dokument wechseln</label>
+        <select class="doc-select" id="viewSelect">
+          <option value="2020-02-01" selected>2020-02-01</option>
+<option value="2020-07-01">2020-07-01</option>
+<option value="2021-07-01">2021-07-01</option>
+<option value="2022-01-01">2022-01-01</option>
+<option value="2022-06-01">2022-06-01</option>
+<option value="2022-11-22">2022-11-22</option>
+<option value="2023-01-01">2023-01-01</option>
+<option value="2023-01-23">2023-01-23</option>
+<option value="2023-07-01">2023-07-01</option>
+<option value="2023-08-01">2023-08-01</option>
+<option value="2023-09-01">2023-09-01</option>
+<option value="2023-12-06">2023-12-06</option>
+<option value="2024-01-01">2024-01-01</option>
+<option value="2024-07-01">2024-07-01</option>
+<option value="2025-01-01">2025-01-01</option>
+<option value="2025-08-01">2025-08-01</option>
+<option value="2026-01-01">2026-01-01</option>
+
+        </select>
+      </div>
+
+      <a class="dropdown-submitter" id="submit-doc-change">
+        Wechseln
+      </a>
+    </form>
+
+    <form class="compare-form">
+
+      <div class="dropdown-selectors">
+        <label for="leftSelect">Dokument links</label>
+        <select class="doc-select" id="leftSelect">
+          <option value="2020-02-01">2020-02-01</option>
+<option value="2020-07-01">2020-07-01</option>
+<option value="2021-07-01">2021-07-01</option>
+<option value="2022-01-01">2022-01-01</option>
+<option value="2022-06-01">2022-06-01</option>
+<option value="2022-11-22">2022-11-22</option>
+<option value="2023-01-01">2023-01-01</option>
+<option value="2023-01-23">2023-01-23</option>
+<option value="2023-07-01">2023-07-01</option>
+<option value="2023-08-01">2023-08-01</option>
+<option value="2023-09-01" selected>2023-09-01</option>
+<option value="2023-12-06">2023-12-06</option>
+<option value="2024-01-01">2024-01-01</option>
+<option value="2024-07-01">2024-07-01</option>
+<option value="2025-01-01">2025-01-01</option>
+<option value="2025-08-01">2025-08-01</option>
+<option value="2026-01-01">2026-01-01</option>
+
+        </select>
+      </div>
+
+      <div class="dropdown-selectors">
+        <label for="rightSelect">Dokument rechts</label>
+        <select class="doc-select" id="rightSelect">
+          <option value="2020-02-01">2020-02-01</option>
+<option value="2020-07-01">2020-07-01</option>
+<option value="2021-07-01">2021-07-01</option>
+<option value="2022-01-01">2022-01-01</option>
+<option value="2022-06-01">2022-06-01</option>
+<option value="2022-11-22">2022-11-22</option>
+<option value="2023-01-01">2023-01-01</option>
+<option value="2023-01-23">2023-01-23</option>
+<option value="2023-07-01">2023-07-01</option>
+<option value="2023-08-01">2023-08-01</option>
+<option value="2023-09-01">2023-09-01</option>
+<option value="2023-12-06">2023-12-06</option>
+<option value="2024-01-01" selected>2024-01-01</option>
+<option value="2024-07-01">2024-07-01</option>
+<option value="2025-01-01">2025-01-01</option>
+<option value="2025-08-01">2025-08-01</option>
+<option value="2026-01-01">2026-01-01</option>
+
+        </select>
+      </div>
+      
+      <a class="dropdown-submitter" id="submit-comparison-change">
+        Vergleichen
+      </a>
+    </form>
+
+    <div class="change-revision button-container">
+      <a href="/Strafgesetzbuch/2023-08-01/2023-12-06">← Vorherige Versionen vergleichen</a>
+<a href="/Strafgesetzbuch/2024-01-01/2023-09-01">← Versionen tauschen →</a>
+<a href="/Strafgesetzbuch/2023-12-06/2024-07-01">Nächste Versionen vergleichen →</a>
+
+    </div>
+
+    <div class="change-doc-version-comparing button-container">
+      <a href="/Strafgesetzbuch/2023-08-01/2024-01-01">← Vorherige Version</a>
+<a href="/Strafgesetzbuch/2023-12-06/2024-01-01">Nächste Version →</a>
+<a href="/Strafgesetzbuch/2023-09-01/2023-12-06">← Vorherige Version</a>
+<a href="/Strafgesetzbuch/2023-09-01/2024-07-01">Nächste Version →</a>
+
+    </div>
+
+    <table class="diff-table">
+      <thead><tr><th>2023-09-01</th>
+<th>2024-01-01</th>
+</tr>
+</thead>
+<tbody><tr class="article-title"><td><p class="artikel-name">Art. 65</p></td>
+<td><p class="artikel-name">Art. 65</p></td>
+</tr>
+<tr><td><div class="paragraph-text">1. Sind bei einem Verurteilten vor oder während des Vollzuges einer Freiheitsstrafe oder einer Verwahrung nach Artikel 64 Absatz 1 die Voraussetzungen einer stationären therapeutischen Massnahme gegeben, so kann das Gericht diese Massnahme nachträglich anordnen. Zuständig ist das Gericht, das die Strafe ausgesprochen oder die Verwahrung angeordnet hat. Der Vollzug einer Reststrafe wird aufgeschoben.</div></td>
+<td><div class="paragraph-text">1. Sind bei einem Verurteilten vor oder während des Vollzuges einer Freiheitsstrafe oder einer Verwahrung nach Artikel 64 Absatz 1 die Voraussetzungen einer stationären therapeutischen Massnahme gegeben, so kann das Gericht diese Massnahme nachträglich anordnen. Zuständig ist das Gericht, das die Strafe ausgesprochen oder die Verwahrung angeordnet hat. Der Vollzug einer Reststrafe wird aufgeschoben.</div></td>
+</tr>
+<tr><td class="changed"><div class="paragraph-text">2. Ergibt sich bei einem Verurteilten während des Vollzuges der Freiheitsstrafe aufgrund neuer Tatsachen oder Beweismittel, dass die Voraussetzungen der Verwahrung gegeben sind und im Zeitpunkt der Verurteilung bereits bestanden haben, ohne dass das Gericht davon Kenntnis haben konnte, so kann das Gericht die Verwahrung nachträglich anordnen. Zuständigkeit und Verfahren bestimmen sich nach den Regeln, die für die <del>Wiederaufnahme</del> gelten.</div></td>
+<td class="changed"><div class="paragraph-text">2. Ergibt sich bei einem Verurteilten während des Vollzuges der Freiheitsstrafe aufgrund neuer Tatsachen oder Beweismittel, dass die Voraussetzungen der Verwahrung gegeben sind und im Zeitpunkt der Verurteilung bereits bestanden haben, ohne dass das Gericht davon Kenntnis haben konnte, so kann das Gericht die Verwahrung nachträglich anordnen. Zuständigkeit und Verfahren bestimmen sich nach den Regeln, die für die <ins>Revision</ins> <ins>(Art. 410−415 der Strafprozessordnung) </ins>gelten.</div></td>
+</tr>
+<tr class="article-title"><td><p class="artikel-name">Art. 71</p></td>
+<td><p class="artikel-name">Art. 71</p></td>
+</tr>
+<tr><td><div class="paragraph-text">1. Sind die der Einziehung unterliegenden Vermögenswerte nicht mehr vorhanden, so erkennt das Gericht auf eine Ersatzforderung des Staates in gleicher Höhe, gegenüber einem Dritten jedoch nur, soweit dies nicht nach Artikel 70 Absatz 2 ausgeschlossen ist.</div></td>
+<td><div class="paragraph-text">1. Sind die der Einziehung unterliegenden Vermögenswerte nicht mehr vorhanden, so erkennt das Gericht auf eine Ersatzforderung des Staates in gleicher Höhe, gegenüber einem Dritten jedoch nur, soweit dies nicht nach Artikel 70 Absatz 2 ausgeschlossen ist.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">2. Das Gericht kann von einer Ersatzforderung ganz oder teilweise absehen, wenn diese voraussichtlich uneinbringlich wäre oder die Wiedereingliederung des Betroffenen ernstlich behindern würde.</div></td>
+<td><div class="paragraph-text">2. Das Gericht kann von einer Ersatzforderung ganz oder teilweise absehen, wenn diese voraussichtlich uneinbringlich wäre oder die Wiedereingliederung des Betroffenen ernstlich behindern würde.</div></td>
+</tr>
+<tr><td class="changed"><div class="paragraph-text">3. <del>Die Untersuchungsbehörde kann im Hinblick auf die Durchsetzung der Ersatzforderung Vermögenswerte des Betroffenen mit Beschlag belegen</del>.<del> Die Beschlagnahme begründet bei der Zwangsvollstreckung der Ersatzforderung kein Vorzugsrecht zu Gunsten des Staates</del>.</div></td>
+<td class="changed"><div class="paragraph-text">3. ..<ins>.</ins></div></td>
+</tr>
+<tr class="article-title"><td><p class="artikel-name">Art. 123</p></td>
+<td><p class="artikel-name">Art. 123</p></td>
+</tr>
+<tr><td><div class="paragraph-text">1. Wer vorsätzlich einen Menschen in anderer Weise an Körper oder Gesundheit schädigt, wird, auf Antrag, mit Freiheitsstrafe bis zu drei Jahren oder Geldstrafe bestraft.</td>
+<td><div class="paragraph-text">1. Wer vorsätzlich einen Menschen in anderer Weise an Körper oder Gesundheit schädigt, wird, auf Antrag, mit Freiheitsstrafe bis zu drei Jahren oder Geldstrafe bestraft.</td>
+</tr>
+<tr><td><p class="p-list">...</p></div></td>
+<td><p class="p-list">...</p></div></td>
+</tr>
+<tr><td><div class="paragraph-text">2. Der Täter wird von Amtes wegen verfolgt,</td>
+<td><div class="paragraph-text">2. Der Täter wird von Amtes wegen verfolgt,</td>
+</tr>
+<tr><td><p class="p-list">wenn er Gift, eine Waffe oder einen gefährlichen Gegenstand gebraucht,</p></td>
+<td><p class="p-list">wenn er Gift, eine Waffe oder einen gefährlichen Gegenstand gebraucht,</p></td>
+</tr>
+<tr><td><p class="p-list">wenn er die Tat an einem Wehrlosen oder an einer Person begeht, die unter seiner Obhut steht oder für die er zu sorgen hat, namentlich an einem Kind,</p></td>
+<td><p class="p-list">wenn er die Tat an einem Wehrlosen oder an einer Person begeht, die unter seiner Obhut steht oder für die er zu sorgen hat, namentlich an einem Kind,</p></td>
+</tr>
+<tr><td><p class="p-list">wenn er der Ehegatte des Opfers ist und die Tat während der Ehe oder bis zu einem Jahr nach der Scheidung begangen wurde,</p></td>
+<td><p class="p-list">wenn er der Ehegatte des Opfers ist und die Tat während der Ehe oder bis zu einem Jahr nach der Scheidung begangen wurde,</p></td>
+</tr>
+<tr><td><p class="p-list">wenn er die eingetragene Partnerin oder der eingetragene Partner des Opfers ist und die Tat während der Dauer der eingetragenen Partnerschaft oder bis zu einem Jahr nach deren Auflösung begangen wurde,</p></td>
+<td><p class="p-list">wenn er die eingetragene Partnerin oder der eingetragene Partner des Opfers ist und die Tat während der Dauer der eingetragenen Partnerschaft oder bis zu einem Jahr nach deren Auflösung begangen wurde,</p></td>
+</tr>
+<tr><td class="changed"><p class="p-list">wenn er der hetero- oder homosexuelle Lebenspartner des Opfers ist, sofern sie auf unbestimmte Zeit einen <del>gemeinsamem</del> Haushalt führen und die Tat während dieser Zeit oder bis zu einem Jahr nach der Trennung begangen wurde.</p></div></td>
+<td class="changed"><p class="p-list">wenn er der hetero- oder homosexuelle Lebenspartner des Opfers ist, sofern sie auf unbestimmte Zeit einen <ins>gemeinsamen</ins> Haushalt führen und die Tat während dieser Zeit oder bis zu einem Jahr nach der Trennung begangen wurde.</p></div></td>
+</tr>
+<tr class="article-title"><td><p class="artikel-name">Art. 154</p></td>
+<td><p class="artikel-name">Art. 154</p></td>
+</tr>
+<tr><td><div class="paragraph-text">1. Mit Freiheitsstrafe bis zu drei Jahren und Geldstrafe wird bestraft, wer als Mitglied des Verwaltungsrats oder der Geschäftsleitung einer Gesellschaft, deren Aktien an einer Börse kotiert sind, unzulässige Vergütungen nach Artikel 735c Ziffern 1, 5 und 6 des Obligationenrechts (OR), gegebenenfalls in Verbindung mit Artikel 735d Ziffer 1 OR, ausrichtet oder bezieht.</div></td>
+<td><div class="paragraph-text">1. Mit Freiheitsstrafe bis zu drei Jahren und Geldstrafe wird bestraft, wer als Mitglied des Verwaltungsrats oder der Geschäftsleitung einer Gesellschaft, deren Aktien an einer Börse kotiert sind, unzulässige Vergütungen nach Artikel 735c Ziffern 1, 5 und 6 des Obligationenrechts (OR), gegebenenfalls in Verbindung mit Artikel 735d Ziffer 1 OR, ausrichtet oder bezieht.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">2. Mit Freiheitsstrafe bis zu drei Jahren oder Geldstrafe wird bestraft, wer als Mitglied des Verwaltungsrats einer Gesellschaft, deren Aktien an einer Börse kotiert sind:</div></td>
+<td><div class="paragraph-text">2. Mit Freiheitsstrafe bis zu drei Jahren oder Geldstrafe wird bestraft, wer als Mitglied des Verwaltungsrats einer Gesellschaft, deren Aktien an einer Börse kotiert sind:</div></td>
+</tr>
+<tr><td class="changed"><div class="buchstabe">a. die Geschäftsführung entgegen Artikel 716b Absatz <del>1</del> erster Satz OR ganz oder zum Teil einer juristischen Person überträgt;</div></td>
+<td class="changed"><div class="buchstabe">a. die Geschäftsführung entgegen Artikel 716b Absatz <ins>2</ins> erster Satz OR ganz oder zum Teil einer juristischen Person überträgt;</div></td>
+</tr>
+<tr><td><div class="buchstabe">b. eine Organ- oder Depotstimmrechtsvertretung einsetzt (Art. 689b Abs. 2 OR);</div></td>
+<td><div class="buchstabe">b. eine Organ- oder Depotstimmrechtsvertretung einsetzt (Art. 689b Abs. 2 OR);</div></td>
+</tr>
+<tr><td><div class="buchstabe">c. verhindert, dass:</div></td>
+<td><div class="buchstabe">c. verhindert, dass:</div></td>
+</tr>
+<tr><td><div class="buchstabe">1. die Statuten die Bestimmungen nach Artikel 626 Absatz 2 Ziffern 1 und 2 OR enthalten,</div></td>
+<td><div class="buchstabe">1. die Statuten die Bestimmungen nach Artikel 626 Absatz 2 Ziffern 1 und 2 OR enthalten,</div></td>
+</tr>
+<tr><td><div class="buchstabe">2. die Generalversammlung jährlich und einzeln die Mitglieder und den Präsidenten des Verwaltungsrats, die Mitglieder des Vergütungsausschusses sowie den unabhängigen Stimmrechtsvertreter wählen kann (Art. 698 Abs. 2 Ziff. 2 und Abs. 3 Ziff. 1–3 OR),</div></td>
+<td><div class="buchstabe">2. die Generalversammlung jährlich und einzeln die Mitglieder und den Präsidenten des Verwaltungsrats, die Mitglieder des Vergütungsausschusses sowie den unabhängigen Stimmrechtsvertreter wählen kann (Art. 698 Abs. 2 Ziff. 2 und Abs. 3 Ziff. 1–3 OR),</div></td>
+</tr>
+<tr><td><div class="buchstabe">3. die Generalversammlung über die Vergütungen, die der Verwaltungsrat für sich selbst, die Geschäftsleitung und den Beirat festgelegt hat, abstimmen kann (Art. 698 Abs. 3 Ziff. 4 OR),</div></td>
+<td><div class="buchstabe">3. die Generalversammlung über die Vergütungen, die der Verwaltungsrat für sich selbst, die Geschäftsleitung und den Beirat festgelegt hat, abstimmen kann (Art. 698 Abs. 3 Ziff. 4 OR),</div></td>
+</tr>
+<tr><td><div class="buchstabe">4. die Aktionäre oder ihre Vertreter ihre Rechte auf elektronischem Weg ausüben können (Art. 689c Abs. 6 OR).</div></td>
+<td><div class="buchstabe">4. die Aktionäre oder ihre Vertreter ihre Rechte auf elektronischem Weg ausüben können (Art. 689c Abs. 6 OR).</div></td>
+</tr>
+<tr><td><div class="paragraph-text">3. Nimmt der Täter die Möglichkeit der Verwirklichung einer Tat nach Absatz 1 oder 2 lediglich in Kauf, so macht er sich nach diesen Bestimmungen nicht strafbar.</div></td>
+<td><div class="paragraph-text">3. Nimmt der Täter die Möglichkeit der Verwirklichung einer Tat nach Absatz 1 oder 2 lediglich in Kauf, so macht er sich nach diesen Bestimmungen nicht strafbar.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">4. Für die Berechnung der Geldstrafe ist das Gericht nicht an die maximale Höhe des Tagessatzes (Art. 34 Abs. 2 erster Satz) gebunden; die Geldstrafe darf jedoch das Sechsfache der Jahresvergütung, die im Zeitpunkt der Tat mit der betroffenen Gesellschaft vereinbart ist, nicht übersteigen.</div></td>
+<td><div class="paragraph-text">4. Für die Berechnung der Geldstrafe ist das Gericht nicht an die maximale Höhe des Tagessatzes (Art. 34 Abs. 2 erster Satz) gebunden; die Geldstrafe darf jedoch das Sechsfache der Jahresvergütung, die im Zeitpunkt der Tat mit der betroffenen Gesellschaft vereinbart ist, nicht übersteigen.</div></td>
+</tr>
+<tr class="article-title"><td><p class="artikel-name">Art. 179octies</p></td>
+<td><p class="artikel-name">Art. 179octies</p></td>
+</tr>
+<tr><td><div class="paragraph-text">1. Wer in Ausübung ausdrücklicher, gesetzlicher Befugnis die Überwachung des Post- und Fernmeldeverkehrs einer Person anordnet oder durchführt oder technische Überwachungsgeräte (Art. 179bis ff.) einsetzt, ist nicht strafbar, wenn unverzüglich die Genehmigung des zuständigen Gerichts eingeholt wird.</div></td>
+<td><div class="paragraph-text">1. Wer in Ausübung ausdrücklicher, gesetzlicher Befugnis die Überwachung des Post- und Fernmeldeverkehrs einer Person anordnet oder durchführt oder technische Überwachungsgeräte (Art. 179bis ff.) einsetzt, ist nicht strafbar, wenn unverzüglich die Genehmigung des zuständigen Gerichts eingeholt wird.</div></td>
+</tr>
+<tr><td class="changed"><div class="paragraph-text">2. <del>Die Voraussetzungen der Überwachung des Post- und Fernmeldeverkehrs und das Verfahren richten sich nach dem Bundesgesetz vom 18</del>.<del> März 2016 betreffend die Überwachung des Post- und Fernmeldeverkehrs oder nach der Strafprozessordnung</del>.</div></td>
+<td class="changed"><div class="paragraph-text">2. ..<ins>.</ins></div></td>
+</tr>
+</tbody>
+
+    </table>
+
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Vergleichswebseite</p>
+  </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vergleichen</title>
+  <link rel="stylesheet" href="/css/main.css">
+  <script src="/js/dropdownLogic.js"></script>
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <a href="/" class="home-link"><img src="/images/LawIcon.png" alt="Recht und Gesetz" width="50" height="50">
+        <span class="home-text">Startseite</span>
+      </a>
+      <a href="/Bundesverfassung">Gesetzesansicht</a>
+      <a href="/Bundesverfassung/2024-01-01/2024-03-03" class="current-page">Dokumentenvergleich</a>
+    </nav>
+    <div class="header-titel">Dokumentenvergleich</div>
+  </header>
+
+  <main>
+
+    <h1>Dokumentvergleich <br />Bundesverfassung der Schweizerischen Eidgenossenschaft</h1>
+    <h2>2021-03-07 ↔ 2021-11-28</h2>
+
+    <form class="change-form">
+      <div class="dropdown-selectors">
+        <label for="viewSelect">Dokument wechseln</label>
+        <select class="doc-select" id="viewSelect">
+          <option value="2021-01-01" selected>2021-01-01</option>
+<option value="2021-03-07">2021-03-07</option>
+<option value="2021-11-28">2021-11-28</option>
+<option value="2022-02-13">2022-02-13</option>
+<option value="2024-01-01">2024-01-01</option>
+<option value="2024-03-03">2024-03-03</option>
+
+        </select>
+      </div>
+
+      <a class="dropdown-submitter" id="submit-doc-change">
+        Wechseln
+      </a>
+    </form>
+
+    <form class="compare-form">
+
+      <div class="dropdown-selectors">
+        <label for="leftSelect">Dokument links</label>
+        <select class="doc-select" id="leftSelect">
+          <option value="2021-01-01">2021-01-01</option>
+<option value="2021-03-07" selected>2021-03-07</option>
+<option value="2021-11-28">2021-11-28</option>
+<option value="2022-02-13">2022-02-13</option>
+<option value="2024-01-01">2024-01-01</option>
+<option value="2024-03-03">2024-03-03</option>
+
+        </select>
+      </div>
+
+      <div class="dropdown-selectors">
+        <label for="rightSelect">Dokument rechts</label>
+        <select class="doc-select" id="rightSelect">
+          <option value="2021-01-01">2021-01-01</option>
+<option value="2021-03-07">2021-03-07</option>
+<option value="2021-11-28" selected>2021-11-28</option>
+<option value="2022-02-13">2022-02-13</option>
+<option value="2024-01-01">2024-01-01</option>
+<option value="2024-03-03">2024-03-03</option>
+
+        </select>
+      </div>
+      
+      <a class="dropdown-submitter" id="submit-comparison-change">
+        Vergleichen
+      </a>
+    </form>
+
+    <div class="change-revision button-container">
+      <a href="/Bundesverfassung/2021-01-01/2021-03-07">← Vorherige Versionen vergleichen</a>
+<a href="/Bundesverfassung/2021-11-28/2021-03-07">← Versionen tauschen →</a>
+<a href="/Bundesverfassung/2021-11-28/2022-02-13">Nächste Versionen vergleichen →</a>
+
+    </div>
+
+    <div class="change-doc-version-comparing button-container">
+      <a href="/Bundesverfassung/2021-01-01/2021-11-28">← Vorherige Version</a>
+<a class="disabled">Aktuelle Version</a>
+<a class="disabled">Aktuelle Version</a>
+<a href="/Bundesverfassung/2021-03-07/2022-02-13">Nächste Version →</a>
+
+    </div>
+
+    <table class="diff-table">
+      <thead><tr><th>2021-03-07</th>
+<th>2021-11-28</th>
+</tr>
+</thead>
+<tbody><tr class="article-title"><td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+<td class="inserted"><ins><p class="artikel-name">Art. 117b: Pflege*</p></ins></td>
+</tr>
+<tr><td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+<td class="inserted"><ins><div class="paragraph-text">1. Bund und Kantone anerkennen und fördern die Pflege als wichtigen Bestandteil der Gesundheitsversorgung und sorgen für eine ausreichende, allen zugängliche Pflege von hoher Qualität.</div></ins></td>
+</tr>
+<tr><td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+<td class="inserted"><ins><div class="paragraph-text">2. Sie stellen sicher, dass eine genügende Anzahl diplomierter Pflegefachpersonen für den zunehmenden Bedarf zur Verfügung steht und dass die in der Pflege tätigen Personen entsprechend ihrer Ausbildung und ihren Kompetenzen eingesetzt werden.</div></ins></td>
+</tr>
+</tbody>
+
+    </table>
+
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Vergleichswebseite</p>
+  </footer>
+
+</body>
+
+</html>

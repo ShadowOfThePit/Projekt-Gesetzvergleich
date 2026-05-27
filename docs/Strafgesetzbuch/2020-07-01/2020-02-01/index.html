@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vergleichen</title>
+  <link rel="stylesheet" href="/css/main.css">
+  <script src="/js/dropdownLogic.js"></script>
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <a href="/" class="home-link"><img src="/images/LawIcon.png" alt="Recht und Gesetz" width="50" height="50">
+        <span class="home-text">Startseite</span>
+      </a>
+      <a href="/Strafgesetzbuch">Gesetzesansicht</a>
+      <a href="/Strafgesetzbuch/2024-01-01/2024-03-03" class="current-page">Dokumentenvergleich</a>
+    </nav>
+    <div class="header-titel">Dokumentenvergleich</div>
+  </header>
+
+  <main>
+
+    <h1>Dokumentvergleich <br />Schweizerisches Strafgesetzbuch</h1>
+    <h2>2020-07-01 ↔ 2020-02-01</h2>
+
+    <form class="change-form">
+      <div class="dropdown-selectors">
+        <label for="viewSelect">Dokument wechseln</label>
+        <select class="doc-select" id="viewSelect">
+          <option value="2020-02-01" selected>2020-02-01</option>
+<option value="2020-07-01">2020-07-01</option>
+<option value="2021-07-01">2021-07-01</option>
+<option value="2022-01-01">2022-01-01</option>
+<option value="2022-06-01">2022-06-01</option>
+<option value="2022-11-22">2022-11-22</option>
+<option value="2023-01-01">2023-01-01</option>
+<option value="2023-01-23">2023-01-23</option>
+<option value="2023-07-01">2023-07-01</option>
+<option value="2023-08-01">2023-08-01</option>
+<option value="2023-09-01">2023-09-01</option>
+<option value="2023-12-06">2023-12-06</option>
+<option value="2024-01-01">2024-01-01</option>
+<option value="2024-07-01">2024-07-01</option>
+<option value="2025-01-01">2025-01-01</option>
+<option value="2025-08-01">2025-08-01</option>
+<option value="2026-01-01">2026-01-01</option>
+
+        </select>
+      </div>
+
+      <a class="dropdown-submitter" id="submit-doc-change">
+        Wechseln
+      </a>
+    </form>
+
+    <form class="compare-form">
+
+      <div class="dropdown-selectors">
+        <label for="leftSelect">Dokument links</label>
+        <select class="doc-select" id="leftSelect">
+          <option value="2020-02-01">2020-02-01</option>
+<option value="2020-07-01" selected>2020-07-01</option>
+<option value="2021-07-01">2021-07-01</option>
+<option value="2022-01-01">2022-01-01</option>
+<option value="2022-06-01">2022-06-01</option>
+<option value="2022-11-22">2022-11-22</option>
+<option value="2023-01-01">2023-01-01</option>
+<option value="2023-01-23">2023-01-23</option>
+<option value="2023-07-01">2023-07-01</option>
+<option value="2023-08-01">2023-08-01</option>
+<option value="2023-09-01">2023-09-01</option>
+<option value="2023-12-06">2023-12-06</option>
+<option value="2024-01-01">2024-01-01</option>
+<option value="2024-07-01">2024-07-01</option>
+<option value="2025-01-01">2025-01-01</option>
+<option value="2025-08-01">2025-08-01</option>
+<option value="2026-01-01">2026-01-01</option>
+
+        </select>
+      </div>
+
+      <div class="dropdown-selectors">
+        <label for="rightSelect">Dokument rechts</label>
+        <select class="doc-select" id="rightSelect">
+          <option value="2020-02-01" selected>2020-02-01</option>
+<option value="2020-07-01">2020-07-01</option>
+<option value="2021-07-01">2021-07-01</option>
+<option value="2022-01-01">2022-01-01</option>
+<option value="2022-06-01">2022-06-01</option>
+<option value="2022-11-22">2022-11-22</option>
+<option value="2023-01-01">2023-01-01</option>
+<option value="2023-01-23">2023-01-23</option>
+<option value="2023-07-01">2023-07-01</option>
+<option value="2023-08-01">2023-08-01</option>
+<option value="2023-09-01">2023-09-01</option>
+<option value="2023-12-06">2023-12-06</option>
+<option value="2024-01-01">2024-01-01</option>
+<option value="2024-07-01">2024-07-01</option>
+<option value="2025-01-01">2025-01-01</option>
+<option value="2025-08-01">2025-08-01</option>
+<option value="2026-01-01">2026-01-01</option>
+
+        </select>
+      </div>
+      
+      <a class="dropdown-submitter" id="submit-comparison-change">
+        Vergleichen
+      </a>
+    </form>
+
+    <div class="change-revision button-container">
+      <a class="disabled">Keine weitere Versionen</a>
+<a href="/Strafgesetzbuch/2020-02-01/2020-07-01">← Versionen tauschen →</a>
+<a href="/Strafgesetzbuch/2021-07-01/2020-07-01">Nächste Versionen vergleichen →</a>
+
+    </div>
+
+    <div class="change-doc-version-comparing button-container">
+      <a class="disabled">Aktuelle Version</a>
+<a href="/Strafgesetzbuch/2021-07-01/2020-02-01">Nächste Version →</a>
+<a class="disabled">Keine weitere Version</a>
+<a class="disabled">Aktuelle Version</a>
+
+    </div>
+
+    <table class="diff-table">
+      <thead><tr><th>2020-07-01</th>
+<th>2020-02-01</th>
+</tr>
+</thead>
+<tbody><tr class="article-title"><td><p class="artikel-name">Art. 55a</p></td>
+<td><p class="artikel-name">Art. 55a</p></td>
+</tr>
+<tr><td class="changed"><div class="paragraph-text">1. Bei einfacher Körperverletzung (Art. 123 Ziff. 2 Abs. 3–5), wiederholten Tätlichkeiten (Art. 126 Abs. 2 Bst. b, bbis und c), Drohung (Art. 180 Abs. 2) und Nötigung (Art. 181) <del>kann</del> die Staatsanwaltschaft <del>oder</del> <del>das</del> <del>Gericht</del> das Verfahren sistieren, wenn:</div></td>
+<td class="changed"><div class="paragraph-text">1. Bei einfacher Körperverletzung (Art. 123 Ziff. 2 Abs. 3–5), wiederholten Tätlichkeiten (Art. 126 Abs. 2 Bst. b, bbis und c), Drohung (Art. 180 Abs. 2) und Nötigung (Art. 181) <ins>können</ins> die Staatsanwaltschaft <ins>und</ins> <ins>die</ins> <ins>Gerichte</ins> das Verfahren sistieren, wenn:</div></td>
+</tr>
+<tr><td><div class="buchstabe">a. das Opfer:</div></td>
+<td><div class="buchstabe">a. das Opfer:</div></td>
+</tr>
+<tr><td><div class="buchstabe">1. der Ehegatte des Täters ist und die Tat während der Ehe oder innerhalb eines Jahres nach deren Scheidung begangen wurde, oder</div></td>
+<td><div class="buchstabe">1. der Ehegatte des Täters ist und die Tat während der Ehe oder innerhalb eines Jahres nach deren Scheidung begangen wurde, oder</div></td>
+</tr>
+<tr><td><div class="buchstabe">2. die eingetragene Partnerin oder der eingetragene Partner des Täters ist und die Tat während der Dauer der eingetragenen Partnerschaft oder innerhalb eines Jahres nach deren Auflösung begangen wurde, oder</div></td>
+<td><div class="buchstabe">2. die eingetragene Partnerin oder der eingetragene Partner des Täters ist und die Tat während der Dauer der eingetragenen Partnerschaft oder innerhalb eines Jahres nach deren Auflösung begangen wurde, oder</div></td>
+</tr>
+<tr><td><div class="buchstabe">3. der hetero- oder homosexuelle Lebenspartner beziehungsweise der noch nicht ein Jahr getrennt lebende Ex-Lebenspartner des Täters ist; und</div></td>
+<td><div class="buchstabe">3. der hetero- oder homosexuelle Lebenspartner beziehungsweise der noch nicht ein Jahr getrennt lebende Ex-Lebenspartner des Täters ist; und</div></td>
+</tr>
+<tr><td class="changed"><div class="buchstabe">b. das Opfer oder, falls dieses nicht handlungsfähig ist, sein gesetzlicher Vertreter darum ersucht<del>;</del> <del>und</del></div></td>
+<td class="changed"><div class="buchstabe">b. das Opfer oder, falls dieses nicht handlungsfähig ist, sein gesetzlicher Vertreter darum ersucht <ins>oder einem entsprechenden Antrag der zuständigen Behörde zustimmt.</ins></div></td>
+</tr>
+<tr><td class="deleted"><del><div class="buchstabe">c. die Sistierung geeignet erscheint, die Situation des Opfers zu stabilisieren oder zu verbessern.</div></del></td>
+<td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+</tr>
+<tr><td class="changed"><div class="paragraph-text">2. <del>Die</del> <del>Staatsanwaltschaft</del> <del>oder</del> <del>das</del> <del>Gericht</del> <del>kann für </del>die <del>Zeit</del> <del>der</del> <del>Sistierung</del> <del>die</del> <del>beschuldigte</del> <del>Person dazu verpflichten</del>, <del>ein</del> <del>Lernprogramm</del> <del>gegen</del> <del>Gewalt</del> <del>zu</del> <del>besuchen.</del> <del>Die</del> <del>Staatsanwaltschaft</del> <del>oder</del> <del>das</del> <del>Gericht</del> <del>informiert</del> <del>die</del> <del>nach</del> <del>kantonalem</del> <del>Recht</del> <del>für</del> <del>Fälle</del> <del>häuslicher</del> <del>Gewalt</del> <del>zuständige Stelle über die getroffenen Massnahmen</del>.</div></td>
+<td class="changed"><div class="paragraph-text">2. <ins>Das</ins> <ins>Verfahren</ins> <ins>wird</ins> <ins>wieder</ins> <ins>an</ins> die <ins>Hand</ins> <ins>genommen,</ins> <ins>wenn</ins> <ins>das</ins> <ins>Opfer</ins> <ins>oder</ins>, <ins>falls</ins> <ins>dieses</ins> <ins>nicht</ins> <ins>handlungsfähig</ins> <ins>ist,</ins> <ins>sein</ins> <ins>gesetzlicher</ins> <ins>Vertreter</ins> <ins>seine</ins> <ins>Zustimmung</ins> <ins>innerhalb</ins> <ins>von</ins> <ins>sechs</ins> <ins>Monaten</ins> <ins>seit</ins> <ins>der</ins> <ins>Sistierung</ins> <ins>schriftlich</ins> <ins>oder</ins> <ins>mündlich</ins> <ins>widerruft</ins>.</div></td>
+</tr>
+<tr><td class="changed"><div class="paragraph-text">3. <del>Die</del> <del>Sistierung</del> <del>ist</del> nicht <del>zulässig</del>, <del>wenn:</del></div></td>
+<td class="changed"><div class="paragraph-text">3. <ins>Wird</ins> <ins>die</ins> <ins>Zustimmung</ins> nicht <ins>widerrufen</ins>, <ins>so verfügen die Staatsanwaltschaft und die Gerichte die Einstellung des Verfahrens.</ins></div></td>
+</tr>
+<tr><td class="deleted"><del><div class="buchstabe">a. die beschuldigte Person wegen eines Verbrechens oder Vergehens gegen Leib und Leben, gegen die Freiheit oder gegen die sexuelle Integrität verurteilt wurde;</div></del></td>
+<td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+</tr>
+<tr><td class="deleted"><del><div class="buchstabe">b. gegen sie eine Strafe verhängt oder eine Massnahme angeordnet wurde; und</div></del></td>
+<td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+</tr>
+<tr><td class="deleted"><del><div class="buchstabe">c. sich die strafbare Handlung gegen ein Opfer nach Absatz 1 Buchstabe a richtete.</div></del></td>
+<td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+</tr>
+<tr><td class="changed"><div class="paragraph-text">4. <del>Die Sistierung ist auf sechs Monate befristet</del>.<del> Die Staatsanwaltschaft oder das Gericht nimmt das Verfahren wieder an die Hand, wenn das Opfer oder, falls dieses nicht handlungsfähig ist, sein gesetzlicher Vertreter dies verlangt oder sich herausstellt, dass die Sistierung die Situation des Opfers weder stabilisiert noch verbessert</del>.</div></td>
+<td class="changed"><div class="paragraph-text">4. ..<ins>.</ins></div></td>
+</tr>
+<tr><td class="deleted"><del><div class="paragraph-text">5. Vor Ende der Sistierung nimmt die Staatsanwaltschaft oder das Gericht eine Beurteilung vor. Hat sich die Situation des Opfers stabilisiert oder verbessert, so wird die Einstellung des Verfahrens verfügt.</div></del></td>
+<td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+</tr>
+<tr class="article-title"><td><p class="artikel-name">Art. 261bis</p></td>
+<td><p class="artikel-name">Art. 261bis</p></td>
+</tr>
+<tr><td class="changed"><div class="artikel-text">Wer öffentlich gegen eine Person oder eine Gruppe von Personen wegen ihrer Rasse, Ethnie<del>,</del> <del>Religion </del>oder <del>sexuellen</del> <del>Orientierung </del>zu Hass oder <del>zu </del>Diskriminierung aufruft,wer öffentlich Ideologien verbreitet, die auf die systematische Herabsetzung oder Verleumdung <del>dieser</del> <del>Personen</del> oder <del>Personengruppen</del> gerichtet sind,wer mit dem gleichen Ziel Propagandaaktionen organisiert, fördert oder daran teilnimmt,wer öffentlich durch Wort, Schrift, Bild, Gebärden, Tätlichkeiten oder in anderer Weise eine Person oder eine Gruppe von Personen wegen ihrer Rasse, Ethnie<del>,</del> <del>Religion </del>oder <del>sexuellen</del> <del>Orientierung </del>in einer gegen die Menschenwürde verstossenden Weise herabsetzt oder diskriminiert oder aus einem dieser Gründe Völkermord oder andere Verbrechen gegen die Menschlichkeit leugnet, gröblich verharmlost oder zu rechtfertigen sucht,wer eine von ihm angebotene Leistung, die für die Allgemeinheit bestimmt ist, einer Person oder einer Gruppe von Personen wegen ihrer Rasse, Ethnie<del>,</del> <del>Religion </del>oder <del>sexuellen</del> <del>Orientierung </del>verweigert,wird mit Freiheitsstrafe bis zu drei Jahren oder Geldstrafe bestraft.</div></td>
+<td class="changed"><div class="artikel-text">Wer öffentlich gegen eine Person oder eine Gruppe von Personen wegen ihrer Rasse, Ethnie oder <ins>Religion</ins> zu Hass oder Diskriminierung aufruft,wer öffentlich Ideologien verbreitet, die auf die systematische Herabsetzung oder Verleumdung <ins>der</ins> <ins>Angehörigen</ins> <ins>einer Rasse, Ethnie </ins>oder <ins>Religion</ins> gerichtet sind,wer mit dem gleichen Ziel Propagandaaktionen organisiert, fördert oder daran teilnimmt,wer öffentlich durch Wort, Schrift, Bild, Gebärden, Tätlichkeiten oder in anderer Weise eine Person oder eine Gruppe von Personen wegen ihrer Rasse, Ethnie oder <ins>Religion</ins> in einer gegen die Menschenwürde verstossenden Weise herabsetzt oder diskriminiert oder aus einem dieser Gründe Völkermord oder andere Verbrechen gegen die Menschlichkeit leugnet, gröblich verharmlost oder zu rechtfertigen sucht,wer eine von ihm angebotene Leistung, die für die Allgemeinheit bestimmt ist, einer Person oder einer Gruppe von Personen wegen ihrer Rasse, Ethnie oder <ins>Religion</ins> verweigert,wird mit Freiheitsstrafe bis zu drei Jahren oder Geldstrafe bestraft.</div></td>
+</tr>
+</tbody>
+
+    </table>
+
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Vergleichswebseite</p>
+  </footer>
+
+</body>
+
+</html>

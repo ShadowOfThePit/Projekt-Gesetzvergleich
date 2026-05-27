@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vergleichen</title>
+  <link rel="stylesheet" href="/css/main.css">
+  <script src="/js/dropdownLogic.js"></script>
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <a href="/" class="home-link"><img src="/images/LawIcon.png" alt="Recht und Gesetz" width="50" height="50">
+        <span class="home-text">Startseite</span>
+      </a>
+      <a href="/Strafgesetzbuch">Gesetzesansicht</a>
+      <a href="/Strafgesetzbuch/2024-01-01/2024-03-03" class="current-page">Dokumentenvergleich</a>
+    </nav>
+    <div class="header-titel">Dokumentenvergleich</div>
+  </header>
+
+  <main>
+
+    <h1>Dokumentvergleich <br />Schweizerisches Strafgesetzbuch</h1>
+    <h2>2023-07-01 ↔ 2024-01-01</h2>
+
+    <form class="change-form">
+      <div class="dropdown-selectors">
+        <label for="viewSelect">Dokument wechseln</label>
+        <select class="doc-select" id="viewSelect">
+          <option value="2020-02-01" selected>2020-02-01</option>
+<option value="2020-07-01">2020-07-01</option>
+<option value="2021-07-01">2021-07-01</option>
+<option value="2022-01-01">2022-01-01</option>
+<option value="2022-06-01">2022-06-01</option>
+<option value="2022-11-22">2022-11-22</option>
+<option value="2023-01-01">2023-01-01</option>
+<option value="2023-01-23">2023-01-23</option>
+<option value="2023-07-01">2023-07-01</option>
+<option value="2023-08-01">2023-08-01</option>
+<option value="2023-09-01">2023-09-01</option>
+<option value="2023-12-06">2023-12-06</option>
+<option value="2024-01-01">2024-01-01</option>
+<option value="2024-07-01">2024-07-01</option>
+<option value="2025-01-01">2025-01-01</option>
+<option value="2025-08-01">2025-08-01</option>
+<option value="2026-01-01">2026-01-01</option>
+
+        </select>
+      </div>
+
+      <a class="dropdown-submitter" id="submit-doc-change">
+        Wechseln
+      </a>
+    </form>
+
+    <form class="compare-form">
+
+      <div class="dropdown-selectors">
+        <label for="leftSelect">Dokument links</label>
+        <select class="doc-select" id="leftSelect">
+          <option value="2020-02-01">2020-02-01</option>
+<option value="2020-07-01">2020-07-01</option>
+<option value="2021-07-01">2021-07-01</option>
+<option value="2022-01-01">2022-01-01</option>
+<option value="2022-06-01">2022-06-01</option>
+<option value="2022-11-22">2022-11-22</option>
+<option value="2023-01-01">2023-01-01</option>
+<option value="2023-01-23">2023-01-23</option>
+<option value="2023-07-01" selected>2023-07-01</option>
+<option value="2023-08-01">2023-08-01</option>
+<option value="2023-09-01">2023-09-01</option>
+<option value="2023-12-06">2023-12-06</option>
+<option value="2024-01-01">2024-01-01</option>
+<option value="2024-07-01">2024-07-01</option>
+<option value="2025-01-01">2025-01-01</option>
+<option value="2025-08-01">2025-08-01</option>
+<option value="2026-01-01">2026-01-01</option>
+
+        </select>
+      </div>
+
+      <div class="dropdown-selectors">
+        <label for="rightSelect">Dokument rechts</label>
+        <select class="doc-select" id="rightSelect">
+          <option value="2020-02-01">2020-02-01</option>
+<option value="2020-07-01">2020-07-01</option>
+<option value="2021-07-01">2021-07-01</option>
+<option value="2022-01-01">2022-01-01</option>
+<option value="2022-06-01">2022-06-01</option>
+<option value="2022-11-22">2022-11-22</option>
+<option value="2023-01-01">2023-01-01</option>
+<option value="2023-01-23">2023-01-23</option>
+<option value="2023-07-01">2023-07-01</option>
+<option value="2023-08-01">2023-08-01</option>
+<option value="2023-09-01">2023-09-01</option>
+<option value="2023-12-06">2023-12-06</option>
+<option value="2024-01-01" selected>2024-01-01</option>
+<option value="2024-07-01">2024-07-01</option>
+<option value="2025-01-01">2025-01-01</option>
+<option value="2025-08-01">2025-08-01</option>
+<option value="2026-01-01">2026-01-01</option>
+
+        </select>
+      </div>
+      
+      <a class="dropdown-submitter" id="submit-comparison-change">
+        Vergleichen
+      </a>
+    </form>
+
+    <div class="change-revision button-container">
+      <a href="/Strafgesetzbuch/2023-01-23/2023-12-06">← Vorherige Versionen vergleichen</a>
+<a href="/Strafgesetzbuch/2024-01-01/2023-07-01">← Versionen tauschen →</a>
+<a href="/Strafgesetzbuch/2023-08-01/2024-07-01">Nächste Versionen vergleichen →</a>
+
+    </div>
+
+    <div class="change-doc-version-comparing button-container">
+      <a href="/Strafgesetzbuch/2023-01-23/2024-01-01">← Vorherige Version</a>
+<a href="/Strafgesetzbuch/2023-08-01/2024-01-01">Nächste Version →</a>
+<a href="/Strafgesetzbuch/2023-07-01/2023-12-06">← Vorherige Version</a>
+<a href="/Strafgesetzbuch/2023-07-01/2024-07-01">Nächste Version →</a>
+
+    </div>
+
+    <table class="diff-table">
+      <thead><tr><th>2023-07-01</th>
+<th>2024-01-01</th>
+</tr>
+</thead>
+<tbody><tr class="article-title"><td><p class="artikel-name">Art. 65</p></td>
+<td><p class="artikel-name">Art. 65</p></td>
+</tr>
+<tr><td><div class="paragraph-text">1. Sind bei einem Verurteilten vor oder während des Vollzuges einer Freiheitsstrafe oder einer Verwahrung nach Artikel 64 Absatz 1 die Voraussetzungen einer stationären therapeutischen Massnahme gegeben, so kann das Gericht diese Massnahme nachträglich anordnen. Zuständig ist das Gericht, das die Strafe ausgesprochen oder die Verwahrung angeordnet hat. Der Vollzug einer Reststrafe wird aufgeschoben.</div></td>
+<td><div class="paragraph-text">1. Sind bei einem Verurteilten vor oder während des Vollzuges einer Freiheitsstrafe oder einer Verwahrung nach Artikel 64 Absatz 1 die Voraussetzungen einer stationären therapeutischen Massnahme gegeben, so kann das Gericht diese Massnahme nachträglich anordnen. Zuständig ist das Gericht, das die Strafe ausgesprochen oder die Verwahrung angeordnet hat. Der Vollzug einer Reststrafe wird aufgeschoben.</div></td>
+</tr>
+<tr><td class="changed"><div class="paragraph-text">2. Ergibt sich bei einem Verurteilten während des Vollzuges der Freiheitsstrafe aufgrund neuer Tatsachen oder Beweismittel, dass die Voraussetzungen der Verwahrung gegeben sind und im Zeitpunkt der Verurteilung bereits bestanden haben, ohne dass das Gericht davon Kenntnis haben konnte, so kann das Gericht die Verwahrung nachträglich anordnen. Zuständigkeit und Verfahren bestimmen sich nach den Regeln, die für die <del>Wiederaufnahme</del> gelten.</div></td>
+<td class="changed"><div class="paragraph-text">2. Ergibt sich bei einem Verurteilten während des Vollzuges der Freiheitsstrafe aufgrund neuer Tatsachen oder Beweismittel, dass die Voraussetzungen der Verwahrung gegeben sind und im Zeitpunkt der Verurteilung bereits bestanden haben, ohne dass das Gericht davon Kenntnis haben konnte, so kann das Gericht die Verwahrung nachträglich anordnen. Zuständigkeit und Verfahren bestimmen sich nach den Regeln, die für die <ins>Revision</ins> <ins>(Art. 410−415 der Strafprozessordnung) </ins>gelten.</div></td>
+</tr>
+<tr class="article-title"><td><p class="artikel-name">Art. 71</p></td>
+<td><p class="artikel-name">Art. 71</p></td>
+</tr>
+<tr><td><div class="paragraph-text">1. Sind die der Einziehung unterliegenden Vermögenswerte nicht mehr vorhanden, so erkennt das Gericht auf eine Ersatzforderung des Staates in gleicher Höhe, gegenüber einem Dritten jedoch nur, soweit dies nicht nach Artikel 70 Absatz 2 ausgeschlossen ist.</div></td>
+<td><div class="paragraph-text">1. Sind die der Einziehung unterliegenden Vermögenswerte nicht mehr vorhanden, so erkennt das Gericht auf eine Ersatzforderung des Staates in gleicher Höhe, gegenüber einem Dritten jedoch nur, soweit dies nicht nach Artikel 70 Absatz 2 ausgeschlossen ist.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">2. Das Gericht kann von einer Ersatzforderung ganz oder teilweise absehen, wenn diese voraussichtlich uneinbringlich wäre oder die Wiedereingliederung des Betroffenen ernstlich behindern würde.</div></td>
+<td><div class="paragraph-text">2. Das Gericht kann von einer Ersatzforderung ganz oder teilweise absehen, wenn diese voraussichtlich uneinbringlich wäre oder die Wiedereingliederung des Betroffenen ernstlich behindern würde.</div></td>
+</tr>
+<tr><td class="changed"><div class="paragraph-text">3. <del>Die Untersuchungsbehörde kann im Hinblick auf die Durchsetzung der Ersatzforderung Vermögenswerte des Betroffenen mit Beschlag belegen</del>.<del> Die Beschlagnahme begründet bei der Zwangsvollstreckung der Ersatzforderung kein Vorzugsrecht zu Gunsten des Staates</del>.</div></td>
+<td class="changed"><div class="paragraph-text">3. ..<ins>.</ins></div></td>
+</tr>
+<tr class="article-title"><td><p class="artikel-name">Art. 123</p></td>
+<td><p class="artikel-name">Art. 123</p></td>
+</tr>
+<tr><td><div class="paragraph-text">1. Wer vorsätzlich einen Menschen in anderer Weise an Körper oder Gesundheit schädigt, wird, auf Antrag, mit Freiheitsstrafe bis zu drei Jahren oder Geldstrafe bestraft.</td>
+<td><div class="paragraph-text">1. Wer vorsätzlich einen Menschen in anderer Weise an Körper oder Gesundheit schädigt, wird, auf Antrag, mit Freiheitsstrafe bis zu drei Jahren oder Geldstrafe bestraft.</td>
+</tr>
+<tr><td><p class="p-list">...</p></div></td>
+<td><p class="p-list">...</p></div></td>
+</tr>
+<tr><td><div class="paragraph-text">2. Der Täter wird von Amtes wegen verfolgt,</td>
+<td><div class="paragraph-text">2. Der Täter wird von Amtes wegen verfolgt,</td>
+</tr>
+<tr><td><p class="p-list">wenn er Gift, eine Waffe oder einen gefährlichen Gegenstand gebraucht,</p></td>
+<td><p class="p-list">wenn er Gift, eine Waffe oder einen gefährlichen Gegenstand gebraucht,</p></td>
+</tr>
+<tr><td><p class="p-list">wenn er die Tat an einem Wehrlosen oder an einer Person begeht, die unter seiner Obhut steht oder für die er zu sorgen hat, namentlich an einem Kind,</p></td>
+<td><p class="p-list">wenn er die Tat an einem Wehrlosen oder an einer Person begeht, die unter seiner Obhut steht oder für die er zu sorgen hat, namentlich an einem Kind,</p></td>
+</tr>
+<tr><td><p class="p-list">wenn er der Ehegatte des Opfers ist und die Tat während der Ehe oder bis zu einem Jahr nach der Scheidung begangen wurde,</p></td>
+<td><p class="p-list">wenn er der Ehegatte des Opfers ist und die Tat während der Ehe oder bis zu einem Jahr nach der Scheidung begangen wurde,</p></td>
+</tr>
+<tr><td><p class="p-list">wenn er die eingetragene Partnerin oder der eingetragene Partner des Opfers ist und die Tat während der Dauer der eingetragenen Partnerschaft oder bis zu einem Jahr nach deren Auflösung begangen wurde,</p></td>
+<td><p class="p-list">wenn er die eingetragene Partnerin oder der eingetragene Partner des Opfers ist und die Tat während der Dauer der eingetragenen Partnerschaft oder bis zu einem Jahr nach deren Auflösung begangen wurde,</p></td>
+</tr>
+<tr><td class="changed"><p class="p-list">wenn er der hetero- oder homosexuelle Lebenspartner des Opfers ist, sofern sie auf unbestimmte Zeit einen <del>gemeinsamem</del> Haushalt führen und die Tat während dieser Zeit oder bis zu einem Jahr nach der Trennung begangen wurde.</p></div></td>
+<td class="changed"><p class="p-list">wenn er der hetero- oder homosexuelle Lebenspartner des Opfers ist, sofern sie auf unbestimmte Zeit einen <ins>gemeinsamen</ins> Haushalt führen und die Tat während dieser Zeit oder bis zu einem Jahr nach der Trennung begangen wurde.</p></div></td>
+</tr>
+<tr class="article-title"><td><p class="artikel-name">Art. 147</p></td>
+<td><p class="artikel-name">Art. 147</p></td>
+</tr>
+<tr><td class="changed"><div class="paragraph-text">1. Wer in der Absicht, sich oder einen andern unrechtmässig zu bereichern, durch unrichtige, unvollständige oder unbefugte Verwendung von Daten oder in vergleichbarer Weise auf einen elektronischen oder vergleichbaren Datenverarbeitungs- oder Datenübermittlungsvorgang einwirkt und dadurch eine Vermögensverschiebung zum Schaden eines andern herbeiführt oder eine Vermögensverschiebung unmittelbar <del>darnach</del> verdeckt, wird mit Freiheitsstrafe bis zu fünf Jahren oder Geldstrafe bestraft.</div></td>
+<td class="changed"><div class="paragraph-text">1. Wer in der Absicht, sich oder einen andern unrechtmässig zu bereichern, durch unrichtige, unvollständige oder unbefugte Verwendung von Daten oder in vergleichbarer Weise auf einen elektronischen oder vergleichbaren Datenverarbeitungs- oder Datenübermittlungsvorgang einwirkt und dadurch eine Vermögensverschiebung zum Schaden eines andern herbeiführt oder eine Vermögensverschiebung unmittelbar <ins>danach</ins> verdeckt, wird mit Freiheitsstrafe bis zu fünf Jahren oder Geldstrafe bestraft.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">2. Handelt der Täter gewerbsmässig, so wird er mit Freiheitsstrafe von sechs Monaten bis zu zehn Jahren bestraft.</div></td>
+<td><div class="paragraph-text">2. Handelt der Täter gewerbsmässig, so wird er mit Freiheitsstrafe von sechs Monaten bis zu zehn Jahren bestraft.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">3. Der betrügerische Missbrauch einer Datenverarbeitungsanlage zum Nachteil eines Angehörigen oder Familiengenossen wird nur auf Antrag verfolgt.</div></td>
+<td><div class="paragraph-text">3. Der betrügerische Missbrauch einer Datenverarbeitungsanlage zum Nachteil eines Angehörigen oder Familiengenossen wird nur auf Antrag verfolgt.</div></td>
+</tr>
+<tr class="article-title"><td><p class="artikel-name">Art. 154</p></td>
+<td><p class="artikel-name">Art. 154</p></td>
+</tr>
+<tr><td><div class="paragraph-text">1. Mit Freiheitsstrafe bis zu drei Jahren und Geldstrafe wird bestraft, wer als Mitglied des Verwaltungsrats oder der Geschäftsleitung einer Gesellschaft, deren Aktien an einer Börse kotiert sind, unzulässige Vergütungen nach Artikel 735c Ziffern 1, 5 und 6 des Obligationenrechts (OR), gegebenenfalls in Verbindung mit Artikel 735d Ziffer 1 OR, ausrichtet oder bezieht.</div></td>
+<td><div class="paragraph-text">1. Mit Freiheitsstrafe bis zu drei Jahren und Geldstrafe wird bestraft, wer als Mitglied des Verwaltungsrats oder der Geschäftsleitung einer Gesellschaft, deren Aktien an einer Börse kotiert sind, unzulässige Vergütungen nach Artikel 735c Ziffern 1, 5 und 6 des Obligationenrechts (OR), gegebenenfalls in Verbindung mit Artikel 735d Ziffer 1 OR, ausrichtet oder bezieht.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">2. Mit Freiheitsstrafe bis zu drei Jahren oder Geldstrafe wird bestraft, wer als Mitglied des Verwaltungsrats einer Gesellschaft, deren Aktien an einer Börse kotiert sind:</div></td>
+<td><div class="paragraph-text">2. Mit Freiheitsstrafe bis zu drei Jahren oder Geldstrafe wird bestraft, wer als Mitglied des Verwaltungsrats einer Gesellschaft, deren Aktien an einer Börse kotiert sind:</div></td>
+</tr>
+<tr><td class="changed"><div class="buchstabe">a. die Geschäftsführung entgegen Artikel 716b Absatz <del>1</del> erster Satz OR ganz oder zum Teil einer juristischen Person überträgt;</div></td>
+<td class="changed"><div class="buchstabe">a. die Geschäftsführung entgegen Artikel 716b Absatz <ins>2</ins> erster Satz OR ganz oder zum Teil einer juristischen Person überträgt;</div></td>
+</tr>
+<tr><td><div class="buchstabe">b. eine Organ- oder Depotstimmrechtsvertretung einsetzt (Art. 689b Abs. 2 OR);</div></td>
+<td><div class="buchstabe">b. eine Organ- oder Depotstimmrechtsvertretung einsetzt (Art. 689b Abs. 2 OR);</div></td>
+</tr>
+<tr><td><div class="buchstabe">c. verhindert, dass:</div></td>
+<td><div class="buchstabe">c. verhindert, dass:</div></td>
+</tr>
+<tr><td><div class="buchstabe">1. die Statuten die Bestimmungen nach Artikel 626 Absatz 2 Ziffern 1 und 2 OR enthalten,</div></td>
+<td><div class="buchstabe">1. die Statuten die Bestimmungen nach Artikel 626 Absatz 2 Ziffern 1 und 2 OR enthalten,</div></td>
+</tr>
+<tr><td><div class="buchstabe">2. die Generalversammlung jährlich und einzeln die Mitglieder und den Präsidenten des Verwaltungsrats, die Mitglieder des Vergütungsausschusses sowie den unabhängigen Stimmrechtsvertreter wählen kann (Art. 698 Abs. 2 Ziff. 2 und Abs. 3 Ziff. 1–3 OR),</div></td>
+<td><div class="buchstabe">2. die Generalversammlung jährlich und einzeln die Mitglieder und den Präsidenten des Verwaltungsrats, die Mitglieder des Vergütungsausschusses sowie den unabhängigen Stimmrechtsvertreter wählen kann (Art. 698 Abs. 2 Ziff. 2 und Abs. 3 Ziff. 1–3 OR),</div></td>
+</tr>
+<tr><td><div class="buchstabe">3. die Generalversammlung über die Vergütungen, die der Verwaltungsrat für sich selbst, die Geschäftsleitung und den Beirat festgelegt hat, abstimmen kann (Art. 698 Abs. 3 Ziff. 4 OR),</div></td>
+<td><div class="buchstabe">3. die Generalversammlung über die Vergütungen, die der Verwaltungsrat für sich selbst, die Geschäftsleitung und den Beirat festgelegt hat, abstimmen kann (Art. 698 Abs. 3 Ziff. 4 OR),</div></td>
+</tr>
+<tr><td><div class="buchstabe">4. die Aktionäre oder ihre Vertreter ihre Rechte auf elektronischem Weg ausüben können (Art. 689c Abs. 6 OR).</div></td>
+<td><div class="buchstabe">4. die Aktionäre oder ihre Vertreter ihre Rechte auf elektronischem Weg ausüben können (Art. 689c Abs. 6 OR).</div></td>
+</tr>
+<tr><td><div class="paragraph-text">3. Nimmt der Täter die Möglichkeit der Verwirklichung einer Tat nach Absatz 1 oder 2 lediglich in Kauf, so macht er sich nach diesen Bestimmungen nicht strafbar.</div></td>
+<td><div class="paragraph-text">3. Nimmt der Täter die Möglichkeit der Verwirklichung einer Tat nach Absatz 1 oder 2 lediglich in Kauf, so macht er sich nach diesen Bestimmungen nicht strafbar.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">4. Für die Berechnung der Geldstrafe ist das Gericht nicht an die maximale Höhe des Tagessatzes (Art. 34 Abs. 2 erster Satz) gebunden; die Geldstrafe darf jedoch das Sechsfache der Jahresvergütung, die im Zeitpunkt der Tat mit der betroffenen Gesellschaft vereinbart ist, nicht übersteigen.</div></td>
+<td><div class="paragraph-text">4. Für die Berechnung der Geldstrafe ist das Gericht nicht an die maximale Höhe des Tagessatzes (Art. 34 Abs. 2 erster Satz) gebunden; die Geldstrafe darf jedoch das Sechsfache der Jahresvergütung, die im Zeitpunkt der Tat mit der betroffenen Gesellschaft vereinbart ist, nicht übersteigen.</div></td>
+</tr>
+<tr class="article-title"><td><p class="artikel-name">Art. 179octies</p></td>
+<td><p class="artikel-name">Art. 179octies</p></td>
+</tr>
+<tr><td><div class="paragraph-text">1. Wer in Ausübung ausdrücklicher, gesetzlicher Befugnis die Überwachung des Post- und Fernmeldeverkehrs einer Person anordnet oder durchführt oder technische Überwachungsgeräte (Art. 179bis ff.) einsetzt, ist nicht strafbar, wenn unverzüglich die Genehmigung des zuständigen Gerichts eingeholt wird.</div></td>
+<td><div class="paragraph-text">1. Wer in Ausübung ausdrücklicher, gesetzlicher Befugnis die Überwachung des Post- und Fernmeldeverkehrs einer Person anordnet oder durchführt oder technische Überwachungsgeräte (Art. 179bis ff.) einsetzt, ist nicht strafbar, wenn unverzüglich die Genehmigung des zuständigen Gerichts eingeholt wird.</div></td>
+</tr>
+<tr><td class="changed"><div class="paragraph-text">2. <del>Die Voraussetzungen der Überwachung des Post- und Fernmeldeverkehrs und das Verfahren richten sich nach dem Bundesgesetz vom 18</del>.<del> März 2016 betreffend die Überwachung des Post- und Fernmeldeverkehrs oder nach der Strafprozessordnung</del>.</div></td>
+<td class="changed"><div class="paragraph-text">2. ..<ins>.</ins></div></td>
+</tr>
+<tr class="article-title"><td><p class="artikel-name">Art. 179novies</p></td>
+<td><p class="artikel-name">Art. 179novies</p></td>
+</tr>
+<tr><td class="changed"><div class="artikel-text">Wer unbefugt besonders schützenswerte Personendaten<del> oder Persönlichkeitsprofile</del>, die nicht <del>frei</del> zugänglich sind, <del>aus einer Datensammlung </del>beschafft, wird auf Antrag mit Freiheitsstrafe bis zu drei Jahren oder Geldstrafe bestraft.</div></td>
+<td class="changed"><div class="artikel-text">Wer unbefugt besonders schützenswerte Personendaten, die nicht <ins>für</ins> <ins>jedermann </ins>zugänglich sind, beschafft, wird auf Antrag mit Freiheitsstrafe bis zu drei Jahren oder Geldstrafe bestraft.</div></td>
+</tr>
+<tr class="article-title"><td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+<td class="inserted"><ins><p class="artikel-name">Art. 179decies</p></ins></td>
+</tr>
+<tr><td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+<td class="inserted"><ins><div class="artikel-text">Wer die Identität einer anderen Person ohne deren Einwilligung verwendet, um dieser zu schaden oder um sich oder einem Dritten einen unrechtmässigen Vorteil zu verschaffen, wird auf Antrag mit Freiheitsstrafe bis zu einem Jahr oder Geldstrafe bestraft.</div></ins></td>
+</tr>
+<tr class="article-title"><td><p class="artikel-name">Art. 349a</p></td>
+<td><p class="artikel-name">Art. 349a</p></td>
+</tr>
+<tr><td class="changed"><div class="artikel-text">Die zuständigen Bundesbehörden dürfen Personendaten nur bekannt geben, wenn dafür eine Rechtsgrundlage im Sinne von Artikel <del>7</del> des <del>Schengen-</del>Datenschutzgesetzes vom <del>28</del>. September <del>2018</del> (<del>SDSG</del>) besteht oder wenn:</div></td>
+<td class="changed"><div class="artikel-text">Die zuständigen Bundesbehörden dürfen Personendaten nur bekannt geben, wenn dafür eine Rechtsgrundlage im Sinne von Artikel <ins>36</ins> <ins>Absatz 1 </ins>des Datenschutzgesetzes vom <ins>25</ins>. September <ins>2020</ins> (<ins>DSG</ins>) besteht oder wenn:</div></td>
+</tr>
+<tr><td><div class="buchstabe">a. die Bekanntgabe von Personendaten notwendig ist, um das Leben oder die körperliche Unversehrtheit der betroffenen Person oder eines Dritten zu schützen;</div></td>
+<td><div class="buchstabe">a. die Bekanntgabe von Personendaten notwendig ist, um das Leben oder die körperliche Unversehrtheit der betroffenen Person oder eines Dritten zu schützen;</div></td>
+</tr>
+<tr><td><div class="buchstabe">b. die betroffene Person ihre Personendaten allgemein zugänglich gemacht und die Bekanntgabe nicht ausdrücklich untersagt hat.</div></td>
+<td><div class="buchstabe">b. die betroffene Person ihre Personendaten allgemein zugänglich gemacht und die Bekanntgabe nicht ausdrücklich untersagt hat.</div></td>
+</tr>
+<tr class="article-title"><td><p class="artikel-name">Art. 349c</p></td>
+<td><p class="artikel-name">Art. 349c</p></td>
+</tr>
+<tr><td><div class="paragraph-text">1. Personendaten dürfen der zuständigen Behörde eines Staates, der nicht über eines der Schengen-Assoziierungsabkommen mit der Schweiz verbunden ist (Drittstaat), oder einem internationalen Organ nicht bekannt gegeben werden, wenn dadurch die Persönlichkeit der betroffenen Person schwerwiegend gefährdet würde, namentlich weil ein angemessener Schutz fehlt.</div></td>
+<td><div class="paragraph-text">1. Personendaten dürfen der zuständigen Behörde eines Staates, der nicht über eines der Schengen-Assoziierungsabkommen mit der Schweiz verbunden ist (Drittstaat), oder einem internationalen Organ nicht bekannt gegeben werden, wenn dadurch die Persönlichkeit der betroffenen Person schwerwiegend gefährdet würde, namentlich weil ein angemessener Schutz fehlt.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">2. Ein angemessener Schutz wird gewährleistet durch:</div></td>
+<td><div class="paragraph-text">2. Ein angemessener Schutz wird gewährleistet durch:</div></td>
+</tr>
+<tr><td><div class="buchstabe">a. die Gesetzgebung des Drittstaates, sofern die Europäische Union dies in einem Beschluss festgehalten hat;</div></td>
+<td><div class="buchstabe">a. die Gesetzgebung des Drittstaates, sofern die Europäische Union dies in einem Beschluss festgehalten hat;</div></td>
+</tr>
+<tr><td><div class="buchstabe">b. einen völkerrechtlichen Vertrag;</div></td>
+<td><div class="buchstabe">b. einen völkerrechtlichen Vertrag;</div></td>
+</tr>
+<tr><td><div class="buchstabe">c. spezifische Garantien.</div></td>
+<td><div class="buchstabe">c. spezifische Garantien.</div></td>
+</tr>
+<tr><td class="changed"><div class="paragraph-text">3. Handelt es sich bei der bekanntgebenden Behörde um eine Bundesbehörde, so informiert sie den Eidgenössischen Datenschutz- und Öffentlichkeitsbeauftragten (<del>Beauftragter</del>) über die Kategorien von Bekanntgaben von Personendaten, die auf der Grundlage spezifischer Garantien nach Absatz 2 Buchstabe c erfolgen. Jede Bekanntgabe wird dokumentiert.</div></td>
+<td class="changed"><div class="paragraph-text">3. Handelt es sich bei der bekanntgebenden Behörde um eine Bundesbehörde, so informiert sie den Eidgenössischen Datenschutz- und Öffentlichkeitsbeauftragten (<ins>EDÖB</ins>) über die Kategorien von Bekanntgaben von Personendaten, die auf der Grundlage spezifischer Garantien nach Absatz 2 Buchstabe c erfolgen. Jede Bekanntgabe wird dokumentiert.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">4. In Abweichung von Absatz 1 können Personendaten der zuständigen Behörde eines Drittstaates oder einem internationalen Organ bekannt gegeben werden, wenn die Bekanntgabe im Einzelfall notwendig ist:</div></td>
+<td><div class="paragraph-text">4. In Abweichung von Absatz 1 können Personendaten der zuständigen Behörde eines Drittstaates oder einem internationalen Organ bekannt gegeben werden, wenn die Bekanntgabe im Einzelfall notwendig ist:</div></td>
+</tr>
+<tr><td><div class="buchstabe">a. zum Schutz des Lebens oder der körperlichen Unversehrtheit der betroffenen Person oder eines Dritten;</div></td>
+<td><div class="buchstabe">a. zum Schutz des Lebens oder der körperlichen Unversehrtheit der betroffenen Person oder eines Dritten;</div></td>
+</tr>
+<tr><td><div class="buchstabe">b. zur Abwehr einer unmittelbar drohenden ernsthaften Gefahr für die öffentliche Sicherheit eines Schengen-Staates oder eines Drittstaates;</div></td>
+<td><div class="buchstabe">b. zur Abwehr einer unmittelbar drohenden ernsthaften Gefahr für die öffentliche Sicherheit eines Schengen-Staates oder eines Drittstaates;</div></td>
+</tr>
+<tr><td><div class="buchstabe">c. zur Verhütung, Feststellung oder Verfolgung einer Straftat, sofern der Bekanntgabe keine überwiegenden schutzwürdigen Interessen der betroffenen Person entgegenstehen;</div></td>
+<td><div class="buchstabe">c. zur Verhütung, Feststellung oder Verfolgung einer Straftat, sofern der Bekanntgabe keine überwiegenden schutzwürdigen Interessen der betroffenen Person entgegenstehen;</div></td>
+</tr>
+<tr><td><div class="buchstabe">d. zur Ausübung oder Durchsetzung von Rechtsansprüchen gegenüber einer für die Verhütung, Feststellung oder Verfolgung einer Straftat zuständigen Behörde, sofern der Bekanntgabe keine überwiegenden schutzwürdigen Interessen der betroffenen Person entgegenstehen.</div></td>
+<td><div class="buchstabe">d. zur Ausübung oder Durchsetzung von Rechtsansprüchen gegenüber einer für die Verhütung, Feststellung oder Verfolgung einer Straftat zuständigen Behörde, sofern der Bekanntgabe keine überwiegenden schutzwürdigen Interessen der betroffenen Person entgegenstehen.</div></td>
+</tr>
+<tr><td class="changed"><div class="paragraph-text">5. Handelt es sich bei der bekanntgebenden Behörde um eine Bundesbehörde, so informiert sie den <del>Beauftragten</del> über die Bekanntgabe nach Absatz 4.</div></td>
+<td class="changed"><div class="paragraph-text">5. Handelt es sich bei der bekanntgebenden Behörde um eine Bundesbehörde, so informiert sie den <ins>EDÖB</ins> über die Bekanntgabe nach Absatz 4.</div></td>
+</tr>
+<tr class="article-title"><td><p class="artikel-name">Art. 349e</p></td>
+<td><p class="artikel-name">Art. 349e</p></td>
+</tr>
+<tr><td><div class="paragraph-text">1. Ist es, namentlich in Notfällen, nicht möglich, der zuständigen Behörde eines Drittstaates Personendaten auf dem üblichen Weg der polizeilichen Zusammenarbeit bekannt zu geben, so kann die zuständige Behörde sie ausnahmsweise einem in diesem Staat niedergelassenen Empfänger bekannt geben, sofern die folgenden Voraussetzungen erfüllt sind:</div></td>
+<td><div class="paragraph-text">1. Ist es, namentlich in Notfällen, nicht möglich, der zuständigen Behörde eines Drittstaates Personendaten auf dem üblichen Weg der polizeilichen Zusammenarbeit bekannt zu geben, so kann die zuständige Behörde sie ausnahmsweise einem in diesem Staat niedergelassenen Empfänger bekannt geben, sofern die folgenden Voraussetzungen erfüllt sind:</div></td>
+</tr>
+<tr><td><div class="buchstabe">a. Die Bekanntgabe ist unentbehrlich zur Erfüllung einer gesetzlichen Aufgabe der Behörde, welche die Daten bekannt gibt.</div></td>
+<td><div class="buchstabe">a. Die Bekanntgabe ist unentbehrlich zur Erfüllung einer gesetzlichen Aufgabe der Behörde, welche die Daten bekannt gibt.</div></td>
+</tr>
+<tr><td><div class="buchstabe">b. Der Bekanntgabe stehen keine überwiegenden schutzwürdigen Interessen der betroffenen Person entgegen.</div></td>
+<td><div class="buchstabe">b. Der Bekanntgabe stehen keine überwiegenden schutzwürdigen Interessen der betroffenen Person entgegen.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">2. Die zuständige Behörde weist den Empfänger der Personendaten bei der Bekanntgabe darauf hin, dass er die Daten nur für die von der Behörde festgelegten Zwecke verwenden darf.</div></td>
+<td><div class="paragraph-text">2. Die zuständige Behörde weist den Empfänger der Personendaten bei der Bekanntgabe darauf hin, dass er die Daten nur für die von der Behörde festgelegten Zwecke verwenden darf.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">3. Sie benachrichtigt die zuständige Behörde des Drittstaates unverzüglich über jede Bekanntgabe von Personendaten, sofern sie dies als zweckmässig erachtet.</div></td>
+<td><div class="paragraph-text">3. Sie benachrichtigt die zuständige Behörde des Drittstaates unverzüglich über jede Bekanntgabe von Personendaten, sofern sie dies als zweckmässig erachtet.</div></td>
+</tr>
+<tr><td class="changed"><div class="paragraph-text">4. Handelt es sich bei der zuständigen Behörde um eine Bundesbehörde, so informiert sie den <del>Beauftragten</del> unverzüglich über jede Bekanntgabe nach Absatz 1.</div></td>
+<td class="changed"><div class="paragraph-text">4. Handelt es sich bei der zuständigen Behörde um eine Bundesbehörde, so informiert sie den <ins>EDÖB</ins> unverzüglich über jede Bekanntgabe nach Absatz 1.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">5. Sie dokumentiert jede Bekanntgabe von Personendaten. Der Bundesrat regelt die Einzelheiten.</div></td>
+<td><div class="paragraph-text">5. Sie dokumentiert jede Bekanntgabe von Personendaten. Der Bundesrat regelt die Einzelheiten.</div></td>
+</tr>
+<tr class="article-title"><td><p class="artikel-name">Art. 349g</p></td>
+<td><p class="artikel-name">Art. 349g</p></td>
+</tr>
+<tr><td class="changed"><div class="paragraph-text">1. Die betroffene Person kann vom <del>Beauftragten</del> verlangen, dass er prüft, ob allfällige Daten über sie rechtmässig bearbeitet werden, wenn:</div></td>
+<td class="changed"><div class="paragraph-text">1. Die betroffene Person kann vom <ins>EDÖB</ins> verlangen, dass er prüft, ob allfällige Daten über sie rechtmässig bearbeitet werden, wenn:</div></td>
+</tr>
+<tr><td class="changed"><div class="buchstabe">a. ihr Recht auf Information über den Austausch von Daten über sie eingeschränkt oder aufgeschoben wird (Art. <del>18a</del> und <del>18b</del> <del>des Bundesgesetzes vom 19. Juni 1992 über den Datenschutz</del>);</div></td>
+<td class="changed"><div class="buchstabe">a. ihr Recht auf Information über den Austausch von Daten über sie eingeschränkt oder aufgeschoben wird (Art. <ins>19</ins> und <ins>20</ins> <ins>DSG</ins>);</div></td>
+</tr>
+<tr><td class="changed"><div class="buchstabe">b. ihr Auskunftsrecht verweigert, eingeschränkt oder aufgeschoben wird (Art. <del>17</del> und <del>18</del> <del>SDSG</del>); oder</div></td>
+<td class="changed"><div class="buchstabe">b. ihr Auskunftsrecht verweigert, eingeschränkt oder aufgeschoben wird (Art. <ins>25</ins> und <ins>26</ins> <ins>DSG</ins>); oder</div></td>
+</tr>
+<tr><td class="changed"><div class="buchstabe">c. ihr Recht, die Berichtigung, die Vernichtung oder die Löschung von Daten über sie zu verlangen, teilweise oder ganz verweigert wird (Art. <del>19</del> Abs. 2 Bst. a <del>SDSG</del>).</div></td>
+<td class="changed"><div class="buchstabe">c. ihr Recht, die Berichtigung, die Vernichtung oder die Löschung von Daten über sie zu verlangen, teilweise oder ganz verweigert wird (Art. <ins>41</ins> Abs. 2 Bst. a <ins>DSG</ins>).</div></td>
+</tr>
+<tr><td class="changed"><div class="paragraph-text">2. Der Prüfung unterzogen werden kann ausschliesslich eine Bundesbehörde, die der Aufsicht des <del>Beauftragten</del> untersteht.</div></td>
+<td class="changed"><div class="paragraph-text">2. Der Prüfung unterzogen werden kann ausschliesslich eine Bundesbehörde, die der Aufsicht des <ins>EDÖB</ins> untersteht.</div></td>
+</tr>
+<tr><td class="changed"><div class="paragraph-text">3. Der <del>Beauftragte</del> führt die Prüfung durch; er teilt der betroffenen Person mit, dass entweder keine Daten über sie unrechtmässig bearbeitet werden oder dass er im Falle von Fehlern bei der Bearbeitung der Personendaten eine Untersuchung nach Artikel <del>22</del> <del>SDSG</del> eröffnet hat.</div></td>
+<td class="changed"><div class="paragraph-text">3. Der <ins>EDÖB</ins> führt die Prüfung durch; er teilt der betroffenen Person mit, dass entweder keine Daten über sie unrechtmässig bearbeitet werden oder dass er im Falle von Fehlern bei der Bearbeitung der Personendaten eine Untersuchung nach Artikel <ins>49</ins> <ins>DSG</ins> eröffnet hat.</div></td>
+</tr>
+<tr><td class="changed"><div class="paragraph-text">4. Stellt der <del>Beauftragte</del> Fehler bei der Datenbearbeitung fest, so ordnet er an, dass die zuständige Bundesbehörde diese behebt.</div></td>
+<td class="changed"><div class="paragraph-text">4. Stellt der <ins>EDÖB</ins> Fehler bei der Datenbearbeitung fest, so ordnet er an, dass die zuständige Bundesbehörde diese behebt.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">5. Die Mitteilung nach Absatz 3 lautet stets gleich und wird nicht begründet. Sie kann nicht angefochten werden.</div></td>
+<td><div class="paragraph-text">5. Die Mitteilung nach Absatz 3 lautet stets gleich und wird nicht begründet. Sie kann nicht angefochten werden.</div></td>
+</tr>
+<tr class="article-title"><td><p class="artikel-name">Art. 349h</p></td>
+<td><p class="artikel-name">Art. 349h</p></td>
+</tr>
+<tr><td class="changed"><div class="paragraph-text">1. Macht die betroffene Person glaubhaft, dass ein Austausch von Personendaten über sie gegen die Vorschriften zum Schutz von Personendaten verstossen könnte, kann sie vom <del>Beauftragten</del> die Eröffnung einer Untersuchung nach Artikel <del>22</del> <del>SDSG</del> verlangen.</div></td>
+<td class="changed"><div class="paragraph-text">1. Macht die betroffene Person glaubhaft, dass ein Austausch von Personendaten über sie gegen die Vorschriften zum Schutz von Personendaten verstossen könnte, kann sie vom <ins>EDÖB</ins> die Eröffnung einer Untersuchung nach Artikel <ins>49</ins> <ins>DSG</ins> verlangen.</div></td>
+</tr>
+<tr><td class="changed"><div class="paragraph-text">2. Eine Untersuchung kann ausschliesslich gegen eine Bundesbehörde eröffnet werden, die der Aufsicht des <del>Beauftragten</del> untersteht.</div></td>
+<td class="changed"><div class="paragraph-text">2. Eine Untersuchung kann ausschliesslich gegen eine Bundesbehörde eröffnet werden, die der Aufsicht des <ins>EDÖB</ins> untersteht.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">3. Partei sind die betroffene Person und die Bundesbehörde, gegen die eine Untersuchung eröffnet wurde.</div></td>
+<td><div class="paragraph-text">3. Partei sind die betroffene Person und die Bundesbehörde, gegen die eine Untersuchung eröffnet wurde.</div></td>
+</tr>
+<tr><td class="changed"><div class="paragraph-text">4. Ferner gelten die Artikel <del>23</del> und <del>24</del> <del>SDSG</del>.</div></td>
+<td class="changed"><div class="paragraph-text">4. Ferner gelten die Artikel <ins>50</ins> und <ins>51</ins> <ins>DSG</ins>.</div></td>
+</tr>
+<tr class="article-title"><td><p class="artikel-name">Art. 352</p></td>
+<td><p class="artikel-name">Art. 352</p></td>
+</tr>
+<tr><td><div class="paragraph-text">1. Der Austausch kriminalpolizeilicher Informationen richtet sich nach den Grundsätzen des Rechtshilfegesetzes vom 20. März 1981 sowie nach den vom Bundesrat als anwendbar erklärten Statuten und Reglementen von INTERPOL.</div></td>
+<td><div class="paragraph-text">1. Der Austausch kriminalpolizeilicher Informationen richtet sich nach den Grundsätzen des Rechtshilfegesetzes vom 20. März 1981 sowie nach den vom Bundesrat als anwendbar erklärten Statuten und Reglementen von INTERPOL.</div></td>
+</tr>
+<tr><td class="changed"><div class="paragraph-text">2. Für den Austausch von Informationen zur Suche nach Vermissten, zur Identifizierung von Unbekannten und zu administrativen Zwecken gilt das <del>Bundesgesetz vom 19</del>.<del> Juni 1992 über den Datenschutz.</del></div></td>
+<td class="changed"><div class="paragraph-text">2. Für den Austausch von Informationen zur Suche nach Vermissten, zur Identifizierung von Unbekannten und zu administrativen Zwecken gilt das <ins>DSG</ins>.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">3. Das Bundesamt für Polizei kann den Zentralbüros anderer Staaten Informationen direkt vermitteln, wenn der Empfängerstaat den datenschutzrechtlichen Vorschriften von INTERPOL untersteht.</div></td>
+<td><div class="paragraph-text">3. Das Bundesamt für Polizei kann den Zentralbüros anderer Staaten Informationen direkt vermitteln, wenn der Empfängerstaat den datenschutzrechtlichen Vorschriften von INTERPOL untersteht.</div></td>
+</tr>
+<tr class="article-title"><td><p class="artikel-name">Art. 354</p></td>
+<td><p class="artikel-name">Art. 354</p></td>
+</tr>
+<tr><td><div class="paragraph-text">1. Das zuständige Departement registriert und speichert die biometrischen erkennungsdienstlichen Daten, die von Behörden der Kantone, des Bundes und des Auslandes im Rahmen der Strafverfolgung oder der Erfüllung anderer gesetzlicher Aufgaben erhoben und ihm übermittelt worden sind. Diese Daten können zur Identifizierung einer gesuchten oder unbekannten Person untereinander abgeglichen werden.</div></td>
+<td><div class="paragraph-text">1. Das zuständige Departement registriert und speichert die biometrischen erkennungsdienstlichen Daten, die von Behörden der Kantone, des Bundes und des Auslandes im Rahmen der Strafverfolgung oder der Erfüllung anderer gesetzlicher Aufgaben erhoben und ihm übermittelt worden sind. Diese Daten können zur Identifizierung einer gesuchten oder unbekannten Person untereinander abgeglichen werden.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">2. Folgende Behörden können Daten nach Absatz 1 vergleichen und bearbeiten:</div></td>
+<td><div class="paragraph-text">2. Folgende Behörden können Daten nach Absatz 1 vergleichen und bearbeiten:</div></td>
+</tr>
+<tr><td><div class="buchstabe">a. das Bundesamt für Polizei;</div></td>
+<td><div class="buchstabe">a. das Bundesamt für Polizei;</div></td>
+</tr>
+<tr><td><div class="buchstabe">b. das Staatssekretariat für Migration (SEM);</div></td>
+<td><div class="buchstabe">b. das Staatssekretariat für Migration (SEM);</div></td>
+</tr>
+<tr><td><div class="buchstabe">c. das Bundesamt für Justiz;</div></td>
+<td><div class="buchstabe">c. das Bundesamt für Justiz;</div></td>
+</tr>
+<tr><td><div class="buchstabe">d. das Bundesamt für Zoll und Grenzsicherheit;</div></td>
+<td><div class="buchstabe">d. das Bundesamt für Zoll und Grenzsicherheit;</div></td>
+</tr>
+<tr><td><div class="buchstabe">e. die für die Erteilung von Visa zuständigen schweizerischen Vertretungen im Ausland;</div></td>
+<td><div class="buchstabe">e. die für die Erteilung von Visa zuständigen schweizerischen Vertretungen im Ausland;</div></td>
+</tr>
+<tr><td><div class="buchstabe">f. der Nachrichtendienst des Bundes;</div></td>
+<td><div class="buchstabe">f. der Nachrichtendienst des Bundes;</div></td>
+</tr>
+<tr><td><div class="buchstabe">g. die Polizeibehörden der Kantone;</div></td>
+<td><div class="buchstabe">g. die Polizeibehörden der Kantone;</div></td>
+</tr>
+<tr><td><div class="buchstabe">h. die kantonalen Migrationsbehörden.</div></td>
+<td><div class="buchstabe">h. die kantonalen Migrationsbehörden.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">3. Die Personendaten, die sich auf Daten nach Absatz 1 beziehen, werden in getrennten Informationssystemen bearbeitet; dabei gelten die Bestimmungen des Bundesgesetzes vom 13. Juni 2008 über die polizeilichen Informationssysteme des Bundes, des Asylgesetzes vom 26. Juni 1998, des Ausländer- und Integrationsgesetz vom 16. Dezember 2005 und des Zollgesetzes vom 18. März 2005.</div></td>
+<td><div class="paragraph-text">3. Die Personendaten, die sich auf Daten nach Absatz 1 beziehen, werden in getrennten Informationssystemen bearbeitet; dabei gelten die Bestimmungen des Bundesgesetzes vom 13. Juni 2008 über die polizeilichen Informationssysteme des Bundes, des Asylgesetzes vom 26. Juni 1998, des Ausländer- und Integrationsgesetz vom 16. Dezember 2005 und des Zollgesetzes vom 18. März 2005.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">4. Die Daten dürfen verwendet werden:</div></td>
+<td><div class="paragraph-text">4. Die Daten dürfen verwendet werden:</div></td>
+</tr>
+<tr><td><div class="buchstabe">a. bis zum Ablauf der Fristen für die Löschung von DNA-Profilen nach den Artikeln 16–19 des DNA-Profil-Gesetzes vom 20. Juni 2003; oder</div></td>
+<td><div class="buchstabe">a. bis zum Ablauf der Fristen für die Löschung von DNA-Profilen nach den Artikeln 16–19 des DNA-Profil-Gesetzes vom 20. Juni 2003; oder</div></td>
+</tr>
+<tr><td class="changed"><div class="buchstabe">b. bei einer Verurteilung wegen einer Übertretung: <del>bis</del> <del>zu</del> fünf <del>Jahre</del> <del>nach</del> <del>Zahlung</del> <del>einer</del> <del>Busse</del> <del>oder</del> <del>nach</del> <del>dem</del> <del>Vollzug</del> <del>einer</del> <del>entsprechenden</del> <del>Ersatzfreiheitsstrafe</del>.</div></td>
+<td class="changed"><div class="buchstabe">b. bei einer Verurteilung wegen einer Übertretung: <ins>für</ins> <ins>eine</ins> <ins>Dauer von </ins>fünf <ins>Jahren</ins> <ins>ab</ins> <ins>dem</ins> <ins>Datum</ins> <ins>des</ins> <ins>Urteils,</ins> <ins>sofern</ins> <ins>dieses</ins> <ins>in</ins> <ins>Rechtskraft</ins> <ins>erwachsen</ins> <ins>ist</ins>.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">5. Der Bundesrat regelt die Einzelheiten, insbesondere die Aufbewahrungsdauer der Daten, die ausserhalb von Strafverfahren erfasst worden sind, das Löschverfahren und die Zusammenarbeit mit den Kantonen. Er regelt die Übermittlung der erkennungsdienstlichen Daten durch die zuständigen Bundesbehörden und die Kantone.</div></td>
+<td><div class="paragraph-text">5. Der Bundesrat regelt die Einzelheiten, insbesondere die Aufbewahrungsdauer der Daten, die ausserhalb von Strafverfahren erfasst worden sind, das Löschverfahren und die Zusammenarbeit mit den Kantonen. Er regelt die Übermittlung der erkennungsdienstlichen Daten durch die zuständigen Bundesbehörden und die Kantone.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">6. Das SEM oder das Bundesamt für Polizei (fedpol) können die Daten zwecks Ausschreibungen im Schengener Informationssystem (SIS) in einem automatisierten Verfahren in den nationalen Teil des Schengener Informationssystems (N-SIS) und das SIS überführen.</div></td>
+<td><div class="paragraph-text">6. Das SEM oder das Bundesamt für Polizei (fedpol) können die Daten zwecks Ausschreibungen im Schengener Informationssystem (SIS) in einem automatisierten Verfahren in den nationalen Teil des Schengener Informationssystems (N-SIS) und das SIS überführen.</div></td>
+</tr>
+<tr class="article-title"><td><p class="artikel-name">Art. 355a</p></td>
+<td><p class="artikel-name">Art. 355a</p></td>
+</tr>
+<tr><td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+<td class="inserted"><ins><div class="paragraph-text">. ...</div></ins></td>
+</tr>
+<tr><td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+<td class="inserted"><ins><div class="buchstabe">1. Das fedpol und der Nachrichtendienst des Bundes (NDB) können dem Europäischen Polizeiamt (Europol) Personendaten, einschliesslich besonders schützenswerter Personendaten, weitergeben</div></ins></td>
+</tr>
+<tr><td class="deleted"><del><div class="paragraph-text">1. Das fedpol und der Nachrichtendienst des Bundes (NDB) können dem Europäischen Polizeiamt (Europol) Personendaten, einschliesslich besonders schützenswerter Personendaten und Persönlichkeitsprofile, weitergeben.</div></del></td>
+<td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+</tr>
+<tr><td><div class="paragraph-text">2. Für die Weitergabe dieser Daten gelten insbesondere die Voraussetzungen nach den Artikeln 3 und 10–13 des Abkommens vom 24. September 2004 zwischen der Schweizerischen Eidgenossenschaft und dem Europäischen Polizeiamt.</div></td>
+<td><div class="paragraph-text">2. Für die Weitergabe dieser Daten gelten insbesondere die Voraussetzungen nach den Artikeln 3 und 10–13 des Abkommens vom 24. September 2004 zwischen der Schweizerischen Eidgenossenschaft und dem Europäischen Polizeiamt.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">3. Gleichzeitig mit der Weitergabe von Daten unterrichtet das Bundesamt für Polizei Europol über die Zweckbestimmung der Daten sowie über alle Beschränkungen hinsichtlich ihrer Bearbeitung, die ihm selbst nach Massgabe der eidgenössischen oder der kantonalen Gesetzgebung auferlegt sind.</div></td>
+<td><div class="paragraph-text">3. Gleichzeitig mit der Weitergabe von Daten unterrichtet das Bundesamt für Polizei Europol über die Zweckbestimmung der Daten sowie über alle Beschränkungen hinsichtlich ihrer Bearbeitung, die ihm selbst nach Massgabe der eidgenössischen oder der kantonalen Gesetzgebung auferlegt sind.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">4. Der Austausch von Personendaten mit Europol wird dem Austausch mit einer zuständigen Behörde eines Schengen-Staates gleichgesetzt (Art. 349b).</div></td>
+<td><div class="paragraph-text">4. Der Austausch von Personendaten mit Europol wird dem Austausch mit einer zuständigen Behörde eines Schengen-Staates gleichgesetzt (Art. 349b).</div></td>
+</tr>
+</tbody>
+
+    </table>
+
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Vergleichswebseite</p>
+  </footer>
+
+</body>
+
+</html>

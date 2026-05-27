@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vergleichen</title>
+  <link rel="stylesheet" href="/css/main.css">
+  <script src="/js/dropdownLogic.js"></script>
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <a href="/" class="home-link"><img src="/images/LawIcon.png" alt="Recht und Gesetz" width="50" height="50">
+        <span class="home-text">Startseite</span>
+      </a>
+      <a href="/Strafgesetzbuch">Gesetzesansicht</a>
+      <a href="/Strafgesetzbuch/2024-01-01/2024-03-03" class="current-page">Dokumentenvergleich</a>
+    </nav>
+    <div class="header-titel">Dokumentenvergleich</div>
+  </header>
+
+  <main>
+
+    <h1>Dokumentvergleich <br />Schweizerisches Strafgesetzbuch</h1>
+    <h2>2023-08-01 ↔ 2023-07-01</h2>
+
+    <form class="change-form">
+      <div class="dropdown-selectors">
+        <label for="viewSelect">Dokument wechseln</label>
+        <select class="doc-select" id="viewSelect">
+          <option value="2020-02-01" selected>2020-02-01</option>
+<option value="2020-07-01">2020-07-01</option>
+<option value="2021-07-01">2021-07-01</option>
+<option value="2022-01-01">2022-01-01</option>
+<option value="2022-06-01">2022-06-01</option>
+<option value="2022-11-22">2022-11-22</option>
+<option value="2023-01-01">2023-01-01</option>
+<option value="2023-01-23">2023-01-23</option>
+<option value="2023-07-01">2023-07-01</option>
+<option value="2023-08-01">2023-08-01</option>
+<option value="2023-09-01">2023-09-01</option>
+<option value="2023-12-06">2023-12-06</option>
+<option value="2024-01-01">2024-01-01</option>
+<option value="2024-07-01">2024-07-01</option>
+<option value="2025-01-01">2025-01-01</option>
+<option value="2025-08-01">2025-08-01</option>
+<option value="2026-01-01">2026-01-01</option>
+
+        </select>
+      </div>
+
+      <a class="dropdown-submitter" id="submit-doc-change">
+        Wechseln
+      </a>
+    </form>
+
+    <form class="compare-form">
+
+      <div class="dropdown-selectors">
+        <label for="leftSelect">Dokument links</label>
+        <select class="doc-select" id="leftSelect">
+          <option value="2020-02-01">2020-02-01</option>
+<option value="2020-07-01">2020-07-01</option>
+<option value="2021-07-01">2021-07-01</option>
+<option value="2022-01-01">2022-01-01</option>
+<option value="2022-06-01">2022-06-01</option>
+<option value="2022-11-22">2022-11-22</option>
+<option value="2023-01-01">2023-01-01</option>
+<option value="2023-01-23">2023-01-23</option>
+<option value="2023-07-01">2023-07-01</option>
+<option value="2023-08-01" selected>2023-08-01</option>
+<option value="2023-09-01">2023-09-01</option>
+<option value="2023-12-06">2023-12-06</option>
+<option value="2024-01-01">2024-01-01</option>
+<option value="2024-07-01">2024-07-01</option>
+<option value="2025-01-01">2025-01-01</option>
+<option value="2025-08-01">2025-08-01</option>
+<option value="2026-01-01">2026-01-01</option>
+
+        </select>
+      </div>
+
+      <div class="dropdown-selectors">
+        <label for="rightSelect">Dokument rechts</label>
+        <select class="doc-select" id="rightSelect">
+          <option value="2020-02-01">2020-02-01</option>
+<option value="2020-07-01">2020-07-01</option>
+<option value="2021-07-01">2021-07-01</option>
+<option value="2022-01-01">2022-01-01</option>
+<option value="2022-06-01">2022-06-01</option>
+<option value="2022-11-22">2022-11-22</option>
+<option value="2023-01-01">2023-01-01</option>
+<option value="2023-01-23">2023-01-23</option>
+<option value="2023-07-01" selected>2023-07-01</option>
+<option value="2023-08-01">2023-08-01</option>
+<option value="2023-09-01">2023-09-01</option>
+<option value="2023-12-06">2023-12-06</option>
+<option value="2024-01-01">2024-01-01</option>
+<option value="2024-07-01">2024-07-01</option>
+<option value="2025-01-01">2025-01-01</option>
+<option value="2025-08-01">2025-08-01</option>
+<option value="2026-01-01">2026-01-01</option>
+
+        </select>
+      </div>
+      
+      <a class="dropdown-submitter" id="submit-comparison-change">
+        Vergleichen
+      </a>
+    </form>
+
+    <div class="change-revision button-container">
+      <a href="/Strafgesetzbuch/2023-07-01/2023-01-23">← Vorherige Versionen vergleichen</a>
+<a href="/Strafgesetzbuch/2023-07-01/2023-08-01">← Versionen tauschen →</a>
+<a href="/Strafgesetzbuch/2023-09-01/2023-08-01">Nächste Versionen vergleichen →</a>
+
+    </div>
+
+    <div class="change-doc-version-comparing button-container">
+      <a class="disabled">Aktuelle Version</a>
+<a href="/Strafgesetzbuch/2023-09-01/2023-07-01">Nächste Version →</a>
+<a href="/Strafgesetzbuch/2023-08-01/2023-01-23">← Vorherige Version</a>
+<a class="disabled">Aktuelle Version</a>
+
+    </div>
+
+    <table class="diff-table">
+      <thead><tr><th>2023-08-01</th>
+<th>2023-07-01</th>
+</tr>
+</thead>
+<tbody><tr class="article-title"><td><p class="artikel-name">Art. 147</p></td>
+<td><p class="artikel-name">Art. 147</p></td>
+</tr>
+<tr><td class="changed"><div class="paragraph-text">1. Wer in der Absicht, sich oder einen andern unrechtmässig zu bereichern, durch unrichtige, unvollständige oder unbefugte Verwendung von Daten oder in vergleichbarer Weise auf einen elektronischen oder vergleichbaren Datenverarbeitungs- oder Datenübermittlungsvorgang einwirkt und dadurch eine Vermögensverschiebung zum Schaden eines andern herbeiführt oder eine Vermögensverschiebung unmittelbar <del>danach</del> verdeckt, wird mit Freiheitsstrafe bis zu fünf Jahren oder Geldstrafe bestraft.</div></td>
+<td class="changed"><div class="paragraph-text">1. Wer in der Absicht, sich oder einen andern unrechtmässig zu bereichern, durch unrichtige, unvollständige oder unbefugte Verwendung von Daten oder in vergleichbarer Weise auf einen elektronischen oder vergleichbaren Datenverarbeitungs- oder Datenübermittlungsvorgang einwirkt und dadurch eine Vermögensverschiebung zum Schaden eines andern herbeiführt oder eine Vermögensverschiebung unmittelbar <ins>darnach</ins> verdeckt, wird mit Freiheitsstrafe bis zu fünf Jahren oder Geldstrafe bestraft.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">2. Handelt der Täter gewerbsmässig, so wird er mit Freiheitsstrafe von sechs Monaten bis zu zehn Jahren bestraft.</div></td>
+<td><div class="paragraph-text">2. Handelt der Täter gewerbsmässig, so wird er mit Freiheitsstrafe von sechs Monaten bis zu zehn Jahren bestraft.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">3. Der betrügerische Missbrauch einer Datenverarbeitungsanlage zum Nachteil eines Angehörigen oder Familiengenossen wird nur auf Antrag verfolgt.</div></td>
+<td><div class="paragraph-text">3. Der betrügerische Missbrauch einer Datenverarbeitungsanlage zum Nachteil eines Angehörigen oder Familiengenossen wird nur auf Antrag verfolgt.</div></td>
+</tr>
+<tr class="article-title"><td><p class="artikel-name">Art. 305bis</p></td>
+<td><p class="artikel-name">Art. 305bis</p></td>
+</tr>
+<tr><td><div class="paragraph-text">1. Wer eine Handlung vornimmt, die geeignet ist, die Ermittlung der Herkunft, die Auffindung oder die Einziehung von Vermögenswerten zu vereiteln, die, wie er weiss oder annehmen muss, aus einem Verbrechen oder aus einem qualifizierten Steuervergehen herrühren, wird mit Freiheitsstrafe bis zu drei Jahren oder Geldstrafe bestraft.</td>
+<td><div class="paragraph-text">1. Wer eine Handlung vornimmt, die geeignet ist, die Ermittlung der Herkunft, die Auffindung oder die Einziehung von Vermögenswerten zu vereiteln, die, wie er weiss oder annehmen muss, aus einem Verbrechen oder aus einem qualifizierten Steuervergehen herrühren, wird mit Freiheitsstrafe bis zu drei Jahren oder Geldstrafe bestraft.</td>
+</tr>
+<tr><td><p class="p-list">1bis. Als qualifiziertes Steuervergehen gelten die Straftaten nach Artikel 186 des Bundesgesetzes vom 14. Dezember 1990 über die direkte Bundessteuer und nach Artikel 59 Absatz 1 erstes Lemma des Bundesgesetzes vom 14. Dezember 1990 über die Harmonisierung der direkten Steuern der Kantone und Gemeinden, wenn die hinterzogenen Steuern pro Steuerperiode mehr als 300 000 Franken betragen.</p></div></td>
+<td><p class="p-list">1bis. Als qualifiziertes Steuervergehen gelten die Straftaten nach Artikel 186 des Bundesgesetzes vom 14. Dezember 1990 über die direkte Bundessteuer und nach Artikel 59 Absatz 1 erstes Lemma des Bundesgesetzes vom 14. Dezember 1990 über die Harmonisierung der direkten Steuern der Kantone und Gemeinden, wenn die hinterzogenen Steuern pro Steuerperiode mehr als 300 000 Franken betragen.</p></div></td>
+</tr>
+<tr><td class="changed"><div class="paragraph-text">2. In schweren Fällen ist die Strafe Freiheitsstrafe bis zu fünf Jahren oder Geldstrafe.<del> </del>Ein schwerer Fall liegt insbesondere vor, wenn der Täter:</div></td>
+<td class="changed"><div class="paragraph-text">2. In schweren Fällen ist die Strafe Freiheitsstrafe bis zu fünf Jahren oder Geldstrafe.Ein schwerer Fall liegt insbesondere vor, wenn der Täter:</div></td>
+</tr>
+<tr><td><div class="buchstabe">a. als Mitglied einer kriminellen oder terroristischen Organisation (Art. 260ter) handelt;</div></td>
+<td><div class="buchstabe">a. als Mitglied einer kriminellen oder terroristischen Organisation (Art. 260ter) handelt;</div></td>
+</tr>
+<tr><td><div class="buchstabe">b. als Mitglied einer Bande handelt, die sich zur fortgesetzten Ausübung der Geldwäscherei zusammengefunden hat;</div></td>
+<td><div class="buchstabe">b. als Mitglied einer Bande handelt, die sich zur fortgesetzten Ausübung der Geldwäscherei zusammengefunden hat;</div></td>
+</tr>
+<tr><td><div class="buchstabe">c. durch gewerbsmässige Geldwäscherei einen grossen Umsatz oder einen erheblichen Gewinn erzielt.</div></td>
+<td><div class="buchstabe">c. durch gewerbsmässige Geldwäscherei einen grossen Umsatz oder einen erheblichen Gewinn erzielt.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">3. Der Täter wird auch bestraft, wenn die Haupttat im Ausland begangen wurde und diese auch am Begehungsort strafbar ist.</div></td>
+<td><div class="paragraph-text">3. Der Täter wird auch bestraft, wenn die Haupttat im Ausland begangen wurde und diese auch am Begehungsort strafbar ist.</div></td>
+</tr>
+<tr class="article-title"><td><p class="artikel-name">Art. 354</p></td>
+<td><p class="artikel-name">Art. 354</p></td>
+</tr>
+<tr><td><div class="paragraph-text">1. Das zuständige Departement registriert und speichert die biometrischen erkennungsdienstlichen Daten, die von Behörden der Kantone, des Bundes und des Auslandes im Rahmen der Strafverfolgung oder der Erfüllung anderer gesetzlicher Aufgaben erhoben und ihm übermittelt worden sind. Diese Daten können zur Identifizierung einer gesuchten oder unbekannten Person untereinander abgeglichen werden.</div></td>
+<td><div class="paragraph-text">1. Das zuständige Departement registriert und speichert die biometrischen erkennungsdienstlichen Daten, die von Behörden der Kantone, des Bundes und des Auslandes im Rahmen der Strafverfolgung oder der Erfüllung anderer gesetzlicher Aufgaben erhoben und ihm übermittelt worden sind. Diese Daten können zur Identifizierung einer gesuchten oder unbekannten Person untereinander abgeglichen werden.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">2. Folgende Behörden können Daten nach Absatz 1 vergleichen und bearbeiten:</div></td>
+<td><div class="paragraph-text">2. Folgende Behörden können Daten nach Absatz 1 vergleichen und bearbeiten:</div></td>
+</tr>
+<tr><td><div class="buchstabe">a. das Bundesamt für Polizei;</div></td>
+<td><div class="buchstabe">a. das Bundesamt für Polizei;</div></td>
+</tr>
+<tr><td><div class="buchstabe">b. das Staatssekretariat für Migration (SEM);</div></td>
+<td><div class="buchstabe">b. das Staatssekretariat für Migration (SEM);</div></td>
+</tr>
+<tr><td><div class="buchstabe">c. das Bundesamt für Justiz;</div></td>
+<td><div class="buchstabe">c. das Bundesamt für Justiz;</div></td>
+</tr>
+<tr><td><div class="buchstabe">d. das Bundesamt für Zoll und Grenzsicherheit;</div></td>
+<td><div class="buchstabe">d. das Bundesamt für Zoll und Grenzsicherheit;</div></td>
+</tr>
+<tr><td><div class="buchstabe">e. die für die Erteilung von Visa zuständigen schweizerischen Vertretungen im Ausland;</div></td>
+<td><div class="buchstabe">e. die für die Erteilung von Visa zuständigen schweizerischen Vertretungen im Ausland;</div></td>
+</tr>
+<tr><td><div class="buchstabe">f. der Nachrichtendienst des Bundes;</div></td>
+<td><div class="buchstabe">f. der Nachrichtendienst des Bundes;</div></td>
+</tr>
+<tr><td><div class="buchstabe">g. die Polizeibehörden der Kantone;</div></td>
+<td><div class="buchstabe">g. die Polizeibehörden der Kantone;</div></td>
+</tr>
+<tr><td><div class="buchstabe">h. die kantonalen Migrationsbehörden.</div></td>
+<td><div class="buchstabe">h. die kantonalen Migrationsbehörden.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">3. Die Personendaten, die sich auf Daten nach Absatz 1 beziehen, werden in getrennten Informationssystemen bearbeitet; dabei gelten die Bestimmungen des Bundesgesetzes vom 13. Juni 2008 über die polizeilichen Informationssysteme des Bundes, des Asylgesetzes vom 26. Juni 1998, des Ausländer- und Integrationsgesetz vom 16. Dezember 2005 und des Zollgesetzes vom 18. März 2005.</div></td>
+<td><div class="paragraph-text">3. Die Personendaten, die sich auf Daten nach Absatz 1 beziehen, werden in getrennten Informationssystemen bearbeitet; dabei gelten die Bestimmungen des Bundesgesetzes vom 13. Juni 2008 über die polizeilichen Informationssysteme des Bundes, des Asylgesetzes vom 26. Juni 1998, des Ausländer- und Integrationsgesetz vom 16. Dezember 2005 und des Zollgesetzes vom 18. März 2005.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">4. Die Daten dürfen verwendet werden:</div></td>
+<td><div class="paragraph-text">4. Die Daten dürfen verwendet werden:</div></td>
+</tr>
+<tr><td><div class="buchstabe">a. bis zum Ablauf der Fristen für die Löschung von DNA-Profilen nach den Artikeln 16–19 des DNA-Profil-Gesetzes vom 20. Juni 2003; oder</div></td>
+<td><div class="buchstabe">a. bis zum Ablauf der Fristen für die Löschung von DNA-Profilen nach den Artikeln 16–19 des DNA-Profil-Gesetzes vom 20. Juni 2003; oder</div></td>
+</tr>
+<tr><td class="changed"><div class="buchstabe">b. bei einer Verurteilung wegen einer Übertretung: <del>für</del> <del>eine</del> <del>Dauer von </del>fünf <del>Jahren</del> <del>ab</del> <del>dem</del> <del>Datum</del> <del>des</del> <del>Urteils,</del> <del>sofern</del> <del>dieses</del> <del>in</del> <del>Rechtskraft</del> <del>erwachsen</del> <del>ist</del>.</div></td>
+<td class="changed"><div class="buchstabe">b. bei einer Verurteilung wegen einer Übertretung: <ins>bis</ins> <ins>zu</ins> fünf <ins>Jahre</ins> <ins>nach</ins> <ins>Zahlung</ins> <ins>einer</ins> <ins>Busse</ins> <ins>oder</ins> <ins>nach</ins> <ins>dem</ins> <ins>Vollzug</ins> <ins>einer</ins> <ins>entsprechenden</ins> <ins>Ersatzfreiheitsstrafe</ins>.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">5. Der Bundesrat regelt die Einzelheiten, insbesondere die Aufbewahrungsdauer der Daten, die ausserhalb von Strafverfahren erfasst worden sind, das Löschverfahren und die Zusammenarbeit mit den Kantonen. Er regelt die Übermittlung der erkennungsdienstlichen Daten durch die zuständigen Bundesbehörden und die Kantone.</div></td>
+<td><div class="paragraph-text">5. Der Bundesrat regelt die Einzelheiten, insbesondere die Aufbewahrungsdauer der Daten, die ausserhalb von Strafverfahren erfasst worden sind, das Löschverfahren und die Zusammenarbeit mit den Kantonen. Er regelt die Übermittlung der erkennungsdienstlichen Daten durch die zuständigen Bundesbehörden und die Kantone.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">6. Das SEM oder das Bundesamt für Polizei (fedpol) können die Daten zwecks Ausschreibungen im Schengener Informationssystem (SIS) in einem automatisierten Verfahren in den nationalen Teil des Schengener Informationssystems (N-SIS) und das SIS überführen.</div></td>
+<td><div class="paragraph-text">6. Das SEM oder das Bundesamt für Polizei (fedpol) können die Daten zwecks Ausschreibungen im Schengener Informationssystem (SIS) in einem automatisierten Verfahren in den nationalen Teil des Schengener Informationssystems (N-SIS) und das SIS überführen.</div></td>
+</tr>
+</tbody>
+
+    </table>
+
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Vergleichswebseite</p>
+  </footer>
+
+</body>
+
+</html>

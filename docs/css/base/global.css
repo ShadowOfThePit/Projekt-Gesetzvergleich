@@ -1,0 +1,61 @@
+:root {
+    /* Text */
+    font-family: "ui-sans-serif", "system-ui", "sans-serif";
+    --text-black: hsl(0, 0%, 13%);
+    --text-white: hsl(210, 8%, 95%);
+
+    /* Bundesblau */
+    --primary-color: hsl(209, 29%, 26%);
+
+    /* Schweizerrot */
+    --secondary-color: hsl(0, 100%, 50%);
+
+    /* Button-Farben */
+    --primary-light-button: hsl(209, 75%, 92%);
+    --primary-light-active: hsl(209, 75%, 84%);
+    --primary-light-hover: hsl(209, 75%, 88%);
+    --primary-lightest: hsl(209, 75%, 98%);
+}
+
+* {
+    color: var(--text-black);
+}
+
+header *,
+footer * {
+    color: var(--text-white);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+h1,
+h2 {
+    max-width: max(50%, 1280px);
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+/* Remove the default anchor underline */
+a {
+    text-decoration: none;
+}
+

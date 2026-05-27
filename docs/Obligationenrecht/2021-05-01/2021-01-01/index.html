@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vergleichen</title>
+  <link rel="stylesheet" href="/css/main.css">
+  <script src="/js/dropdownLogic.js"></script>
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <a href="/" class="home-link"><img src="/images/LawIcon.png" alt="Recht und Gesetz" width="50" height="50">
+        <span class="home-text">Startseite</span>
+      </a>
+      <a href="/Obligationenrecht">Gesetzesansicht</a>
+      <a href="/Obligationenrecht/2024-01-01/2024-03-03" class="current-page">Dokumentenvergleich</a>
+    </nav>
+    <div class="header-titel">Dokumentenvergleich</div>
+  </header>
+
+  <main>
+
+    <h1>Dokumentvergleich <br />Bundesgesetz betreffend die Ergänzung des Schweizerischen Zivilgesetzbuches (Fünfter Teil: Obligationenrecht)</h1>
+    <h2>2021-05-01 ↔ 2021-01-01</h2>
+
+    <form class="change-form">
+      <div class="dropdown-selectors">
+        <label for="viewSelect">Dokument wechseln</label>
+        <select class="doc-select" id="viewSelect">
+          <option value="2021-01-01" selected>2021-01-01</option>
+<option value="2021-02-01">2021-02-01</option>
+<option value="2021-05-01">2021-05-01</option>
+<option value="2021-07-01">2021-07-01</option>
+<option value="2022-01-01">2022-01-01</option>
+<option value="2023-01-01">2023-01-01</option>
+<option value="2023-02-09">2023-02-09</option>
+<option value="2023-09-01">2023-09-01</option>
+<option value="2024-01-01">2024-01-01</option>
+<option value="2025-01-01">2025-01-01</option>
+<option value="2025-07-08">2025-07-08</option>
+<option value="2025-10-01">2025-10-01</option>
+<option value="2026-01-01">2026-01-01</option>
+
+        </select>
+      </div>
+
+      <a class="dropdown-submitter" id="submit-doc-change">
+        Wechseln
+      </a>
+    </form>
+
+    <form class="compare-form">
+
+      <div class="dropdown-selectors">
+        <label for="leftSelect">Dokument links</label>
+        <select class="doc-select" id="leftSelect">
+          <option value="2021-01-01">2021-01-01</option>
+<option value="2021-02-01">2021-02-01</option>
+<option value="2021-05-01" selected>2021-05-01</option>
+<option value="2021-07-01">2021-07-01</option>
+<option value="2022-01-01">2022-01-01</option>
+<option value="2023-01-01">2023-01-01</option>
+<option value="2023-02-09">2023-02-09</option>
+<option value="2023-09-01">2023-09-01</option>
+<option value="2024-01-01">2024-01-01</option>
+<option value="2025-01-01">2025-01-01</option>
+<option value="2025-07-08">2025-07-08</option>
+<option value="2025-10-01">2025-10-01</option>
+<option value="2026-01-01">2026-01-01</option>
+
+        </select>
+      </div>
+
+      <div class="dropdown-selectors">
+        <label for="rightSelect">Dokument rechts</label>
+        <select class="doc-select" id="rightSelect">
+          <option value="2021-01-01" selected>2021-01-01</option>
+<option value="2021-02-01">2021-02-01</option>
+<option value="2021-05-01">2021-05-01</option>
+<option value="2021-07-01">2021-07-01</option>
+<option value="2022-01-01">2022-01-01</option>
+<option value="2023-01-01">2023-01-01</option>
+<option value="2023-02-09">2023-02-09</option>
+<option value="2023-09-01">2023-09-01</option>
+<option value="2024-01-01">2024-01-01</option>
+<option value="2025-01-01">2025-01-01</option>
+<option value="2025-07-08">2025-07-08</option>
+<option value="2025-10-01">2025-10-01</option>
+<option value="2026-01-01">2026-01-01</option>
+
+        </select>
+      </div>
+      
+      <a class="dropdown-submitter" id="submit-comparison-change">
+        Vergleichen
+      </a>
+    </form>
+
+    <div class="change-revision button-container">
+      <a class="disabled">Keine weitere Versionen</a>
+<a href="/Obligationenrecht/2021-01-01/2021-05-01">← Versionen tauschen →</a>
+<a href="/Obligationenrecht/2021-07-01/2021-02-01">Nächste Versionen vergleichen →</a>
+
+    </div>
+
+    <div class="change-doc-version-comparing button-container">
+      <a href="/Obligationenrecht/2021-02-01/2021-01-01">← Vorherige Version</a>
+<a href="/Obligationenrecht/2021-07-01/2021-01-01">Nächste Version →</a>
+<a class="disabled">Keine weitere Version</a>
+<a href="/Obligationenrecht/2021-05-01/2021-02-01">Nächste Version →</a>
+
+    </div>
+
+    <table class="diff-table">
+      <thead><tr><th>2021-05-01</th>
+<th>2021-01-01</th>
+</tr>
+</thead>
+<tbody><tr class="article-title"><td><p class="artikel-name">Art. 622</p></td>
+<td><p class="artikel-name">Art. 622</p></td>
+</tr>
+<tr><td class="changed"><div class="paragraph-text">1. Die Aktien lauten auf den Namen oder auf den Inhaber. <del>Sie</del> <del>können als Wertpapiere ausgegeben werden. Die Statuten können bestimmen, dass sie als Wertrechte nach Artikel 973c oder 973d oder als </del>Bucheffekten im Sinne des Bucheffektengesetzes vom 3. Oktober 2008 <del>(BEG)</del> <del>ausgegeben</del> werden.</div></td>
+<td class="changed"><div class="paragraph-text">1. Die Aktien lauten auf den Namen oder auf den Inhaber. <ins>Als</ins> Bucheffekten im Sinne des Bucheffektengesetzes vom 3. Oktober 2008 <ins>ausgegebene</ins> <ins>Aktien</ins> werden<ins> aktienrechtlich entweder als Namen- oder Inhaberaktien ausgestaltet</ins>.</div></td>
+</tr>
+<tr><td class="changed"><div class="paragraph-text">1bis. Inhaberaktien sind nur zulässig, wenn die Gesellschaft Beteiligungspapiere an einer Börse kotiert hat oder die Inhaberaktien als Bucheffekten im Sinne des <del>BEG</del> ausgestaltet und bei einer von der Gesellschaft bezeichneten Verwahrungsstelle in der Schweiz hinterlegt oder im Hauptregister eingetragen sind.</div></td>
+<td class="changed"><div class="paragraph-text">1bis. Inhaberaktien sind nur zulässig, wenn die Gesellschaft Beteiligungspapiere an einer Börse kotiert hat oder die Inhaberaktien als Bucheffekten im Sinne des <ins>Bucheffektengesetzes</ins> <ins>vom 3. Oktober 2008 </ins>ausgestaltet und bei einer von der Gesellschaft bezeichneten Verwahrungsstelle in der Schweiz hinterlegt oder im Hauptregister eingetragen sind.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">2. Beide Arten von Aktien können in einem durch die Statuten bestimmten Verhältnis nebeneinander bestehen.</div></td>
+<td><div class="paragraph-text">2. Beide Arten von Aktien können in einem durch die Statuten bestimmten Verhältnis nebeneinander bestehen.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">2bis. Eine Gesellschaft mit Inhaberaktien muss im Handelsregister eintragen lassen, ob sie Beteiligungspapiere an einer Börse kotiert hat oder ihre Inhaberaktien als Bucheffekten ausgestaltet sind.</div></td>
+<td><div class="paragraph-text">2bis. Eine Gesellschaft mit Inhaberaktien muss im Handelsregister eintragen lassen, ob sie Beteiligungspapiere an einer Börse kotiert hat oder ihre Inhaberaktien als Bucheffekten ausgestaltet sind.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">2ter. Werden sämtliche Beteiligungspapiere dekotiert, so muss die Gesellschaft die bestehenden Inhaberaktien innerhalb einer Frist von sechs Monaten entweder in Namenaktien umwandeln oder als Bucheffekten ausgestalten.</div></td>
+<td><div class="paragraph-text">2ter. Werden sämtliche Beteiligungspapiere dekotiert, so muss die Gesellschaft die bestehenden Inhaberaktien innerhalb einer Frist von sechs Monaten entweder in Namenaktien umwandeln oder als Bucheffekten ausgestalten.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">3. Die Statuten können bestimmen, dass Namenaktien später in Inhaberaktien oder Inhaberaktien in Namenaktien umgewandelt werden sollen oder dürfen.</div></td>
+<td><div class="paragraph-text">3. Die Statuten können bestimmen, dass Namenaktien später in Inhaberaktien oder Inhaberaktien in Namenaktien umgewandelt werden sollen oder dürfen.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">4. Der Nennwert der Aktie muss mindestens 1 Rappen betragen.</div></td>
+<td><div class="paragraph-text">4. Der Nennwert der Aktie muss mindestens 1 Rappen betragen.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">5. Die Aktientitel müssen durch mindestens ein Mitglied des Verwaltungsrates unterschrieben sein. Die Gesellschaft kann bestimmen, dass auch auf Aktien, die in grosser Zahl ausgegeben werden, mindestens eine Unterschrift eigenhändig beigesetzt werden muss.</div></td>
+<td><div class="paragraph-text">5. Die Aktientitel müssen durch mindestens ein Mitglied des Verwaltungsrates unterschrieben sein. Die Gesellschaft kann bestimmen, dass auch auf Aktien, die in grosser Zahl ausgegeben werden, mindestens eine Unterschrift eigenhändig beigesetzt werden muss.</div></td>
+</tr>
+<tr class="article-title"><td><p class="artikel-name">Art. 697i</p></td>
+<td><p class="artikel-name">Art. 697i</p></td>
+</tr>
+<tr><td class="deleted"><del><div class="artikel-text">...</div></del></td>
+<td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+</tr>
+<tr><td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+<td class="inserted"><ins><div class="paragraph-text">1. Wer Inhaberaktien einer Gesellschaft erwirbt, deren Aktien nicht an einer Börse kotiert sind, muss den Erwerb, seinen Vor- und seinen Nachnamen oder seine Firma sowie seine Adresse innert Monatsfrist der Gesellschaft melden.</div></ins></td>
+</tr>
+<tr><td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+<td class="inserted"><ins><div class="paragraph-text">2. Der Aktionär hat den Besitz der Inhaberaktie nachzuweisen und sich wie folgt zu identifizieren:</div></ins></td>
+</tr>
+<tr><td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+<td class="inserted"><ins><div class="buchstabe">a. als natürliche Person: durch einen amtlichen Ausweis mit Fotografie, namentlich durch den Pass, die Identitätskarte oder den Führerausweis, im Original oder in Kopie;</div></ins></td>
+</tr>
+<tr><td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+<td class="inserted"><ins><div class="buchstabe">b. als schweizerische juristische Person: durch einen Handelsregisterauszug;</div></ins></td>
+</tr>
+<tr><td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+<td class="inserted"><ins><div class="buchstabe">c. als ausländische juristische Person: durch einen aktuellen beglaubigten Auszug aus dem ausländischen Handelsregister oder durch eine gleichwertige Urkunde.</div></ins></td>
+</tr>
+<tr><td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+<td class="inserted"><ins><div class="paragraph-text">3. Der Aktionär muss der Gesellschaft jede Änderung seines Vor- oder seines Nachnamens oder seiner Firma sowie seiner Adresse melden.</div></ins></td>
+</tr>
+<tr><td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+<td class="inserted"><ins><div class="paragraph-text">4. Die Meldepflicht besteht nicht, wenn die Inhaberaktien nach dem Bucheffektengesetz vom 3. Oktober 2008 als Bucheffekten ausgestaltet sind. Die Gesellschaft bezeichnet die Verwahrungsstelle, bei der die Inhaberaktien hinterlegt oder ins Hauptregister eingetragen werden; die Verwahrungsstelle muss in der Schweiz sein.</div></ins></td>
+</tr>
+<tr class="article-title"><td><p class="artikel-name">Art. 697k</p></td>
+<td><p class="artikel-name">Art. 697k</p></td>
+</tr>
+<tr><td class="deleted"><del><div class="artikel-text">...</div></del></td>
+<td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+</tr>
+<tr><td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+<td class="inserted"><ins><div class="paragraph-text">1. Die Generalversammlung kann vorsehen, dass die Meldungen nach den Artikeln 697i und 697j, die Inhaberaktien betreffen, nicht der Gesellschaft zu erstatten sind, sondern einem Finanzintermediär im Sinne des Geldwäschereigesetzes vom 10. Oktober 1997.</div></ins></td>
+</tr>
+<tr><td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+<td class="inserted"><ins><div class="paragraph-text">2. Der Verwaltungsrat bezeichnet den Finanzintermediär und macht den Aktionären bekannt, wen er bezeichnet hat.</div></ins></td>
+</tr>
+<tr><td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+<td class="inserted"><ins><div class="paragraph-text">3. Der Finanzintermediär hat der Gesellschaft jederzeit darüber Auskunft zu geben, für welche Inhaberaktien die vorgeschriebenen Meldungen erstattet und der Besitz nachgewiesen wurden.</div></ins></td>
+</tr>
+<tr class="article-title"><td><p class="artikel-name">Art. 697l</p></td>
+<td><p class="artikel-name">Art. 697l</p></td>
+</tr>
+<tr><td class="changed"><div class="paragraph-text">1. Die Gesellschaft führt ein Verzeichnis über die <del>ihr</del> gemeldeten wirtschaftlich berechtigten Personen.</div></td>
+<td class="changed"><div class="paragraph-text">1. Die Gesellschaft führt ein Verzeichnis über die <ins>Inhaberaktionäre</ins> <ins>sowie über die der Gesellschaft </ins>gemeldeten wirtschaftlich berechtigten Personen.</div></td>
+</tr>
+<tr><td class="changed"><div class="paragraph-text">2. Dieses Verzeichnis enthält den Vor- und den Nachnamen sowie die Adresse der wirtschaftlich berechtigten Personen.</div></td>
+<td class="changed"><div class="paragraph-text">2. Dieses Verzeichnis enthält den Vor- und den Nachnamen <ins>oder die Firma </ins>sowie die Adresse der <ins>Inhaberaktionäre und der </ins>wirtschaftlich berechtigten Personen.<ins> Es enthält die Staatsangehörigkeit und das Geburtsdatum der Inhaberaktionäre.</ins></div></td>
+</tr>
+<tr><td class="changed"><div class="paragraph-text">3. Die Belege, die einer Meldung nach <del>Artikel</del> 697j zugrunde liegen, müssen nach der Streichung der Person aus dem Verzeichnis <del>während zehn Jahren </del>aufbewahrt werden.</div></td>
+<td class="changed"><div class="paragraph-text">3. Die Belege, die einer Meldung nach <ins>den</ins> <ins>Artikeln </ins>697<ins>i und 697</ins>j zugrunde liegen, müssen <ins>während zehn Jahren </ins>nach der Streichung der Person aus dem Verzeichnis aufbewahrt werden.</div></td>
+</tr>
+<tr><td class="changed"><div class="paragraph-text">4. <del>Das</del> <del>Verzeichnis</del> <del>muss</del> <del>so</del> <del>geführt</del> <del>werden</del>, <del>dass</del> <del>in</del> <del>der</del> <del>Schweiz</del> <del>jederzeit</del> <del>darauf</del> <del>zugegriffen</del> <del>werden</del> <del>kann</del>.</div></td>
+<td class="changed"><div class="paragraph-text">4. <ins>Hat</ins> <ins>die</ins> <ins>Gesellschaft</ins> <ins>nach</ins> <ins>Artikel</ins> <ins>697k einen Finanzintermediär bezeichnet</ins>, <ins>so</ins> <ins>ist</ins> <ins>dieser</ins> <ins>für</ins> <ins>die</ins> <ins>Führung</ins> <ins>des</ins> <ins>Verzeichnisses</ins> <ins>und die Aufbewahrung der Belege zuständig</ins>.</div></td>
+</tr>
+<tr><td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+<td class="inserted"><ins><div class="paragraph-text">5. Das Verzeichnis muss so geführt werden, dass in der Schweiz jederzeit darauf zugegriffen werden kann.</div></ins></td>
+</tr>
+<tr class="article-title"><td><p class="artikel-name">Art. 731b</p></td>
+<td><p class="artikel-name">Art. 731b</p></td>
+</tr>
+<tr><td><div class="paragraph-text">1. Ein Aktionär oder ein Gläubiger kann dem Gericht bei folgenden Mängeln in der Organisation der Gesellschaft beantragen, die erforderlichen Massnahmen zu ergreifen:</div></td>
+<td><div class="paragraph-text">1. Ein Aktionär oder ein Gläubiger kann dem Gericht bei folgenden Mängeln in der Organisation der Gesellschaft beantragen, die erforderlichen Massnahmen zu ergreifen:</div></td>
+</tr>
+<tr><td><div class="buchstabe">1. Der Gesellschaft fehlt eines der vorgeschriebenen Organe.</div></td>
+<td><div class="buchstabe">1. Der Gesellschaft fehlt eines der vorgeschriebenen Organe.</div></td>
+</tr>
+<tr><td><div class="buchstabe">2. Ein vorgeschriebenes Organ der Gesellschaft ist nicht richtig zusammengesetzt.</div></td>
+<td><div class="buchstabe">2. Ein vorgeschriebenes Organ der Gesellschaft ist nicht richtig zusammengesetzt.</div></td>
+</tr>
+<tr><td><div class="buchstabe">3. Die Gesellschaft führt das Aktienbuch oder das Verzeichnis über die ihr gemeldeten wirtschaftlich berechtigten Personen nicht vorschriftsgemäss.</div></td>
+<td><div class="buchstabe">3. Die Gesellschaft führt das Aktienbuch oder das Verzeichnis über die ihr gemeldeten wirtschaftlich berechtigten Personen nicht vorschriftsgemäss.</div></td>
+</tr>
+<tr><td class="changed"><div class="buchstabe">4. <del>Die Gesellschaft hat Inhaberaktien ausgegeben, ohne dass sie Beteiligungspapiere an einer Börse kotiert hat oder die Inhaberaktien als Bucheffekten ausgestaltet sind</del>.</div></td>
+<td class="changed"><div class="buchstabe">4. .<ins>..</ins></div></td>
+</tr>
+<tr><td><div class="buchstabe">5. Die Gesellschaft hat an ihrem Sitz kein Rechtsdomizil mehr.</div></td>
+<td><div class="buchstabe">5. Die Gesellschaft hat an ihrem Sitz kein Rechtsdomizil mehr.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">1bis. Das Gericht kann insbesondere:</div></td>
+<td><div class="paragraph-text">1bis. Das Gericht kann insbesondere:</div></td>
+</tr>
+<tr><td><div class="buchstabe">1. der Gesellschaft unter Androhung ihrer Auflösung eine Frist ansetzen, binnen deren der rechtmässige Zustand wiederherzustellen ist;</div></td>
+<td><div class="buchstabe">1. der Gesellschaft unter Androhung ihrer Auflösung eine Frist ansetzen, binnen deren der rechtmässige Zustand wiederherzustellen ist;</div></td>
+</tr>
+<tr><td><div class="buchstabe">2. das fehlende Organ oder einen Sachwalter ernennen;</div></td>
+<td><div class="buchstabe">2. das fehlende Organ oder einen Sachwalter ernennen;</div></td>
+</tr>
+<tr><td><div class="buchstabe">3. die Gesellschaft auflösen und ihre Liquidation nach den Vorschriften über den Konkurs anordnen.</div></td>
+<td><div class="buchstabe">3. die Gesellschaft auflösen und ihre Liquidation nach den Vorschriften über den Konkurs anordnen.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">2. Ernennt das Gericht das fehlende Organ oder einen Sachwalter, so bestimmt es die Dauer, für die die Ernennung gültig ist. Es verpflichtet die Gesellschaft, die Kosten zu tragen und den ernannten Personen einen Vorschuss zu leisten.</div></td>
+<td><div class="paragraph-text">2. Ernennt das Gericht das fehlende Organ oder einen Sachwalter, so bestimmt es die Dauer, für die die Ernennung gültig ist. Es verpflichtet die Gesellschaft, die Kosten zu tragen und den ernannten Personen einen Vorschuss zu leisten.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">3. Liegt ein wichtiger Grund vor, so kann die Gesellschaft vom Gericht die Abberufung von Personen verlangen, die dieses eingesetzt hat.</div></td>
+<td><div class="paragraph-text">3. Liegt ein wichtiger Grund vor, so kann die Gesellschaft vom Gericht die Abberufung von Personen verlangen, die dieses eingesetzt hat.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">4. Die zur Liquidation der Gesellschaft nach den Vorschriften über den Konkurs eingesetzten Liquidatoren haben, sobald sie eine Überschuldung feststellen, das Gericht zu benachrichtigen; es eröffnet den Konkurs.</div></td>
+<td><div class="paragraph-text">4. Die zur Liquidation der Gesellschaft nach den Vorschriften über den Konkurs eingesetzten Liquidatoren haben, sobald sie eine Überschuldung feststellen, das Gericht zu benachrichtigen; es eröffnet den Konkurs.</div></td>
+</tr>
+<tr class="article-title"><td><p class="artikel-name">Art. 973c</p></td>
+<td><p class="artikel-name">Art. 973c</p></td>
+</tr>
+<tr><td class="changed"><div class="paragraph-text">1. Der Schuldner kann <del>einfache</del> Wertrechte ausgeben oder vertretbare Wertpapiere oder Globalurkunden, die einem einzigen Aufbewahrer anvertraut sind, durch <del>einfache </del>Wertrechte ersetzen, sofern die Ausgabebedingungen oder <del>seine</del> <del>Statuten</del> dies vorsehen oder die Hinterleger dazu ihre Zustimmung erteilt haben.</div></td>
+<td class="changed"><div class="paragraph-text">1. Der Schuldner kann <ins>Rechte</ins> <ins>mit gleicher Funktion wie Wertpapiere (</ins>Wertrechte<ins>)</ins> ausgeben oder vertretbare Wertpapiere oder Globalurkunden, die einem einzigen Aufbewahrer anvertraut sind, durch Wertrechte ersetzen, sofern die Ausgabebedingungen oder <ins>die</ins> <ins>Gesellschaftsstatuten</ins> dies vorsehen oder die Hinterleger dazu ihre Zustimmung erteilt haben.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">2. Der Schuldner führt über die von ihm ausgegebenen Wertrechte ein Buch, in das die Anzahl und Stückelung der ausgegebenen Wertrechte sowie die Gläubiger einzutragen sind. Das Buch ist nicht öffentlich.</div></td>
+<td><div class="paragraph-text">2. Der Schuldner führt über die von ihm ausgegebenen Wertrechte ein Buch, in das die Anzahl und Stückelung der ausgegebenen Wertrechte sowie die Gläubiger einzutragen sind. Das Buch ist nicht öffentlich.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">3. Die Wertrechte entstehen mit Eintragung in das Buch und bestehen nur nach Massgabe dieser Eintragung.</div></td>
+<td><div class="paragraph-text">3. Die Wertrechte entstehen mit Eintragung in das Buch und bestehen nur nach Massgabe dieser Eintragung.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">4. Zur Übertragung von Wertrechten bedarf es einer schriftlichen Abtretungserklärung. Ihre Verpfändung richtet sich nach den Vorschriften über das Pfandrecht an Forderungen.</div></td>
+<td><div class="paragraph-text">4. Zur Übertragung von Wertrechten bedarf es einer schriftlichen Abtretungserklärung. Ihre Verpfändung richtet sich nach den Vorschriften über das Pfandrecht an Forderungen.</div></td>
+</tr>
+<tr class="article-title"><td class="deleted"><del><p class="artikel-name">Art. 973d</p></del></td>
+<td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+</tr>
+<tr><td class="deleted"><del><div class="paragraph-text">1. Ein Registerwertrecht ist ein Recht, das gemäss einer Vereinbarung der Parteien:</div></del></td>
+<td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+</tr>
+<tr><td class="deleted"><del><div class="buchstabe">1. in einem Wertrechteregister gemäss Absatz 2 eingetragen ist; und</div></del></td>
+<td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+</tr>
+<tr><td class="deleted"><del><div class="buchstabe">2. nur über dieses Wertrechteregister geltend gemacht und auf andere übertragen werden kann.</div></del></td>
+<td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+</tr>
+<tr><td class="deleted"><del><div class="paragraph-text">2. Das Wertrechteregister muss die folgenden Anforderungen erfüllen:</div></del></td>
+<td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+</tr>
+<tr><td class="deleted"><del><div class="buchstabe">1. Es vermittelt den Gläubigern, nicht aber dem Schuldner, mittels technischer Verfahren die Verfügungsmacht über ihre Rechte.</div></del></td>
+<td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+</tr>
+<tr><td class="deleted"><del><div class="buchstabe">2. Seine Integrität ist geschützt, indem es durch angemessene technische und organisatorische Massnahmen, wie die gemeinsame Verwaltung durch mehrere voneinander unabhängige Beteiligte, gegen unbefugte Veränderungen geschützt ist.</div></del></td>
+<td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+</tr>
+<tr><td class="deleted"><del><div class="buchstabe">3. Der Inhalt der Rechte, die Funktionsweise des Registers und die Registrierungsvereinbarung sind im Register oder in damit verknüpften Begleitdaten festgehalten.</div></del></td>
+<td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+</tr>
+<tr><td class="deleted"><del><div class="buchstabe">4. Die Gläubiger können die sie betreffenden Informationen und Registereinträge einsehen sowie die Integrität des sie betreffenden Registerinhalts ohne Zutun Dritter überprüfen.</div></del></td>
+<td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+</tr>
+<tr><td class="deleted"><del><div class="paragraph-text">3. Der Schuldner hat sicherzustellen, dass das Wertrechteregister dessen Zweck entsprechend organisiert ist. Insbesondere ist sicherzustellen, dass das Register jederzeit gemäss Registrierungsvereinbarung funktioniert.</div></del></td>
+<td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+</tr>
+<tr class="article-title"><td class="deleted"><del><p class="artikel-name">Art. 973e</p></del></td>
+<td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+</tr>
+<tr><td class="deleted"><del><div class="paragraph-text">1. Der Schuldner aus einem Registerwertrecht ist nur an den durch das Wertrechteregister ausgewiesenen Gläubiger sowie gegen entsprechende Anpassung des Registers zu leisten berechtigt und verpflichtet.</div></del></td>
+<td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+</tr>
+<tr><td class="deleted"><del><div class="paragraph-text">2. Er wird durch eine bei Verfall erfolgte Leistung an den durch das Wertrechteregister ausgewiesenen Gläubiger befreit, auch wenn der ausgewiesene nicht der tatsächliche Gläubiger ist, wenn dem Schuldner nicht Arglist oder grobe Fahrlässigkeit zur Last fällt.</div></del></td>
+<td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+</tr>
+<tr><td class="deleted"><del><div class="paragraph-text">3. Wer in einem Wertrechteregister vom dort ausgewiesenen Gläubiger ein Registerwertrecht erworben hat, ist in seinem Erwerb zu schützen, auch wenn der Veräusserer zur Verfügung nicht befugt war, es sei denn, der Erwerber handelte beim Erwerb bösgläubig oder grobfahrlässig.</div></del></td>
+<td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+</tr>
+<tr><td class="deleted"><del><div class="paragraph-text">4. Der Schuldner kann der Forderung aus einem Registerwertrecht nur Einreden entgegensetzen, die:</div></del></td>
+<td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+</tr>
+<tr><td class="deleted"><del><div class="buchstabe">1. entweder gegen die Gültigkeit der Registrierung gerichtet sind oder aus dem Wertrechteregister oder dessen Begleitdaten selbst hervorgehen;</div></del></td>
+<td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+</tr>
+<tr><td class="deleted"><del><div class="buchstabe">2. ihm persönlich gegen den aktuellen Gläubiger des Registerwertrechts zustehen; oder</div></del></td>
+<td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+</tr>
+<tr><td class="deleted"><del><div class="buchstabe">3. sich auf die unmittelbare Beziehung des Schuldners zu einem früheren Gläubiger des Registerwertrechts gründen, wenn der aktuelle Gläubiger bei dem Erwerb des Registerwertrechts bewusst zum Nachteil des Schuldners gehandelt hat.</div></del></td>
+<td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+</tr>
+<tr class="article-title"><td class="deleted"><del><p class="artikel-name">Art. 973f</p></del></td>
+<td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+</tr>
+<tr><td class="deleted"><del><div class="paragraph-text">1. Die Übertragung des Registerwertrechts untersteht den Regeln der Registrierungsvereinbarung.</div></del></td>
+<td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+</tr>
+<tr><td class="deleted"><del><div class="paragraph-text">2. Wird über den Gläubiger eines Registerwertrechts der Konkurs eröffnet, die Pfändung vollzogen oder die Nachlassstundung bewilligt, so sind seine Verfügungen über Registerwertrechte rechtlich verbindlich und Dritten gegenüber wirksam, wenn sie:</div></del></td>
+<td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+</tr>
+<tr><td class="deleted"><del><div class="buchstabe">1. vorgängig eingebracht wurden;</div></del></td>
+<td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+</tr>
+<tr><td class="deleted"><del><div class="buchstabe">2. nach den Regeln des Wertrechteregisters oder eines anderen Handelssystems unwiderruflich wurden; sowie</div></del></td>
+<td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+</tr>
+<tr><td class="deleted"><del><div class="buchstabe">3. innerhalb von 24 Stunden tatsächlich in das Wertrechteregister eingetragen wurden.</div></del></td>
+<td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+</tr>
+<tr><td class="deleted"><del><div class="paragraph-text">3. Steht in Bezug auf dasselbe Recht dem gutgläubigen Empfänger eines Wertpapiers ein gutgläubiger Empfänger des Registerwertrechts gegenüber, so geht der Erste dem Letzteren vor.</div></del></td>
+<td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+</tr>
+<tr class="article-title"><td class="deleted"><del><p class="artikel-name">Art. 973g</p></del></td>
+<td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+</tr>
+<tr><td class="deleted"><del><div class="paragraph-text">1. Eine Sicherheit kann auch ohne Übertragung des Registerwertrechts errichtet werden, wenn:</div></del></td>
+<td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+</tr>
+<tr><td class="deleted"><del><div class="buchstabe">1. die Sicherheit im Wertrechteregister ersichtlich ist; und</div></del></td>
+<td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+</tr>
+<tr><td class="deleted"><del><div class="buchstabe">2. gewährleistet ist, dass ausschliesslich der Sicherungsnehmer im Falle der Nichtbefriedigung über das Registerwertrecht verfügen kann.</div></del></td>
+<td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+</tr>
+<tr><td class="deleted"><del><div class="paragraph-text">2. Im Übrigen richtet sich:</div></del></td>
+<td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+</tr>
+<tr><td class="deleted"><del><div class="buchstabe">1. das Retentionsrecht an Registerwertrechten nach den für Wertpapiere geltenden Bestimmungen über das Retentionsrecht (Art. 895–898 ZGB);</div></del></td>
+<td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+</tr>
+<tr><td class="deleted"><del><div class="buchstabe">2. das Pfandrecht an Registerwertrechten nach den für Wertpapiere geltenden Bestimmungen über das Pfandrecht an Forderungen und anderen Rechten (Art. 899–906 ZGB).</div></del></td>
+<td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+</tr>
+<tr class="article-title"><td class="deleted"><del><p class="artikel-name">Art. 973h</p></del></td>
+<td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+</tr>
+<tr><td class="deleted"><del><div class="paragraph-text">1. Der an einem Registerwertrecht Berechtigte kann verlangen, dass das Gericht das Registerwertrecht kraftlos erklärt, sofern er seine ursprüngliche Verfügungsmacht sowie deren Verlust glaubhaft macht. Nach der Kraftloserklärung kann er sein Recht auch ausserhalb des Registers geltend machen oder auf seine Kosten vom Schuldner die Zuteilung eines neuen Registerwertrechts verlangen. Im Übrigen sind für das Verfahren und die Wirkung der Kraftloserklärung die Artikel 982–986 sinngemäss anwendbar.</div></del></td>
+<td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+</tr>
+<tr><td class="deleted"><del><div class="paragraph-text">2. Die Parteien können eine vereinfachte Kraftloserklärung durch Herabsetzung der Zahl der öffentlichen Aufforderungen oder durch Verkürzung der Fristen vorsehen.</div></del></td>
+<td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+</tr>
+<tr class="article-title"><td class="deleted"><del><p class="artikel-name">Art. 973i</p></del></td>
+<td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+</tr>
+<tr><td class="deleted"><del><div class="paragraph-text">1. Der Schuldner aus einem Registerwertrecht oder einem Recht, das als solches angeboten wird, hat jedem Erwerber bekannt zu geben:</div></del></td>
+<td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+</tr>
+<tr><td class="deleted"><del><div class="buchstabe">1. den Inhalt des Wertrechts;</div></del></td>
+<td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+</tr>
+<tr><td class="deleted"><del><div class="buchstabe">2. die Funktionsweise des Wertrechteregisters sowie die Massnahmen zum Schutz des Funktionierens und der Integrität des Wertrechteregisters nach Artikel 973d Absätze 2 und 3.</div></del></td>
+<td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+</tr>
+<tr><td class="deleted"><del><div class="paragraph-text">2. Er haftet für den Schaden, der dem Erwerber durch unrichtige, irreführende oder den gesetzlichen Anforderungen nicht entsprechende Angaben entsteht, sofern er nicht nachweist, dass er die erforderliche Sorgfalt angewendet hat.</div></del></td>
+<td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+</tr>
+<tr><td class="deleted"><del><div class="paragraph-text">3. Vereinbarungen, welche diese Haftung beschränken oder wegbedingen, sind nichtig.</div></del></td>
+<td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+</tr>
+<tr class="article-title"><td class="deleted"><del><p class="artikel-name">Art. 1153a</p></del></td>
+<td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+</tr>
+<tr><td class="deleted"><del><div class="paragraph-text">1. Die Parteien können Warenpapiere in der Form von Registerwertrechten vorsehen. Die Artikel 1154 und 1155 sind sinngemäss anwendbar.</div></del></td>
+<td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+</tr>
+<tr><td class="deleted"><del><div class="paragraph-text">2. Die Unterschrift des Ausstellers kann entfallen, wenn der Titel ihm auf andere Weise eindeutig zugeordnet werden kann. Der weitere Inhalt des Titels samt dessen Lasten muss im Wertrechteregister selbst oder in damit verknüpften Begleitdaten festgehalten werden.</div></del></td>
+<td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+</tr>
+</tbody>
+
+    </table>
+
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Vergleichswebseite</p>
+  </footer>
+
+</body>
+
+</html>

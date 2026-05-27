@@ -1,0 +1,10 @@
+@import "base/global.css";
+@import "layout/header.css";
+@import "layout/footer.css";
+@import "components/compare-form.css";
+@import "components/action-buttons.css";
+@import "pages/document-overview.css";
+@import "documents/legal-document.css";
+@import "documents/navigation-table.css";
+@import "documents/diff-table.css";
+@import "utilities/messages.css";

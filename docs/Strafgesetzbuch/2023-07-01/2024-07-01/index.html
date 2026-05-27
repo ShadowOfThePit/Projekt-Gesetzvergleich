@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vergleichen</title>
+  <link rel="stylesheet" href="/css/main.css">
+  <script src="/js/dropdownLogic.js"></script>
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <a href="/" class="home-link"><img src="/images/LawIcon.png" alt="Recht und Gesetz" width="50" height="50">
+        <span class="home-text">Startseite</span>
+      </a>
+      <a href="/Strafgesetzbuch">Gesetzesansicht</a>
+      <a href="/Strafgesetzbuch/2024-01-01/2024-03-03" class="current-page">Dokumentenvergleich</a>
+    </nav>
+    <div class="header-titel">Dokumentenvergleich</div>
+  </header>
+
+  <main>
+
+    <h1>Dokumentvergleich <br />Schweizerisches Strafgesetzbuch</h1>
+    <h2>2023-07-01 ↔ 2024-07-01</h2>
+
+    <form class="change-form">
+      <div class="dropdown-selectors">
+        <label for="viewSelect">Dokument wechseln</label>
+        <select class="doc-select" id="viewSelect">
+          <option value="2020-02-01" selected>2020-02-01</option>
+<option value="2020-07-01">2020-07-01</option>
+<option value="2021-07-01">2021-07-01</option>
+<option value="2022-01-01">2022-01-01</option>
+<option value="2022-06-01">2022-06-01</option>
+<option value="2022-11-22">2022-11-22</option>
+<option value="2023-01-01">2023-01-01</option>
+<option value="2023-01-23">2023-01-23</option>
+<option value="2023-07-01">2023-07-01</option>
+<option value="2023-08-01">2023-08-01</option>
+<option value="2023-09-01">2023-09-01</option>
+<option value="2023-12-06">2023-12-06</option>
+<option value="2024-01-01">2024-01-01</option>
+<option value="2024-07-01">2024-07-01</option>
+<option value="2025-01-01">2025-01-01</option>
+<option value="2025-08-01">2025-08-01</option>
+<option value="2026-01-01">2026-01-01</option>
+
+        </select>
+      </div>
+
+      <a class="dropdown-submitter" id="submit-doc-change">
+        Wechseln
+      </a>
+    </form>
+
+    <form class="compare-form">
+
+      <div class="dropdown-selectors">
+        <label for="leftSelect">Dokument links</label>
+        <select class="doc-select" id="leftSelect">
+          <option value="2020-02-01">2020-02-01</option>
+<option value="2020-07-01">2020-07-01</option>
+<option value="2021-07-01">2021-07-01</option>
+<option value="2022-01-01">2022-01-01</option>
+<option value="2022-06-01">2022-06-01</option>
+<option value="2022-11-22">2022-11-22</option>
+<option value="2023-01-01">2023-01-01</option>
+<option value="2023-01-23">2023-01-23</option>
+<option value="2023-07-01" selected>2023-07-01</option>
+<option value="2023-08-01">2023-08-01</option>
+<option value="2023-09-01">2023-09-01</option>
+<option value="2023-12-06">2023-12-06</option>
+<option value="2024-01-01">2024-01-01</option>
+<option value="2024-07-01">2024-07-01</option>
+<option value="2025-01-01">2025-01-01</option>
+<option value="2025-08-01">2025-08-01</option>
+<option value="2026-01-01">2026-01-01</option>
+
+        </select>
+      </div>
+
+      <div class="dropdown-selectors">
+        <label for="rightSelect">Dokument rechts</label>
+        <select class="doc-select" id="rightSelect">
+          <option value="2020-02-01">2020-02-01</option>
+<option value="2020-07-01">2020-07-01</option>
+<option value="2021-07-01">2021-07-01</option>
+<option value="2022-01-01">2022-01-01</option>
+<option value="2022-06-01">2022-06-01</option>
+<option value="2022-11-22">2022-11-22</option>
+<option value="2023-01-01">2023-01-01</option>
+<option value="2023-01-23">2023-01-23</option>
+<option value="2023-07-01">2023-07-01</option>
+<option value="2023-08-01">2023-08-01</option>
+<option value="2023-09-01">2023-09-01</option>
+<option value="2023-12-06">2023-12-06</option>
+<option value="2024-01-01">2024-01-01</option>
+<option value="2024-07-01" selected>2024-07-01</option>
+<option value="2025-01-01">2025-01-01</option>
+<option value="2025-08-01">2025-08-01</option>
+<option value="2026-01-01">2026-01-01</option>
+
+        </select>
+      </div>
+      
+      <a class="dropdown-submitter" id="submit-comparison-change">
+        Vergleichen
+      </a>
+    </form>
+
+    <div class="change-revision button-container">
+      <a href="/Strafgesetzbuch/2023-01-23/2024-01-01">← Vorherige Versionen vergleichen</a>
+<a href="/Strafgesetzbuch/2024-07-01/2023-07-01">← Versionen tauschen →</a>
+<a href="/Strafgesetzbuch/2023-08-01/2025-01-01">Nächste Versionen vergleichen →</a>
+
+    </div>
+
+    <div class="change-doc-version-comparing button-container">
+      <a href="/Strafgesetzbuch/2023-01-23/2024-07-01">← Vorherige Version</a>
+<a href="/Strafgesetzbuch/2023-08-01/2024-07-01">Nächste Version →</a>
+<a href="/Strafgesetzbuch/2023-07-01/2024-01-01">← Vorherige Version</a>
+<a href="/Strafgesetzbuch/2023-07-01/2025-01-01">Nächste Version →</a>
+
+    </div>
+
+    <table class="diff-table">
+      <thead><tr><th>2023-07-01</th>
+<th>2024-07-01</th>
+</tr>
+</thead>
+<tbody><tr class="article-title"><td><p class="artikel-name">Art. 5</p></td>
+<td><p class="artikel-name">Art. 5</p></td>
+</tr>
+<tr><td><div class="paragraph-text">1. Diesem Gesetz ist ausserdem unterworfen, wer sich in der Schweiz befindet, nicht ausgeliefert wird und im Ausland eine der folgenden Taten begangen hat:</div></td>
+<td><div class="paragraph-text">1. Diesem Gesetz ist ausserdem unterworfen, wer sich in der Schweiz befindet, nicht ausgeliefert wird und im Ausland eine der folgenden Taten begangen hat:</div></td>
+</tr>
+<tr><td class="changed"><div class="buchstabe">a. Menschenhandel (Art. 182), sexuelle Nötigung (Art. 189), Vergewaltigung (Art. 190), <del>Schändung</del> (Art. 191) oder Förderung der Prostitution (Art. 195), wenn das Opfer weniger als 18 Jahre alt war;</div></td>
+<td class="changed"><div class="buchstabe">a. Menschenhandel (Art. 182), sexuelle Nötigung (Art. 189<ins> Abs. 2 und 3</ins>), Vergewaltigung (Art. 190<ins> Abs. 2 und 3</ins>), <ins>Missbrauch</ins> <ins>einer urteilsunfähigen oder zum Widerstand unfähigen Person </ins>(Art. 191) oder Förderung der Prostitution (Art. 195), wenn das Opfer weniger als 18 Jahre alt war;</div></td>
+</tr>
+<tr><td><div class="buchstabe">bis. sexuelle Handlungen mit Abhängigen (Art. 188) und sexuelle Handlungen mit Minderjährigen gegen Entgelt (Art. 196);</div></td>
+<td><div class="buchstabe">bis. sexuelle Handlungen mit Abhängigen (Art. 188) und sexuelle Handlungen mit Minderjährigen gegen Entgelt (Art. 196);</div></td>
+</tr>
+<tr><td><div class="buchstabe">b. sexuelle Handlungen mit Kindern (Art. 187), wenn das Opfer weniger als 14 Jahre alt war;</div></td>
+<td><div class="buchstabe">b. sexuelle Handlungen mit Kindern (Art. 187), wenn das Opfer weniger als 14 Jahre alt war;</div></td>
+</tr>
+<tr><td><div class="buchstabe">c. qualifizierte Pornografie (Art. 197 Abs. 3 und 4), wenn die Gegenstände oder Vorführungen sexuelle Handlungen mit Minderjährigen zum Inhalt hatten.</div></td>
+<td><div class="buchstabe">c. qualifizierte Pornografie (Art. 197 Abs. 3 und 4), wenn die Gegenstände oder Vorführungen sexuelle Handlungen mit Minderjährigen zum Inhalt hatten.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">2. Der Täter wird, unter Vorbehalt eines krassen Verstosses gegen die Grundsätze der Bundesverfassung und der EMRK, in der Schweiz wegen der Tat nicht mehr verfolgt, wenn:</div></td>
+<td><div class="paragraph-text">2. Der Täter wird, unter Vorbehalt eines krassen Verstosses gegen die Grundsätze der Bundesverfassung und der EMRK, in der Schweiz wegen der Tat nicht mehr verfolgt, wenn:</div></td>
+</tr>
+<tr><td><div class="buchstabe">a. ein ausländisches Gericht ihn endgültig freigesprochen hat;</div></td>
+<td><div class="buchstabe">a. ein ausländisches Gericht ihn endgültig freigesprochen hat;</div></td>
+</tr>
+<tr><td><div class="buchstabe">b. die Sanktion, zu der er im Ausland verurteilt wurde, vollzogen, erlassen oder verjährt ist.</div></td>
+<td><div class="buchstabe">b. die Sanktion, zu der er im Ausland verurteilt wurde, vollzogen, erlassen oder verjährt ist.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">3. Ist der Täter wegen der Tat im Ausland verurteilt worden und wurde die Strafe im Ausland nur teilweise vollzogen, so rechnet ihm das Gericht den vollzogenen Teil auf die auszusprechende Strafe an. Das Gericht entscheidet, ob eine im Ausland angeordnete, dort aber nur teilweise vollzogene Massnahme fortzusetzen oder auf die in der Schweiz ausgefällte Strafe anzurechnen ist.</div></td>
+<td><div class="paragraph-text">3. Ist der Täter wegen der Tat im Ausland verurteilt worden und wurde die Strafe im Ausland nur teilweise vollzogen, so rechnet ihm das Gericht den vollzogenen Teil auf die auszusprechende Strafe an. Das Gericht entscheidet, ob eine im Ausland angeordnete, dort aber nur teilweise vollzogene Massnahme fortzusetzen oder auf die in der Schweiz ausgefällte Strafe anzurechnen ist.</div></td>
+</tr>
+<tr class="article-title"><td><p class="artikel-name">Art. 65</p></td>
+<td><p class="artikel-name">Art. 65</p></td>
+</tr>
+<tr><td><div class="paragraph-text">1. Sind bei einem Verurteilten vor oder während des Vollzuges einer Freiheitsstrafe oder einer Verwahrung nach Artikel 64 Absatz 1 die Voraussetzungen einer stationären therapeutischen Massnahme gegeben, so kann das Gericht diese Massnahme nachträglich anordnen. Zuständig ist das Gericht, das die Strafe ausgesprochen oder die Verwahrung angeordnet hat. Der Vollzug einer Reststrafe wird aufgeschoben.</div></td>
+<td><div class="paragraph-text">1. Sind bei einem Verurteilten vor oder während des Vollzuges einer Freiheitsstrafe oder einer Verwahrung nach Artikel 64 Absatz 1 die Voraussetzungen einer stationären therapeutischen Massnahme gegeben, so kann das Gericht diese Massnahme nachträglich anordnen. Zuständig ist das Gericht, das die Strafe ausgesprochen oder die Verwahrung angeordnet hat. Der Vollzug einer Reststrafe wird aufgeschoben.</div></td>
+</tr>
+<tr><td class="changed"><div class="paragraph-text">2. Ergibt sich bei einem Verurteilten während des Vollzuges der Freiheitsstrafe aufgrund neuer Tatsachen oder Beweismittel, dass die Voraussetzungen der Verwahrung gegeben sind und im Zeitpunkt der Verurteilung bereits bestanden haben, ohne dass das Gericht davon Kenntnis haben konnte, so kann das Gericht die Verwahrung nachträglich anordnen. Zuständigkeit und Verfahren bestimmen sich nach den Regeln, die für die <del>Wiederaufnahme</del> gelten.</div></td>
+<td class="changed"><div class="paragraph-text">2. Ergibt sich bei einem Verurteilten während des Vollzuges der Freiheitsstrafe aufgrund neuer Tatsachen oder Beweismittel, dass die Voraussetzungen der Verwahrung gegeben sind und im Zeitpunkt der Verurteilung bereits bestanden haben, ohne dass das Gericht davon Kenntnis haben konnte, so kann das Gericht die Verwahrung nachträglich anordnen. Zuständigkeit und Verfahren bestimmen sich nach den Regeln, die für die <ins>Revision</ins> <ins>(Art. 410−415 der Strafprozessordnung) </ins>gelten.</div></td>
+</tr>
+<tr class="article-title"><td><p class="artikel-name">Art. 66a</p></td>
+<td><p class="artikel-name">Art. 66a</p></td>
+</tr>
+<tr><td><div class="paragraph-text">1. Das Gericht verweist den Ausländer, der wegen einer der folgenden strafbaren Handlungen verurteilt wird, unabhängig von der Höhe der Strafe für 5–15 Jahre aus der Schweiz:</div></td>
+<td><div class="paragraph-text">1. Das Gericht verweist den Ausländer, der wegen einer der folgenden strafbaren Handlungen verurteilt wird, unabhängig von der Höhe der Strafe für 5–15 Jahre aus der Schweiz:</div></td>
+</tr>
+<tr><td><div class="buchstabe">a. vorsätzliche Tötung (Art. 111), Mord (Art. 112), Totschlag (Art. 113), Verleitung und Beihilfe zum Selbstmord (Art. 115), strafbarer Schwangerschaftsabbruch (Art. 118 Abs. 1 und 2);</div></td>
+<td><div class="buchstabe">a. vorsätzliche Tötung (Art. 111), Mord (Art. 112), Totschlag (Art. 113), Verleitung und Beihilfe zum Selbstmord (Art. 115), strafbarer Schwangerschaftsabbruch (Art. 118 Abs. 1 und 2);</div></td>
+</tr>
+<tr><td><div class="buchstabe">b. schwere Körperverletzung (Art. 122), Verstümmelung weiblicher Genitalien (Art. 124 Abs. 1), Aussetzung (Art. 127), Gefährdung des Lebens (Art. 129), Angriff (Art. 134), Gewaltdarstellungen (Art. 135 Abs. 1 zweiter Satz);</div></td>
+<td><div class="buchstabe">b. schwere Körperverletzung (Art. 122), Verstümmelung weiblicher Genitalien (Art. 124 Abs. 1), Aussetzung (Art. 127), Gefährdung des Lebens (Art. 129), Angriff (Art. 134), Gewaltdarstellungen (Art. 135 Abs. 1 zweiter Satz);</div></td>
+</tr>
+<tr><td><div class="buchstabe">c. qualifizierte Veruntreuung (Art. 138 Ziff. 2), qualifizierter Diebstahl (Art. 139 Ziff. 3), Raub (Art. 140), gewerbsmässiger Betrug (Art. 146 Abs. 2), gewerbsmässiger betrügerischer Missbrauch einer Datenverarbeitungsanlage (Art. 147 Abs. 2), gewerbsmässiger Check- und Kreditkartenmissbrauch (Art. 148 Abs. 2), qualifizierte Erpressung (Art. 156 Ziff. 2–4), gewerbsmässiger Wucher (Art. 157 Ziff. 2), gewerbsmässige Hehlerei (Art. 160 Ziff. 2);</div></td>
+<td><div class="buchstabe">c. qualifizierte Veruntreuung (Art. 138 Ziff. 2), qualifizierter Diebstahl (Art. 139 Ziff. 3), Raub (Art. 140), gewerbsmässiger Betrug (Art. 146 Abs. 2), gewerbsmässiger betrügerischer Missbrauch einer Datenverarbeitungsanlage (Art. 147 Abs. 2), gewerbsmässiger Check- und Kreditkartenmissbrauch (Art. 148 Abs. 2), qualifizierte Erpressung (Art. 156 Ziff. 2–4), gewerbsmässiger Wucher (Art. 157 Ziff. 2), gewerbsmässige Hehlerei (Art. 160 Ziff. 2);</div></td>
+</tr>
+<tr><td><div class="buchstabe">d. Diebstahl (Art. 139) in Verbindung mit Hausfriedensbruch (Art. 186);</div></td>
+<td><div class="buchstabe">d. Diebstahl (Art. 139) in Verbindung mit Hausfriedensbruch (Art. 186);</div></td>
+</tr>
+<tr><td><div class="buchstabe">e. Betrug (Art. 146 Abs. 1) im Bereich einer Sozialversicherung oder der Sozialhilfe, unrechtmässiger Bezug von Leistungen einer Sozialversicherung oder der Sozialhilfe (Art. 148a Abs. 1);</div></td>
+<td><div class="buchstabe">e. Betrug (Art. 146 Abs. 1) im Bereich einer Sozialversicherung oder der Sozialhilfe, unrechtmässiger Bezug von Leistungen einer Sozialversicherung oder der Sozialhilfe (Art. 148a Abs. 1);</div></td>
+</tr>
+<tr><td><div class="buchstabe">f. Betrug (Art. 146 Abs. 1), Leistungs- und Abgabebetrug (Art. 14 Abs. 1–3 des BG vom 22. März 1974 über das Verwaltungsstrafrecht) oder Steuerbetrug, Veruntreuung von Quellensteuern oder eine andere Straftat im Bereich der öffentlich-rechtlichen Abgaben, die mit einer Höchststrafe von einem Jahr Freiheitsstrafe oder mehr bedroht ist;</div></td>
+<td><div class="buchstabe">f. Betrug (Art. 146 Abs. 1), Leistungs- und Abgabebetrug (Art. 14 Abs. 1–3 des BG vom 22. März 1974 über das Verwaltungsstrafrecht) oder Steuerbetrug, Veruntreuung von Quellensteuern oder eine andere Straftat im Bereich der öffentlich-rechtlichen Abgaben, die mit einer Höchststrafe von einem Jahr Freiheitsstrafe oder mehr bedroht ist;</div></td>
+</tr>
+<tr><td><div class="buchstabe">g. Zwangsheirat, erzwungene eingetragene Partnerschaft (Art. 181a), Menschenhandel (Art. 182), Freiheitsberaubung und Entführung (Art. 183), qualifizierte Freiheitsberaubung und Entführung (Art. 184), Geiselnahme (Art. 185);</div></td>
+<td><div class="buchstabe">g. Zwangsheirat, erzwungene eingetragene Partnerschaft (Art. 181a), Menschenhandel (Art. 182), Freiheitsberaubung und Entführung (Art. 183), qualifizierte Freiheitsberaubung und Entführung (Art. 184), Geiselnahme (Art. 185);</div></td>
+</tr>
+<tr><td class="changed"><div class="buchstabe">h. sexuelle Handlungen mit Kindern (Art. 187 Ziff. 1), sexuelle Nötigung (Art. 189), Vergewaltigung (Art. 190), <del>Schändung</del> (Art. 191), Förderung der Prostitution (Art. 195), Pornografie (Art. 197 Abs. 4 zweiter Satz);</div></td>
+<td class="changed"><div class="buchstabe">h. sexuelle Handlungen mit Kindern (Art. 187 Ziff. 1<ins> und 1bis</ins>), sexuelle <ins>Handlungen mit Abhängigen (Art. 188), sexuelle </ins>Nötigung (Art. 189<ins> Abs. 2 und 3</ins>), Vergewaltigung (Art. 190), <ins>Missbrauch</ins> <ins>einer urteilsunfähigen oder zum Widerstand unfähigen Person </ins>(Art. 191), <ins>Ausnützung einer Notlage oder Abhängigkeit (Art. 193), Täuschung über den sexuellen Charakter einer Handlung (Art. 193a), </ins>Förderung der Prostitution (Art. 195), Pornografie (Art. 197 Abs. 4 zweiter Satz);</div></td>
+</tr>
+<tr><td><div class="buchstabe">i. Brandstiftung (Art. 221 Abs. 1 und 2), vorsätzliche Verursachung einer Explosion (Art. 223 Ziff. 1 Abs. 1), Gefährdung durch Sprengstoffe und giftige Gase in verbrecherischer Absicht (Art. 224 Abs. 1), vorsätzliche Gefährdung ohne verbrecherische Absicht (Art. 225 Abs. 1), Herstellen, Verbergen, Weiterschaffen von Sprengstoffen und giftigen Gasen (Art. 226), Gefährdung durch Kernenergie, Radioaktivität und ionisierende Strahlen (Art. 226bis), strafbare Vorbereitungshandlungen (Art. 226ter), vorsätzliches Verursachen einer Überschwemmung oder eines Einsturzes (Art. 227 Ziff. 1 Abs. 1), vorsätzliche Beschädigung von elektrischen Anlagen, Wasserbauten und Schutzvorrichtungen (Art. 228 Ziff. 1 Abs. 1), Gefährdung durch Verletzung der Regeln der Baukunde (Art. 229 Abs. 1), Beseitigung oder Nichtanbringung von Sicherheitsvorrichtungen (Art. 230 Ziff. 1);</div></td>
+<td><div class="buchstabe">i. Brandstiftung (Art. 221 Abs. 1 und 2), vorsätzliche Verursachung einer Explosion (Art. 223 Ziff. 1 Abs. 1), Gefährdung durch Sprengstoffe und giftige Gase in verbrecherischer Absicht (Art. 224 Abs. 1), vorsätzliche Gefährdung ohne verbrecherische Absicht (Art. 225 Abs. 1), Herstellen, Verbergen, Weiterschaffen von Sprengstoffen und giftigen Gasen (Art. 226), Gefährdung durch Kernenergie, Radioaktivität und ionisierende Strahlen (Art. 226bis), strafbare Vorbereitungshandlungen (Art. 226ter), vorsätzliches Verursachen einer Überschwemmung oder eines Einsturzes (Art. 227 Ziff. 1 Abs. 1), vorsätzliche Beschädigung von elektrischen Anlagen, Wasserbauten und Schutzvorrichtungen (Art. 228 Ziff. 1 Abs. 1), Gefährdung durch Verletzung der Regeln der Baukunde (Art. 229 Abs. 1), Beseitigung oder Nichtanbringung von Sicherheitsvorrichtungen (Art. 230 Ziff. 1);</div></td>
+</tr>
+<tr><td><div class="buchstabe">j. vorsätzliche Gefährdung durch gentechnisch veränderte oder pathogene Organismen (Art. 230bis Abs. 1), Verbreiten menschlicher Krankheiten (Art. 231), vorsätzliche Trinkwasserverunreinigung (Art. 234 Abs. 1);</div></td>
+<td><div class="buchstabe">j. vorsätzliche Gefährdung durch gentechnisch veränderte oder pathogene Organismen (Art. 230bis Abs. 1), Verbreiten menschlicher Krankheiten (Art. 231), vorsätzliche Trinkwasserverunreinigung (Art. 234 Abs. 1);</div></td>
+</tr>
+<tr><td><div class="buchstabe">k. Störung des öffentlichen Verkehrs (Art. 237 Ziff. 1);</div></td>
+<td><div class="buchstabe">k. Störung des öffentlichen Verkehrs (Art. 237 Ziff. 1);</div></td>
+</tr>
+<tr><td><div class="buchstabe">l. strafbare Vorbereitungshandlungen (Art. 260bis Abs. 1 und 3), Beteiligung an oder Unterstützung einer kriminellen oder terroristischen Organisation (Art. 260ter), Gefährdung der öffentlichen Sicherheit mit Waffen (Art. 260quater), Finanzierung des Terrorismus (Art. 260quinquies), Anwerbung, Ausbildung und Reisen im Hinblick auf eine terroristische Straftat (Art. 260sexies);</div></td>
+<td><div class="buchstabe">l. strafbare Vorbereitungshandlungen (Art. 260bis Abs. 1 und 3), Beteiligung an oder Unterstützung einer kriminellen oder terroristischen Organisation (Art. 260ter), Gefährdung der öffentlichen Sicherheit mit Waffen (Art. 260quater), Finanzierung des Terrorismus (Art. 260quinquies), Anwerbung, Ausbildung und Reisen im Hinblick auf eine terroristische Straftat (Art. 260sexies);</div></td>
+</tr>
+<tr><td><div class="buchstabe">m. Völkermord (Art. 264), Verbrechen gegen die Menschlichkeit (Art. 264a), schwere Verletzungen der Genfer Konventionen vom 12. August 1949 (Art. 264c), andere Kriegsverbrechen (Art. 264d–264h);</div></td>
+<td><div class="buchstabe">m. Völkermord (Art. 264), Verbrechen gegen die Menschlichkeit (Art. 264a), schwere Verletzungen der Genfer Konventionen vom 12. August 1949 (Art. 264c), andere Kriegsverbrechen (Art. 264d–264h);</div></td>
+</tr>
+<tr><td><div class="buchstabe">n. vorsätzliche Widerhandlung gegen Artikel 116 Absatz 3 oder Artikel 118 Absatz 3 des Ausländergesetzes vom 16. Dezember 2005;</div></td>
+<td><div class="buchstabe">n. vorsätzliche Widerhandlung gegen Artikel 116 Absatz 3 oder Artikel 118 Absatz 3 des Ausländergesetzes vom 16. Dezember 2005;</div></td>
+</tr>
+<tr><td><div class="buchstabe">o. Widerhandlung gegen Artikel 19 Absatz 2 oder 20 Absatz 2 des Betäubungsmittelgesetzes vom 3. Oktober 1951 (BetmG);</div></td>
+<td><div class="buchstabe">o. Widerhandlung gegen Artikel 19 Absatz 2 oder 20 Absatz 2 des Betäubungsmittelgesetzes vom 3. Oktober 1951 (BetmG);</div></td>
+</tr>
+<tr><td><div class="buchstabe">p. Widerhandlung nach Artikel 74 Absatz 4 des Nachrichtendienstgesetzes vom 25. September 2015 (NDG).</div></td>
+<td><div class="buchstabe">p. Widerhandlung nach Artikel 74 Absatz 4 des Nachrichtendienstgesetzes vom 25. September 2015 (NDG).</div></td>
+</tr>
+<tr><td><div class="paragraph-text">2. Das Gericht kann ausnahmsweise von einer Landesverweisung absehen, wenn diese für den Ausländer einen schweren persönlichen Härtefall bewirken würde und die öffentlichen Interessen an der Landesverweisung gegenüber den privaten Interessen des Ausländers am Verbleib in der Schweiz nicht überwiegen. Dabei ist der besonderen Situation von Ausländern Rechnung zu tragen, die in der Schweiz geboren oder aufgewachsen sind.</div></td>
+<td><div class="paragraph-text">2. Das Gericht kann ausnahmsweise von einer Landesverweisung absehen, wenn diese für den Ausländer einen schweren persönlichen Härtefall bewirken würde und die öffentlichen Interessen an der Landesverweisung gegenüber den privaten Interessen des Ausländers am Verbleib in der Schweiz nicht überwiegen. Dabei ist der besonderen Situation von Ausländern Rechnung zu tragen, die in der Schweiz geboren oder aufgewachsen sind.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">3. Von einer Landesverweisung kann ferner abgesehen werden, wenn die Tat in entschuldbarer Notwehr (Art. 16 Abs. 1) oder in entschuldbarem Notstand (Art. 18 Abs. 1) begangen wurde.</div></td>
+<td><div class="paragraph-text">3. Von einer Landesverweisung kann ferner abgesehen werden, wenn die Tat in entschuldbarer Notwehr (Art. 16 Abs. 1) oder in entschuldbarem Notstand (Art. 18 Abs. 1) begangen wurde.</div></td>
+</tr>
+<tr class="article-title"><td><p class="artikel-name">Art. 67</p></td>
+<td><p class="artikel-name">Art. 67</p></td>
+</tr>
+<tr><td><div class="paragraph-text">1. Hat jemand in Ausübung einer beruflichen oder einer organisierten ausserberuflichen Tätigkeit ein Verbrechen oder Vergehen begangen, für das er zu einer Freiheitsstrafe von über sechs Monaten verurteilt worden ist, und besteht die Gefahr, dass er seine Tätigkeit zur Begehung weiterer Verbrechen oder Vergehen missbrauchen wird, so kann ihm das Gericht die betreffende oder vergleichbare Tätigkeiten für sechs Monate bis zu fünf Jahren ganz oder teilweise verbieten.</div></td>
+<td><div class="paragraph-text">1. Hat jemand in Ausübung einer beruflichen oder einer organisierten ausserberuflichen Tätigkeit ein Verbrechen oder Vergehen begangen, für das er zu einer Freiheitsstrafe von über sechs Monaten verurteilt worden ist, und besteht die Gefahr, dass er seine Tätigkeit zur Begehung weiterer Verbrechen oder Vergehen missbrauchen wird, so kann ihm das Gericht die betreffende oder vergleichbare Tätigkeiten für sechs Monate bis zu fünf Jahren ganz oder teilweise verbieten.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">2. Hat jemand gegen einen Minderjährigen oder eine andere besonders schutzbedürftige Person ein Verbrechen oder Vergehen begangen und besteht die Gefahr, dass er in Ausübung einer beruflichen oder einer organisierten ausserberuflichen Tätigkeit, die einen regelmässigen Kontakt mit Minderjährigen oder mit anderen besonders schutzbedürftigen Personen umfasst, weitere Straftaten dieser Art begeht, so kann ihm das Gericht die betreffende Tätigkeit für ein Jahr bis zehn Jahre verbieten.</div></td>
+<td><div class="paragraph-text">2. Hat jemand gegen einen Minderjährigen oder eine andere besonders schutzbedürftige Person ein Verbrechen oder Vergehen begangen und besteht die Gefahr, dass er in Ausübung einer beruflichen oder einer organisierten ausserberuflichen Tätigkeit, die einen regelmässigen Kontakt mit Minderjährigen oder mit anderen besonders schutzbedürftigen Personen umfasst, weitere Straftaten dieser Art begeht, so kann ihm das Gericht die betreffende Tätigkeit für ein Jahr bis zehn Jahre verbieten.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">2bis. Das Gericht kann das Verbot nach Absatz 2 lebenslänglich verhängen, wenn zu erwarten ist, dass die Dauer von zehn Jahren nicht ausreicht, damit vom Täter keine Gefahr mehr ausgeht. Es kann ein zeitlich befristetes Verbot nach Absatz 2 auf Antrag der Vollzugsbehörde jeweils um höchstens fünf Jahre verlängern, wenn dies notwendig ist, um den Täter von weiteren Verbrechen und Vergehen, wie sie Anlass für das Verbot waren, abzuhalten.</div></td>
+<td><div class="paragraph-text">2bis. Das Gericht kann das Verbot nach Absatz 2 lebenslänglich verhängen, wenn zu erwarten ist, dass die Dauer von zehn Jahren nicht ausreicht, damit vom Täter keine Gefahr mehr ausgeht. Es kann ein zeitlich befristetes Verbot nach Absatz 2 auf Antrag der Vollzugsbehörde jeweils um höchstens fünf Jahre verlängern, wenn dies notwendig ist, um den Täter von weiteren Verbrechen und Vergehen, wie sie Anlass für das Verbot waren, abzuhalten.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">3. Wird jemand wegen einer der nachfolgenden Straftaten zu einer Strafe verurteilt oder wird deswegen gegen ihn eine Massnahme nach den Artikeln 59–61, 63 oder 64 angeordnet, so verbietet ihm das Gericht lebenslänglich jede berufliche und jede organisierte ausserberufliche Tätigkeit, die einen regelmässigen Kontakt zu Minderjährigen umfasst:</div></td>
+<td><div class="paragraph-text">3. Wird jemand wegen einer der nachfolgenden Straftaten zu einer Strafe verurteilt oder wird deswegen gegen ihn eine Massnahme nach den Artikeln 59–61, 63 oder 64 angeordnet, so verbietet ihm das Gericht lebenslänglich jede berufliche und jede organisierte ausserberufliche Tätigkeit, die einen regelmässigen Kontakt zu Minderjährigen umfasst:</div></td>
+</tr>
+<tr><td><div class="buchstabe">a. Menschenhandel (Art. 182), sofern er die Straftat zum Zwecke der sexuellen Ausbeutung an einem minderjährigen Opfer begangen hat;</div></td>
+<td><div class="buchstabe">a. Menschenhandel (Art. 182), sofern er die Straftat zum Zwecke der sexuellen Ausbeutung an einem minderjährigen Opfer begangen hat;</div></td>
+</tr>
+<tr><td><div class="buchstabe">b. sexuelle Handlungen mit Kindern (Art. 187), sexuelle Handlungen mit Abhängigen (Art. 188) oder sexuelle Handlungen mit Minderjährigen gegen Entgelt (Art. 196);</div></td>
+<td><div class="buchstabe">b. sexuelle Handlungen mit Kindern (Art. 187), sexuelle Handlungen mit Abhängigen (Art. 188) oder sexuelle Handlungen mit Minderjährigen gegen Entgelt (Art. 196);</div></td>
+</tr>
+<tr><td class="changed"><div class="buchstabe">c. sexuelle Nötigung (Art. 189), Vergewaltigung (Art. 190), <del>Schändung</del> (Art. 191), <del>sexuelle</del> <del>Handlungen</del> <del>mit</del> <del>Anstaltspfleglingen,</del> <del>Gefangenen,</del> <del>Beschuldigten </del>(Art. <del>192</del>), <del>Ausnützung</del> <del>der</del> <del>Notlage</del> (Art. 193), Exhibitionismus (Art. 194), Förderung der Prostitution (Art. 195) oder sexuelle Belästigungen (Art. 198), sofern er die Straftat an oder vor einem minderjährigen Opfer begangen hat;</div></td>
+<td class="changed"><div class="buchstabe">c. <ins>sexueller Übergriff und </ins>sexuelle Nötigung (Art. 189), Vergewaltigung (Art. 190), <ins>Missbrauch</ins> <ins>einer urteilsunfähigen oder zum Widerstand unfähigen Person </ins>(Art. 191), <ins>Ausnützung</ins> <ins>einer</ins> <ins>Notlage</ins> <ins>oder</ins> <ins>Abhängigkeit</ins> (Art. <ins>193</ins>), <ins>Täuschung</ins> <ins>über</ins> <ins>den</ins> <ins>sexuellen Charakter einer Handlung </ins>(Art. 193<ins>a</ins>), Exhibitionismus (Art. 194), Förderung der Prostitution (Art. 195)<ins>,</ins> <ins>unbefugtes Weiterleiten von nicht öffentlichen sexuellen Inhalten (Art. 197a) </ins>oder sexuelle Belästigungen (Art. 198), sofern er die Straftat an oder vor einem minderjährigen Opfer begangen hat;</div></td>
+</tr>
+<tr><td><div class="buchstabe">d. Pornografie (Art. 197):</div></td>
+<td><div class="buchstabe">d. Pornografie (Art. 197):</div></td>
+</tr>
+<tr><td><div class="buchstabe">1. nach Artikel 197 Absatz 1 oder 3,</div></td>
+<td><div class="buchstabe">1. nach Artikel 197 Absatz 1 oder 3,</div></td>
+</tr>
+<tr><td><div class="buchstabe">2. nach Artikel 197 Absatz 4 oder 5, sofern die Gegenstände oder Vorführungen sexuelle Handlungen mit Minderjährigen zum Inhalt hatten.</div></td>
+<td><div class="buchstabe">2. nach Artikel 197 Absatz 4 oder 5, sofern die Gegenstände oder Vorführungen sexuelle Handlungen mit Minderjährigen zum Inhalt hatten.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">4. Wird jemand wegen einer der nachfolgenden Straftaten zu einer Strafe verurteilt oder wird deswegen gegen ihn eine Massnahme nach den Artikeln 59–61, 63 oder 64 angeordnet, so verbietet ihm das Gericht lebenslänglich jede berufliche und jede organisierte ausserberufliche Tätigkeit, die einen regelmässigen Kontakt zu volljährigen, besonders schutzbedürftigen Personen umfasst, sowie jede berufliche oder jede organisierte ausserberufliche Tätigkeit im Gesundheitsbereich mit direktem Patientenkontakt:</div></td>
+<td><div class="paragraph-text">4. Wird jemand wegen einer der nachfolgenden Straftaten zu einer Strafe verurteilt oder wird deswegen gegen ihn eine Massnahme nach den Artikeln 59–61, 63 oder 64 angeordnet, so verbietet ihm das Gericht lebenslänglich jede berufliche und jede organisierte ausserberufliche Tätigkeit, die einen regelmässigen Kontakt zu volljährigen, besonders schutzbedürftigen Personen umfasst, sowie jede berufliche oder jede organisierte ausserberufliche Tätigkeit im Gesundheitsbereich mit direktem Patientenkontakt:</div></td>
+</tr>
+<tr><td class="changed"><div class="buchstabe">a. Menschenhandel (Art. 182) zum Zwecke der sexuellen Ausbeutung, sexuelle Nötigung (Art. 189), Vergewaltigung (Art. 190), <del>Schändung</del> (Art. 191), <del>sexuelle</del> <del>Handlungen</del> <del>mit</del> <del>Anstaltspfleglingen,</del> <del>Gefangenen,</del> <del>Beschuldigten </del>(Art. <del>192</del>), <del>Ausnützung</del> <del>der</del> <del>Notlage</del> (Art. 193), Exhibitionismus (Art. 194), Förderung der Prostitution (Art. 195) oder sexuelle Belästigungen (Art. 198), sofern er die Straftat begangen hat an oder vor:</div></td>
+<td class="changed"><div class="buchstabe">a. Menschenhandel (Art. 182) zum Zwecke der sexuellen Ausbeutung, <ins>sexueller Übergriff und </ins>sexuelle Nötigung (Art. 189), Vergewaltigung (Art. 190), <ins>Missbrauch</ins> <ins>einer urteilsunfähigen oder zum Widerstand unfähigen Person </ins>(Art. 191), <ins>Ausnützung</ins> <ins>einer</ins> <ins>Notlage</ins> <ins>oder</ins> <ins>Abhängigkeit</ins> (Art. <ins>193</ins>), <ins>Täuschung</ins> <ins>über</ins> <ins>den</ins> <ins>sexuellen Charakter einer Handlung </ins>(Art. 193<ins>a</ins>), Exhibitionismus (Art. 194), Förderung der Prostitution (Art. 195)<ins>,</ins> <ins>unbefugtes Weiterleiten von nicht öffentlichen sexuellen Inhalten (Art. 197a) </ins>oder sexuelle Belästigungen (Art. 198), sofern er die Straftat begangen hat an oder vor:</div></td>
+</tr>
+<tr><td><div class="buchstabe">1. einem volljährigen, besonders schutzbedürftigen Opfer, oder</div></td>
+<td><div class="buchstabe">1. einem volljährigen, besonders schutzbedürftigen Opfer, oder</div></td>
+</tr>
+<tr><td><div class="buchstabe">2. einem volljährigen nicht besonders schutzbedürftigen Opfer, das zum Widerstand unfähig oder urteilsunfähig war oder sich aufgrund einer körperlichen oder psychischen Abhängigkeit nicht zu Wehr setzen konnte;</div></td>
+<td><div class="buchstabe">2. einem volljährigen nicht besonders schutzbedürftigen Opfer, das zum Widerstand unfähig oder urteilsunfähig war oder sich aufgrund einer körperlichen oder psychischen Abhängigkeit nicht zu Wehr setzen konnte;</div></td>
+</tr>
+<tr><td><div class="buchstabe">b. Pornografie (Art. 197 Abs. 2 erster Satz und Abs. 4 oder 5), sofern die Gegenstände oder Vorführungen zum Inhalt hatten:</div></td>
+<td><div class="buchstabe">b. Pornografie (Art. 197 Abs. 2 erster Satz und Abs. 4 oder 5), sofern die Gegenstände oder Vorführungen zum Inhalt hatten:</div></td>
+</tr>
+<tr><td><div class="buchstabe">1. sexuelle Handlungen mit volljährigen, besonders schutzbedürftigen Opfern, oder</div></td>
+<td><div class="buchstabe">1. sexuelle Handlungen mit volljährigen, besonders schutzbedürftigen Opfern, oder</div></td>
+</tr>
+<tr><td><div class="buchstabe">2. sexuelle Handlungen mit volljährigen, nicht besonders schutzbedürftigen Opfern, die zum Widerstand unfähig oder urteilsunfähig waren oder sich aufgrund einer körperlichen oder psychischen Abhängigkeit nicht zur Wehr setzen konnten.</div></td>
+<td><div class="buchstabe">2. sexuelle Handlungen mit volljährigen, nicht besonders schutzbedürftigen Opfern, die zum Widerstand unfähig oder urteilsunfähig waren oder sich aufgrund einer körperlichen oder psychischen Abhängigkeit nicht zur Wehr setzen konnten.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">4bis. Das Gericht kann in besonders leichten Fällen ausnahmsweise von der Anordnung eines Tätigkeitsverbotes nach Absatz 3 oder 4 absehen, wenn ein solches Verbot nicht notwendig erscheint, um den Täter von der Begehung weiterer Straftaten abzuhalten, wie sie Anlass für das Verbot sind. Von der Anordnung eines Tätigkeitsverbotes darf jedoch nicht abgesehen werden, wenn der Täter:</div></td>
+<td><div class="paragraph-text">4bis. Das Gericht kann in besonders leichten Fällen ausnahmsweise von der Anordnung eines Tätigkeitsverbotes nach Absatz 3 oder 4 absehen, wenn ein solches Verbot nicht notwendig erscheint, um den Täter von der Begehung weiterer Straftaten abzuhalten, wie sie Anlass für das Verbot sind. Von der Anordnung eines Tätigkeitsverbotes darf jedoch nicht abgesehen werden, wenn der Täter:</div></td>
+</tr>
+<tr><td class="changed"><div class="buchstabe">a. verurteilt worden ist wegen Menschenhandel (Art. 182), sexueller Nötigung (Art. 189), Vergewaltigung (Art. 190), <del>Schändung</del> (Art. 191) oder Förderung der Prostitution (Art. 195); oder</div></td>
+<td class="changed"><div class="buchstabe">a. verurteilt worden ist wegen Menschenhandel (Art. 182), sexueller Nötigung (Art. 189<ins> Abs. 2 und 3</ins>), Vergewaltigung (Art. 190<ins> Abs. 2 und 3</ins>), <ins>Missbrauch</ins> <ins>einer urteilsunfähigen oder zum Widerstand unfähigen Person </ins>(Art. 191) oder Förderung der Prostitution (Art. 195); oder</div></td>
+</tr>
+<tr><td><div class="buchstabe">b. gemäss den international anerkannten Klassifikationskriterien pädophil ist.</div></td>
+<td><div class="buchstabe">b. gemäss den international anerkannten Klassifikationskriterien pädophil ist.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">5. Wird der Täter im selben Verfahren wegen mehrerer Straftaten zu einer Strafe verurteilt oder wird gegen ihn deswegen eine Massnahme angeordnet, so legt das Gericht fest, welcher Anteil der Strafe oder welche Massnahme auf eine Straftat entfällt, die ein Tätigkeitsverbot nach sich zieht. Dieser Strafanteil, die Massnahme sowie die Straftat sind massgebend dafür, ob ein Tätigkeitsverbot nach Absatz 1, 2, 2bis, 3 oder 4 verhängt wird. Die Strafanteile für mehrere einschlägige Straftaten werden addiert. Es können mehrere Tätigkeitsverbote verhängt werden.</div></td>
+<td><div class="paragraph-text">5. Wird der Täter im selben Verfahren wegen mehrerer Straftaten zu einer Strafe verurteilt oder wird gegen ihn deswegen eine Massnahme angeordnet, so legt das Gericht fest, welcher Anteil der Strafe oder welche Massnahme auf eine Straftat entfällt, die ein Tätigkeitsverbot nach sich zieht. Dieser Strafanteil, die Massnahme sowie die Straftat sind massgebend dafür, ob ein Tätigkeitsverbot nach Absatz 1, 2, 2bis, 3 oder 4 verhängt wird. Die Strafanteile für mehrere einschlägige Straftaten werden addiert. Es können mehrere Tätigkeitsverbote verhängt werden.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">6. Das Gericht kann für die Dauer der Verbote Bewährungshilfe anordnen.</div></td>
+<td><div class="paragraph-text">6. Das Gericht kann für die Dauer der Verbote Bewährungshilfe anordnen.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">7. ...</div></td>
+<td><div class="paragraph-text">7. ...</div></td>
+</tr>
+<tr class="article-title"><td><p class="artikel-name">Art. 71</p></td>
+<td><p class="artikel-name">Art. 71</p></td>
+</tr>
+<tr><td><div class="paragraph-text">1. Sind die der Einziehung unterliegenden Vermögenswerte nicht mehr vorhanden, so erkennt das Gericht auf eine Ersatzforderung des Staates in gleicher Höhe, gegenüber einem Dritten jedoch nur, soweit dies nicht nach Artikel 70 Absatz 2 ausgeschlossen ist.</div></td>
+<td><div class="paragraph-text">1. Sind die der Einziehung unterliegenden Vermögenswerte nicht mehr vorhanden, so erkennt das Gericht auf eine Ersatzforderung des Staates in gleicher Höhe, gegenüber einem Dritten jedoch nur, soweit dies nicht nach Artikel 70 Absatz 2 ausgeschlossen ist.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">2. Das Gericht kann von einer Ersatzforderung ganz oder teilweise absehen, wenn diese voraussichtlich uneinbringlich wäre oder die Wiedereingliederung des Betroffenen ernstlich behindern würde.</div></td>
+<td><div class="paragraph-text">2. Das Gericht kann von einer Ersatzforderung ganz oder teilweise absehen, wenn diese voraussichtlich uneinbringlich wäre oder die Wiedereingliederung des Betroffenen ernstlich behindern würde.</div></td>
+</tr>
+<tr><td class="changed"><div class="paragraph-text">3. <del>Die Untersuchungsbehörde kann im Hinblick auf die Durchsetzung der Ersatzforderung Vermögenswerte des Betroffenen mit Beschlag belegen</del>.<del> Die Beschlagnahme begründet bei der Zwangsvollstreckung der Ersatzforderung kein Vorzugsrecht zu Gunsten des Staates</del>.</div></td>
+<td class="changed"><div class="paragraph-text">3. ..<ins>.</ins></div></td>
+</tr>
+<tr class="article-title"><td><p class="artikel-name">Art. 94</p></td>
+<td><p class="artikel-name">Art. 94</p></td>
+</tr>
+<tr><td class="deleted"><del><div class="artikel-text">Die Weisungen, welche das Gericht oder die Strafvollzugsbehörde dem Verurteilten für die Probezeit erteilen kann, betreffen insbesondere die Berufsausübung, den Aufenthalt, das Führen eines Motorfahrzeuges, den Schadenersatz sowie die ärztliche und psychologische Betreuung.</div></del></td>
+<td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+</tr>
+<tr><td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+<td class="inserted"><ins><div class="paragraph-text">1. Die Weisungen, welche das Gericht oder die Strafvollzugsbehörde der verurteilten Person für die Probezeit erteilen kann, betreffen insbesondere die Berufsausübung, den Aufenthalt, das Führen eines Motorfahrzeuges, den Schadenersatz sowie die ärztliche und psychologische Betreuung.</div></ins></td>
+</tr>
+<tr><td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+<td class="inserted"><ins><div class="paragraph-text">2. Bei Delikten gegen die sexuelle Integrität kann die verurteilte Person zum Besuch eines Lernprogramms verpflichtet werden.</div></ins></td>
+</tr>
+<tr class="article-title"><td><p class="artikel-name">Art. 97</p></td>
+<td><p class="artikel-name">Art. 97</p></td>
+</tr>
+<tr><td><div class="paragraph-text">1. Die Strafverfolgung verjährt, wenn die für die Tat angedrohte Höchststrafe:</div></td>
+<td><div class="paragraph-text">1. Die Strafverfolgung verjährt, wenn die für die Tat angedrohte Höchststrafe:</div></td>
+</tr>
+<tr><td><div class="buchstabe">a. lebenslängliche Freiheitsstrafe ist: in 30 Jahren;</div></td>
+<td><div class="buchstabe">a. lebenslängliche Freiheitsstrafe ist: in 30 Jahren;</div></td>
+</tr>
+<tr><td><div class="buchstabe">b. eine Freiheitsstrafe von mehr als drei Jahren ist: in 15 Jahren;</div></td>
+<td><div class="buchstabe">b. eine Freiheitsstrafe von mehr als drei Jahren ist: in 15 Jahren;</div></td>
+</tr>
+<tr><td><div class="buchstabe">c. eine Freiheitsstrafe von drei Jahren ist: in 10 Jahren;</div></td>
+<td><div class="buchstabe">c. eine Freiheitsstrafe von drei Jahren ist: in 10 Jahren;</div></td>
+</tr>
+<tr><td><div class="buchstabe">d. eine andere Strafe ist: in 7 Jahren.</div></td>
+<td><div class="buchstabe">d. eine andere Strafe ist: in 7 Jahren.</div></td>
+</tr>
+<tr><td class="changed"><div class="paragraph-text">2. Bei sexuellen Handlungen mit Kindern (Art. 187) <del>und Abhängigen (Art. 188) </del>sowie bei Straftaten nach den Artikeln 111, 113, 122, 124, 182, 189<del>–</del>191, 195 und 197 Absatz 3, die sich gegen ein Kind unter 16 Jahren richten, dauert die Verfolgungsverjährung in jedem Fall mindestens bis zum vollendeten 25. Lebensjahr des Opfers.</div></td>
+<td class="changed"><div class="paragraph-text">2. Bei sexuellen Handlungen mit Kindern (Art. 187) sowie bei Straftaten nach den Artikeln 111, 113, 122, 124, 182, 189<ins>−</ins>191, <ins>193, 193a, </ins>195 und 197 Absatz 3, die sich gegen ein Kind unter 16 Jahren richten, dauert die Verfolgungsverjährung in jedem Fall mindestens bis zum vollendeten 25. Lebensjahr des Opfers.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">3. Ist vor Ablauf der Verjährungsfrist ein erstinstanzliches Urteil ergangen, so tritt die Verjährung nicht mehr ein.</div></td>
+<td><div class="paragraph-text">3. Ist vor Ablauf der Verjährungsfrist ein erstinstanzliches Urteil ergangen, so tritt die Verjährung nicht mehr ein.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">4. Die Verjährung der Strafverfolgung von sexuellen Handlungen mit Kindern (Art. 187) und minderjährigen Abhängigen (Art. 188) sowie von Straftaten nach den Artikeln 111–113, 122, 182, 189–191 und 195, die sich gegen ein Kind unter 16 Jahren richten, bemisst sich nach den Absätzen 1–3, wenn die Straftat vor dem Inkrafttreten der Änderung vom 5. Oktober 2001 begangen worden ist und die Verfolgungsverjährung zu diesem Zeitpunkt noch nicht eingetreten ist.</div></td>
+<td><div class="paragraph-text">4. Die Verjährung der Strafverfolgung von sexuellen Handlungen mit Kindern (Art. 187) und minderjährigen Abhängigen (Art. 188) sowie von Straftaten nach den Artikeln 111–113, 122, 182, 189–191 und 195, die sich gegen ein Kind unter 16 Jahren richten, bemisst sich nach den Absätzen 1–3, wenn die Straftat vor dem Inkrafttreten der Änderung vom 5. Oktober 2001 begangen worden ist und die Verfolgungsverjährung zu diesem Zeitpunkt noch nicht eingetreten ist.</div></td>
+</tr>
+<tr class="article-title"><td><p class="artikel-name">Art. 101</p></td>
+<td><p class="artikel-name">Art. 101</p></td>
+</tr>
+<tr><td><div class="paragraph-text">1. Keine Verjährung tritt ein für:</div></td>
+<td><div class="paragraph-text">1. Keine Verjährung tritt ein für:</div></td>
+</tr>
+<tr><td><div class="buchstabe">a. Völkermord (Art. 264);</div></td>
+<td><div class="buchstabe">a. Völkermord (Art. 264);</div></td>
+</tr>
+<tr><td><div class="buchstabe">b. Verbrechen gegen die Menschlichkeit (Art. 264a Abs. 1 und 2);</div></td>
+<td><div class="buchstabe">b. Verbrechen gegen die Menschlichkeit (Art. 264a Abs. 1 und 2);</div></td>
+</tr>
+<tr><td><div class="buchstabe">c. Kriegsverbrechen (Art. 264c Abs. 1–3, 264d Abs. 1 und 2, 264e Abs. 1 und 2, 264f, 264g Abs. 1 und 2 und 264h);</div></td>
+<td><div class="buchstabe">c. Kriegsverbrechen (Art. 264c Abs. 1–3, 264d Abs. 1 und 2, 264e Abs. 1 und 2, 264f, 264g Abs. 1 und 2 und 264h);</div></td>
+</tr>
+<tr><td><div class="buchstabe">d. Verbrechen, die als Mittel zu Erpressung oder Nötigung Leib und Leben vieler Menschen in Gefahr brachten oder zu bringen drohten, namentlich unter Verwendung von Massenvernichtungsmitteln, durch Auslösen von Katastrophen oder durch Geiselnahme;</div></td>
+<td><div class="buchstabe">d. Verbrechen, die als Mittel zu Erpressung oder Nötigung Leib und Leben vieler Menschen in Gefahr brachten oder zu bringen drohten, namentlich unter Verwendung von Massenvernichtungsmitteln, durch Auslösen von Katastrophen oder durch Geiselnahme;</div></td>
+</tr>
+<tr><td class="changed"><div class="buchstabe">e. sexuelle Handlungen mit Kindern (Art. 187 Ziff. 1), sexuelle Nötigung (Art. 189), Vergewaltigung (Art. 190), <del>Schändung</del> (Art. 191), <del>sexuelle</del> <del>Handlungen</del> <del>mit</del> <del>Anstaltspfleglingen,</del> <del>Gefangenen,</del> <del>Beschuldigten </del>(Art. <del>192 Abs. 1</del>) und <del>Ausnützung</del> <del>der</del> <del>Notlage</del> (Art. 193<del> Abs. 1</del>), wenn sie an Kindern unter 12 Jahren begangen wurden.</div></td>
+<td class="changed"><div class="buchstabe">e. sexuelle Handlungen mit Kindern (Art. 187 Ziff. 1<ins> und 1bis</ins>), <ins>sexueller Übergriff und </ins>sexuelle Nötigung (Art. 189), Vergewaltigung (Art. 190), <ins>Missbrauch</ins> <ins>einer urteilsunfähigen oder zum Widerstand unfähigen Person </ins>(Art. 191), <ins>Ausnützung</ins> <ins>einer</ins> <ins>Notlage</ins> <ins>oder</ins> <ins>Abhängigkeit</ins> (Art. <ins>193</ins>) und <ins>Täuschung</ins> <ins>über</ins> <ins>den</ins> <ins>sexuellen Charakter einer Handlung </ins>(Art. 193<ins>a</ins>), wenn sie an Kindern unter 12 Jahren begangen wurden.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">2. Wäre die Strafverfolgung bei Anwendung der Artikel 97 und 98 verjährt, so kann das Gericht die Strafe mildern.</div></td>
+<td><div class="paragraph-text">2. Wäre die Strafverfolgung bei Anwendung der Artikel 97 und 98 verjährt, so kann das Gericht die Strafe mildern.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">3. Die Absätze 1 Buchstaben a, c und d sowie 2 gelten, wenn die Strafverfolgung oder die Strafe am 1. Januar 1983 nach dem bis zu jenem Zeitpunkt geltenden Recht noch nicht verjährt war. Absatz 1 Buchstabe b gilt, wenn die Strafverfolgung oder die Strafe beim Inkrafttreten der Änderung vom 18. Juni 2010 dieses Gesetzes nach bisherigem Recht noch nicht verjährt war. Absatz 1 Buchstabe e gilt, wenn die Strafverfolgung oder die Strafe am 30. November 2008 nach dem bis zu jenem Zeitpunkt geltenden Recht noch nicht verjährt war.</div></td>
+<td><div class="paragraph-text">3. Die Absätze 1 Buchstaben a, c und d sowie 2 gelten, wenn die Strafverfolgung oder die Strafe am 1. Januar 1983 nach dem bis zu jenem Zeitpunkt geltenden Recht noch nicht verjährt war. Absatz 1 Buchstabe b gilt, wenn die Strafverfolgung oder die Strafe beim Inkrafttreten der Änderung vom 18. Juni 2010 dieses Gesetzes nach bisherigem Recht noch nicht verjährt war. Absatz 1 Buchstabe e gilt, wenn die Strafverfolgung oder die Strafe am 30. November 2008 nach dem bis zu jenem Zeitpunkt geltenden Recht noch nicht verjährt war.</div></td>
+</tr>
+<tr class="article-title"><td><p class="artikel-name">Art. 123</p></td>
+<td><p class="artikel-name">Art. 123</p></td>
+</tr>
+<tr><td><div class="paragraph-text">1. Wer vorsätzlich einen Menschen in anderer Weise an Körper oder Gesundheit schädigt, wird, auf Antrag, mit Freiheitsstrafe bis zu drei Jahren oder Geldstrafe bestraft.</td>
+<td><div class="paragraph-text">1. Wer vorsätzlich einen Menschen in anderer Weise an Körper oder Gesundheit schädigt, wird, auf Antrag, mit Freiheitsstrafe bis zu drei Jahren oder Geldstrafe bestraft.</td>
+</tr>
+<tr><td><p class="p-list">...</p></div></td>
+<td><p class="p-list">...</p></div></td>
+</tr>
+<tr><td><div class="paragraph-text">2. Der Täter wird von Amtes wegen verfolgt,</td>
+<td><div class="paragraph-text">2. Der Täter wird von Amtes wegen verfolgt,</td>
+</tr>
+<tr><td><p class="p-list">wenn er Gift, eine Waffe oder einen gefährlichen Gegenstand gebraucht,</p></td>
+<td><p class="p-list">wenn er Gift, eine Waffe oder einen gefährlichen Gegenstand gebraucht,</p></td>
+</tr>
+<tr><td><p class="p-list">wenn er die Tat an einem Wehrlosen oder an einer Person begeht, die unter seiner Obhut steht oder für die er zu sorgen hat, namentlich an einem Kind,</p></td>
+<td><p class="p-list">wenn er die Tat an einem Wehrlosen oder an einer Person begeht, die unter seiner Obhut steht oder für die er zu sorgen hat, namentlich an einem Kind,</p></td>
+</tr>
+<tr><td><p class="p-list">wenn er der Ehegatte des Opfers ist und die Tat während der Ehe oder bis zu einem Jahr nach der Scheidung begangen wurde,</p></td>
+<td><p class="p-list">wenn er der Ehegatte des Opfers ist und die Tat während der Ehe oder bis zu einem Jahr nach der Scheidung begangen wurde,</p></td>
+</tr>
+<tr><td><p class="p-list">wenn er die eingetragene Partnerin oder der eingetragene Partner des Opfers ist und die Tat während der Dauer der eingetragenen Partnerschaft oder bis zu einem Jahr nach deren Auflösung begangen wurde,</p></td>
+<td><p class="p-list">wenn er die eingetragene Partnerin oder der eingetragene Partner des Opfers ist und die Tat während der Dauer der eingetragenen Partnerschaft oder bis zu einem Jahr nach deren Auflösung begangen wurde,</p></td>
+</tr>
+<tr><td class="changed"><p class="p-list">wenn er der hetero- oder homosexuelle Lebenspartner des Opfers ist, sofern sie auf unbestimmte Zeit einen <del>gemeinsamem</del> Haushalt führen und die Tat während dieser Zeit oder bis zu einem Jahr nach der Trennung begangen wurde.</p></div></td>
+<td class="changed"><p class="p-list">wenn er der hetero- oder homosexuelle Lebenspartner des Opfers ist, sofern sie auf unbestimmte Zeit einen <ins>gemeinsamen</ins> Haushalt führen und die Tat während dieser Zeit oder bis zu einem Jahr nach der Trennung begangen wurde.</p></div></td>
+</tr>
+<tr class="article-title"><td><p class="artikel-name">Art. 147</p></td>
+<td><p class="artikel-name">Art. 147</p></td>
+</tr>
+<tr><td class="changed"><div class="paragraph-text">1. Wer in der Absicht, sich oder einen andern unrechtmässig zu bereichern, durch unrichtige, unvollständige oder unbefugte Verwendung von Daten oder in vergleichbarer Weise auf einen elektronischen oder vergleichbaren Datenverarbeitungs- oder Datenübermittlungsvorgang einwirkt und dadurch eine Vermögensverschiebung zum Schaden eines andern herbeiführt oder eine Vermögensverschiebung unmittelbar <del>darnach</del> verdeckt, wird mit Freiheitsstrafe bis zu fünf Jahren oder Geldstrafe bestraft.</div></td>
+<td class="changed"><div class="paragraph-text">1. Wer in der Absicht, sich oder einen andern unrechtmässig zu bereichern, durch unrichtige, unvollständige oder unbefugte Verwendung von Daten oder in vergleichbarer Weise auf einen elektronischen oder vergleichbaren Datenverarbeitungs- oder Datenübermittlungsvorgang einwirkt und dadurch eine Vermögensverschiebung zum Schaden eines andern herbeiführt oder eine Vermögensverschiebung unmittelbar <ins>danach</ins> verdeckt, wird mit Freiheitsstrafe bis zu fünf Jahren oder Geldstrafe bestraft.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">2. Handelt der Täter gewerbsmässig, so wird er mit Freiheitsstrafe von sechs Monaten bis zu zehn Jahren bestraft.</div></td>
+<td><div class="paragraph-text">2. Handelt der Täter gewerbsmässig, so wird er mit Freiheitsstrafe von sechs Monaten bis zu zehn Jahren bestraft.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">3. Der betrügerische Missbrauch einer Datenverarbeitungsanlage zum Nachteil eines Angehörigen oder Familiengenossen wird nur auf Antrag verfolgt.</div></td>
+<td><div class="paragraph-text">3. Der betrügerische Missbrauch einer Datenverarbeitungsanlage zum Nachteil eines Angehörigen oder Familiengenossen wird nur auf Antrag verfolgt.</div></td>
+</tr>
+<tr class="article-title"><td><p class="artikel-name">Art. 154</p></td>
+<td><p class="artikel-name">Art. 154</p></td>
+</tr>
+<tr><td><div class="paragraph-text">1. Mit Freiheitsstrafe bis zu drei Jahren und Geldstrafe wird bestraft, wer als Mitglied des Verwaltungsrats oder der Geschäftsleitung einer Gesellschaft, deren Aktien an einer Börse kotiert sind, unzulässige Vergütungen nach Artikel 735c Ziffern 1, 5 und 6 des Obligationenrechts (OR), gegebenenfalls in Verbindung mit Artikel 735d Ziffer 1 OR, ausrichtet oder bezieht.</div></td>
+<td><div class="paragraph-text">1. Mit Freiheitsstrafe bis zu drei Jahren und Geldstrafe wird bestraft, wer als Mitglied des Verwaltungsrats oder der Geschäftsleitung einer Gesellschaft, deren Aktien an einer Börse kotiert sind, unzulässige Vergütungen nach Artikel 735c Ziffern 1, 5 und 6 des Obligationenrechts (OR), gegebenenfalls in Verbindung mit Artikel 735d Ziffer 1 OR, ausrichtet oder bezieht.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">2. Mit Freiheitsstrafe bis zu drei Jahren oder Geldstrafe wird bestraft, wer als Mitglied des Verwaltungsrats einer Gesellschaft, deren Aktien an einer Börse kotiert sind:</div></td>
+<td><div class="paragraph-text">2. Mit Freiheitsstrafe bis zu drei Jahren oder Geldstrafe wird bestraft, wer als Mitglied des Verwaltungsrats einer Gesellschaft, deren Aktien an einer Börse kotiert sind:</div></td>
+</tr>
+<tr><td class="changed"><div class="buchstabe">a. die Geschäftsführung entgegen Artikel 716b Absatz <del>1</del> erster Satz OR ganz oder zum Teil einer juristischen Person überträgt;</div></td>
+<td class="changed"><div class="buchstabe">a. die Geschäftsführung entgegen Artikel 716b Absatz <ins>2</ins> erster Satz OR ganz oder zum Teil einer juristischen Person überträgt;</div></td>
+</tr>
+<tr><td><div class="buchstabe">b. eine Organ- oder Depotstimmrechtsvertretung einsetzt (Art. 689b Abs. 2 OR);</div></td>
+<td><div class="buchstabe">b. eine Organ- oder Depotstimmrechtsvertretung einsetzt (Art. 689b Abs. 2 OR);</div></td>
+</tr>
+<tr><td><div class="buchstabe">c. verhindert, dass:</div></td>
+<td><div class="buchstabe">c. verhindert, dass:</div></td>
+</tr>
+<tr><td><div class="buchstabe">1. die Statuten die Bestimmungen nach Artikel 626 Absatz 2 Ziffern 1 und 2 OR enthalten,</div></td>
+<td><div class="buchstabe">1. die Statuten die Bestimmungen nach Artikel 626 Absatz 2 Ziffern 1 und 2 OR enthalten,</div></td>
+</tr>
+<tr><td><div class="buchstabe">2. die Generalversammlung jährlich und einzeln die Mitglieder und den Präsidenten des Verwaltungsrats, die Mitglieder des Vergütungsausschusses sowie den unabhängigen Stimmrechtsvertreter wählen kann (Art. 698 Abs. 2 Ziff. 2 und Abs. 3 Ziff. 1–3 OR),</div></td>
+<td><div class="buchstabe">2. die Generalversammlung jährlich und einzeln die Mitglieder und den Präsidenten des Verwaltungsrats, die Mitglieder des Vergütungsausschusses sowie den unabhängigen Stimmrechtsvertreter wählen kann (Art. 698 Abs. 2 Ziff. 2 und Abs. 3 Ziff. 1–3 OR),</div></td>
+</tr>
+<tr><td><div class="buchstabe">3. die Generalversammlung über die Vergütungen, die der Verwaltungsrat für sich selbst, die Geschäftsleitung und den Beirat festgelegt hat, abstimmen kann (Art. 698 Abs. 3 Ziff. 4 OR),</div></td>
+<td><div class="buchstabe">3. die Generalversammlung über die Vergütungen, die der Verwaltungsrat für sich selbst, die Geschäftsleitung und den Beirat festgelegt hat, abstimmen kann (Art. 698 Abs. 3 Ziff. 4 OR),</div></td>
+</tr>
+<tr><td><div class="buchstabe">4. die Aktionäre oder ihre Vertreter ihre Rechte auf elektronischem Weg ausüben können (Art. 689c Abs. 6 OR).</div></td>
+<td><div class="buchstabe">4. die Aktionäre oder ihre Vertreter ihre Rechte auf elektronischem Weg ausüben können (Art. 689c Abs. 6 OR).</div></td>
+</tr>
+<tr><td><div class="paragraph-text">3. Nimmt der Täter die Möglichkeit der Verwirklichung einer Tat nach Absatz 1 oder 2 lediglich in Kauf, so macht er sich nach diesen Bestimmungen nicht strafbar.</div></td>
+<td><div class="paragraph-text">3. Nimmt der Täter die Möglichkeit der Verwirklichung einer Tat nach Absatz 1 oder 2 lediglich in Kauf, so macht er sich nach diesen Bestimmungen nicht strafbar.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">4. Für die Berechnung der Geldstrafe ist das Gericht nicht an die maximale Höhe des Tagessatzes (Art. 34 Abs. 2 erster Satz) gebunden; die Geldstrafe darf jedoch das Sechsfache der Jahresvergütung, die im Zeitpunkt der Tat mit der betroffenen Gesellschaft vereinbart ist, nicht übersteigen.</div></td>
+<td><div class="paragraph-text">4. Für die Berechnung der Geldstrafe ist das Gericht nicht an die maximale Höhe des Tagessatzes (Art. 34 Abs. 2 erster Satz) gebunden; die Geldstrafe darf jedoch das Sechsfache der Jahresvergütung, die im Zeitpunkt der Tat mit der betroffenen Gesellschaft vereinbart ist, nicht übersteigen.</div></td>
+</tr>
+<tr class="article-title"><td><p class="artikel-name">Art. 155</p></td>
+<td><p class="artikel-name">Art. 155</p></td>
+</tr>
+<tr><td class="deleted"><del><div class="artikel-text">1.Wer zum Zwecke der Täuschung in Handel und Verkehreine Ware herstellt, die einen höheren als ihren wirklichen Verkehrswert vorspiegelt, namentlich indem er eine Ware nachmacht oder verfälscht,eine solche Ware einführt, lagert oder in Verkehr bringt,wird, sofern die Tat nicht nach einer andern Bestimmung mit höherer Strafe bedroht ist, mit Freiheitsstrafe bis zu drei Jahren oder Geldstrafe bestraft.2. Handelt der Täter gewerbsmässig, so wird er, sofern die Tat nicht nach einer andern Bestimmung mit höherer Strafe bedroht ist, mit Freiheitsstrafe bis zu fünf Jahren oder Geldstrafe bestraft.</div></del></td>
+<td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+</tr>
+<tr><td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+<td class="inserted"><ins><div class="paragraph-text">1. Wer zum Zwecke der Täuschung in Handel und Verkehr</ins></td>
+</tr>
+<tr><td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+<td class="inserted"><ins><p class="p-list">eine Ware herstellt, die einen höheren als ihren wirklichen Verkehrswert vorspiegelt, namentlich indem er eine Ware nachmacht oder verfälscht,</p></ins></td>
+</tr>
+<tr><td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+<td class="inserted"><ins><p class="p-list">eine solche Ware einführt, lagert oder in Verkehr bringt,</p></ins></td>
+</tr>
+<tr><td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+<td class="inserted"><ins><p class="p-list">wird, sofern die Tat nicht nach einer andern Bestimmung mit höherer Strafe bedroht ist, mit Freiheitsstrafe bis zu drei Jahren oder Geldstrafe bestraft.</p></div></ins></td>
+</tr>
+<tr><td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+<td class="inserted"><ins><div class="paragraph-text">2. Handelt der Täter gewerbsmässig, so wird er, sofern die Tat nicht nach einer andern Bestimmung mit höherer Strafe bedroht ist, mit Freiheitsstrafe bis zu fünf Jahren oder Geldstrafe bestraft.</div></ins></td>
+</tr>
+<tr class="article-title"><td><p class="artikel-name">Art. 179octies</p></td>
+<td><p class="artikel-name">Art. 179octies</p></td>
+</tr>
+<tr><td><div class="paragraph-text">1. Wer in Ausübung ausdrücklicher, gesetzlicher Befugnis die Überwachung des Post- und Fernmeldeverkehrs einer Person anordnet oder durchführt oder technische Überwachungsgeräte (Art. 179bis ff.) einsetzt, ist nicht strafbar, wenn unverzüglich die Genehmigung des zuständigen Gerichts eingeholt wird.</div></td>
+<td><div class="paragraph-text">1. Wer in Ausübung ausdrücklicher, gesetzlicher Befugnis die Überwachung des Post- und Fernmeldeverkehrs einer Person anordnet oder durchführt oder technische Überwachungsgeräte (Art. 179bis ff.) einsetzt, ist nicht strafbar, wenn unverzüglich die Genehmigung des zuständigen Gerichts eingeholt wird.</div></td>
+</tr>
+<tr><td class="changed"><div class="paragraph-text">2. <del>Die Voraussetzungen der Überwachung des Post- und Fernmeldeverkehrs und das Verfahren richten sich nach dem Bundesgesetz vom 18</del>.<del> März 2016 betreffend die Überwachung des Post- und Fernmeldeverkehrs oder nach der Strafprozessordnung</del>.</div></td>
+<td class="changed"><div class="paragraph-text">2. ..<ins>.</ins></div></td>
+</tr>
+<tr class="article-title"><td><p class="artikel-name">Art. 179novies</p></td>
+<td><p class="artikel-name">Art. 179novies</p></td>
+</tr>
+<tr><td class="changed"><div class="artikel-text">Wer unbefugt besonders schützenswerte Personendaten<del> oder Persönlichkeitsprofile</del>, die nicht <del>frei</del> zugänglich sind, <del>aus einer Datensammlung </del>beschafft, wird auf Antrag mit Freiheitsstrafe bis zu drei Jahren oder Geldstrafe bestraft.</div></td>
+<td class="changed"><div class="artikel-text">Wer unbefugt besonders schützenswerte Personendaten, die nicht <ins>für</ins> <ins>jedermann </ins>zugänglich sind, beschafft, wird auf Antrag mit Freiheitsstrafe bis zu drei Jahren oder Geldstrafe bestraft.</div></td>
+</tr>
+<tr class="article-title"><td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+<td class="inserted"><ins><p class="artikel-name">Art. 179decies</p></ins></td>
+</tr>
+<tr><td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+<td class="inserted"><ins><div class="artikel-text">Wer die Identität einer anderen Person ohne deren Einwilligung verwendet, um dieser zu schaden oder um sich oder einem Dritten einen unrechtmässigen Vorteil zu verschaffen, wird auf Antrag mit Freiheitsstrafe bis zu einem Jahr oder Geldstrafe bestraft.</div></ins></td>
+</tr>
+<tr class="article-title"><td><p class="artikel-name">Art. 185</p></td>
+<td><p class="artikel-name">Art. 185</p></td>
+</tr>
+<tr><td><div class="paragraph-text">1. Wer jemanden der Freiheit beraubt, entführt oder sich seiner sonst wie bemächtigt, um einen Dritten zu einer Handlung, Unterlassung oder Duldung zu nötigen,</td>
+<td><div class="paragraph-text">1. Wer jemanden der Freiheit beraubt, entführt oder sich seiner sonst wie bemächtigt, um einen Dritten zu einer Handlung, Unterlassung oder Duldung zu nötigen,</td>
+</tr>
+<tr><td><p class="p-list">wer die von einem anderen auf diese Weise geschaffene Lage ausnützt, um einen Dritten zu nötigen,</p></td>
+<td><p class="p-list">wer die von einem anderen auf diese Weise geschaffene Lage ausnützt, um einen Dritten zu nötigen,</p></td>
+</tr>
+<tr><td><p class="p-list">wird mit Freiheitsstrafe nicht unter einem Jahr bestraft.</p></div></td>
+<td><p class="p-list">wird mit Freiheitsstrafe nicht unter einem Jahr bestraft.</p></div></td>
+</tr>
+<tr><td><div class="paragraph-text">2. Die Strafe ist Freiheitsstrafe nicht unter drei Jahren, wenn der Täter droht, das Opfer zu töten, körperlich schwer zu verletzen oder grausam zu behandeln.</div></td>
+<td><div class="paragraph-text">2. Die Strafe ist Freiheitsstrafe nicht unter drei Jahren, wenn der Täter droht, das Opfer zu töten, körperlich schwer zu verletzen oder grausam zu behandeln.</div></td>
+</tr>
+<tr><td class="changed"><div class="paragraph-text">3. In besonders schweren Fällen, namentlich wenn die Tat viele Menschen betrifft, kann der Täter mit lebenslänglicher Freiheitsstrafe bestraft werden.</td>
+<td class="changed"><div class="paragraph-text">3. In besonders schweren Fällen, namentlich wenn die Tat viele Menschen betrifft, kann der Täter mit lebenslänglicher Freiheitsstrafe bestraft werden.<ins></div></ins></td>
+</tr>
+<tr><td class="deleted"><del><p class="p-list">4. Tritt der Täter von der Nötigung zurück und lässt er das Opfer frei, so kann er milder bestraft werden (Art. 48a).</p></div></del></td>
+<td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+</tr>
+<tr><td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+<td class="inserted"><ins><div class="paragraph-text">4. Tritt der Täter von der Nötigung zurück und lässt er das Opfer frei, so kann er milder bestraft werden (Art. 48a).</div></ins></td>
+</tr>
+<tr><td><div class="paragraph-text">5. Strafbar ist auch, wer die Tat im Ausland begeht, wenn er in der Schweiz verhaftet und nicht ausgeliefert wird. Artikel 7 Absätze 4 und 5 sind anwendbar.</div></td>
+<td><div class="paragraph-text">5. Strafbar ist auch, wer die Tat im Ausland begeht, wenn er in der Schweiz verhaftet und nicht ausgeliefert wird. Artikel 7 Absätze 4 und 5 sind anwendbar.</div></td>
+</tr>
+<tr class="article-title"><td><p class="artikel-name">Art. 187</p></td>
+<td><p class="artikel-name">Art. 187</p></td>
+</tr>
+<tr><td><div class="paragraph-text">1. Wer mit einem Kind unter 16 Jahren eine sexuelle Handlung vornimmt,</td>
+<td><div class="paragraph-text">1. Wer mit einem Kind unter 16 Jahren eine sexuelle Handlung vornimmt,</td>
+</tr>
+<tr><td class="changed"><p class="p-list">es zu einer solchen Handlung verleitet oder</p></td>
+<td class="changed"><p class="p-list">es zu einer solchen Handlung verleitet<ins>,</ins> oder</p></td>
+</tr>
+<tr><td class="changed"><p class="p-list">es in eine <del>sexuelle</del> Handlung einbezieht,</p></td>
+<td class="changed"><p class="p-list">es in eine <ins>solche</ins> Handlung einbezieht,</p></td>
+</tr>
+<tr><td class="changed"><p class="p-list">wird mit Freiheitsstrafe bis zu fünf Jahren oder Geldstrafe bestraft.</p><del></div></del></td>
+<td class="changed"><p class="p-list">wird mit Freiheitsstrafe bis zu fünf Jahren oder Geldstrafe bestraft.</p></td>
+</tr>
+<tr><td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+<td class="inserted"><ins><p class="p-list">1bis. Hat das Kind das 12. Altersjahr noch nicht vollendet und nimmt der Täter mit ihm eine sexuelle Handlung vor oder verleitet es zu einer solchen mit einer Drittperson oder einem Tier, so ist die Strafe Freiheitsstrafe von einem Jahr bis zu fünf Jahren.</p></div></ins></td>
+</tr>
+<tr><td class="changed"><div class="paragraph-text">2. Die Handlung ist nicht strafbar, wenn der Altersunterschied zwischen den Beteiligten nicht mehr als drei Jahre beträgt.</td>
+<td class="changed"><div class="paragraph-text">2. Die Handlung ist nicht strafbar, wenn der Altersunterschied zwischen den Beteiligten nicht mehr als drei Jahre beträgt.<ins></div></ins></td>
+</tr>
+<tr><td class="deleted"><del><p class="p-list">3. Hat der Täter zur Zeit der Tat oder der ersten Tathandlung das 20. Altersjahr noch nicht zurückgelegt und liegen besondere Umstände vor oder ist die verletzte Person mit ihm die Ehe oder eine eingetragene Partnerschaft eingegangen, so kann die zuständige Behörde von der Strafverfolgung, der Überweisung an das Gericht oder der Bestrafung absehen.</p></div></del></td>
+<td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+</tr>
+<tr><td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+<td class="inserted"><ins><div class="paragraph-text">3. Hat der Täter zur Zeit der Tat oder der ersten Tathandlung das 20. Altersjahr noch nicht zurückgelegt und liegen besondere Umstände vor, so kann die zuständige Behörde von der Strafverfolgung, der Überweisung an das Gericht oder der Bestrafung absehen.</div></ins></td>
+</tr>
+<tr><td><div class="paragraph-text">4. Handelte der Täter in der irrigen Vorstellung, das Kind sei mindestens 16 Jahre alt, hätte er jedoch bei pflichtgemässer Vorsicht den Irrtum vermeiden können, so ist die Strafe Freiheitsstrafe bis zu drei Jahren oder Geldstrafe.</div></td>
+<td><div class="paragraph-text">4. Handelte der Täter in der irrigen Vorstellung, das Kind sei mindestens 16 Jahre alt, hätte er jedoch bei pflichtgemässer Vorsicht den Irrtum vermeiden können, so ist die Strafe Freiheitsstrafe bis zu drei Jahren oder Geldstrafe.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">5. ...</div></td>
+<td><div class="paragraph-text">5. ...</div></td>
+</tr>
+<tr><td><div class="paragraph-text">6. ...</div></td>
+<td><div class="paragraph-text">6. ...</div></td>
+</tr>
+<tr class="article-title"><td><p class="artikel-name">Art. 188</p></td>
+<td><p class="artikel-name">Art. 188</p></td>
+</tr>
+<tr><td class="changed"><div class="artikel-text"><del>1.</del>Wer mit einer minderjährigen Person von <del>mehr</del> <del>als </del>16 Jahren, die von ihm durch ein Erziehungs-, Betreuungs- oder Arbeitsverhältnis oder auf andere Weise abhängig ist, eine sexuelle Handlung vornimmt, indem er diese Abhängigkeit ausnützt,wer eine solche Person unter Ausnützung ihrer Abhängigkeit zu einer sexuellen Handlung verleitet,wird mit Freiheitsstrafe bis zu <del>drei</del> Jahren oder Geldstrafe bestraft.<del>2. Ist die verletzte Person mit dem Täter eine Ehe oder eine eingetragene Partnerschaft eingegangen, so kann die zuständige Behörde von der Strafverfolgung, der Überweisung an das Gericht oder der Bestrafung absehen.</del></div></td>
+<td class="changed"><div class="artikel-text">Wer mit einer minderjährigen Person von <ins>mindestens</ins> 16 Jahren, die von ihm durch ein Erziehungs-, Betreuungs- oder Arbeitsverhältnis oder auf andere Weise abhängig ist, eine sexuelle Handlung vornimmt, indem er diese Abhängigkeit ausnützt,wer eine solche Person unter Ausnützung ihrer Abhängigkeit zu einer sexuellen Handlung verleitet,wird mit Freiheitsstrafe bis zu <ins>fünf</ins> Jahren oder Geldstrafe bestraft.</div></td>
+</tr>
+<tr class="article-title"><td><p class="artikel-name">Art. 189</p></td>
+<td><p class="artikel-name">Art. 189</p></td>
+</tr>
+<tr><td class="changed"><div class="paragraph-text">1. Wer <del>eine</del> <del>Person</del> <del>zur</del> <del>Duldung </del>einer <del>beischlafsähnlichen</del> <del>oder</del> <del>einer</del> <del>anderen sexuellen </del>Handlung <del>nötigt,</del> <del>namentlich</del> <del>indem</del> <del>er</del> <del>sie</del> <del>bedroht,</del> <del>Gewalt</del> <del>anwendet,</del> <del>sie</del> <del>unter</del> <del>psychischen</del> <del>Druck</del> <del>setzt</del> <del>oder</del> <del>zum</del> <del>Widerstand</del> <del>unfähig macht</del>, wird mit Freiheitsstrafe bis zu <del>zehn</del> Jahren oder Geldstrafe bestraft.</div></td>
+<td class="changed"><div class="paragraph-text">1. Wer <ins>gegen</ins> <ins>den</ins> <ins>Willen</ins> einer <ins>Person</ins> <ins>eine</ins> <ins>sexuelle</ins> Handlung <ins>an</ins> <ins>dieser</ins> <ins>vornimmt</ins> <ins>oder</ins> <ins>von</ins> <ins>dieser</ins> <ins>vornehmen</ins> <ins>lässt</ins> <ins>oder</ins> <ins>zu</ins> <ins>diesem</ins> <ins>Zweck</ins> <ins>einen</ins> <ins>Schockzustand</ins> <ins>einer</ins> <ins>Person</ins> <ins>ausnützt</ins>, wird mit Freiheitsstrafe bis zu <ins>drei</ins> Jahren oder Geldstrafe bestraft.</div></td>
+</tr>
+<tr><td class="changed"><div class="paragraph-text">2. .<del>..</del></div></td>
+<td class="changed"><div class="paragraph-text">2. <ins>Wer eine Person zur Vornahme oder Duldung einer sexuellen Handlung nötigt, namentlich indem er sie bedroht, Gewalt anwendet, sie unter psychischen Druck setzt oder zum Widerstand unfähig macht, wird mit Freiheitsstrafe bis zu zehn Jahren oder Geldstrafe bestraft</ins>.</div></td>
+</tr>
+<tr><td class="changed"><div class="paragraph-text">3. Handelt der Täter grausam, verwendet er <del>namentlich </del>eine gefährliche Waffe oder einen anderen gefährlichen Gegenstand, so ist die Strafe Freiheitsstrafe nicht unter <del>drei</del> <del>Jahren</del>.</div></td>
+<td class="changed"><div class="paragraph-text">3. Handelt der Täter <ins>nach Absatz 2 </ins>grausam, verwendet er eine gefährliche Waffe oder einen anderen gefährlichen Gegenstand, so ist die Strafe Freiheitsstrafe nicht unter <ins>einem</ins> <ins>Jahr</ins>.</div></td>
+</tr>
+<tr class="article-title"><td><p class="artikel-name">Art. 190</p></td>
+<td><p class="artikel-name">Art. 190</p></td>
+</tr>
+<tr><td class="changed"><div class="paragraph-text">1. Wer <del>eine</del> <del>Person</del> <del>weiblichen</del> <del>Geschlechts</del> <del>zur</del> <del>Duldung</del> <del>des</del> <del>Beischlafs</del> <del>nötigt</del>, <del>namentlich</del> <del>indem</del> <del>er</del> <del>sie</del> <del>bedroht,</del> <del>Gewalt</del> <del>anwendet</del>, <del>sie</del> <del>unter</del> <del>psychischen</del> <del>Druck</del> <del>setzt</del> oder <del>zum</del> <del>Widerstand</del> <del>unfähig</del> <del>macht</del>, wird mit Freiheitsstrafe <del>von einem Jahr </del>bis zu <del>zehn</del> Jahren bestraft.</div></td>
+<td class="changed"><div class="paragraph-text">1. Wer <ins>gegen</ins> <ins>den</ins> <ins>Willen</ins> <ins>einer</ins> <ins>Person</ins> <ins>den</ins> <ins>Beischlaf</ins> <ins>oder</ins> <ins>eine beischlafsähnliche Handlung</ins>, <ins>die</ins> <ins>mit</ins> <ins>einem</ins> <ins>Eindringen</ins> <ins>in</ins> <ins>den</ins> <ins>Körper verbunden ist</ins>, <ins>an</ins> <ins>dieser</ins> <ins>vornimmt</ins> <ins>oder</ins> <ins>von</ins> <ins>dieser vornehmen lässt </ins>oder <ins>zu</ins> <ins>diesem</ins> <ins>Zweck</ins> <ins>einen Schockzustand einer Person ausnützt</ins>, wird mit Freiheitsstrafe bis zu <ins>fünf</ins> Jahren bestraft.</div></td>
+</tr>
+<tr><td class="changed"><div class="paragraph-text">2. .<del>..</del></div></td>
+<td class="changed"><div class="paragraph-text">2. <ins>Wer eine Person zur Vornahme oder Duldung des Beischlafs oder einer beischlafsähnlichen Handlung, die mit einem Eindringen in den Körper verbunden ist, nötigt, namentlich indem er sie bedroht, Gewalt anwendet, sie unter psychischen Druck setzt oder zum Widerstand unfähig macht, wird mit Freiheitsstrafe von einem Jahr bis zu zehn Jahren bestraft</ins>.</div></td>
+</tr>
+<tr><td class="changed"><div class="paragraph-text">3. Handelt der Täter grausam, verwendet er <del>namentlich </del>eine gefährliche Waffe oder einen anderen gefährlichen Gegenstand, so ist die Strafe Freiheitsstrafe nicht unter drei Jahren.</div></td>
+<td class="changed"><div class="paragraph-text">3. Handelt der Täter <ins>nach Absatz 2 </ins>grausam, verwendet er eine gefährliche Waffe oder einen anderen gefährlichen Gegenstand, so ist die Strafe Freiheitsstrafe nicht unter drei Jahren.</div></td>
+</tr>
+<tr class="article-title"><td><p class="artikel-name">Art. 191</p></td>
+<td><p class="artikel-name">Art. 191</p></td>
+</tr>
+<tr><td class="changed"><div class="artikel-text">Wer eine urteilsunfähige oder eine zum Widerstand unfähige Person <del>in Kenntnis ihres Zustandes </del>zum Beischlaf, zu einer beischlafsähnlichen oder einer anderen sexuellen Handlung missbraucht, wird mit Freiheitsstrafe bis zu zehn Jahren oder Geldstrafe bestraft.</div></td>
+<td class="changed"><div class="artikel-text">Wer eine urteilsunfähige oder eine zum Widerstand unfähige Person zum Beischlaf, zu einer beischlafsähnlichen oder einer anderen sexuellen Handlung missbraucht, wird mit Freiheitsstrafe bis zu zehn Jahren oder Geldstrafe bestraft.</div></td>
+</tr>
+<tr class="article-title"><td><p class="artikel-name">Art. 192</p></td>
+<td><p class="artikel-name">Art. 192</p></td>
+</tr>
+<tr><td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+<td class="inserted"><ins><div class="artikel-text">...</div></ins></td>
+</tr>
+<tr><td class="deleted"><del><div class="paragraph-text">1. Wer unter Ausnützung der Abhängigkeit einen Anstaltspflegling, Anstaltsinsassen, Gefangenen, Verhafteten oder Beschuldigten veranlasst, eine sexuelle Handlung vorzunehmen oder zu dulden, wird mit Freiheitsstrafe bis zu drei Jahren oder Geldstrafe bestraft.</div></del></td>
+<td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+</tr>
+<tr><td class="deleted"><del><div class="paragraph-text">2. Hat die verletzte Person mit dem Täter die Ehe geschlossen oder ist sie mit ihm eine eingetragene Partnerschaft eingegangen, so kann die zuständige Behörde von der Strafverfolgung, der Überweisung an das Gericht oder der Bestrafung absehen.</div></del></td>
+<td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+</tr>
+<tr class="article-title"><td><p class="artikel-name">Art. 193</p></td>
+<td><p class="artikel-name">Art. 193</p></td>
+</tr>
+<tr><td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+<td class="inserted"><ins><div class="artikel-text">Wer eine Person veranlasst, eine sexuelle Handlung vorzunehmen oder zu dulden, indem er eine Notlage oder eine durch ein Arbeitsverhältnis oder eine in anderer Weise begründete Abhängigkeit ausnützt, wird mit Freiheitsstrafe bis zu fünf Jahren oder Geldstrafe bestraft.</div></ins></td>
+</tr>
+<tr><td class="deleted"><del><div class="paragraph-text">1. Wer eine Person veranlasst, eine sexuelle Handlung vorzunehmen oder zu dulden, indem er eine Notlage oder eine durch ein Arbeitsverhältnis oder eine in anderer Weise begründete Abhängigkeit ausnützt, wird mit Freiheitsstrafe bis zu drei Jahren oder Geldstrafe bestraft.</div></del></td>
+<td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+</tr>
+<tr><td class="deleted"><del><div class="paragraph-text">2. Ist die verletzte Person mit dem Täter eine Ehe oder eine eingetragene Partnerschaft eingegangen, so kann die zuständige Behörde von der Strafverfolgung, der Überweisung an das Gericht oder der Bestrafung absehen.</div></del></td>
+<td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+</tr>
+<tr class="article-title"><td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+<td class="inserted"><ins><p class="artikel-name">Art. 193a</p></ins></td>
+</tr>
+<tr><td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+<td class="inserted"><ins><div class="artikel-text">Wer bei der Ausübung einer beruflichen oder organisierten ausserberuflichen Tätigkeit im Gesundheitsbereich an einer Person eine sexuelle Handlung vornimmt oder von ihr vornehmen lässt und sie dabei über den Charakter der Handlung täuscht oder ihren Irrtum über den Charakter der Handlung ausnützt, wird mit Freiheitsstrafe bis zu fünf Jahren oder Geldstrafe bestraft.</div></ins></td>
+</tr>
+<tr class="article-title"><td><p class="artikel-name">Art. 194</p></td>
+<td><p class="artikel-name">Art. 194</p></td>
+</tr>
+<tr><td class="changed"><div class="paragraph-text">1. Wer eine exhibitionistische Handlung vornimmt, wird, auf Antrag, mit <del>Geldstrafe</del> bestraft.</div></td>
+<td class="changed"><div class="paragraph-text">1. Wer eine exhibitionistische Handlung vornimmt, wird, auf Antrag, mit <ins>Busse</ins> bestraft.</div></td>
+</tr>
+<tr><td class="changed"><div class="paragraph-text">2. <del>Unterzieht</del> <del>sich</del> <del>der</del> <del>Täter</del> <del>einer</del> <del>ärztlichen</del> <del>Behandlung, so kann das Strafverfahren eingestellt werden</del>. <del>Es</del> wird <del>wieder</del> <del>aufgenommen,</del> <del>wenn sich der Täter der Behandlung entzieht</del>.</div></td>
+<td class="changed"><div class="paragraph-text">2. <ins>In</ins> <ins>schweren</ins> <ins>Fällen</ins> <ins>ist</ins> <ins>die</ins> <ins>Strafe</ins> <ins>Geldstrafe</ins>. <ins>Die</ins> <ins>Tat </ins>wird <ins>auf</ins> <ins>Antrag</ins> <ins>verfolgt</ins>.</div></td>
+</tr>
+<tr><td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+<td class="inserted"><ins><div class="paragraph-text">3. Unterzieht sich die beschuldigte Person gemäss Anordnung der zuständigen Behörde einer ärztlichen Behandlung, so wird das Verfahren eingestellt.</div></ins></td>
+</tr>
+<tr class="article-title"><td><p class="artikel-name">Art. 197</p></td>
+<td><p class="artikel-name">Art. 197</p></td>
+</tr>
+<tr><td><div class="paragraph-text">1. Wer pornografische Schriften, Ton- oder Bildaufnahmen, Abbildungen, andere Gegenstände solcher Art oder pornografische Vorführungen einer Person unter 16 Jahren anbietet, zeigt, überlässt, zugänglich macht oder durch Radio oder Fernsehen verbreitet, wird mit Freiheitsstrafe bis zu drei Jahren oder Geldstrafe bestraft.</div></td>
+<td><div class="paragraph-text">1. Wer pornografische Schriften, Ton- oder Bildaufnahmen, Abbildungen, andere Gegenstände solcher Art oder pornografische Vorführungen einer Person unter 16 Jahren anbietet, zeigt, überlässt, zugänglich macht oder durch Radio oder Fernsehen verbreitet, wird mit Freiheitsstrafe bis zu drei Jahren oder Geldstrafe bestraft.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">2. Wer Gegenstände oder Vorführungen im Sinne von Absatz 1 öffentlich ausstellt oder zeigt oder sie sonst jemandem unaufgefordert anbietet, wird mit Busse bestraft. Wer die Besucher von Ausstellungen oder Vorführungen in geschlossenen Räumen im Voraus auf deren pornografischen Charakter hinweist, bleibt straflos.</div></td>
+<td><div class="paragraph-text">2. Wer Gegenstände oder Vorführungen im Sinne von Absatz 1 öffentlich ausstellt oder zeigt oder sie sonst jemandem unaufgefordert anbietet, wird mit Busse bestraft. Wer die Besucher von Ausstellungen oder Vorführungen in geschlossenen Räumen im Voraus auf deren pornografischen Charakter hinweist, bleibt straflos.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">3. Wer eine minderjährige Person anwirbt, damit diese an einer pornografischen Vorführung mitwirkt, oder wer sie zur Mitwirkung an einer derartigen Vorführung veranlasst, wird mit Freiheitsstrafe bis zu drei Jahren oder Geldstrafe bestraft.</div></td>
+<td><div class="paragraph-text">3. Wer eine minderjährige Person anwirbt, damit diese an einer pornografischen Vorführung mitwirkt, oder wer sie zur Mitwirkung an einer derartigen Vorführung veranlasst, wird mit Freiheitsstrafe bis zu drei Jahren oder Geldstrafe bestraft.</div></td>
+</tr>
+<tr><td class="changed"><div class="paragraph-text">4. Wer Gegenstände oder Vorführungen im Sinne von Absatz 1, die sexuelle Handlungen mit Tieren oder <del>mit Gewalttätigkeiten unter Erwachsenen oder </del>nicht tatsächliche sexuelle Handlungen mit Minderjährigen zum Inhalt haben, herstellt, einführt, lagert, in Verkehr bringt, anpreist, ausstellt, anbietet, zeigt, überlässt, zugänglich macht, erwirbt, sich über elektronische Mittel oder sonst wie beschafft oder besitzt, wird mit Freiheitsstrafe bis zu drei Jahren oder Geldstrafe bestraft.<del> Haben die Gegenstände oder Vorführungen tatsächliche sexuelle Handlungen mit Minderjährigen zum Inhalt, so ist die Strafe Freiheitsstrafe bis zu fünf Jahren oder Geldstrafe.</div></del></td>
+<td class="changed"><div class="paragraph-text">4. Wer Gegenstände oder Vorführungen im Sinne von Absatz 1, die sexuelle Handlungen mit Tieren oder nicht tatsächliche sexuelle Handlungen mit Minderjährigen zum Inhalt haben, herstellt, einführt, lagert, in Verkehr bringt, anpreist, ausstellt, anbietet, zeigt, überlässt, zugänglich macht, erwirbt, sich über elektronische Mittel oder sonst wie beschafft oder besitzt, wird mit Freiheitsstrafe bis zu drei Jahren oder Geldstrafe bestraft.</td>
+</tr>
+<tr><td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+<td class="inserted"><ins><p class="p-list">Haben die Gegenstände oder Vorführungen tatsächliche sexuelle Handlungen mit Minderjährigen zum Inhalt, so ist die Strafe Freiheitsstrafe bis zu fünf Jahren oder Geldstrafe.</p></div></ins></td>
+</tr>
+<tr><td class="changed"><div class="paragraph-text">5. Wer Gegenstände oder Vorführungen im Sinne von Absatz 1, die sexuelle Handlungen mit Tieren oder <del>mit Gewalttätigkeiten unter Erwachsenen oder </del>nicht tatsächliche sexuelle Handlungen mit Minderjährigen zum Inhalt haben, konsumiert oder zum eigenen Konsum herstellt, einführt, lagert, erwirbt, sich über elektronische Mittel oder sonst wie beschafft oder besitzt, wird mit Freiheitsstrafe bis zu einem Jahr oder Geldstrafe bestraft.<del> Haben die Gegenstände oder Vorführungen tatsächliche sexuelle Handlungen mit Minderjährigen zum Inhalt, so ist die Strafe Freiheitsstrafe bis zu drei Jahren oder Geldstrafe.</div></del></td>
+<td class="changed"><div class="paragraph-text">5. Wer Gegenstände oder Vorführungen im Sinne von Absatz 1, die sexuelle Handlungen mit Tieren oder nicht tatsächliche sexuelle Handlungen mit Minderjährigen zum Inhalt haben, konsumiert oder zum eigenen Konsum herstellt, einführt, lagert, erwirbt, sich über elektronische Mittel oder sonst wie beschafft oder besitzt, wird mit Freiheitsstrafe bis zu einem Jahr oder Geldstrafe bestraft.</td>
+</tr>
+<tr><td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+<td class="inserted"><ins><p class="p-list">Haben die Gegenstände oder Vorführungen tatsächliche sexuelle Handlungen mit Minderjährigen zum Inhalt, so ist die Strafe Freiheitsstrafe bis zu drei Jahren oder Geldstrafe.</p></div></ins></td>
+</tr>
+<tr><td><div class="paragraph-text">6. Bei Straftaten nach den Absätzen 4 und 5 werden die Gegenstände eingezogen.</div></td>
+<td><div class="paragraph-text">6. Bei Straftaten nach den Absätzen 4 und 5 werden die Gegenstände eingezogen.</div></td>
+</tr>
+<tr><td class="changed"><div class="paragraph-text">7. <del>Handelt der Täter mit Bereicherungsabsicht, so ist mit Freiheitsstrafe eine Geldstrafe zu verbinden</del>.</div></td>
+<td class="changed"><div class="paragraph-text">7. .<ins>..</ins></div></td>
+</tr>
+<tr><td class="changed"><div class="paragraph-text">8. <del>Minderjährige</del> von <del>mehr</del> <del>als</del> <del>16</del> <del>Jahren bleiben straflos, wenn sie voneinander einvernehmlich </del>Gegenstände oder Vorführungen im Sinne von Absatz 1 <del>herstellen</del>, diese <del>besitzen</del> oder <del>konsumieren.</del></div></td>
+<td class="changed"><div class="paragraph-text">8. <ins>Wer</ins> von <ins>einer</ins> <ins>minderjährigen</ins> <ins>Person</ins> Gegenstände oder Vorführungen im Sinne von Absatz 1 <ins>herstellt</ins>, diese <ins>besitzt,</ins> <ins>konsumiert </ins>oder <ins>der dargestellten Person zugänglich macht, bleibt straflos, wenn:</ins></div></td>
+</tr>
+<tr><td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+<td class="inserted"><ins><div class="buchstabe">a. die minderjährige Person eingewilligt hat;</div></ins></td>
+</tr>
+<tr><td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+<td class="inserted"><ins><div class="buchstabe">b. die herstellende Person dafür kein Entgelt leistet oder verspricht; und</div></ins></td>
+</tr>
+<tr><td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+<td class="inserted"><ins><div class="buchstabe">c. der Altersunterschied zwischen den Beteiligten nicht mehr als drei Jahre beträgt.</div></ins></td>
+</tr>
+<tr><td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+<td class="inserted"><ins><div class="paragraph-text">8bis. Straflos bleibt, wer von sich als minderjährige Person Gegenstände oder Vorführungen im Sinne von Absatz 1 herstellt, besitzt, konsumiert oder einer anderen Person mit deren Einwilligung zugänglich macht.Die Person, der diese Gegenstände oder Vorführungen zugänglich gemacht werden, bleibt für Besitz und Konsum straflos, wenn:</div></ins></td>
+</tr>
+<tr><td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+<td class="inserted"><ins><div class="buchstabe">a. sie dafür kein Entgelt leistet oder verspricht;</div></ins></td>
+</tr>
+<tr><td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+<td class="inserted"><ins><div class="buchstabe">b. die Beteiligten sich persönlich kennen; und</div></ins></td>
+</tr>
+<tr><td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+<td class="inserted"><ins><div class="buchstabe">c. die Beteiligten volljährig sind oder, sofern mindestens eine Person minderjährig ist, einen Altersunterschied von nicht mehr als drei Jahren aufweisen.</div></ins></td>
+</tr>
+<tr><td><div class="paragraph-text">9. Gegenstände oder Vorführungen im Sinne der Absätze 1–5 sind nicht pornografisch, wenn sie einen schutzwürdigen kulturellen oder wissenschaftlichen Wert haben.</div></td>
+<td><div class="paragraph-text">9. Gegenstände oder Vorführungen im Sinne der Absätze 1–5 sind nicht pornografisch, wenn sie einen schutzwürdigen kulturellen oder wissenschaftlichen Wert haben.</div></td>
+</tr>
+<tr class="article-title"><td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+<td class="inserted"><ins><p class="artikel-name">Art. 197a</p></ins></td>
+</tr>
+<tr><td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+<td class="inserted"><ins><div class="paragraph-text">1. Wer einen nicht öffentlichen sexuellen Inhalt, namentlich Schriften, Ton- oder Bildaufnahmen, Abbildungen, Gegenstände oder Vorführungen, ohne Zustimmung der darin erkennbaren Person einer Drittperson weiterleitet, wird, auf Antrag, mit Freiheitsstrafe bis zu einem Jahr oder Geldstrafe bestraft.</div></ins></td>
+</tr>
+<tr><td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+<td class="inserted"><ins><div class="paragraph-text">2. Hat der Täter den Inhalt öffentlich gemacht, so wird er mit Freiheitsstrafe bis zu drei Jahren oder Geldstrafe bestraft.</div></ins></td>
+</tr>
+<tr class="article-title"><td><p class="artikel-name">Art. 198</p></td>
+<td><p class="artikel-name">Art. 198</p></td>
+</tr>
+<tr><td class="deleted"><del><div class="artikel-text">Wer vor jemandem, der dies nicht erwartet, eine sexuelle Handlung vornimmt und dadurch Ärgernis erregt,wer jemanden tätlich oder in grober Weise durch Worte sexuell belästigt,wird, auf Antrag, mit Busse bestraft.</div></del></td>
+<td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+</tr>
+<tr><td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+<td class="inserted"><ins><div class="paragraph-text">1. Wer vor jemandem, der dies nicht erwartet, eine sexuelle Handlung vornimmt und dadurch Ärgernis erregt,</ins></td>
+</tr>
+<tr><td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+<td class="inserted"><ins><p class="p-list">wer jemanden tätlich oder in grober Weise durch Wort, Schrift oder Bild sexuell belästigt,</p></ins></td>
+</tr>
+<tr><td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+<td class="inserted"><ins><p class="p-list">wird, auf Antrag, mit Busse bestraft.</p></div></ins></td>
+</tr>
+<tr><td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+<td class="inserted"><ins><div class="paragraph-text">2. Die zuständige Behörde kann die beschuldigte Person zum Besuch eines Lernprogramms verpflichten. Absolviert diese das angeordnete Lernprogramm, wird das Verfahren eingestellt.</div></ins></td>
+</tr>
+<tr><td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+<td class="inserted"><ins><div class="paragraph-text">3. Die zuständige Behörde entscheidet über die Kosten des Verfahrens und über allfällig geltend gemachte Forderungen der Zivilpartei.</div></ins></td>
+</tr>
+<tr class="article-title"><td><p class="artikel-name">Art. 200</p></td>
+<td><p class="artikel-name">Art. 200</p></td>
+</tr>
+<tr><td class="changed"><div class="artikel-text">Wird eine strafbare Handlung <del>dieses</del> <del>Titels</del> gemeinsam von mehreren Personen ausgeführt, so <del>kann</del> das Gericht die Strafe <del>erhöhen,</del> darf jedoch das <del>höchste</del> <del>Mass </del>der angedrohten Strafe nicht um mehr als die Hälfte überschreiten. Dabei ist es an das gesetzliche Höchstmass der Strafart gebunden.</div></td>
+<td class="changed"><div class="artikel-text">Wird eine strafbare Handlung <ins>nach</ins> <ins>diesem</ins> <ins>Titel </ins>gemeinsam von mehreren Personen ausgeführt, so <ins>erhöht</ins> das Gericht die Strafe<ins>.</ins> <ins>Es</ins> darf jedoch das <ins>Höchstmass</ins> der angedrohten Strafe nicht um mehr als die Hälfte überschreiten. Dabei ist es an das gesetzliche Höchstmass der Strafart gebunden.</div></td>
+</tr>
+<tr class="article-title"><td><p class="artikel-name">Art. 264a</p></td>
+<td><p class="artikel-name">Art. 264a</p></td>
+</tr>
+<tr><td><div class="paragraph-text">1. Mit Freiheitsstrafe nicht unter fünf Jahren wird bestraft, wer im Rahmen eines ausgedehnten oder systematischen Angriffs gegen die Zivilbevölkerung:</div></td>
+<td><div class="paragraph-text">1. Mit Freiheitsstrafe nicht unter fünf Jahren wird bestraft, wer im Rahmen eines ausgedehnten oder systematischen Angriffs gegen die Zivilbevölkerung:</div></td>
+</tr>
+<tr><td><div class="buchstabe">a. einen Menschen vorsätzlich tötet;</div></td>
+<td><div class="buchstabe">a. einen Menschen vorsätzlich tötet;</div></td>
+</tr>
+<tr><td><div class="buchstabe">b. viele Menschen vorsätzlich tötet oder der Bevölkerung in der Absicht, sie ganz oder teilweise zu vernichten, Lebensbedingungen auferlegt, die geeignet sind, deren Vernichtung herbeizuführen;</div></td>
+<td><div class="buchstabe">b. viele Menschen vorsätzlich tötet oder der Bevölkerung in der Absicht, sie ganz oder teilweise zu vernichten, Lebensbedingungen auferlegt, die geeignet sind, deren Vernichtung herbeizuführen;</div></td>
+</tr>
+<tr><td><div class="buchstabe">c. sich ein Eigentumsrecht über einen Menschen anmasst und über ihn verfügt, namentlich in Form von Menschenhandel, sexueller Ausbeutung oder Zwangsarbeit;</div></td>
+<td><div class="buchstabe">c. sich ein Eigentumsrecht über einen Menschen anmasst und über ihn verfügt, namentlich in Form von Menschenhandel, sexueller Ausbeutung oder Zwangsarbeit;</div></td>
+</tr>
+<tr><td><div class="buchstabe">d. einem Menschen unter Verstoss gegen die Grundregeln des Völkerrechts in schwerwiegender Weise die Freiheit entzieht;</div></td>
+<td><div class="buchstabe">d. einem Menschen unter Verstoss gegen die Grundregeln des Völkerrechts in schwerwiegender Weise die Freiheit entzieht;</div></td>
+</tr>
+<tr><td><div class="buchstabe">e. in der Absicht, eine Person für längere Zeit dem Schutz des Gesetzes zu entziehen:</div></td>
+<td><div class="buchstabe">e. in der Absicht, eine Person für längere Zeit dem Schutz des Gesetzes zu entziehen:</div></td>
+</tr>
+<tr><td><div class="buchstabe">1. im Auftrag oder mit Billigung eines Staates oder einer politischen Organisation der Person die Freiheit entzieht, wobei in der Folge die Auskunft über ihr Schicksal oder ihren Verbleib verweigert wird, oder</div></td>
+<td><div class="buchstabe">1. im Auftrag oder mit Billigung eines Staates oder einer politischen Organisation der Person die Freiheit entzieht, wobei in der Folge die Auskunft über ihr Schicksal oder ihren Verbleib verweigert wird, oder</div></td>
+</tr>
+<tr><td><div class="buchstabe">2. im Auftrag eines Staates oder einer politischen Organisation oder entgegen einer Rechtspflicht die Auskunft über das Schicksal oder den Verbleib dieser Person verweigert;</div></td>
+<td><div class="buchstabe">2. im Auftrag eines Staates oder einer politischen Organisation oder entgegen einer Rechtspflicht die Auskunft über das Schicksal oder den Verbleib dieser Person verweigert;</div></td>
+</tr>
+<tr><td><div class="buchstabe">f. einem unter seinem Gewahrsam oder seiner Kontrolle stehenden Menschen grosse Leiden oder eine schwere Schädigung des Körpers oder der physischen oder psychischen Gesundheit zufügt;</div></td>
+<td><div class="buchstabe">f. einem unter seinem Gewahrsam oder seiner Kontrolle stehenden Menschen grosse Leiden oder eine schwere Schädigung des Körpers oder der physischen oder psychischen Gesundheit zufügt;</div></td>
+</tr>
+<tr><td class="changed"><div class="buchstabe">g. <del>eine</del> Person <del>weiblichen</del> <del>Geschlechts</del> <del>vergewaltigt</del> <del>oder,</del> <del>nachdem</del> <del>sie</del> <del>gegen</del> <del>ihren</del> <del>Willen</del> <del>geschwängert</del> <del>wurde,</del> <del>gefangen</del> <del>hält</del> <del>in</del> <del>der</del> <del>Absicht,</del> <del>die</del> <del>ethnische</del> <del>Zusammensetzung</del> <del>einer</del> <del>Bevölkerung</del> <del>zu</del> <del>beeinflussen</del>, <del>eine</del> <del>Person</del> <del>zur Duldung </del>einer sexuellen Handlung von vergleichbarer Schwere <del>oder</del> zur Prostitution nötigt oder sie zwangsweise sterilisiert;</div></td>
+<td class="changed"><div class="buchstabe">g. <ins>an</ins> <ins>einer </ins>Person <ins>eine</ins> <ins>Vergewaltigung</ins> <ins>nach</ins> <ins>Artikel</ins> <ins>190</ins> <ins>Absatz</ins> <ins>2</ins> <ins>oder</ins> <ins>3</ins> <ins>oder</ins> <ins>eine</ins> <ins>sexuelle</ins> <ins>Nötigung</ins> <ins>nach</ins> <ins>Artikel</ins> <ins>189</ins> <ins>Absatz</ins> <ins>2</ins> <ins>oder</ins> <ins>3</ins> <ins>von</ins> <ins>vergleichbarer</ins> <ins>Schwere begeht</ins>, <ins>sie</ins> <ins>zu</ins> einer sexuellen Handlung von vergleichbarer Schwere <ins>missbraucht,</ins> <ins>sie </ins>zur Prostitution nötigt oder sie zwangsweise sterilisiert<ins> oder, nachdem sie gegen ihren Willen geschwängert wurde, gefangen hält in der Absicht, die ethnische Zusammensetzung einer Bevölkerung zu beeinflussen</ins>;</div></td>
+</tr>
+<tr><td><div class="buchstabe">h. Menschen aus dem Gebiet, in dem sie sich rechtmässig aufhalten, vertreibt oder zwangsweise an einen andern Ort überführt;</div></td>
+<td><div class="buchstabe">h. Menschen aus dem Gebiet, in dem sie sich rechtmässig aufhalten, vertreibt oder zwangsweise an einen andern Ort überführt;</div></td>
+</tr>
+<tr><td><div class="buchstabe">i. einer Gruppe von Menschen aus politischen, rassischen, ethnischen, religiösen, sozialen oder anderen völkerrechtswidrigen Gründen, im Zusammenhang mit einer Tat nach dem zwölften Titelbis oder dem zwölften Titelter oder zwecks systematischer Unterdrückung oder Beherrschung einer rassischen Gruppe, in schwerwiegender Weise Grundrechte vorenthält oder entzieht;</div></td>
+<td><div class="buchstabe">i. einer Gruppe von Menschen aus politischen, rassischen, ethnischen, religiösen, sozialen oder anderen völkerrechtswidrigen Gründen, im Zusammenhang mit einer Tat nach dem zwölften Titelbis oder dem zwölften Titelter oder zwecks systematischer Unterdrückung oder Beherrschung einer rassischen Gruppe, in schwerwiegender Weise Grundrechte vorenthält oder entzieht;</div></td>
+</tr>
+<tr><td><div class="buchstabe">j. eine andere Handlung von vergleichbarer Schwere wie die in diesem Absatz genannten Verbrechen verübt und dadurch einem Menschen grosse Leiden oder eine schwere Schädigung des Körpers oder der physischen oder psychischen Gesundheit zufügt.</div></td>
+<td><div class="buchstabe">j. eine andere Handlung von vergleichbarer Schwere wie die in diesem Absatz genannten Verbrechen verübt und dadurch einem Menschen grosse Leiden oder eine schwere Schädigung des Körpers oder der physischen oder psychischen Gesundheit zufügt.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">2. In besonders schweren Fällen, namentlich wenn die Tat viele Menschen betrifft oder der Täter grausam handelt, kann auf lebenslängliche Freiheitsstrafe erkannt werden.</div></td>
+<td><div class="paragraph-text">2. In besonders schweren Fällen, namentlich wenn die Tat viele Menschen betrifft oder der Täter grausam handelt, kann auf lebenslängliche Freiheitsstrafe erkannt werden.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">3. In weniger schweren Fällen nach Absatz 1 Buchstaben c–j kann auf Freiheitsstrafe nicht unter einem Jahr erkannt werden.</div></td>
+<td><div class="paragraph-text">3. In weniger schweren Fällen nach Absatz 1 Buchstaben c–j kann auf Freiheitsstrafe nicht unter einem Jahr erkannt werden.</div></td>
+</tr>
+<tr class="article-title"><td><p class="artikel-name">Art. 264e</p></td>
+<td><p class="artikel-name">Art. 264e</p></td>
+</tr>
+<tr><td><div class="paragraph-text">1. Mit Freiheitsstrafe nicht unter drei Jahren wird bestraft, wer im Zusammenhang mit einem bewaffneten Konflikt:</div></td>
+<td><div class="paragraph-text">1. Mit Freiheitsstrafe nicht unter drei Jahren wird bestraft, wer im Zusammenhang mit einem bewaffneten Konflikt:</div></td>
+</tr>
+<tr><td><div class="buchstabe">a. eine vom humanitären Völkerrecht geschützte Person körperlich schwer schädigt oder in ihrer physischen oder psychischen Gesundheit schwer verletzt oder gefährdet, indem er sie einem medizinischen Verfahren unterzieht, das nicht durch ihren Gesundheitszustand geboten ist und das nicht mit allgemein anerkannten medizinischen Grundsätzen im Einklang steht;</div></td>
+<td><div class="buchstabe">a. eine vom humanitären Völkerrecht geschützte Person körperlich schwer schädigt oder in ihrer physischen oder psychischen Gesundheit schwer verletzt oder gefährdet, indem er sie einem medizinischen Verfahren unterzieht, das nicht durch ihren Gesundheitszustand geboten ist und das nicht mit allgemein anerkannten medizinischen Grundsätzen im Einklang steht;</div></td>
+</tr>
+<tr><td class="changed"><div class="buchstabe">b. <del>eine</del> vom humanitären Völkerrecht <del>geschützte</del> Person <del>weiblichen</del> <del>Geschlechts</del> <del>vergewaltigt</del> <del>oder,</del> <del>nachdem</del> <del>sie</del> <del>gegen</del> <del>ihren</del> <del>Willen</del> <del>geschwängert</del> <del>wurde,</del> <del>gefangen</del> <del>hält</del> <del>in</del> <del>der</del> <del>Absicht,</del> <del>die</del> <del>ethnische</del> <del>Zusammensetzung</del> <del>einer</del> <del>Bevölkerung</del> <del>zu</del> <del>beeinflussen</del>, <del>eine</del> <del>vom</del> <del>humanitären Völkerrecht geschützte Person zur Duldung </del>einer sexuellen Handlung von vergleichbarer Schwere <del>oder</del> zur Prostitution nötigt oder sie zwangsweise sterilisiert;</div></td>
+<td class="changed"><div class="buchstabe">b. <ins>an</ins> <ins>einer </ins>vom humanitären Völkerrecht <ins>geschützten</ins> Person <ins>eine</ins> <ins>Vergewaltigung</ins> <ins>nach</ins> <ins>Artikel</ins> <ins>190</ins> <ins>Absatz</ins> <ins>2</ins> <ins>oder</ins> <ins>3</ins> <ins>oder</ins> <ins>eine</ins> <ins>sexuelle</ins> <ins>Nötigung</ins> <ins>nach</ins> <ins>Artikel</ins> <ins>189</ins> <ins>Absatz</ins> <ins>2</ins> <ins>oder</ins> <ins>3</ins> <ins>von</ins> <ins>vergleichbarer</ins> <ins>Schwere begeht</ins>, <ins>sie</ins> <ins>zu</ins> einer sexuellen Handlung von vergleichbarer Schwere <ins>missbraucht,</ins> <ins>sie </ins>zur Prostitution nötigt oder sie zwangsweise sterilisiert<ins> oder, nachdem sie gegen ihren Willen geschwängert wurde, gefangen hält in der Absicht, die ethnische Zusammensetzung einer Bevölkerung zu beeinflussen</ins>;</div></td>
+</tr>
+<tr><td><div class="buchstabe">c. eine vom humanitären Völkerrecht geschützte Person in schwerwiegender Weise entwürdigend oder erniedrigend behandelt.</div></td>
+<td><div class="buchstabe">c. eine vom humanitären Völkerrecht geschützte Person in schwerwiegender Weise entwürdigend oder erniedrigend behandelt.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">2. In besonders schweren Fällen, namentlich wenn die Tat viele Menschen betrifft oder der Täter grausam handelt, kann auf lebenslängliche Freiheitsstrafe erkannt werden.</div></td>
+<td><div class="paragraph-text">2. In besonders schweren Fällen, namentlich wenn die Tat viele Menschen betrifft oder der Täter grausam handelt, kann auf lebenslängliche Freiheitsstrafe erkannt werden.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">3. In weniger schweren Fällen kann auf Freiheitsstrafe nicht unter einem Jahr erkannt werden.</div></td>
+<td><div class="paragraph-text">3. In weniger schweren Fällen kann auf Freiheitsstrafe nicht unter einem Jahr erkannt werden.</div></td>
+</tr>
+<tr class="article-title"><td><p class="artikel-name">Art. 266</p></td>
+<td><p class="artikel-name">Art. 266</p></td>
+</tr>
+<tr><td class="deleted"><del><div class="artikel-text">1.Wer eine Handlung vornimmt, die darauf gerichtet ist,die Unabhängigkeit der Eidgenossenschaft zu verletzen oder zu gefährden,eine die Unabhängigkeit der Eidgenossenschaft gefährdende Einmischung einer fremden Macht in die Angelegenheiten der Eidgenossenschaft herbeizuführen,wird mit Freiheitsstrafe nicht unter einem Jahr bestraft.2. Wer mit der Regierung eines fremden Staates oder mit deren Agenten in Beziehung tritt, um einen Krieg gegen die Eidgenossenschaft herbeizuführen, wird mit Freiheitsstrafe nicht unter drei Jahren bestraft.In schweren Fällen kann auf lebenslängliche Freiheitsstrafe erkannt werden.</div></del></td>
+<td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+</tr>
+<tr><td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+<td class="inserted"><ins><div class="paragraph-text">1. Wer eine Handlung vornimmt, die darauf gerichtet ist,</ins></td>
+</tr>
+<tr><td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+<td class="inserted"><ins><p class="p-list">die Unabhängigkeit der Eidgenossenschaft zu verletzen oder zu gefährden,</p></ins></td>
+</tr>
+<tr><td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+<td class="inserted"><ins><p class="p-list">eine die Unabhängigkeit der Eidgenossenschaft gefährdende Einmischung einer fremden Macht in die Angelegenheiten der Eidgenossenschaft herbeizuführen,</p></ins></td>
+</tr>
+<tr><td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+<td class="inserted"><ins><p class="p-list">wird mit Freiheitsstrafe nicht unter einem Jahr bestraft.</p></div></ins></td>
+</tr>
+<tr><td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+<td class="inserted"><ins><div class="paragraph-text">2. Wer mit der Regierung eines fremden Staates oder mit deren Agenten in Beziehung tritt, um einen Krieg gegen die Eidgenossenschaft herbeizuführen, wird mit Freiheitsstrafe nicht unter drei Jahren bestraft.</ins></td>
+</tr>
+<tr><td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+<td class="inserted"><ins><p class="p-list">In schweren Fällen kann auf lebenslängliche Freiheitsstrafe erkannt werden.</p></div></ins></td>
+</tr>
+<tr class="article-title"><td><p class="artikel-name">Art. 267</p></td>
+<td><p class="artikel-name">Art. 267</p></td>
+</tr>
+<tr><td class="deleted"><del><div class="artikel-text">1.Wer vorsätzlich ein Geheimnis, dessen Bewahrung zum Wohle der Eidgenossenschaft geboten ist, einem fremden Staate oder dessen Agenten bekannt oder zugänglich macht,wer Urkunden oder Beweismittel, die sich auf Rechtsverhältnisse zwischen der Eidgenossenschaft oder einem Kanton und einem ausländischen Staate beziehen, verfälscht, vernichtet, beiseiteschafft oder entwendet und dadurch die Interessen der Eidgenossenschaft oder des Kantons vorsätzlich gefährdet,wer als Bevollmächtigter der Eidgenossenschaft vorsätzlich Unterhandlungen mit einer auswärtigen Regierung zum Nachteile der Eidgenossenschaft führt,wird mit Freiheitsstrafe nicht unter einem Jahr bestraft.2. Wer vorsätzlich ein Geheimnis, dessen Bewahrung zum Wohle der Eidgenossenschaft geboten ist, der Öffentlichkeit bekannt oder zugänglich macht, wird mit Freiheitsstrafe bis zu fünf Jahren oder Geldstrafe bestraft.3. Handelt der Täter fahrlässig, so ist die Strafe Freiheitsstrafe bis zu drei Jahren oder Geldstrafe.</div></del></td>
+<td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+</tr>
+<tr><td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+<td class="inserted"><ins><div class="paragraph-text">1. Wer vorsätzlich ein Geheimnis, dessen Bewahrung zum Wohle der Eidgenossenschaft geboten ist, einem fremden Staate oder dessen Agenten bekannt oder zugänglich macht,</ins></td>
+</tr>
+<tr><td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+<td class="inserted"><ins><p class="p-list">wer Urkunden oder Beweismittel, die sich auf Rechtsverhältnisse zwischen der Eidgenossenschaft oder einem Kanton und einem ausländischen Staate beziehen, verfälscht, vernichtet, beiseiteschafft oder entwendet und dadurch die Interessen der Eidgenossenschaft oder des Kantons vorsätzlich gefährdet,</p></ins></td>
+</tr>
+<tr><td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+<td class="inserted"><ins><p class="p-list">wer als Bevollmächtigter der Eidgenossenschaft vorsätzlich Unterhandlungen mit einer auswärtigen Regierung zum Nachteile der Eidgenossenschaft führt,</p></ins></td>
+</tr>
+<tr><td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+<td class="inserted"><ins><p class="p-list">wird mit Freiheitsstrafe nicht unter einem Jahr bestraft.</p></div></ins></td>
+</tr>
+<tr><td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+<td class="inserted"><ins><div class="paragraph-text">2. Wer vorsätzlich ein Geheimnis, dessen Bewahrung zum Wohle der Eidgenossenschaft geboten ist, der Öffentlichkeit bekannt oder zugänglich macht, wird mit Freiheitsstrafe bis zu fünf Jahren oder Geldstrafe bestraft.</div></ins></td>
+</tr>
+<tr><td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+<td class="inserted"><ins><div class="paragraph-text">3. Handelt der Täter fahrlässig, so ist die Strafe Freiheitsstrafe bis zu drei Jahren oder Geldstrafe.</div></ins></td>
+</tr>
+<tr class="article-title"><td><p class="artikel-name">Art. 349a</p></td>
+<td><p class="artikel-name">Art. 349a</p></td>
+</tr>
+<tr><td class="changed"><div class="artikel-text">Die zuständigen Bundesbehörden dürfen Personendaten nur bekannt geben, wenn dafür eine Rechtsgrundlage im Sinne von Artikel <del>7</del> des <del>Schengen-</del>Datenschutzgesetzes vom <del>28</del>. September <del>2018</del> (<del>SDSG</del>) besteht oder wenn:</div></td>
+<td class="changed"><div class="artikel-text">Die zuständigen Bundesbehörden dürfen Personendaten nur bekannt geben, wenn dafür eine Rechtsgrundlage im Sinne von Artikel <ins>36</ins> <ins>Absatz 1 </ins>des Datenschutzgesetzes vom <ins>25</ins>. September <ins>2020</ins> (<ins>DSG</ins>) besteht oder wenn:</div></td>
+</tr>
+<tr><td><div class="buchstabe">a. die Bekanntgabe von Personendaten notwendig ist, um das Leben oder die körperliche Unversehrtheit der betroffenen Person oder eines Dritten zu schützen;</div></td>
+<td><div class="buchstabe">a. die Bekanntgabe von Personendaten notwendig ist, um das Leben oder die körperliche Unversehrtheit der betroffenen Person oder eines Dritten zu schützen;</div></td>
+</tr>
+<tr><td><div class="buchstabe">b. die betroffene Person ihre Personendaten allgemein zugänglich gemacht und die Bekanntgabe nicht ausdrücklich untersagt hat.</div></td>
+<td><div class="buchstabe">b. die betroffene Person ihre Personendaten allgemein zugänglich gemacht und die Bekanntgabe nicht ausdrücklich untersagt hat.</div></td>
+</tr>
+<tr class="article-title"><td><p class="artikel-name">Art. 349c</p></td>
+<td><p class="artikel-name">Art. 349c</p></td>
+</tr>
+<tr><td><div class="paragraph-text">1. Personendaten dürfen der zuständigen Behörde eines Staates, der nicht über eines der Schengen-Assoziierungsabkommen mit der Schweiz verbunden ist (Drittstaat), oder einem internationalen Organ nicht bekannt gegeben werden, wenn dadurch die Persönlichkeit der betroffenen Person schwerwiegend gefährdet würde, namentlich weil ein angemessener Schutz fehlt.</div></td>
+<td><div class="paragraph-text">1. Personendaten dürfen der zuständigen Behörde eines Staates, der nicht über eines der Schengen-Assoziierungsabkommen mit der Schweiz verbunden ist (Drittstaat), oder einem internationalen Organ nicht bekannt gegeben werden, wenn dadurch die Persönlichkeit der betroffenen Person schwerwiegend gefährdet würde, namentlich weil ein angemessener Schutz fehlt.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">2. Ein angemessener Schutz wird gewährleistet durch:</div></td>
+<td><div class="paragraph-text">2. Ein angemessener Schutz wird gewährleistet durch:</div></td>
+</tr>
+<tr><td><div class="buchstabe">a. die Gesetzgebung des Drittstaates, sofern die Europäische Union dies in einem Beschluss festgehalten hat;</div></td>
+<td><div class="buchstabe">a. die Gesetzgebung des Drittstaates, sofern die Europäische Union dies in einem Beschluss festgehalten hat;</div></td>
+</tr>
+<tr><td><div class="buchstabe">b. einen völkerrechtlichen Vertrag;</div></td>
+<td><div class="buchstabe">b. einen völkerrechtlichen Vertrag;</div></td>
+</tr>
+<tr><td><div class="buchstabe">c. spezifische Garantien.</div></td>
+<td><div class="buchstabe">c. spezifische Garantien.</div></td>
+</tr>
+<tr><td class="changed"><div class="paragraph-text">3. Handelt es sich bei der bekanntgebenden Behörde um eine Bundesbehörde, so informiert sie den Eidgenössischen Datenschutz- und Öffentlichkeitsbeauftragten (<del>Beauftragter</del>) über die Kategorien von Bekanntgaben von Personendaten, die auf der Grundlage spezifischer Garantien nach Absatz 2 Buchstabe c erfolgen. Jede Bekanntgabe wird dokumentiert.</div></td>
+<td class="changed"><div class="paragraph-text">3. Handelt es sich bei der bekanntgebenden Behörde um eine Bundesbehörde, so informiert sie den Eidgenössischen Datenschutz- und Öffentlichkeitsbeauftragten (<ins>EDÖB</ins>) über die Kategorien von Bekanntgaben von Personendaten, die auf der Grundlage spezifischer Garantien nach Absatz 2 Buchstabe c erfolgen. Jede Bekanntgabe wird dokumentiert.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">4. In Abweichung von Absatz 1 können Personendaten der zuständigen Behörde eines Drittstaates oder einem internationalen Organ bekannt gegeben werden, wenn die Bekanntgabe im Einzelfall notwendig ist:</div></td>
+<td><div class="paragraph-text">4. In Abweichung von Absatz 1 können Personendaten der zuständigen Behörde eines Drittstaates oder einem internationalen Organ bekannt gegeben werden, wenn die Bekanntgabe im Einzelfall notwendig ist:</div></td>
+</tr>
+<tr><td><div class="buchstabe">a. zum Schutz des Lebens oder der körperlichen Unversehrtheit der betroffenen Person oder eines Dritten;</div></td>
+<td><div class="buchstabe">a. zum Schutz des Lebens oder der körperlichen Unversehrtheit der betroffenen Person oder eines Dritten;</div></td>
+</tr>
+<tr><td><div class="buchstabe">b. zur Abwehr einer unmittelbar drohenden ernsthaften Gefahr für die öffentliche Sicherheit eines Schengen-Staates oder eines Drittstaates;</div></td>
+<td><div class="buchstabe">b. zur Abwehr einer unmittelbar drohenden ernsthaften Gefahr für die öffentliche Sicherheit eines Schengen-Staates oder eines Drittstaates;</div></td>
+</tr>
+<tr><td><div class="buchstabe">c. zur Verhütung, Feststellung oder Verfolgung einer Straftat, sofern der Bekanntgabe keine überwiegenden schutzwürdigen Interessen der betroffenen Person entgegenstehen;</div></td>
+<td><div class="buchstabe">c. zur Verhütung, Feststellung oder Verfolgung einer Straftat, sofern der Bekanntgabe keine überwiegenden schutzwürdigen Interessen der betroffenen Person entgegenstehen;</div></td>
+</tr>
+<tr><td><div class="buchstabe">d. zur Ausübung oder Durchsetzung von Rechtsansprüchen gegenüber einer für die Verhütung, Feststellung oder Verfolgung einer Straftat zuständigen Behörde, sofern der Bekanntgabe keine überwiegenden schutzwürdigen Interessen der betroffenen Person entgegenstehen.</div></td>
+<td><div class="buchstabe">d. zur Ausübung oder Durchsetzung von Rechtsansprüchen gegenüber einer für die Verhütung, Feststellung oder Verfolgung einer Straftat zuständigen Behörde, sofern der Bekanntgabe keine überwiegenden schutzwürdigen Interessen der betroffenen Person entgegenstehen.</div></td>
+</tr>
+<tr><td class="changed"><div class="paragraph-text">5. Handelt es sich bei der bekanntgebenden Behörde um eine Bundesbehörde, so informiert sie den <del>Beauftragten</del> über die Bekanntgabe nach Absatz 4.</div></td>
+<td class="changed"><div class="paragraph-text">5. Handelt es sich bei der bekanntgebenden Behörde um eine Bundesbehörde, so informiert sie den <ins>EDÖB</ins> über die Bekanntgabe nach Absatz 4.</div></td>
+</tr>
+<tr class="article-title"><td><p class="artikel-name">Art. 349e</p></td>
+<td><p class="artikel-name">Art. 349e</p></td>
+</tr>
+<tr><td><div class="paragraph-text">1. Ist es, namentlich in Notfällen, nicht möglich, der zuständigen Behörde eines Drittstaates Personendaten auf dem üblichen Weg der polizeilichen Zusammenarbeit bekannt zu geben, so kann die zuständige Behörde sie ausnahmsweise einem in diesem Staat niedergelassenen Empfänger bekannt geben, sofern die folgenden Voraussetzungen erfüllt sind:</div></td>
+<td><div class="paragraph-text">1. Ist es, namentlich in Notfällen, nicht möglich, der zuständigen Behörde eines Drittstaates Personendaten auf dem üblichen Weg der polizeilichen Zusammenarbeit bekannt zu geben, so kann die zuständige Behörde sie ausnahmsweise einem in diesem Staat niedergelassenen Empfänger bekannt geben, sofern die folgenden Voraussetzungen erfüllt sind:</div></td>
+</tr>
+<tr><td><div class="buchstabe">a. Die Bekanntgabe ist unentbehrlich zur Erfüllung einer gesetzlichen Aufgabe der Behörde, welche die Daten bekannt gibt.</div></td>
+<td><div class="buchstabe">a. Die Bekanntgabe ist unentbehrlich zur Erfüllung einer gesetzlichen Aufgabe der Behörde, welche die Daten bekannt gibt.</div></td>
+</tr>
+<tr><td><div class="buchstabe">b. Der Bekanntgabe stehen keine überwiegenden schutzwürdigen Interessen der betroffenen Person entgegen.</div></td>
+<td><div class="buchstabe">b. Der Bekanntgabe stehen keine überwiegenden schutzwürdigen Interessen der betroffenen Person entgegen.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">2. Die zuständige Behörde weist den Empfänger der Personendaten bei der Bekanntgabe darauf hin, dass er die Daten nur für die von der Behörde festgelegten Zwecke verwenden darf.</div></td>
+<td><div class="paragraph-text">2. Die zuständige Behörde weist den Empfänger der Personendaten bei der Bekanntgabe darauf hin, dass er die Daten nur für die von der Behörde festgelegten Zwecke verwenden darf.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">3. Sie benachrichtigt die zuständige Behörde des Drittstaates unverzüglich über jede Bekanntgabe von Personendaten, sofern sie dies als zweckmässig erachtet.</div></td>
+<td><div class="paragraph-text">3. Sie benachrichtigt die zuständige Behörde des Drittstaates unverzüglich über jede Bekanntgabe von Personendaten, sofern sie dies als zweckmässig erachtet.</div></td>
+</tr>
+<tr><td class="changed"><div class="paragraph-text">4. Handelt es sich bei der zuständigen Behörde um eine Bundesbehörde, so informiert sie den <del>Beauftragten</del> unverzüglich über jede Bekanntgabe nach Absatz 1.</div></td>
+<td class="changed"><div class="paragraph-text">4. Handelt es sich bei der zuständigen Behörde um eine Bundesbehörde, so informiert sie den <ins>EDÖB</ins> unverzüglich über jede Bekanntgabe nach Absatz 1.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">5. Sie dokumentiert jede Bekanntgabe von Personendaten. Der Bundesrat regelt die Einzelheiten.</div></td>
+<td><div class="paragraph-text">5. Sie dokumentiert jede Bekanntgabe von Personendaten. Der Bundesrat regelt die Einzelheiten.</div></td>
+</tr>
+<tr class="article-title"><td><p class="artikel-name">Art. 349g</p></td>
+<td><p class="artikel-name">Art. 349g</p></td>
+</tr>
+<tr><td class="changed"><div class="paragraph-text">1. Die betroffene Person kann vom <del>Beauftragten</del> verlangen, dass er prüft, ob allfällige Daten über sie rechtmässig bearbeitet werden, wenn:</div></td>
+<td class="changed"><div class="paragraph-text">1. Die betroffene Person kann vom <ins>EDÖB</ins> verlangen, dass er prüft, ob allfällige Daten über sie rechtmässig bearbeitet werden, wenn:</div></td>
+</tr>
+<tr><td class="changed"><div class="buchstabe">a. ihr Recht auf Information über den Austausch von Daten über sie eingeschränkt oder aufgeschoben wird (Art. <del>18a</del> und <del>18b</del> <del>des Bundesgesetzes vom 19. Juni 1992 über den Datenschutz</del>);</div></td>
+<td class="changed"><div class="buchstabe">a. ihr Recht auf Information über den Austausch von Daten über sie eingeschränkt oder aufgeschoben wird (Art. <ins>19</ins> und <ins>20</ins> <ins>DSG</ins>);</div></td>
+</tr>
+<tr><td class="changed"><div class="buchstabe">b. ihr Auskunftsrecht verweigert, eingeschränkt oder aufgeschoben wird (Art. <del>17</del> und <del>18</del> <del>SDSG</del>); oder</div></td>
+<td class="changed"><div class="buchstabe">b. ihr Auskunftsrecht verweigert, eingeschränkt oder aufgeschoben wird (Art. <ins>25</ins> und <ins>26</ins> <ins>DSG</ins>); oder</div></td>
+</tr>
+<tr><td class="changed"><div class="buchstabe">c. ihr Recht, die Berichtigung, die Vernichtung oder die Löschung von Daten über sie zu verlangen, teilweise oder ganz verweigert wird (Art. <del>19</del> Abs. 2 Bst. a <del>SDSG</del>).</div></td>
+<td class="changed"><div class="buchstabe">c. ihr Recht, die Berichtigung, die Vernichtung oder die Löschung von Daten über sie zu verlangen, teilweise oder ganz verweigert wird (Art. <ins>41</ins> Abs. 2 Bst. a <ins>DSG</ins>).</div></td>
+</tr>
+<tr><td class="changed"><div class="paragraph-text">2. Der Prüfung unterzogen werden kann ausschliesslich eine Bundesbehörde, die der Aufsicht des <del>Beauftragten</del> untersteht.</div></td>
+<td class="changed"><div class="paragraph-text">2. Der Prüfung unterzogen werden kann ausschliesslich eine Bundesbehörde, die der Aufsicht des <ins>EDÖB</ins> untersteht.</div></td>
+</tr>
+<tr><td class="changed"><div class="paragraph-text">3. Der <del>Beauftragte</del> führt die Prüfung durch; er teilt der betroffenen Person mit, dass entweder keine Daten über sie unrechtmässig bearbeitet werden oder dass er im Falle von Fehlern bei der Bearbeitung der Personendaten eine Untersuchung nach Artikel <del>22</del> <del>SDSG</del> eröffnet hat.</div></td>
+<td class="changed"><div class="paragraph-text">3. Der <ins>EDÖB</ins> führt die Prüfung durch; er teilt der betroffenen Person mit, dass entweder keine Daten über sie unrechtmässig bearbeitet werden oder dass er im Falle von Fehlern bei der Bearbeitung der Personendaten eine Untersuchung nach Artikel <ins>49</ins> <ins>DSG</ins> eröffnet hat.</div></td>
+</tr>
+<tr><td class="changed"><div class="paragraph-text">4. Stellt der <del>Beauftragte</del> Fehler bei der Datenbearbeitung fest, so ordnet er an, dass die zuständige Bundesbehörde diese behebt.</div></td>
+<td class="changed"><div class="paragraph-text">4. Stellt der <ins>EDÖB</ins> Fehler bei der Datenbearbeitung fest, so ordnet er an, dass die zuständige Bundesbehörde diese behebt.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">5. Die Mitteilung nach Absatz 3 lautet stets gleich und wird nicht begründet. Sie kann nicht angefochten werden.</div></td>
+<td><div class="paragraph-text">5. Die Mitteilung nach Absatz 3 lautet stets gleich und wird nicht begründet. Sie kann nicht angefochten werden.</div></td>
+</tr>
+<tr class="article-title"><td><p class="artikel-name">Art. 349h</p></td>
+<td><p class="artikel-name">Art. 349h</p></td>
+</tr>
+<tr><td class="changed"><div class="paragraph-text">1. Macht die betroffene Person glaubhaft, dass ein Austausch von Personendaten über sie gegen die Vorschriften zum Schutz von Personendaten verstossen könnte, kann sie vom <del>Beauftragten</del> die Eröffnung einer Untersuchung nach Artikel <del>22</del> <del>SDSG</del> verlangen.</div></td>
+<td class="changed"><div class="paragraph-text">1. Macht die betroffene Person glaubhaft, dass ein Austausch von Personendaten über sie gegen die Vorschriften zum Schutz von Personendaten verstossen könnte, kann sie vom <ins>EDÖB</ins> die Eröffnung einer Untersuchung nach Artikel <ins>49</ins> <ins>DSG</ins> verlangen.</div></td>
+</tr>
+<tr><td class="changed"><div class="paragraph-text">2. Eine Untersuchung kann ausschliesslich gegen eine Bundesbehörde eröffnet werden, die der Aufsicht des <del>Beauftragten</del> untersteht.</div></td>
+<td class="changed"><div class="paragraph-text">2. Eine Untersuchung kann ausschliesslich gegen eine Bundesbehörde eröffnet werden, die der Aufsicht des <ins>EDÖB</ins> untersteht.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">3. Partei sind die betroffene Person und die Bundesbehörde, gegen die eine Untersuchung eröffnet wurde.</div></td>
+<td><div class="paragraph-text">3. Partei sind die betroffene Person und die Bundesbehörde, gegen die eine Untersuchung eröffnet wurde.</div></td>
+</tr>
+<tr><td class="changed"><div class="paragraph-text">4. Ferner gelten die Artikel <del>23</del> und <del>24</del> <del>SDSG</del>.</div></td>
+<td class="changed"><div class="paragraph-text">4. Ferner gelten die Artikel <ins>50</ins> und <ins>51</ins> <ins>DSG</ins>.</div></td>
+</tr>
+<tr class="article-title"><td><p class="artikel-name">Art. 352</p></td>
+<td><p class="artikel-name">Art. 352</p></td>
+</tr>
+<tr><td><div class="paragraph-text">1. Der Austausch kriminalpolizeilicher Informationen richtet sich nach den Grundsätzen des Rechtshilfegesetzes vom 20. März 1981 sowie nach den vom Bundesrat als anwendbar erklärten Statuten und Reglementen von INTERPOL.</div></td>
+<td><div class="paragraph-text">1. Der Austausch kriminalpolizeilicher Informationen richtet sich nach den Grundsätzen des Rechtshilfegesetzes vom 20. März 1981 sowie nach den vom Bundesrat als anwendbar erklärten Statuten und Reglementen von INTERPOL.</div></td>
+</tr>
+<tr><td class="changed"><div class="paragraph-text">2. Für den Austausch von Informationen zur Suche nach Vermissten, zur Identifizierung von Unbekannten und zu administrativen Zwecken gilt das <del>Bundesgesetz vom 19</del>.<del> Juni 1992 über den Datenschutz.</del></div></td>
+<td class="changed"><div class="paragraph-text">2. Für den Austausch von Informationen zur Suche nach Vermissten, zur Identifizierung von Unbekannten und zu administrativen Zwecken gilt das <ins>DSG</ins>.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">3. Das Bundesamt für Polizei kann den Zentralbüros anderer Staaten Informationen direkt vermitteln, wenn der Empfängerstaat den datenschutzrechtlichen Vorschriften von INTERPOL untersteht.</div></td>
+<td><div class="paragraph-text">3. Das Bundesamt für Polizei kann den Zentralbüros anderer Staaten Informationen direkt vermitteln, wenn der Empfängerstaat den datenschutzrechtlichen Vorschriften von INTERPOL untersteht.</div></td>
+</tr>
+<tr class="article-title"><td><p class="artikel-name">Art. 354</p></td>
+<td><p class="artikel-name">Art. 354</p></td>
+</tr>
+<tr><td><div class="paragraph-text">1. Das zuständige Departement registriert und speichert die biometrischen erkennungsdienstlichen Daten, die von Behörden der Kantone, des Bundes und des Auslandes im Rahmen der Strafverfolgung oder der Erfüllung anderer gesetzlicher Aufgaben erhoben und ihm übermittelt worden sind. Diese Daten können zur Identifizierung einer gesuchten oder unbekannten Person untereinander abgeglichen werden.</div></td>
+<td><div class="paragraph-text">1. Das zuständige Departement registriert und speichert die biometrischen erkennungsdienstlichen Daten, die von Behörden der Kantone, des Bundes und des Auslandes im Rahmen der Strafverfolgung oder der Erfüllung anderer gesetzlicher Aufgaben erhoben und ihm übermittelt worden sind. Diese Daten können zur Identifizierung einer gesuchten oder unbekannten Person untereinander abgeglichen werden.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">2. Folgende Behörden können Daten nach Absatz 1 vergleichen und bearbeiten:</div></td>
+<td><div class="paragraph-text">2. Folgende Behörden können Daten nach Absatz 1 vergleichen und bearbeiten:</div></td>
+</tr>
+<tr><td><div class="buchstabe">a. das Bundesamt für Polizei;</div></td>
+<td><div class="buchstabe">a. das Bundesamt für Polizei;</div></td>
+</tr>
+<tr><td><div class="buchstabe">b. das Staatssekretariat für Migration (SEM);</div></td>
+<td><div class="buchstabe">b. das Staatssekretariat für Migration (SEM);</div></td>
+</tr>
+<tr><td><div class="buchstabe">c. das Bundesamt für Justiz;</div></td>
+<td><div class="buchstabe">c. das Bundesamt für Justiz;</div></td>
+</tr>
+<tr><td><div class="buchstabe">d. das Bundesamt für Zoll und Grenzsicherheit;</div></td>
+<td><div class="buchstabe">d. das Bundesamt für Zoll und Grenzsicherheit;</div></td>
+</tr>
+<tr><td><div class="buchstabe">e. die für die Erteilung von Visa zuständigen schweizerischen Vertretungen im Ausland;</div></td>
+<td><div class="buchstabe">e. die für die Erteilung von Visa zuständigen schweizerischen Vertretungen im Ausland;</div></td>
+</tr>
+<tr><td><div class="buchstabe">f. der Nachrichtendienst des Bundes;</div></td>
+<td><div class="buchstabe">f. der Nachrichtendienst des Bundes;</div></td>
+</tr>
+<tr><td><div class="buchstabe">g. die Polizeibehörden der Kantone;</div></td>
+<td><div class="buchstabe">g. die Polizeibehörden der Kantone;</div></td>
+</tr>
+<tr><td><div class="buchstabe">h. die kantonalen Migrationsbehörden.</div></td>
+<td><div class="buchstabe">h. die kantonalen Migrationsbehörden.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">3. Die Personendaten, die sich auf Daten nach Absatz 1 beziehen, werden in getrennten Informationssystemen bearbeitet; dabei gelten die Bestimmungen des Bundesgesetzes vom 13. Juni 2008 über die polizeilichen Informationssysteme des Bundes, des Asylgesetzes vom 26. Juni 1998, des Ausländer- und Integrationsgesetz vom 16. Dezember 2005 und des Zollgesetzes vom 18. März 2005.</div></td>
+<td><div class="paragraph-text">3. Die Personendaten, die sich auf Daten nach Absatz 1 beziehen, werden in getrennten Informationssystemen bearbeitet; dabei gelten die Bestimmungen des Bundesgesetzes vom 13. Juni 2008 über die polizeilichen Informationssysteme des Bundes, des Asylgesetzes vom 26. Juni 1998, des Ausländer- und Integrationsgesetz vom 16. Dezember 2005 und des Zollgesetzes vom 18. März 2005.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">4. Die Daten dürfen verwendet werden:</div></td>
+<td><div class="paragraph-text">4. Die Daten dürfen verwendet werden:</div></td>
+</tr>
+<tr><td><div class="buchstabe">a. bis zum Ablauf der Fristen für die Löschung von DNA-Profilen nach den Artikeln 16–19 des DNA-Profil-Gesetzes vom 20. Juni 2003; oder</div></td>
+<td><div class="buchstabe">a. bis zum Ablauf der Fristen für die Löschung von DNA-Profilen nach den Artikeln 16–19 des DNA-Profil-Gesetzes vom 20. Juni 2003; oder</div></td>
+</tr>
+<tr><td class="changed"><div class="buchstabe">b. bei einer Verurteilung wegen einer Übertretung: <del>bis</del> <del>zu</del> fünf <del>Jahre</del> <del>nach</del> <del>Zahlung</del> <del>einer</del> <del>Busse</del> <del>oder</del> <del>nach</del> <del>dem</del> <del>Vollzug</del> <del>einer</del> <del>entsprechenden</del> <del>Ersatzfreiheitsstrafe</del>.</div></td>
+<td class="changed"><div class="buchstabe">b. bei einer Verurteilung wegen einer Übertretung: <ins>für</ins> <ins>eine</ins> <ins>Dauer von </ins>fünf <ins>Jahren</ins> <ins>ab</ins> <ins>dem</ins> <ins>Datum</ins> <ins>des</ins> <ins>Urteils,</ins> <ins>sofern</ins> <ins>dieses</ins> <ins>in</ins> <ins>Rechtskraft</ins> <ins>erwachsen</ins> <ins>ist</ins>.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">5. Der Bundesrat regelt die Einzelheiten, insbesondere die Aufbewahrungsdauer der Daten, die ausserhalb von Strafverfahren erfasst worden sind, das Löschverfahren und die Zusammenarbeit mit den Kantonen. Er regelt die Übermittlung der erkennungsdienstlichen Daten durch die zuständigen Bundesbehörden und die Kantone.</div></td>
+<td><div class="paragraph-text">5. Der Bundesrat regelt die Einzelheiten, insbesondere die Aufbewahrungsdauer der Daten, die ausserhalb von Strafverfahren erfasst worden sind, das Löschverfahren und die Zusammenarbeit mit den Kantonen. Er regelt die Übermittlung der erkennungsdienstlichen Daten durch die zuständigen Bundesbehörden und die Kantone.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">6. Das SEM oder das Bundesamt für Polizei (fedpol) können die Daten zwecks Ausschreibungen im Schengener Informationssystem (SIS) in einem automatisierten Verfahren in den nationalen Teil des Schengener Informationssystems (N-SIS) und das SIS überführen.</div></td>
+<td><div class="paragraph-text">6. Das SEM oder das Bundesamt für Polizei (fedpol) können die Daten zwecks Ausschreibungen im Schengener Informationssystem (SIS) in einem automatisierten Verfahren in den nationalen Teil des Schengener Informationssystems (N-SIS) und das SIS überführen.</div></td>
+</tr>
+<tr class="article-title"><td><p class="artikel-name">Art. 355a</p></td>
+<td><p class="artikel-name">Art. 355a</p></td>
+</tr>
+<tr><td class="changed"><div class="paragraph-text">1. Das fedpol und der Nachrichtendienst des Bundes (NDB) können dem Europäischen Polizeiamt (Europol) Personendaten, einschliesslich besonders schützenswerter Personendaten<del> und Persönlichkeitsprofile</del>, weitergeben.</div></td>
+<td class="changed"><div class="paragraph-text">1. Das fedpol und der Nachrichtendienst des Bundes (NDB) können dem Europäischen Polizeiamt (Europol) Personendaten, einschliesslich besonders schützenswerter Personendaten, weitergeben.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">2. Für die Weitergabe dieser Daten gelten insbesondere die Voraussetzungen nach den Artikeln 3 und 10–13 des Abkommens vom 24. September 2004 zwischen der Schweizerischen Eidgenossenschaft und dem Europäischen Polizeiamt.</div></td>
+<td><div class="paragraph-text">2. Für die Weitergabe dieser Daten gelten insbesondere die Voraussetzungen nach den Artikeln 3 und 10–13 des Abkommens vom 24. September 2004 zwischen der Schweizerischen Eidgenossenschaft und dem Europäischen Polizeiamt.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">3. Gleichzeitig mit der Weitergabe von Daten unterrichtet das Bundesamt für Polizei Europol über die Zweckbestimmung der Daten sowie über alle Beschränkungen hinsichtlich ihrer Bearbeitung, die ihm selbst nach Massgabe der eidgenössischen oder der kantonalen Gesetzgebung auferlegt sind.</div></td>
+<td><div class="paragraph-text">3. Gleichzeitig mit der Weitergabe von Daten unterrichtet das Bundesamt für Polizei Europol über die Zweckbestimmung der Daten sowie über alle Beschränkungen hinsichtlich ihrer Bearbeitung, die ihm selbst nach Massgabe der eidgenössischen oder der kantonalen Gesetzgebung auferlegt sind.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">4. Der Austausch von Personendaten mit Europol wird dem Austausch mit einer zuständigen Behörde eines Schengen-Staates gleichgesetzt (Art. 349b).</div></td>
+<td><div class="paragraph-text">4. Der Austausch von Personendaten mit Europol wird dem Austausch mit einer zuständigen Behörde eines Schengen-Staates gleichgesetzt (Art. 349b).</div></td>
+</tr>
+</tbody>
+
+    </table>
+
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Vergleichswebseite</p>
+  </footer>
+
+</body>
+
+</html>

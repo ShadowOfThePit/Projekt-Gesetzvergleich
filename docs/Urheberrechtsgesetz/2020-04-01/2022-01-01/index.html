@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vergleichen</title>
+  <link rel="stylesheet" href="/css/main.css">
+  <script src="/js/dropdownLogic.js"></script>
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <a href="/" class="home-link"><img src="/images/LawIcon.png" alt="Recht und Gesetz" width="50" height="50">
+        <span class="home-text">Startseite</span>
+      </a>
+      <a href="/Urheberrechtsgesetz">Gesetzesansicht</a>
+      <a href="/Urheberrechtsgesetz/2024-01-01/2024-03-03" class="current-page">Dokumentenvergleich</a>
+    </nav>
+    <div class="header-titel">Dokumentenvergleich</div>
+  </header>
+
+  <main>
+
+    <h1>Dokumentvergleich <br />Bundesgesetz über das Urheberrecht und verwandte Schutzrechte</h1>
+    <h2>2020-04-01 ↔ 2022-01-01</h2>
+
+    <form class="change-form">
+      <div class="dropdown-selectors">
+        <label for="viewSelect">Dokument wechseln</label>
+        <select class="doc-select" id="viewSelect">
+          <option value="2020-04-01" selected>2020-04-01</option>
+<option value="2022-01-01">2022-01-01</option>
+<option value="2023-07-01">2023-07-01</option>
+<option value="2025-07-01">2025-07-01</option>
+
+        </select>
+      </div>
+
+      <a class="dropdown-submitter" id="submit-doc-change">
+        Wechseln
+      </a>
+    </form>
+
+    <form class="compare-form">
+
+      <div class="dropdown-selectors">
+        <label for="leftSelect">Dokument links</label>
+        <select class="doc-select" id="leftSelect">
+          <option value="2020-04-01" selected>2020-04-01</option>
+<option value="2022-01-01">2022-01-01</option>
+<option value="2023-07-01">2023-07-01</option>
+<option value="2025-07-01">2025-07-01</option>
+
+        </select>
+      </div>
+
+      <div class="dropdown-selectors">
+        <label for="rightSelect">Dokument rechts</label>
+        <select class="doc-select" id="rightSelect">
+          <option value="2020-04-01">2020-04-01</option>
+<option value="2022-01-01" selected>2022-01-01</option>
+<option value="2023-07-01">2023-07-01</option>
+<option value="2025-07-01">2025-07-01</option>
+
+        </select>
+      </div>
+      
+      <a class="dropdown-submitter" id="submit-comparison-change">
+        Vergleichen
+      </a>
+    </form>
+
+    <div class="change-revision button-container">
+      <a class="disabled">Keine weitere Versionen</a>
+<a href="/Urheberrechtsgesetz/2022-01-01/2020-04-01">← Versionen tauschen →</a>
+<a href="/Urheberrechtsgesetz/2022-01-01/2023-07-01">Nächste Versionen vergleichen →</a>
+
+    </div>
+
+    <div class="change-doc-version-comparing button-container">
+      <a class="disabled">Keine weitere Version</a>
+<a class="disabled">Aktuelle Version</a>
+<a class="disabled">Aktuelle Version</a>
+<a href="/Urheberrechtsgesetz/2020-04-01/2023-07-01">Nächste Version →</a>
+
+    </div>
+
+    <table class="diff-table">
+      <thead><tr><th>2020-04-01</th>
+<th>2022-01-01</th>
+</tr>
+</thead>
+<tbody><tr class="article-title"><td><p class="artikel-name">Art. 53: Umfang der Aufsicht</p></td>
+<td><p class="artikel-name">Art. 53: Umfang der Aufsicht</p></td>
+</tr>
+<tr><td class="changed"><div class="paragraph-text">1. Das IGE überwacht die Geschäftsführung der Verwertungsgesellschaften und sorgt dafür, dass sie ihren Pflichten nachkommen. <del>Sie</del> prüft und genehmigt den Geschäftsbericht.</div></td>
+<td class="changed"><div class="paragraph-text">1. Das IGE überwacht die Geschäftsführung der Verwertungsgesellschaften und sorgt dafür, dass sie ihren Pflichten nachkommen. <ins>Es</ins> prüft und genehmigt den Geschäftsbericht.</div></td>
+</tr>
+<tr><td class="changed"><div class="paragraph-text">2. <del>Sie</del> kann über die Auskunftspflicht (Art. 50) Weisungen erlassen.</div></td>
+<td class="changed"><div class="paragraph-text">2. <ins>Es</ins> kann über die Auskunftspflicht (Art. 50) Weisungen erlassen.</div></td>
+</tr>
+<tr><td class="changed"><div class="paragraph-text">3. Zur Ausübung <del>ihrer</del> Befugnisse kann <del>sie</del> auch nicht zur Bundesverwaltung gehörende Beauftragte beiziehen; diese unterstehen der Schweigepflicht.</div></td>
+<td class="changed"><div class="paragraph-text">3. Zur Ausübung <ins>seiner</ins> Befugnisse kann <ins>es</ins> auch nicht zur Bundesverwaltung gehörende Beauftragte beiziehen; diese unterstehen der Schweigepflicht.</div></td>
+</tr>
+<tr class="article-title"><td><p class="artikel-name">Art. 75: Anzeige verdächtiger Waren</p></td>
+<td><p class="artikel-name">Art. 75: Anzeige verdächtiger Waren</p></td>
+</tr>
+<tr><td class="changed"><div class="paragraph-text">1. <del>Die</del> <del>Eidgenössische</del> <del>Zollverwaltung</del> (<del>EZV</del>) ist ermächtigt, die Inhaber und Inhaberinnen der Urheber- oder der verwandten Schutzrechte sowie die zugelassenen Verwertungsgesellschaften zu benachrichtigen, wenn der Verdacht besteht, dass die Ein-, Aus- oder Durchfuhr von Waren bevorsteht, deren Verbreitung gegen die in der Schweiz geltende Gesetzgebung über das Urheberrecht oder die verwandten Schutzrechte verstösst.</div></td>
+<td class="changed"><div class="paragraph-text">1. <ins>Das</ins> <ins>Bundesamt</ins> <ins>für</ins> <ins>Zoll und Grenzsicherheit </ins>(<ins>BAZG</ins>) ist ermächtigt, die Inhaber und Inhaberinnen der Urheber- oder der verwandten Schutzrechte sowie die zugelassenen Verwertungsgesellschaften zu benachrichtigen, wenn der Verdacht besteht, dass die Ein-, Aus- oder Durchfuhr von Waren bevorsteht, deren Verbreitung gegen die in der Schweiz geltende Gesetzgebung über das Urheberrecht oder die verwandten Schutzrechte verstösst.</div></td>
+</tr>
+<tr><td class="changed"><div class="paragraph-text">2. In diesem Fall ist <del>die</del> <del>EZV</del> ermächtigt, die Waren während drei Werktagen zurückzubehalten, damit die antragsberechtigten Personen einen Antrag nach Artikel 76 Absatz 1 stellen können.</div></td>
+<td class="changed"><div class="paragraph-text">2. In diesem Fall ist <ins>das</ins> <ins>BAZG</ins> ermächtigt, die Waren während drei Werktagen zurückzubehalten, damit die antragsberechtigten Personen einen Antrag nach Artikel 76 Absatz 1 stellen können.</div></td>
+</tr>
+<tr class="article-title"><td><p class="artikel-name">Art. 76: Antrag auf Hilfeleistung</p></td>
+<td><p class="artikel-name">Art. 76: Antrag auf Hilfeleistung</p></td>
+</tr>
+<tr><td class="changed"><div class="paragraph-text">1. Haben Inhaber oder Inhaberinnen beziehungsweise klageberechtigte Lizenznehmer oder Lizenznehmerinnen von Urheber- oder von verwandten Schutzrechten oder eine zugelassene Verwertungsgesellschaft konkrete Anhaltspunkte dafür, dass das Verbringen ins schweizerische Zollgebiet oder aus dem schweizerischen Zollgebiet von Waren bevorsteht, deren Verbreitung gegen die in der Schweiz geltende Gesetzgebung über das Urheberrecht oder die verwandten Schutzrechte verstösst, so können sie <del>bei</del> <del>der</del> <del>EZV </del>schriftlich beantragen, die Freigabe der Waren zu verweigern.</div></td>
+<td class="changed"><div class="paragraph-text">1. Haben Inhaber oder Inhaberinnen beziehungsweise klageberechtigte Lizenznehmer oder Lizenznehmerinnen von Urheber- oder von verwandten Schutzrechten oder eine zugelassene Verwertungsgesellschaft konkrete Anhaltspunkte dafür, dass das Verbringen ins schweizerische Zollgebiet oder aus dem schweizerischen Zollgebiet von Waren bevorsteht, deren Verbreitung gegen die in der Schweiz geltende Gesetzgebung über das Urheberrecht oder die verwandten Schutzrechte verstösst, so können sie <ins>beim</ins> <ins>BAZG</ins> schriftlich beantragen, die Freigabe der Waren zu verweigern.</div></td>
+</tr>
+<tr><td class="changed"><div class="paragraph-text">2. Die Antragsteller haben alle ihnen greifbaren zweckdienlichen Angaben zu machen, welche <del>die</del> <del>EZV</del> benötigt, um über den Antrag entscheiden zu können. Sie übergeben <del>ihr</del> namentlich eine genaue Beschreibung der Waren.</div></td>
+<td class="changed"><div class="paragraph-text">2. Die Antragsteller haben alle ihnen greifbaren zweckdienlichen Angaben zu machen, welche <ins>das</ins> <ins>BAZG</ins> benötigt, um über den Antrag entscheiden zu können. Sie übergeben <ins>ihm</ins> namentlich eine genaue Beschreibung der Waren.</div></td>
+</tr>
+<tr><td class="changed"><div class="paragraph-text">3. <del>Die</del> <del>EZV</del> entscheidet endgültig über den Antrag. <del>Sie</del> kann eine Gebühr zur Deckung der Verwaltungskosten erheben.</div></td>
+<td class="changed"><div class="paragraph-text">3. <ins>Das</ins> <ins>BAZG</ins> entscheidet endgültig über den Antrag. <ins>Es</ins> kann eine Gebühr zur Deckung der Verwaltungskosten erheben.</div></td>
+</tr>
+<tr class="article-title"><td><p class="artikel-name">Art. 77: Zurückbehalten von Waren</p></td>
+<td><p class="artikel-name">Art. 77: Zurückbehalten von Waren</p></td>
+</tr>
+<tr><td class="changed"><div class="paragraph-text">1. Hat <del>die</del> <del>EZV</del> aufgrund eines Antrags nach Artikel 76 Absatz 1 den begründeten Verdacht, dass das Verbringen ins schweizerische Zollgebiet oder aus dem schweizerischen Zollgebiet von Waren gegen die in der Schweiz geltende Gesetzgebung über das Urheberrecht oder die verwandten Schutzrechte verstösst, so teilt <del>sie</del> dies einerseits dem Antragsteller oder der Antragstellerin und andererseits dem Anmelder, Besitzer oder Eigentümer beziehungsweise der Anmelderin, Besitzerin oder Eigentümerin der Ware mit.</div></td>
+<td class="changed"><div class="paragraph-text">1. Hat <ins>das</ins> <ins>BAZG</ins> aufgrund eines Antrags nach Artikel 76 Absatz 1 den begründeten Verdacht, dass das Verbringen ins schweizerische Zollgebiet oder aus dem schweizerischen Zollgebiet von Waren gegen die in der Schweiz geltende Gesetzgebung über das Urheberrecht oder die verwandten Schutzrechte verstösst, so teilt <ins>es</ins> dies einerseits dem Antragsteller oder der Antragstellerin und andererseits dem Anmelder, Besitzer oder Eigentümer beziehungsweise der Anmelderin, Besitzerin oder Eigentümerin der Ware mit.</div></td>
+</tr>
+<tr><td class="changed"><div class="paragraph-text">2. <del>Die</del> <del>EZV</del> behält die Ware bis höchstens zehn Werktage vom Zeitpunkt der Mitteilung nach Absatz 1 an zurück, damit der Antragsteller oder die Antragstellerin vorsorgliche Massnahmen erwirken kann.</div></td>
+<td class="changed"><div class="paragraph-text">2. <ins>Das</ins> <ins>BAZG</ins> behält die Ware bis höchstens zehn Werktage vom Zeitpunkt der Mitteilung nach Absatz 1 an zurück, damit der Antragsteller oder die Antragstellerin vorsorgliche Massnahmen erwirken kann.</div></td>
+</tr>
+<tr><td class="changed"><div class="paragraph-text">3. In begründeten Fällen kann <del>sie</del> die Ware während höchstens zehn weiteren Werktagen zurückbehalten.</div></td>
+<td class="changed"><div class="paragraph-text">3. In begründeten Fällen kann <ins>es</ins> die Ware während höchstens zehn weiteren Werktagen zurückbehalten.</div></td>
+</tr>
+<tr class="article-title"><td><p class="artikel-name">Art. 77a: Proben oder Muster</p></td>
+<td><p class="artikel-name">Art. 77a: Proben oder Muster</p></td>
+</tr>
+<tr><td class="changed"><div class="paragraph-text">1. Während des Zurückbehaltens der Ware ist <del>die</del> <del>EZV</del> ermächtigt, dem Antragsteller oder der Antragstellerin auf Antrag Proben oder Muster zur Prüfung zu übergeben oder zuzusenden oder ihm oder ihr die Besichtigung der zurückbehaltenen Ware zu gestatten.</div></td>
+<td class="changed"><div class="paragraph-text">1. Während des Zurückbehaltens der Ware ist <ins>das</ins> <ins>BAZG</ins> ermächtigt, dem Antragsteller oder der Antragstellerin auf Antrag Proben oder Muster zur Prüfung zu übergeben oder zuzusenden oder ihm oder ihr die Besichtigung der zurückbehaltenen Ware zu gestatten.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">2. Die Proben oder Muster werden auf Kosten des Antragstellers oder der Antragstellerin entnommen und versandt.</div></td>
+<td><div class="paragraph-text">2. Die Proben oder Muster werden auf Kosten des Antragstellers oder der Antragstellerin entnommen und versandt.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">3. Sie müssen nach erfolgter Prüfung, soweit sinnvoll, zurückgegeben werden. Verbleiben Proben oder Muster beim Antragsteller oder bei der Antragstellerin, so unterliegen sie den Bestimmungen der Zollgesetzgebung.</div></td>
+<td><div class="paragraph-text">3. Sie müssen nach erfolgter Prüfung, soweit sinnvoll, zurückgegeben werden. Verbleiben Proben oder Muster beim Antragsteller oder bei der Antragstellerin, so unterliegen sie den Bestimmungen der Zollgesetzgebung.</div></td>
+</tr>
+<tr class="article-title"><td><p class="artikel-name">Art. 77b: Wahrung von Fabrikations- und Geschäftsgeheimnissen</p></td>
+<td><p class="artikel-name">Art. 77b: Wahrung von Fabrikations- und Geschäftsgeheimnissen</p></td>
+</tr>
+<tr><td class="changed"><div class="paragraph-text">1. Gleichzeitig mit der Benachrichtigung nach Artikel 77 Absatz 1 informiert <del>die</del> <del>EZV</del> den Anmelder, Besitzer oder Eigentümer beziehungsweise die Anmelderin, Besitzerin oder Eigentümerin der Ware über die mögliche Übergabe von Proben oder Mustern beziehungsweise die Besichtigungsmöglichkeit nach Artikel 77a Absatz 1.</div></td>
+<td class="changed"><div class="paragraph-text">1. Gleichzeitig mit der Benachrichtigung nach Artikel 77 Absatz 1 informiert <ins>das</ins> <ins>BAZG</ins> den Anmelder, Besitzer oder Eigentümer beziehungsweise die Anmelderin, Besitzerin oder Eigentümerin der Ware über die mögliche Übergabe von Proben oder Mustern beziehungsweise die Besichtigungsmöglichkeit nach Artikel 77a Absatz 1.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">2. Der Anmelder, Besitzer oder Eigentümer beziehungsweise die Anmelderin, Besitzerin oder Eigentümerin kann verlangen, zur Wahrung seiner beziehungsweise ihrer Fabrikations- oder Geschäftsgeheimnisse bei der Besichtigung anwesend zu sein.</div></td>
+<td><div class="paragraph-text">2. Der Anmelder, Besitzer oder Eigentümer beziehungsweise die Anmelderin, Besitzerin oder Eigentümerin kann verlangen, zur Wahrung seiner beziehungsweise ihrer Fabrikations- oder Geschäftsgeheimnisse bei der Besichtigung anwesend zu sein.</div></td>
+</tr>
+<tr><td class="changed"><div class="paragraph-text">3. <del>Die</del> <del>EZV</del> kann auf begründeten Antrag des Anmelders, Besitzers oder Eigentümers beziehungsweise der Anmelderin, Besitzerin oder Eigentümerin die Übergabe von Proben oder Mustern verweigern.</div></td>
+<td class="changed"><div class="paragraph-text">3. <ins>Das</ins> <ins>BAZG</ins> kann auf begründeten Antrag des Anmelders, Besitzers oder Eigentümers beziehungsweise der Anmelderin, Besitzerin oder Eigentümerin die Übergabe von Proben oder Mustern verweigern.</div></td>
+</tr>
+<tr class="article-title"><td><p class="artikel-name">Art. 77c: Antrag auf Vernichtung der Ware</p></td>
+<td><p class="artikel-name">Art. 77c: Antrag auf Vernichtung der Ware</p></td>
+</tr>
+<tr><td class="changed"><div class="paragraph-text">1. Zusammen mit dem Antrag nach Artikel 76 Absatz 1 kann der Antragsteller oder die Antragstellerin <del>der</del> <del>EZV</del> schriftlich beantragen, die Ware zu vernichten.</div></td>
+<td class="changed"><div class="paragraph-text">1. Zusammen mit dem Antrag nach Artikel 76 Absatz 1 kann der Antragsteller oder die Antragstellerin <ins>beim</ins> <ins>BAZG</ins> schriftlich beantragen, die Ware zu vernichten.</div></td>
+</tr>
+<tr><td class="changed"><div class="paragraph-text">2. Wird ein Antrag auf Vernichtung gestellt, so teilt <del>die</del> <del>EZV</del> dies dem Anmelder, Besitzer oder Eigentümer beziehungsweise der Anmelderin, Besitzerin oder Eigentümerin der Ware im Rahmen der Mitteilung nach Artikel 77 Absatz 1 mit.</div></td>
+<td class="changed"><div class="paragraph-text">2. Wird ein Antrag auf Vernichtung gestellt, so teilt <ins>das</ins> <ins>BAZG</ins> dies dem Anmelder, Besitzer oder Eigentümer beziehungsweise der Anmelderin, Besitzerin oder Eigentümerin der Ware im Rahmen der Mitteilung nach Artikel 77 Absatz 1 mit.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">3. Der Antrag auf Vernichtung führt nicht dazu, dass die Fristen nach Artikel 77 Absätze 2 und 3 zur Erwirkung vorsorglicher Massnahmen verlängert werden.</div></td>
+<td><div class="paragraph-text">3. Der Antrag auf Vernichtung führt nicht dazu, dass die Fristen nach Artikel 77 Absätze 2 und 3 zur Erwirkung vorsorglicher Massnahmen verlängert werden.</div></td>
+</tr>
+<tr class="article-title"><td><p class="artikel-name">Art. 77e: Beweismittel</p></td>
+<td><p class="artikel-name">Art. 77e: Beweismittel</p></td>
+</tr>
+<tr><td class="changed"><div class="artikel-text">Vor der Vernichtung der Ware entnimmt <del>die</del> <del>EZV</del> Proben oder Muster und bewahrt sie als Beweismittel auf für allfällige Klagen auf Schadenersatz.</div></td>
+<td class="changed"><div class="artikel-text">Vor der Vernichtung der Ware entnimmt <ins>das</ins> <ins>BAZG</ins> Proben oder Muster und bewahrt sie als Beweismittel auf für allfällige Klagen auf Schadenersatz.</div></td>
+</tr>
+<tr class="article-title"><td><p class="artikel-name">Art. 77h: Haftungserklärung und Schadenersatz</p></td>
+<td><p class="artikel-name">Art. 77h: Haftungserklärung und Schadenersatz</p></td>
+</tr>
+<tr><td class="changed"><div class="paragraph-text">1. Ist durch das Zurückbehalten der Ware ein Schaden zu befürchten, so kann <del>die</del> <del>EZV</del> das Zurückbehalten davon abhängig machen, dass der Antragsteller oder die Antragstellerin <del>ihr</del> eine Haftungserklärung abgibt. An deren Stelle kann <del>die</del> <del>EZV</del> vom Antragsteller oder von der Antragstellerin in begründeten Fällen eine angemessene Sicherheitsleistung verlangen.</div></td>
+<td class="changed"><div class="paragraph-text">1. Ist durch das Zurückbehalten der Ware ein Schaden zu befürchten, so kann <ins>das</ins> <ins>BAZG</ins> das Zurückbehalten davon abhängig machen, dass der Antragsteller oder die Antragstellerin <ins>ihm</ins> eine Haftungserklärung abgibt. An deren Stelle kann <ins>das</ins> <ins>BAZG</ins> vom Antragsteller oder von der Antragstellerin in begründeten Fällen eine angemessene Sicherheitsleistung verlangen.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">2. Der Antragsteller oder die Antragstellerin muss den Schaden, der durch das Zurückbehalten der Ware und die Entnahme von Proben oder Mustern entstanden ist, ersetzen, wenn vorsorgliche Massnahmen nicht angeordnet werden oder sich als unbegründet erweisen.</div></td>
+<td><div class="paragraph-text">2. Der Antragsteller oder die Antragstellerin muss den Schaden, der durch das Zurückbehalten der Ware und die Entnahme von Proben oder Mustern entstanden ist, ersetzen, wenn vorsorgliche Massnahmen nicht angeordnet werden oder sich als unbegründet erweisen.</div></td>
+</tr>
+</tbody>
+
+    </table>
+
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Vergleichswebseite</p>
+  </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vergleichen</title>
+  <link rel="stylesheet" href="/css/main.css">
+  <script src="/js/dropdownLogic.js"></script>
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <a href="/" class="home-link"><img src="/images/LawIcon.png" alt="Recht und Gesetz" width="50" height="50">
+        <span class="home-text">Startseite</span>
+      </a>
+      <a href="/Strafgesetzbuch">Gesetzesansicht</a>
+      <a href="/Strafgesetzbuch/2024-01-01/2024-03-03" class="current-page">Dokumentenvergleich</a>
+    </nav>
+    <div class="header-titel">Dokumentenvergleich</div>
+  </header>
+
+  <main>
+
+    <h1>Dokumentvergleich <br />Schweizerisches Strafgesetzbuch</h1>
+    <h2>2020-07-01 ↔ 2022-11-22</h2>
+
+    <form class="change-form">
+      <div class="dropdown-selectors">
+        <label for="viewSelect">Dokument wechseln</label>
+        <select class="doc-select" id="viewSelect">
+          <option value="2020-02-01" selected>2020-02-01</option>
+<option value="2020-07-01">2020-07-01</option>
+<option value="2021-07-01">2021-07-01</option>
+<option value="2022-01-01">2022-01-01</option>
+<option value="2022-06-01">2022-06-01</option>
+<option value="2022-11-22">2022-11-22</option>
+<option value="2023-01-01">2023-01-01</option>
+<option value="2023-01-23">2023-01-23</option>
+<option value="2023-07-01">2023-07-01</option>
+<option value="2023-08-01">2023-08-01</option>
+<option value="2023-09-01">2023-09-01</option>
+<option value="2023-12-06">2023-12-06</option>
+<option value="2024-01-01">2024-01-01</option>
+<option value="2024-07-01">2024-07-01</option>
+<option value="2025-01-01">2025-01-01</option>
+<option value="2025-08-01">2025-08-01</option>
+<option value="2026-01-01">2026-01-01</option>
+
+        </select>
+      </div>
+
+      <a class="dropdown-submitter" id="submit-doc-change">
+        Wechseln
+      </a>
+    </form>
+
+    <form class="compare-form">
+
+      <div class="dropdown-selectors">
+        <label for="leftSelect">Dokument links</label>
+        <select class="doc-select" id="leftSelect">
+          <option value="2020-02-01">2020-02-01</option>
+<option value="2020-07-01" selected>2020-07-01</option>
+<option value="2021-07-01">2021-07-01</option>
+<option value="2022-01-01">2022-01-01</option>
+<option value="2022-06-01">2022-06-01</option>
+<option value="2022-11-22">2022-11-22</option>
+<option value="2023-01-01">2023-01-01</option>
+<option value="2023-01-23">2023-01-23</option>
+<option value="2023-07-01">2023-07-01</option>
+<option value="2023-08-01">2023-08-01</option>
+<option value="2023-09-01">2023-09-01</option>
+<option value="2023-12-06">2023-12-06</option>
+<option value="2024-01-01">2024-01-01</option>
+<option value="2024-07-01">2024-07-01</option>
+<option value="2025-01-01">2025-01-01</option>
+<option value="2025-08-01">2025-08-01</option>
+<option value="2026-01-01">2026-01-01</option>
+
+        </select>
+      </div>
+
+      <div class="dropdown-selectors">
+        <label for="rightSelect">Dokument rechts</label>
+        <select class="doc-select" id="rightSelect">
+          <option value="2020-02-01">2020-02-01</option>
+<option value="2020-07-01">2020-07-01</option>
+<option value="2021-07-01">2021-07-01</option>
+<option value="2022-01-01">2022-01-01</option>
+<option value="2022-06-01">2022-06-01</option>
+<option value="2022-11-22" selected>2022-11-22</option>
+<option value="2023-01-01">2023-01-01</option>
+<option value="2023-01-23">2023-01-23</option>
+<option value="2023-07-01">2023-07-01</option>
+<option value="2023-08-01">2023-08-01</option>
+<option value="2023-09-01">2023-09-01</option>
+<option value="2023-12-06">2023-12-06</option>
+<option value="2024-01-01">2024-01-01</option>
+<option value="2024-07-01">2024-07-01</option>
+<option value="2025-01-01">2025-01-01</option>
+<option value="2025-08-01">2025-08-01</option>
+<option value="2026-01-01">2026-01-01</option>
+
+        </select>
+      </div>
+      
+      <a class="dropdown-submitter" id="submit-comparison-change">
+        Vergleichen
+      </a>
+    </form>
+
+    <div class="change-revision button-container">
+      <a href="/Strafgesetzbuch/2020-02-01/2022-06-01">← Vorherige Versionen vergleichen</a>
+<a href="/Strafgesetzbuch/2022-11-22/2020-07-01">← Versionen tauschen →</a>
+<a href="/Strafgesetzbuch/2021-07-01/2023-01-01">Nächste Versionen vergleichen →</a>
+
+    </div>
+
+    <div class="change-doc-version-comparing button-container">
+      <a href="/Strafgesetzbuch/2020-02-01/2022-11-22">← Vorherige Version</a>
+<a href="/Strafgesetzbuch/2021-07-01/2022-11-22">Nächste Version →</a>
+<a href="/Strafgesetzbuch/2020-07-01/2022-06-01">← Vorherige Version</a>
+<a href="/Strafgesetzbuch/2020-07-01/2023-01-01">Nächste Version →</a>
+
+    </div>
+
+    <table class="diff-table">
+      <thead><tr><th>2020-07-01</th>
+<th>2022-11-22</th>
+</tr>
+</thead>
+<tbody><tr class="article-title"><td><p class="artikel-name">Art. 28a</p></td>
+<td><p class="artikel-name">Art. 28a</p></td>
+</tr>
+<tr><td><div class="paragraph-text">1. Verweigern Personen, die sich beruflich mit der Veröffentlichung von Informationen im redaktionellen Teil eines periodisch erscheinenden Mediums befassen, oder ihre Hilfspersonen das Zeugnis über die Identität des Autors oder über Inhalt und Quellen ihrer Informationen, so dürfen weder Strafen noch prozessuale Zwangsmassnahmen gegen sie verhängt werden.</div></td>
+<td><div class="paragraph-text">1. Verweigern Personen, die sich beruflich mit der Veröffentlichung von Informationen im redaktionellen Teil eines periodisch erscheinenden Mediums befassen, oder ihre Hilfspersonen das Zeugnis über die Identität des Autors oder über Inhalt und Quellen ihrer Informationen, so dürfen weder Strafen noch prozessuale Zwangsmassnahmen gegen sie verhängt werden.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">2. Absatz 1 gilt nicht, wenn der Richter feststellt, dass:</div></td>
+<td><div class="paragraph-text">2. Absatz 1 gilt nicht, wenn der Richter feststellt, dass:</div></td>
+</tr>
+<tr><td><div class="buchstabe">a. das Zeugnis erforderlich ist, um eine Person aus einer unmittelbaren Gefahr für Leib und Leben zu retten; oder</div></td>
+<td><div class="buchstabe">a. das Zeugnis erforderlich ist, um eine Person aus einer unmittelbaren Gefahr für Leib und Leben zu retten; oder</div></td>
+</tr>
+<tr><td class="changed"><div class="buchstabe">b. ohne das Zeugnis ein Tötungsdelikt im Sinne der Artikel 111–113 oder ein anderes Verbrechen, das mit einer Mindeststrafe von drei Jahren Freiheitsstrafe bedroht ist, oder eine Straftat nach den Artikeln 187, 189–191, 197 Absatz 4, 260ter, 260quinquies, 305bis, 305ter und 322ter–322septies des vorliegenden Gesetzes <del>sowie</del> nach Artikel 19 Absatz 2 des Betäubungsmittelgesetzes vom 3. Oktober 1951 nicht aufgeklärt werden oder der einer solchen Tat Beschuldigte nicht ergriffen werden kann.</div></td>
+<td class="changed"><div class="buchstabe">b. ohne das Zeugnis ein Tötungsdelikt im Sinne der Artikel 111–113 oder ein anderes Verbrechen, das mit einer Mindeststrafe von drei Jahren Freiheitsstrafe bedroht ist, oder eine Straftat nach den Artikeln 187, 189–191, 197 Absatz 4, 260ter, 260quinquies, <ins>260sexies, </ins>305bis, 305ter und 322ter–322septies des vorliegenden Gesetzes <ins>oder</ins> nach Artikel 19 Absatz 2 des Betäubungsmittelgesetzes vom 3. Oktober 1951 nicht aufgeklärt werden oder der einer solchen Tat Beschuldigte nicht ergriffen werden kann.</div></td>
+</tr>
+<tr class="article-title"><td><p class="artikel-name">Art. 66a</p></td>
+<td><p class="artikel-name">Art. 66a</p></td>
+</tr>
+<tr><td><div class="paragraph-text">1. Das Gericht verweist den Ausländer, der wegen einer der folgenden strafbaren Handlungen verurteilt wird, unabhängig von der Höhe der Strafe für 5–15 Jahre aus der Schweiz:</div></td>
+<td><div class="paragraph-text">1. Das Gericht verweist den Ausländer, der wegen einer der folgenden strafbaren Handlungen verurteilt wird, unabhängig von der Höhe der Strafe für 5–15 Jahre aus der Schweiz:</div></td>
+</tr>
+<tr><td><div class="buchstabe">a. vorsätzliche Tötung (Art. 111), Mord (Art. 112), Totschlag (Art. 113), Verleitung und Beihilfe zum Selbstmord (Art. 115), strafbarer Schwangerschaftsabbruch (Art. 118 Abs. 1 und 2);</div></td>
+<td><div class="buchstabe">a. vorsätzliche Tötung (Art. 111), Mord (Art. 112), Totschlag (Art. 113), Verleitung und Beihilfe zum Selbstmord (Art. 115), strafbarer Schwangerschaftsabbruch (Art. 118 Abs. 1 und 2);</div></td>
+</tr>
+<tr><td><div class="buchstabe">b. schwere Körperverletzung (Art. 122), Verstümmelung weiblicher Genitalien (Art. 124 Abs. 1), Aussetzung (Art. 127), Gefährdung des Lebens (Art. 129), Angriff (Art. 134);</div></td>
+<td><div class="buchstabe">b. schwere Körperverletzung (Art. 122), Verstümmelung weiblicher Genitalien (Art. 124 Abs. 1), Aussetzung (Art. 127), Gefährdung des Lebens (Art. 129), Angriff (Art. 134);</div></td>
+</tr>
+<tr><td><div class="buchstabe">c. qualifizierte Veruntreuung (Art. 138 Ziff. 2), qualifizierter Diebstahl (Art. 139 Ziff. 2 und 3), Raub (Art. 140), gewerbsmässiger Betrug (Art. 146 Abs. 2), gewerbsmässiger betrügerischer Missbrauch einer Datenverarbeitungsanlage (Art. 147 Abs. 2), gewerbsmässiger Check- und Kreditkartenmissbrauch (Art. 148 Abs. 2), qualifizierte Erpressung (Art. 156 Ziff. 2–4), gewerbsmässiger Wucher (Art. 157 Ziff. 2), gewerbsmässige Hehlerei (Art. 160 Ziff. 2);</div></td>
+<td><div class="buchstabe">c. qualifizierte Veruntreuung (Art. 138 Ziff. 2), qualifizierter Diebstahl (Art. 139 Ziff. 2 und 3), Raub (Art. 140), gewerbsmässiger Betrug (Art. 146 Abs. 2), gewerbsmässiger betrügerischer Missbrauch einer Datenverarbeitungsanlage (Art. 147 Abs. 2), gewerbsmässiger Check- und Kreditkartenmissbrauch (Art. 148 Abs. 2), qualifizierte Erpressung (Art. 156 Ziff. 2–4), gewerbsmässiger Wucher (Art. 157 Ziff. 2), gewerbsmässige Hehlerei (Art. 160 Ziff. 2);</div></td>
+</tr>
+<tr><td><div class="buchstabe">d. Diebstahl (Art. 139) in Verbindung mit Hausfriedensbruch (Art. 186);</div></td>
+<td><div class="buchstabe">d. Diebstahl (Art. 139) in Verbindung mit Hausfriedensbruch (Art. 186);</div></td>
+</tr>
+<tr><td><div class="buchstabe">e. Betrug (Art. 146 Abs. 1) im Bereich einer Sozialversicherung oder der Sozialhilfe, unrechtmässiger Bezug von Leistungen einer Sozialversicherung oder der Sozialhilfe (Art. 148a Abs. 1);</div></td>
+<td><div class="buchstabe">e. Betrug (Art. 146 Abs. 1) im Bereich einer Sozialversicherung oder der Sozialhilfe, unrechtmässiger Bezug von Leistungen einer Sozialversicherung oder der Sozialhilfe (Art. 148a Abs. 1);</div></td>
+</tr>
+<tr><td><div class="buchstabe">f. Betrug (Art. 146 Abs. 1), Leistungs- und Abgabebetrug (Art. 14 Abs. 1, 2 und 4 des BG vom 22. März 1974 über das Verwaltungsstrafrecht) oder Steuerbetrug, Veruntreuung von Quellensteuern oder eine andere Straftat im Bereich der öffentlich-rechtlichen Abgaben, die mit einer Höchststrafe von einem Jahr Freiheitsstrafe oder mehr bedroht ist;</div></td>
+<td><div class="buchstabe">f. Betrug (Art. 146 Abs. 1), Leistungs- und Abgabebetrug (Art. 14 Abs. 1, 2 und 4 des BG vom 22. März 1974 über das Verwaltungsstrafrecht) oder Steuerbetrug, Veruntreuung von Quellensteuern oder eine andere Straftat im Bereich der öffentlich-rechtlichen Abgaben, die mit einer Höchststrafe von einem Jahr Freiheitsstrafe oder mehr bedroht ist;</div></td>
+</tr>
+<tr><td><div class="buchstabe">g. Zwangsheirat, erzwungene eingetragene Partnerschaft (Art. 181a), Menschenhandel (Art. 182), Freiheitsberaubung und Entführung (Art. 183), qualifizierte Freiheitsberaubung und Entführung (Art. 184), Geiselnahme (Art. 185);</div></td>
+<td><div class="buchstabe">g. Zwangsheirat, erzwungene eingetragene Partnerschaft (Art. 181a), Menschenhandel (Art. 182), Freiheitsberaubung und Entführung (Art. 183), qualifizierte Freiheitsberaubung und Entführung (Art. 184), Geiselnahme (Art. 185);</div></td>
+</tr>
+<tr><td><div class="buchstabe">h. sexuelle Handlungen mit Kindern (Art. 187 Ziff. 1), sexuelle Nötigung (Art. 189), Vergewaltigung (Art. 190), Schändung (Art. 191), Förderung der Prostitution (Art. 195), Pornografie (Art. 197 Abs. 4 zweiter Satz);</div></td>
+<td><div class="buchstabe">h. sexuelle Handlungen mit Kindern (Art. 187 Ziff. 1), sexuelle Nötigung (Art. 189), Vergewaltigung (Art. 190), Schändung (Art. 191), Förderung der Prostitution (Art. 195), Pornografie (Art. 197 Abs. 4 zweiter Satz);</div></td>
+</tr>
+<tr><td><div class="buchstabe">i. Brandstiftung (Art. 221 Abs. 1 und 2), vorsätzliche Verursachung einer Explosion (Art. 223 Ziff. 1 Abs. 1), Gefährdung durch Sprengstoffe und giftige Gase in verbrecherischer Absicht (Art. 224 Abs. 1), vorsätzliche Gefährdung ohne verbrecherische Absicht (Art. 225 Abs. 1), Herstellen, Verbergen, Weiterschaffen von Sprengstoffen und giftigen Gasen (Art. 226), Gefährdung durch Kernenergie, Radioaktivität und ionisierende Strahlen (Art. 226bis), strafbare Vorbereitungshandlungen (Art. 226ter), vorsätzliches Verursachen einer Überschwemmung oder eines Einsturzes (Art. 227 Ziff. 1 Abs. 1), vorsätzliche Beschädigung von elektrischen Anlagen, Wasserbauten und Schutzvorrichtungen (Art. 228 Ziff. 1 Abs. 1);</div></td>
+<td><div class="buchstabe">i. Brandstiftung (Art. 221 Abs. 1 und 2), vorsätzliche Verursachung einer Explosion (Art. 223 Ziff. 1 Abs. 1), Gefährdung durch Sprengstoffe und giftige Gase in verbrecherischer Absicht (Art. 224 Abs. 1), vorsätzliche Gefährdung ohne verbrecherische Absicht (Art. 225 Abs. 1), Herstellen, Verbergen, Weiterschaffen von Sprengstoffen und giftigen Gasen (Art. 226), Gefährdung durch Kernenergie, Radioaktivität und ionisierende Strahlen (Art. 226bis), strafbare Vorbereitungshandlungen (Art. 226ter), vorsätzliches Verursachen einer Überschwemmung oder eines Einsturzes (Art. 227 Ziff. 1 Abs. 1), vorsätzliche Beschädigung von elektrischen Anlagen, Wasserbauten und Schutzvorrichtungen (Art. 228 Ziff. 1 Abs. 1);</div></td>
+</tr>
+<tr><td><div class="buchstabe">j. vorsätzliche Gefährdung durch gentechnisch veränderte oder pathogene Organismen (Art. 230bis Abs. 1), vorsätzliches Verbreiten menschlicher Krankheiten (Art. 231 Ziff. 1), vorsätzliche Trinkwasserverunreinigung (Art. 234 Abs. 1);</div></td>
+<td><div class="buchstabe">j. vorsätzliche Gefährdung durch gentechnisch veränderte oder pathogene Organismen (Art. 230bis Abs. 1), vorsätzliches Verbreiten menschlicher Krankheiten (Art. 231 Ziff. 1), vorsätzliche Trinkwasserverunreinigung (Art. 234 Abs. 1);</div></td>
+</tr>
+<tr><td><div class="buchstabe">k. qualifizierte Störung des öffentlichen Verkehrs (Art. 237 Ziff. 1 Abs. 2), vorsätzliche Störung des Eisenbahnverkehrs (Art. 238 Abs. 1);</div></td>
+<td><div class="buchstabe">k. qualifizierte Störung des öffentlichen Verkehrs (Art. 237 Ziff. 1 Abs. 2), vorsätzliche Störung des Eisenbahnverkehrs (Art. 238 Abs. 1);</div></td>
+</tr>
+<tr><td class="changed"><div class="buchstabe">l. strafbare Vorbereitungshandlungen (Art. 260bis Abs. 1 und 3), Beteiligung an oder Unterstützung einer kriminellen Organisation (Art. 260ter), Gefährdung der öffentlichen Sicherheit mit Waffen (Art. 260quater), Finanzierung des Terrorismus (Art. 260quinquies);</div></td>
+<td class="changed"><div class="buchstabe">l. strafbare Vorbereitungshandlungen (Art. 260bis Abs. 1 und 3), Beteiligung an oder Unterstützung einer kriminellen <ins>oder terroristischen </ins>Organisation (Art. 260ter), Gefährdung der öffentlichen Sicherheit mit Waffen (Art. 260quater), Finanzierung des Terrorismus (Art. 260quinquies)<ins>, Anwerbung, Ausbildung und Reisen im Hinblick auf eine terroristische Straftat (Art. 260sexies)</ins>;</div></td>
+</tr>
+<tr><td><div class="buchstabe">m. Völkermord (Art. 264), Verbrechen gegen die Menschlichkeit (Art. 264a), schwere Verletzungen der Genfer Konventionen vom 12. August 1949 (Art. 264c), andere Kriegsverbrechen (Art. 264d–264h);</div></td>
+<td><div class="buchstabe">m. Völkermord (Art. 264), Verbrechen gegen die Menschlichkeit (Art. 264a), schwere Verletzungen der Genfer Konventionen vom 12. August 1949 (Art. 264c), andere Kriegsverbrechen (Art. 264d–264h);</div></td>
+</tr>
+<tr><td><div class="buchstabe">n. vorsätzliche Widerhandlung gegen Artikel 116 Absatz 3 oder Artikel 118 Absatz 3 des Ausländergesetzes vom 16. Dezember 2005;</div></td>
+<td><div class="buchstabe">n. vorsätzliche Widerhandlung gegen Artikel 116 Absatz 3 oder Artikel 118 Absatz 3 des Ausländergesetzes vom 16. Dezember 2005;</div></td>
+</tr>
+<tr><td class="changed"><div class="buchstabe">o. Widerhandlung gegen Artikel 19 Absatz 2 oder 20 Absatz 2 des Betäubungsmittelgesetzes vom 3. Oktober 1951 (BetmG)<del>.</del></div></td>
+<td class="changed"><div class="buchstabe">o. Widerhandlung gegen Artikel 19 Absatz 2 oder 20 Absatz 2 des Betäubungsmittelgesetzes vom 3. Oktober 1951 (BetmG)<ins>;</ins></div></td>
+</tr>
+<tr><td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+<td class="inserted"><ins><div class="buchstabe">p. Widerhandlung nach Artikel 74 Absatz 4 des Nachrichtendienstgesetzes vom 25. September 2015 (NDG).</div></ins></td>
+</tr>
+<tr><td><div class="paragraph-text">2. Das Gericht kann ausnahmsweise von einer Landesverweisung absehen, wenn diese für den Ausländer einen schweren persönlichen Härtefall bewirken würde und die öffentlichen Interessen an der Landesverweisung gegenüber den privaten Interessen des Ausländers am Verbleib in der Schweiz nicht überwiegen. Dabei ist der besonderen Situation von Ausländern Rechnung zu tragen, die in der Schweiz geboren oder aufgewachsen sind.</div></td>
+<td><div class="paragraph-text">2. Das Gericht kann ausnahmsweise von einer Landesverweisung absehen, wenn diese für den Ausländer einen schweren persönlichen Härtefall bewirken würde und die öffentlichen Interessen an der Landesverweisung gegenüber den privaten Interessen des Ausländers am Verbleib in der Schweiz nicht überwiegen. Dabei ist der besonderen Situation von Ausländern Rechnung zu tragen, die in der Schweiz geboren oder aufgewachsen sind.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">3. Von einer Landesverweisung kann ferner abgesehen werden, wenn die Tat in entschuldbarer Notwehr (Art. 16 Abs. 1) oder in entschuldbarem Notstand (Art. 18 Abs. 1) begangen wurde.</div></td>
+<td><div class="paragraph-text">3. Von einer Landesverweisung kann ferner abgesehen werden, wenn die Tat in entschuldbarer Notwehr (Art. 16 Abs. 1) oder in entschuldbarem Notstand (Art. 18 Abs. 1) begangen wurde.</div></td>
+</tr>
+<tr class="article-title"><td><p class="artikel-name">Art. 72</p></td>
+<td><p class="artikel-name">Art. 72</p></td>
+</tr>
+<tr><td class="changed"><div class="artikel-text">Das Gericht verfügt die Einziehung aller Vermögenswerte, welche der Verfügungsmacht einer kriminellen Organisation unterliegen. Bei Vermögenswerten einer Person, die sich an einer <del>kriminellen</del> Organisation beteiligt oder sie unterstützt hat (Art. 260ter), wird die Verfügungsmacht der Organisation bis zum Beweis des Gegenteils vermutet.</div></td>
+<td class="changed"><div class="artikel-text">Das Gericht verfügt die Einziehung aller Vermögenswerte, welche der Verfügungsmacht einer kriminellen <ins>oder terroristischen </ins>Organisation unterliegen. Bei Vermögenswerten einer Person, die sich an einer <ins>solchen</ins> Organisation beteiligt oder sie unterstützt hat (Art. 260ter), wird die Verfügungsmacht der Organisation bis zum Beweis des Gegenteils vermutet.</div></td>
+</tr>
+<tr class="article-title"><td><p class="artikel-name">Art. 78</p></td>
+<td><p class="artikel-name">Art. 78</p></td>
+</tr>
+<tr><td><div class="artikel-text">Einzelhaft als ununterbrochene Trennung von den anderen Gefangenen darf nur angeordnet werden:</div></td>
+<td><div class="artikel-text">Einzelhaft als ununterbrochene Trennung von den anderen Gefangenen darf nur angeordnet werden:</div></td>
+</tr>
+<tr><td><div class="buchstabe">a. bei Antritt der Strafe und zur Einleitung des Vollzugs für die Dauer von höchstens einer Woche;</div></td>
+<td><div class="buchstabe">a. bei Antritt der Strafe und zur Einleitung des Vollzugs für die Dauer von höchstens einer Woche;</div></td>
+</tr>
+<tr><td><div class="buchstabe">b. zum Schutz des Gefangenen oder Dritter;</div></td>
+<td><div class="buchstabe">b. zum Schutz des Gefangenen oder Dritter;</div></td>
+</tr>
+<tr><td class="changed"><div class="buchstabe">c. als Disziplinarsanktion<del>.</del></div></td>
+<td class="changed"><div class="buchstabe">c. als Disziplinarsanktion<ins>;</ins></div></td>
+</tr>
+<tr><td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+<td class="inserted"><ins><div class="buchstabe">d. zur Verhinderung der Beeinflussung von Mitgefangenen durch Gedankengut, das die Ausübung von terroristischen Aktivitäten begünstigen kann, sofern konkrete Anhaltspunkte auf eine solche Beeinflussung vorliegen.</div></ins></td>
+</tr>
+<tr class="article-title"><td><p class="artikel-name">Art. 90</p></td>
+<td><p class="artikel-name">Art. 90</p></td>
+</tr>
+<tr><td><div class="paragraph-text">1. Eine Person, die sich im Vollzug einer Massnahme nach den Artikeln 59–61 befindet, darf nur dann ununterbrochen von den andern Eingewiesenen getrennt untergebracht werden, wenn dies unerlässlich ist:</div></td>
+<td><div class="paragraph-text">1. Eine Person, die sich im Vollzug einer Massnahme nach den Artikeln 59–61 befindet, darf nur dann ununterbrochen von den andern Eingewiesenen getrennt untergebracht werden, wenn dies unerlässlich ist:</div></td>
+</tr>
+<tr><td><div class="buchstabe">a. als vorübergehende therapeutische Massnahme;</div></td>
+<td><div class="buchstabe">a. als vorübergehende therapeutische Massnahme;</div></td>
+</tr>
+<tr><td><div class="buchstabe">b. zum Schutz des Eingewiesenen oder Dritter;</div></td>
+<td><div class="buchstabe">b. zum Schutz des Eingewiesenen oder Dritter;</div></td>
+</tr>
+<tr><td class="changed"><div class="buchstabe">c. als Disziplinarsanktion<del>.</del></div></td>
+<td class="changed"><div class="buchstabe">c. als Disziplinarsanktion<ins>;</ins></div></td>
+</tr>
+<tr><td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+<td class="inserted"><ins><div class="buchstabe">d. zur Verhinderung der Beeinflussung von anderen Eingewiesenen durch Gedankengut, das die Ausübung von terroristischen Aktivitäten begünstigen kann, sofern konkrete Anhaltspunkte auf eine solche Beeinflussung vorliegen.</div></ins></td>
+</tr>
+<tr><td><div class="paragraph-text">2. Zu Beginn des Vollzugs der Massnahme wird zusammen mit dem Eingewiesenen oder seinem gesetzlichen Vertreter ein Vollzugsplan erstellt. Dieser enthält namentlich Angaben über die Behandlung der psychischen Störung, der Abhängigkeit oder der Entwicklungsstörung des Eingewiesenen sowie zur Vermeidung von Drittgefährdung.</div></td>
+<td><div class="paragraph-text">2. Zu Beginn des Vollzugs der Massnahme wird zusammen mit dem Eingewiesenen oder seinem gesetzlichen Vertreter ein Vollzugsplan erstellt. Dieser enthält namentlich Angaben über die Behandlung der psychischen Störung, der Abhängigkeit oder der Entwicklungsstörung des Eingewiesenen sowie zur Vermeidung von Drittgefährdung.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">2bis. Massnahmen nach den Artikeln 59–61 und 64 können in der Form des Wohn- und Arbeitsexternats vollzogen werden, wenn begründete Aussicht besteht, dass dies entscheidend dazu beiträgt, den Zweck der Massnahme zu erreichen, und wenn keine Gefahr besteht, dass der Eingewiesene flieht oder weitere Straftaten begeht. Artikel 77a Absätze 2 und 3 gilt sinngemäss.</div></td>
+<td><div class="paragraph-text">2bis. Massnahmen nach den Artikeln 59–61 und 64 können in der Form des Wohn- und Arbeitsexternats vollzogen werden, wenn begründete Aussicht besteht, dass dies entscheidend dazu beiträgt, den Zweck der Massnahme zu erreichen, und wenn keine Gefahr besteht, dass der Eingewiesene flieht oder weitere Straftaten begeht. Artikel 77a Absätze 2 und 3 gilt sinngemäss.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">3. Ist der Eingewiesene arbeitsfähig, so wird er zur Arbeit angehalten, soweit seine stationäre Behandlung oder Pflege dies erfordert oder zulässt. Die Artikel 81–83 sind sinngemäss anwendbar.</div></td>
+<td><div class="paragraph-text">3. Ist der Eingewiesene arbeitsfähig, so wird er zur Arbeit angehalten, soweit seine stationäre Behandlung oder Pflege dies erfordert oder zulässt. Die Artikel 81–83 sind sinngemäss anwendbar.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">4. Für die Beziehungen des Eingewiesenen zur Aussenwelt gilt Artikel 84 sinngemäss, sofern nicht Gründe der stationären Behandlung weiter gehende Einschränkungen gebieten.</div></td>
+<td><div class="paragraph-text">4. Für die Beziehungen des Eingewiesenen zur Aussenwelt gilt Artikel 84 sinngemäss, sofern nicht Gründe der stationären Behandlung weiter gehende Einschränkungen gebieten.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">4bis. Für die Einweisung in eine offene Einrichtung und für die Bewilligung von Vollzugsöffnungen gilt Artikel 75a sinngemäss.</div></td>
+<td><div class="paragraph-text">4bis. Für die Einweisung in eine offene Einrichtung und für die Bewilligung von Vollzugsöffnungen gilt Artikel 75a sinngemäss.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">4ter. Während der lebenslänglichen Verwahrung werden keine Urlaube oder andere Vollzugsöffnungen bewilligt.</div></td>
+<td><div class="paragraph-text">4ter. Während der lebenslänglichen Verwahrung werden keine Urlaube oder andere Vollzugsöffnungen bewilligt.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">5. Für Kontrollen und Untersuchungen gilt Artikel 85 sinngemäss.</div></td>
+<td><div class="paragraph-text">5. Für Kontrollen und Untersuchungen gilt Artikel 85 sinngemäss.</div></td>
+</tr>
+<tr class="article-title"><td><p class="artikel-name">Art. 123</p></td>
+<td><p class="artikel-name">Art. 123</p></td>
+</tr>
+<tr><td><div class="paragraph-text">1. Wer vorsätzlich einen Menschen in anderer Weise an Körper oder Gesundheit schädigt, wird, auf Antrag, mit Freiheitsstrafe bis zu drei Jahren oder Geldstrafe bestraft.</td>
+<td><div class="paragraph-text">1. Wer vorsätzlich einen Menschen in anderer Weise an Körper oder Gesundheit schädigt, wird, auf Antrag, mit Freiheitsstrafe bis zu drei Jahren oder Geldstrafe bestraft.</td>
+</tr>
+<tr><td><p class="p-list">In leichten Fällen kann der Richter die Strafe mildern (Art. 48a).</p></div></td>
+<td><p class="p-list">In leichten Fällen kann der Richter die Strafe mildern (Art. 48a).</p></div></td>
+</tr>
+<tr><td><div class="paragraph-text">2. Die Strafe ist Freiheitsstrafe bis zu drei Jahren oder Geldstrafe, und der Täter wird von Amtes wegen verfolgt,</td>
+<td><div class="paragraph-text">2. Die Strafe ist Freiheitsstrafe bis zu drei Jahren oder Geldstrafe, und der Täter wird von Amtes wegen verfolgt,</td>
+</tr>
+<tr><td><p class="p-list">wenn er Gift, eine Waffe oder einen gefährlichen Gegenstand gebraucht,</p></td>
+<td><p class="p-list">wenn er Gift, eine Waffe oder einen gefährlichen Gegenstand gebraucht,</p></td>
+</tr>
+<tr><td><p class="p-list">wenn er die Tat an einem Wehrlosen oder an einer Person begeht, die unter seiner Obhut steht oder für die er zu sorgen hat, namentlich an einem Kind,</p></td>
+<td><p class="p-list">wenn er die Tat an einem Wehrlosen oder an einer Person begeht, die unter seiner Obhut steht oder für die er zu sorgen hat, namentlich an einem Kind,</p></td>
+</tr>
+<tr><td><p class="p-list">wenn er der Ehegatte des Opfers ist und die Tat während der Ehe oder bis zu einem Jahr nach der Scheidung begangen wurde,</p></td>
+<td><p class="p-list">wenn er der Ehegatte des Opfers ist und die Tat während der Ehe oder bis zu einem Jahr nach der Scheidung begangen wurde,</p></td>
+</tr>
+<tr><td><p class="p-list">wenn er die eingetragene Partnerin oder der eingetragene Partner des Opfers ist und die Tat während der Dauer der eingetragenen Partnerschaft oder bis zu einem Jahr nach deren Auflösung begangen wurde,</p></td>
+<td><p class="p-list">wenn er die eingetragene Partnerin oder der eingetragene Partner des Opfers ist und die Tat während der Dauer der eingetragenen Partnerschaft oder bis zu einem Jahr nach deren Auflösung begangen wurde,</p></td>
+</tr>
+<tr><td class="changed"><p class="p-list">wenn er der hetero- oder homosexuelle Lebenspartner des Opfers ist, sofern sie auf unbestimmte Zeit einen <del>gemeinsamem</del> Haushalt führen und die Tat während dieser Zeit oder bis zu einem Jahr nach der Trennung begangen wurde.</p></div></td>
+<td class="changed"><p class="p-list">wenn er der hetero- oder homosexuelle Lebenspartner des Opfers ist, sofern sie auf unbestimmte Zeit einen <ins>gemeinsamen</ins> Haushalt führen und die Tat während dieser Zeit oder bis zu einem Jahr nach der Trennung begangen wurde.</p></div></td>
+</tr>
+<tr class="article-title"><td><p class="artikel-name">Art. 246</p></td>
+<td><p class="artikel-name">Art. 246</p></td>
+</tr>
+<tr><td class="changed"><div class="artikel-text">Wer amtliche Zeichen, die die Behörde an einem Gegenstand anbringt, um das Ergebnis einer Prüfung oder um eine Genehmigung festzustellen, zum Beispiel Stempel der Gold- und Silberkontrolle, Stempel der Fleischschauer, Marken <del>der</del> <del>Zollverwaltung</del>, fälscht oder verfälscht, um sie als echt oder unverfälscht zu verwenden,wer falsche oder verfälschte Zeichen dieser Art als echt oder unverfälscht verwendet,wird mit Freiheitsstrafe bis zu drei Jahren oder Geldstrafe bestraft.</div></td>
+<td class="changed"><div class="artikel-text">Wer amtliche Zeichen, die die Behörde an einem Gegenstand anbringt, um das Ergebnis einer Prüfung oder um eine Genehmigung festzustellen, zum Beispiel Stempel der Gold- und Silberkontrolle, Stempel der Fleischschauer, Marken <ins>des</ins> <ins>Bundesamtes für Zoll und Grenzsicherheit</ins>, fälscht oder verfälscht, um sie als echt oder unverfälscht zu verwenden,wer falsche oder verfälschte Zeichen dieser Art als echt oder unverfälscht verwendet,wird mit Freiheitsstrafe bis zu drei Jahren oder Geldstrafe bestraft.</div></td>
+</tr>
+<tr class="article-title"><td><p class="artikel-name">Art. 260ter</p></td>
+<td><p class="artikel-name">Art. 260ter</p></td>
+</tr>
+<tr><td class="changed"><div class="paragraph-text">1. <del>Wer</del> <del>sich</del> <del>an</del> <del>einer Organisation beteiligt, die ihren Aufbau und ihre personelle Zusammensetzung geheim hält und die den Zweck verfolgt, Gewaltverbrechen </del>zu <del>begehen</del> oder <del>sich</del> <del>mit</del> <del>verbrecherischen Mitteln zu bereichern</del>,</td>
+<td class="changed"><div class="paragraph-text">1. <ins>Mit</ins> <ins>Freiheitsstrafe</ins> <ins>bis</ins> zu <ins>zehn</ins> <ins>Jahren </ins>oder <ins>Geldstrafe</ins> <ins>wird</ins> <ins>bestraft</ins>,<ins> wer:</div></ins></td>
+</tr>
+<tr><td class="changed"><<del>p</del> class="<del>p-list</del>"><del>wer</del> <del>eine</del> <del>solche</del> Organisation <del>in</del> <del>ihrer</del> <del>verbrecherischen</del> <del>Tätigkeit</del> <del>unterstützt,</del></<del>p</del>></td>
+<td class="changed"><<ins>div</ins> class="<ins>buchstabe</ins>"><ins>a.</ins> <ins>sich</ins> <ins>an</ins> <ins>einer </ins>Organisation <ins>beteiligt,</ins> <ins>die</ins> <ins>den</ins> <ins>Zweck</ins> <ins>verfolgt:</ins></<ins>div</ins>></td>
+</tr>
+<tr><td class="changed"><<del>p</del> class="<del>p-list</del>"><del>wird</del> <del>mit</del> <del>Freiheitsstrafe</del> <del>bis</del> <del>zu</del> <del>fünf</del> <del>Jahren</del> <del>oder</del> <del>Geldstrafe</del> <del>bestraft.</del></<del>p></</del>div></td>
+<td class="changed"><<ins>div</ins> class="<ins>buchstabe</ins>"><ins>1.</ins> <ins>Gewaltverbrechen</ins> <ins>zu</ins> <ins>begehen</ins> <ins>oder</ins> <ins>sich</ins> <ins>mit</ins> <ins>verbrecherischen</ins> <ins>Mitteln</ins> <ins>zu bereichern, oder</ins></div></td>
+</tr>
+<tr><td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+<td class="inserted"><ins><div class="buchstabe">2. Gewaltverbrechen zu begehen, mit denen die Bevölkerung eingeschüchtert oder ein Staat oder eine internationale Organisation zu einem Tun oder Unterlassen genötigt werden soll; oder</div></ins></td>
+</tr>
+<tr><td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+<td class="inserted"><ins><div class="buchstabe">b. eine solche Organisation in ihrer Tätigkeit unterstützt.</div></ins></td>
+</tr>
+<tr><td class="changed"><div class="paragraph-text">2. <del>Der</del> <del>Richter</del> <del>kann</del> die <del>Strafe</del> <del>mildern</del> <del>(Art.</del> <del>48a)</del>, <del>wenn</del> <del>der</del> <del>Täter</del> <del>sich</del> <del>bemüht</del>, <del>die</del> <del>weitere</del> <del>verbrecherische</del> <del>Tätigkeit</del> der <del>Organisation</del> <del>zu</del> <del>verhindern</del>.</div></td>
+<td class="changed"><div class="paragraph-text">2. <ins>Absatz</ins> <ins>1</ins> <ins>Buchstabe</ins> <ins>b findet keine Anwendung auf humanitäre Dienste, </ins>die <ins>von</ins> <ins>einer</ins> <ins>unparteiischen</ins> <ins>humanitären Organisation</ins>, <ins>wie</ins> <ins>dem</ins> <ins>Internationalen</ins> <ins>Komitee</ins> <ins>vom Roten Kreuz</ins>, <ins>in</ins> <ins>Übereinstimmung</ins> <ins>mit</ins> <ins>dem</ins> <ins>gemeinsamen Artikel 3 </ins>der <ins>Genfer</ins> <ins>Abkommen</ins> <ins>vom 12</ins>.<ins> August 1949 erbracht werden.</ins></div></td>
+</tr>
+<tr><td class="changed"><div class="paragraph-text">3. <del>Strafbar</del> <del>ist</del> <del>auch,</del> <del>wer</del> <del>die</del> <del>Tat</del> <del>im</del> <del>Ausland</del> <del>begeht, wenn die </del>Organisation <del>ihre</del> <del>verbrecherische</del> <del>Tätigkeit</del> <del>ganz</del> <del>oder</del> <del>teilweise</del> <del>in</del> <del>der</del> <del>Schweiz</del> <del>ausübt</del> <del>oder auszuüben beabsichtigt</del>.<del> Artikel 3 Absatz 2 ist anwendbar.</del></div></td>
+<td class="changed"><div class="paragraph-text">3. <ins>Übt</ins> <ins>der</ins> <ins>Täter</ins> <ins>einen</ins> <ins>bestimmenden</ins> <ins>Einfluss</ins> <ins>in</ins> <ins>der</ins> Organisation <ins>aus,</ins> <ins>so</ins> <ins>wird</ins> <ins>er</ins> <ins>mit</ins> <ins>Freiheitsstrafe</ins> <ins>nicht</ins> <ins>unter</ins> <ins>drei</ins> <ins>Jahren</ins> <ins>bestraft</ins>.</div></td>
+</tr>
+<tr><td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+<td class="inserted"><ins><div class="paragraph-text">4. Das Gericht kann die Strafe mildern (Art. 48a), wenn der Täter sich bemüht, die weitere Tätigkeit der Organisation zu verhindern.</div></ins></td>
+</tr>
+<tr><td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+<td class="inserted"><ins><div class="paragraph-text">5. Strafbar ist auch, wer die Tat im Ausland begeht, wenn die Organisation ihre verbrecherische Tätigkeit ganz oder teilweise in der Schweiz ausübt oder auszuüben beabsichtigt. Artikel 7 Absätze 4 und 5 sind anwendbar.</div></ins></td>
+</tr>
+<tr class="article-title"><td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+<td class="inserted"><ins><p class="artikel-name">Art. 260sexies</p></ins></td>
+</tr>
+<tr><td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+<td class="inserted"><ins><div class="paragraph-text">1. Mit Freiheitsstrafe bis zu fünf Jahren oder Geldstrafe wird bestraft, wer im Hinblick auf die Verübung eines Gewaltverbrechens, mit dem die Bevölkerung eingeschüchtert oder ein Staat oder eine internationale Organisation zu einem Tun oder Unterlassen genötigt werden soll:</div></ins></td>
+</tr>
+<tr><td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+<td class="inserted"><ins><div class="buchstabe">a. jemanden für die Begehung einer solchen Straftat oder die Teilnahme daran anwirbt;</div></ins></td>
+</tr>
+<tr><td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+<td class="inserted"><ins><div class="buchstabe">b. sich für die Begehung einer solchen Straftat oder die Teilnahme daran anleiten lässt zum Herstellen oder Gebrauch von Waffen, Sprengstoffen, radioaktiven Materialien, giftigen Gasen oder anderen Vorrichtungen oder gefährlichen Stoffen oder jemanden hierzu anleitet; oder</div></ins></td>
+</tr>
+<tr><td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+<td class="inserted"><ins><div class="buchstabe">c. eine grenzüberschreitende Reise unternimmt in der Absicht, eine solche Straftat zu begehen, sich daran zu beteiligen oder sich dafür ausbilden zu lassen.</div></ins></td>
+</tr>
+<tr><td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+<td class="inserted"><ins><div class="paragraph-text">2. Mit der gleichen Strafe wird belegt, wer in der Absicht, eine Reise nach Absatz 1 Buchstabe c zu finanzieren, Vermögenswerte sammelt oder zur Verfügung stellt, oder wer eine solche Reise organisiert oder dafür anwirbt.</div></ins></td>
+</tr>
+<tr><td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+<td class="inserted"><ins><div class="paragraph-text">3. Strafbar ist auch, wer die Tat im Ausland begeht, wenn er sich in der Schweiz befindet und nicht ausgeliefert wird oder wenn die terroristische Straftat in der Schweiz oder gegen die Schweiz verübt werden soll. Artikel 7 Absätze 4 und 5 ist anwendbar.</div></ins></td>
+</tr>
+<tr class="article-title"><td><p class="artikel-name">Art. 305bis</p></td>
+<td><p class="artikel-name">Art. 305bis</p></td>
+</tr>
+<tr><td><div class="paragraph-text">1. Wer eine Handlung vornimmt, die geeignet ist, die Ermittlung der Herkunft, die Auffindung oder die Einziehung von Vermögenswerten zu vereiteln, die, wie er weiss oder annehmen muss, aus einem Verbrechen oder aus einem qualifizierten Steuervergehen herrühren, wird mit Freiheitsstrafe bis zu drei Jahren oder Geldstrafe bestraft.</td>
+<td><div class="paragraph-text">1. Wer eine Handlung vornimmt, die geeignet ist, die Ermittlung der Herkunft, die Auffindung oder die Einziehung von Vermögenswerten zu vereiteln, die, wie er weiss oder annehmen muss, aus einem Verbrechen oder aus einem qualifizierten Steuervergehen herrühren, wird mit Freiheitsstrafe bis zu drei Jahren oder Geldstrafe bestraft.</td>
+</tr>
+<tr><td><p class="p-list">1bis. Als qualifiziertes Steuervergehen gelten die Straftaten nach Artikel 186 des Bundesgesetzes vom 14. Dezember 1990 über die direkte Bundessteuer und nach Artikel 59 Absatz 1 erstes Lemma des Bundesgesetzes vom 14. Dezember 1990 über die Harmonisierung der direkten Steuern der Kantone und Gemeinden, wenn die hinterzogenen Steuern pro Steuerperiode mehr als 300 000 Franken betragen.</p></div></td>
+<td><p class="p-list">1bis. Als qualifiziertes Steuervergehen gelten die Straftaten nach Artikel 186 des Bundesgesetzes vom 14. Dezember 1990 über die direkte Bundessteuer und nach Artikel 59 Absatz 1 erstes Lemma des Bundesgesetzes vom 14. Dezember 1990 über die Harmonisierung der direkten Steuern der Kantone und Gemeinden, wenn die hinterzogenen Steuern pro Steuerperiode mehr als 300 000 Franken betragen.</p></div></td>
+</tr>
+<tr><td><div class="paragraph-text">2. In schweren Fällen ist die Strafe Freiheitsstrafe bis zu fünf Jahren oder Geldstrafe. Mit der Freiheitsstrafe wird eine Geldstrafe bis zu 500 Tagessätzen verbunden.Ein schwerer Fall liegt insbesondere vor, wenn der Täter:</div></td>
+<td><div class="paragraph-text">2. In schweren Fällen ist die Strafe Freiheitsstrafe bis zu fünf Jahren oder Geldstrafe. Mit der Freiheitsstrafe wird eine Geldstrafe bis zu 500 Tagessätzen verbunden.Ein schwerer Fall liegt insbesondere vor, wenn der Täter:</div></td>
+</tr>
+<tr><td class="changed"><div class="buchstabe">a. als Mitglied einer <del>Verbrechensorganisation</del> handelt;</div></td>
+<td class="changed"><div class="buchstabe">a. als Mitglied einer <ins>kriminellen</ins> <ins>oder terroristischen Organisation (Art. 260ter) </ins>handelt;</div></td>
+</tr>
+<tr><td><div class="buchstabe">b. als Mitglied einer Bande handelt, die sich zur fortgesetzten Ausübung der Geldwäscherei zusammengefunden hat;</div></td>
+<td><div class="buchstabe">b. als Mitglied einer Bande handelt, die sich zur fortgesetzten Ausübung der Geldwäscherei zusammengefunden hat;</div></td>
+</tr>
+<tr><td><div class="buchstabe">c. durch gewerbsmässige Geldwäscherei einen grossen Umsatz oder einen erheblichen Gewinn erzielt.</div></td>
+<td><div class="buchstabe">c. durch gewerbsmässige Geldwäscherei einen grossen Umsatz oder einen erheblichen Gewinn erzielt.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">3. Der Täter wird auch bestraft, wenn die Haupttat im Ausland begangen wurde und diese auch am Begehungsort strafbar ist.</div></td>
+<td><div class="paragraph-text">3. Der Täter wird auch bestraft, wenn die Haupttat im Ausland begangen wurde und diese auch am Begehungsort strafbar ist.</div></td>
+</tr>
+<tr class="article-title"><td><p class="artikel-name">Art. 317bis</p></td>
+<td><p class="artikel-name">Art. 317bis</p></td>
+</tr>
+<tr><td class="changed"><div class="paragraph-text">1. Wer mit richterlicher Genehmigung im Rahmen einer verdeckten Ermittlung zum Aufbau oder zur Aufrechterhaltung seiner Legende oder mit Ermächtigung des Nachrichtendienstes des Bundes (NDB) nach Artikel 17 <del>des Nachrichtendienstgesetzes vom 25. September 2015 (</del>NDG<del>)</del> oder mit Ermächtigung der Vorsteherin oder des Vorstehers des Eidgenössischen Departements für Verteidigung, Bevölkerungsschutz und Sport nach Artikel 18 NDG zur Schaffung oder Aufrechterhaltung seiner nachrichtendienstlichen Legende oder Tarnidentität Urkunden herstellt, verändert oder gebraucht, ist nicht nach den Artikeln 251, 252, 255 und 317 strafbar.</div></td>
+<td class="changed"><div class="paragraph-text">1. Wer mit richterlicher Genehmigung im Rahmen einer verdeckten Ermittlung zum Aufbau oder zur Aufrechterhaltung seiner Legende oder mit Ermächtigung des Nachrichtendienstes des Bundes (NDB) nach Artikel 17 NDG oder mit Ermächtigung der Vorsteherin oder des Vorstehers des Eidgenössischen Departements für Verteidigung, Bevölkerungsschutz und Sport nach Artikel 18 NDG zur Schaffung oder Aufrechterhaltung seiner nachrichtendienstlichen Legende oder Tarnidentität Urkunden herstellt, verändert oder gebraucht, ist nicht nach den Artikeln 251, 252, 255 und 317 strafbar.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">2. Wer mit Bewilligung für eine verdeckte Ermittlung oder im Auftrag der zuständigen Behörde nach Artikel 17 oder 18 NDG Urkunden für Legenden oder Tarnidentitäten herstellt oder verändert, ist nicht nach den Artikeln 251, 252, 255 und 317 strafbar.</div></td>
+<td><div class="paragraph-text">2. Wer mit Bewilligung für eine verdeckte Ermittlung oder im Auftrag der zuständigen Behörde nach Artikel 17 oder 18 NDG Urkunden für Legenden oder Tarnidentitäten herstellt oder verändert, ist nicht nach den Artikeln 251, 252, 255 und 317 strafbar.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">3. Wer im Rahmen des Bundesgesetzes vom 23. Dezember 2011 über den ausserprozessualen Zeugenschutz Urkunden herstellt, verändert oder gebraucht, ist nicht nach den Artikeln 251, 252, 255 und 317 strafbar.</div></td>
+<td><div class="paragraph-text">3. Wer im Rahmen des Bundesgesetzes vom 23. Dezember 2011 über den ausserprozessualen Zeugenschutz Urkunden herstellt, verändert oder gebraucht, ist nicht nach den Artikeln 251, 252, 255 und 317 strafbar.</div></td>
+</tr>
+<tr class="article-title"><td><p class="artikel-name">Art. 325bis</p></td>
+<td><p class="artikel-name">Art. 325bis</p></td>
+</tr>
+<tr><td class="changed"><div class="artikel-text"><del>Wer</del> <del>den</del> <del>Mieter</del> <del>unter Androhung von Nachteilen</del>, <del>insbesondere der späteren Kündigung des Mietverhältnisses, davon abhält oder abzuhalten versucht, Mietzinse oder sonstige Forderungen des Vermieters anzufechten,</del>wer <del>dem Mieter kündigt, weil dieser die ihm nach dem Obligationenrecht zustehenden Rechte wahrnimmt oder wahrnehmen will,wer Mietzinse oder sonstige Forderungen nach einem gescheiterten Einigungsversuch oder nach einem richterlichen Entscheid in unzulässiger Weise durchsetzt oder durchzusetzen versucht,wird auf Antrag des Mieters mit Busse bestraft.</del></div></td>
+<td class="changed"><div class="artikel-text"><ins>Mit</ins> <ins>Busse</ins> <ins>wird</ins> <ins>bestraft</ins>, wer <ins>vorsätzlich:</ins></div></td>
+</tr>
+<tr><td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+<td class="inserted"><ins><div class="buchstabe">a. im Bericht über Zahlungen an staatliche Stellen gemäss Artikel 964d OR falsche Angaben macht oder die Berichterstattung ganz oder teilweise unterlässt;</div></ins></td>
+</tr>
+<tr><td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+<td class="inserted"><ins><div class="buchstabe">b. der Pflicht zur Führung und Aufbewahrung der Berichte über Zahlungen an staatliche Stellen gemäss Artikel 964h OR nicht nachkommt.</div></ins></td>
+</tr>
+<tr class="article-title"><td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+<td class="inserted"><ins><p class="artikel-name">Art. 325ter</p></ins></td>
+</tr>
+<tr><td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+<td class="inserted"><ins><div class="paragraph-text">1. Mit Busse bis zu 100 000 Franken wird bestraft, wer vorsätzlich:</div></ins></td>
+</tr>
+<tr><td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+<td class="inserted"><ins><div class="buchstabe">a. in den Berichten gemäss den Artikeln 964a, 964b und 964l OR falsche Angaben macht oder die Berichterstattung unterlässt;</div></ins></td>
+</tr>
+<tr><td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+<td class="inserted"><ins><div class="buchstabe">b. der gesetzlichen Pflicht zur Aufbewahrung und Dokumentation der Berichte gemäss den Artikeln 964c und 964l OR nicht nachkommt.</div></ins></td>
+</tr>
+<tr><td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+<td class="inserted"><ins><div class="paragraph-text">2. Wer fahrlässig handelt, wird mit Busse bis zu 50 000 Franken bestraft.</div></ins></td>
+</tr>
+<tr class="article-title"><td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+<td class="inserted"><ins><p class="artikel-name">Art. 325quater</p></ins></td>
+</tr>
+<tr><td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+<td class="inserted"><ins><div class="artikel-text">Wer den Mieter unter Androhung von Nachteilen, insbesondere der späteren Kündigung des Mietverhältnisses, davon abhält oder abzuhalten versucht, Mietzinse oder sonstige Forderungen des Vermieters anzufechten,wer dem Mieter kündigt, weil dieser die ihm nach dem OR zustehenden Rechte wahrnimmt oder wahrnehmen will,wer Mietzinse oder sonstige Forderungen nach einem gescheiterten Einigungsversuch oder nach einem richterlichen Entscheid in unzulässiger Weise durchsetzt oder durchzusetzen versucht,wird auf Antrag des Mieters mit Busse bestraft.</div></ins></td>
+</tr>
+<tr class="article-title"><td><p class="artikel-name">Art. 326bis</p></td>
+<td><p class="artikel-name">Art. 326bis</p></td>
+</tr>
+<tr><td class="changed"><div class="paragraph-text">1. Werden die <del>im</del> Artikel 325<del>bis</del> unter Strafe gestellten Handlungen beim Besorgen der Angelegenheiten einer juristischen Person, Kollektiv- oder Kommanditgesellschaft oder Einzelfirma oder sonst in Ausübung geschäftlicher oder dienstlicher Verrichtungen für einen anderen begangen, so finden die Strafbestimmungen auf diejenigen natürlichen Personen Anwendung, die diese Handlungen begangen haben.</div></td>
+<td class="changed"><div class="paragraph-text">1. Werden die <ins>in</ins> Artikel 325<ins>quater</ins> unter Strafe gestellten Handlungen beim Besorgen der Angelegenheiten einer juristischen Person, Kollektiv- oder Kommanditgesellschaft oder Einzelfirma oder sonst in Ausübung geschäftlicher oder dienstlicher Verrichtungen für einen anderen begangen, so finden die Strafbestimmungen auf diejenigen natürlichen Personen Anwendung, die diese Handlungen begangen haben.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">2. Der Geschäftsherr oder Arbeitgeber, Auftraggeber oder Vertretene, der von der Widerhandlung Kenntnis hat oder nachträglich Kenntnis erhält und, obgleich es ihm möglich wäre, es unterlässt, sie abzuwenden oder ihre Wirkungen aufzuheben, untersteht der gleichen Strafandrohung wie der Täter.</div></td>
+<td><div class="paragraph-text">2. Der Geschäftsherr oder Arbeitgeber, Auftraggeber oder Vertretene, der von der Widerhandlung Kenntnis hat oder nachträglich Kenntnis erhält und, obgleich es ihm möglich wäre, es unterlässt, sie abzuwenden oder ihre Wirkungen aufzuheben, untersteht der gleichen Strafandrohung wie der Täter.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">3. Ist der Geschäftsherr oder Arbeitgeber, Auftraggeber oder Vertretene eine juristische Person, Kollektiv- oder Kommanditgesellschaft, Einzelfirma oder Personengesamtheit ohne Rechtspersönlichkeit, so findet Absatz 2 auf die schuldigen Organe, Organmitglieder, geschäftsführenden Gesellschafter, tatsächlich leitenden Personen oder Liquidatoren Anwendung.</div></td>
+<td><div class="paragraph-text">3. Ist der Geschäftsherr oder Arbeitgeber, Auftraggeber oder Vertretene eine juristische Person, Kollektiv- oder Kommanditgesellschaft, Einzelfirma oder Personengesamtheit ohne Rechtspersönlichkeit, so findet Absatz 2 auf die schuldigen Organe, Organmitglieder, geschäftsführenden Gesellschafter, tatsächlich leitenden Personen oder Liquidatoren Anwendung.</div></td>
+</tr>
+<tr class="article-title"><td><p class="artikel-name">Art. 354</p></td>
+<td><p class="artikel-name">Art. 354</p></td>
+</tr>
+<tr><td><div class="paragraph-text">1. Das zuständige Departement registriert und speichert erkennungsdienstliche Daten, die von Behörden der Kantone, des Bundes und des Auslandes bei Strafverfolgungen oder bei Erfüllung anderer gesetzlicher Aufgaben erhoben und ihm übermittelt worden sind. Diese Daten können zur Identifizierung einer gesuchten oder unbekannten Person miteinander verglichen werden.</div></td>
+<td><div class="paragraph-text">1. Das zuständige Departement registriert und speichert erkennungsdienstliche Daten, die von Behörden der Kantone, des Bundes und des Auslandes bei Strafverfolgungen oder bei Erfüllung anderer gesetzlicher Aufgaben erhoben und ihm übermittelt worden sind. Diese Daten können zur Identifizierung einer gesuchten oder unbekannten Person miteinander verglichen werden.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">2. Folgende Behörden können Daten im Rahmen von Absatz 1 vergleichen und bearbeiten:</div></td>
+<td><div class="paragraph-text">2. Folgende Behörden können Daten im Rahmen von Absatz 1 vergleichen und bearbeiten:</div></td>
+</tr>
+<tr><td><div class="buchstabe">a. das Rechenzentrum des Eidgenössischen Justiz- und Polizeidepartementes;</div></td>
+<td><div class="buchstabe">a. das Rechenzentrum des Eidgenössischen Justiz- und Polizeidepartementes;</div></td>
+</tr>
+<tr><td><div class="buchstabe">b. das Bundesamt für Polizei;</div></td>
+<td><div class="buchstabe">b. das Bundesamt für Polizei;</div></td>
+</tr>
+<tr><td><div class="buchstabe">c. die Grenzstellen;</div></td>
+<td><div class="buchstabe">c. die Grenzstellen;</div></td>
+</tr>
+<tr><td class="changed"><div class="buchstabe">d. die Polizeibehörden der Kantone<del>.</del></div></td>
+<td class="changed"><div class="buchstabe">d. die Polizeibehörden der Kantone<ins>;</ins></div></td>
+</tr>
+<tr><td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+<td class="inserted"><ins><div class="buchstabe">e. das Staatssekretariat für Migration (SEM).</div></ins></td>
+</tr>
+<tr><td><div class="paragraph-text">3. Die Personendaten, die sich auf erkennungsdienstliche Daten nach Absatz 1 beziehen, werden in getrennten Informationssystemen bearbeitet; dabei gelten die Bestimmungen des Bundesgesetzes vom 13. Juni 2008 über die polizeilichen Informationssysteme des Bundes, des Asylgesetzes vom 26. Juni 1998 und des Bundesgesetzes vom 16. Dezember 2005 über die Ausländerinnen und Ausländer. Das DNA-Profil-Informationssystem unterliegt den Bestimmungen des DNA-Profil-Gesetzes vom 20. Juni 2003.</div></td>
+<td><div class="paragraph-text">3. Die Personendaten, die sich auf erkennungsdienstliche Daten nach Absatz 1 beziehen, werden in getrennten Informationssystemen bearbeitet; dabei gelten die Bestimmungen des Bundesgesetzes vom 13. Juni 2008 über die polizeilichen Informationssysteme des Bundes, des Asylgesetzes vom 26. Juni 1998 und des Bundesgesetzes vom 16. Dezember 2005 über die Ausländerinnen und Ausländer. Das DNA-Profil-Informationssystem unterliegt den Bestimmungen des DNA-Profil-Gesetzes vom 20. Juni 2003.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">4. Der Bundesrat:</div></td>
+<td><div class="paragraph-text">4. Der Bundesrat:</div></td>
+</tr>
+<tr><td><div class="buchstabe">a. regelt die Einzelheiten, insbesondere die Verantwortung für die Datenbearbeitung, die Kategorien der zu erfassenden Daten, die Aufbewahrungsdauer der Daten und die Zusammenarbeit mit den Kantonen;</div></td>
+<td><div class="buchstabe">a. regelt die Einzelheiten, insbesondere die Verantwortung für die Datenbearbeitung, die Kategorien der zu erfassenden Daten, die Aufbewahrungsdauer der Daten und die Zusammenarbeit mit den Kantonen;</div></td>
+</tr>
+<tr><td><div class="buchstabe">b. bestimmt die Behörden, welche Personendaten im Abrufverfahren eingeben und abfragen oder denen Personendaten im Einzelfall bekannt gegeben werden können;</div></td>
+<td><div class="buchstabe">b. bestimmt die Behörden, welche Personendaten im Abrufverfahren eingeben und abfragen oder denen Personendaten im Einzelfall bekannt gegeben werden können;</div></td>
+</tr>
+<tr><td class="changed"><div class="buchstabe">c. regelt die Verfahrensrechte der betroffenen Personen, insbesondere die Einsicht in ihre Daten sowie deren Berichtigung, Archivierung und Vernichtung<del>.</del></div></td>
+<td class="changed"><div class="buchstabe">c. regelt die Verfahrensrechte der betroffenen Personen, insbesondere die Einsicht in ihre Daten sowie deren Berichtigung, Archivierung und Vernichtung<ins>;</ins></div></td>
+</tr>
+<tr><td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+<td class="inserted"><ins><div class="buchstabe">d. regelt die Übermittlung der erkennungsdienstlichen Daten durch die zuständigen Bundesbehörden und die Kantone.</div></ins></td>
+</tr>
+<tr><td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+<td class="inserted"><ins><div class="paragraph-text">5. Das SEM oder das Bundesamt für Polizei (fedpol) können die Daten zwecks SIS-Ausschreibungen im Schengener Informationssystem (SIS) in einem automatisierten Verfahren in den nationalen Teil des Schengener Informationssystems (N-SIS) und das SIS überführen.</div></ins></td>
+</tr>
+<tr class="article-title"><td><p class="artikel-name">Art. 355a</p></td>
+<td><p class="artikel-name">Art. 355a</p></td>
+</tr>
+<tr><td class="changed"><div class="paragraph-text">1. Das <del>Bundesamt für Polizei (</del>fedpol<del>)</del> und der Nachrichtendienst des Bundes (NDB) können dem Europäischen Polizeiamt (Europol) Personendaten, einschliesslich besonders schützenswerter Personendaten und Persönlichkeitsprofile, weitergeben.</div></td>
+<td class="changed"><div class="paragraph-text">1. Das fedpol und der Nachrichtendienst des Bundes (NDB) können dem Europäischen Polizeiamt (Europol) Personendaten, einschliesslich besonders schützenswerter Personendaten und Persönlichkeitsprofile, weitergeben.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">2. Für die Weitergabe dieser Daten gelten insbesondere die Voraussetzungen nach den Artikeln 3 und 10–13 des Abkommens vom 24. September 2004 zwischen der Schweizerischen Eidgenossenschaft und dem Europäischen Polizeiamt.</div></td>
+<td><div class="paragraph-text">2. Für die Weitergabe dieser Daten gelten insbesondere die Voraussetzungen nach den Artikeln 3 und 10–13 des Abkommens vom 24. September 2004 zwischen der Schweizerischen Eidgenossenschaft und dem Europäischen Polizeiamt.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">3. Gleichzeitig mit der Weitergabe von Daten unterrichtet das Bundesamt für Polizei Europol über die Zweckbestimmung der Daten sowie über alle Beschränkungen hinsichtlich ihrer Bearbeitung, die ihm selbst nach Massgabe der eidgenössischen oder der kantonalen Gesetzgebung auferlegt sind.</div></td>
+<td><div class="paragraph-text">3. Gleichzeitig mit der Weitergabe von Daten unterrichtet das Bundesamt für Polizei Europol über die Zweckbestimmung der Daten sowie über alle Beschränkungen hinsichtlich ihrer Bearbeitung, die ihm selbst nach Massgabe der eidgenössischen oder der kantonalen Gesetzgebung auferlegt sind.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">4. Der Austausch von Personendaten mit Europol wird dem Austausch mit einer zuständigen Behörde eines Schengen-Staates gleichgesetzt (Art. 349b).</div></td>
+<td><div class="paragraph-text">4. Der Austausch von Personendaten mit Europol wird dem Austausch mit einer zuständigen Behörde eines Schengen-Staates gleichgesetzt (Art. 349b).</div></td>
+</tr>
+<tr class="article-title"><td><p class="artikel-name">Art. 355e</p></td>
+<td><p class="artikel-name">Art. 355e</p></td>
+</tr>
+<tr><td class="changed"><div class="paragraph-text">1. Das <del>Bundesamt</del> <del>für Polizei </del>führt <del>eine</del> zentrale Stelle <del>(SIRENE-Büro),</del> <del>die</del> <del>für</del> den <del>N-SIS</del> <del>zuständig</del> <del>ist</del>.</div></td>
+<td class="changed"><div class="paragraph-text">1. Das <ins>fedpol</ins> führt <ins>die</ins> zentrale Stelle <ins>für</ins> <ins>den</ins> <ins>Austausch</ins> <ins>von Zusatzinformationen mit </ins>den <ins>Schengen</ins> <ins>Staaten</ins> <ins>(SIRENE-Büro)</ins>.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">2. Das SIRENE-Büro ist Anlauf-, Koordinations- und Konsultationsstelle für den Informationsaustausch im Zusammenhang mit den Ausschreibungen im SIS. Es überprüft die formelle Zulässigkeit der in- und ausländischen Ausschreibungen im SIS.</div></td>
+<td><div class="paragraph-text">2. Das SIRENE-Büro ist Anlauf-, Koordinations- und Konsultationsstelle für den Informationsaustausch im Zusammenhang mit den Ausschreibungen im SIS. Es überprüft die formelle Zulässigkeit der in- und ausländischen Ausschreibungen im SIS.</div></td>
+</tr>
+<tr class="article-title"><td><p class="artikel-name">Art. 365</p></td>
+<td><p class="artikel-name">Art. 365</p></td>
+</tr>
+<tr><td><div class="paragraph-text">1. Das Bundesamt für Justiz führt unter Mitwirkung anderer Bundesbehörden und der Kantone (Art. 367 Abs. 1) ein automatisiertes Strafregister über Verurteilungen und Gesuche um Strafregisterauszug im Rahmen von hängigen Strafverfahren, welches besonders schützenswerte Personendaten und Persönlichkeitsprofile enthält. Die Daten über Verurteilungen und jene über Gesuche um Strafregisterauszug im Rahmen von hängigen Strafverfahren werden im automatisierten Register getrennt bearbeitet.</div></td>
+<td><div class="paragraph-text">1. Das Bundesamt für Justiz führt unter Mitwirkung anderer Bundesbehörden und der Kantone (Art. 367 Abs. 1) ein automatisiertes Strafregister über Verurteilungen und Gesuche um Strafregisterauszug im Rahmen von hängigen Strafverfahren, welches besonders schützenswerte Personendaten und Persönlichkeitsprofile enthält. Die Daten über Verurteilungen und jene über Gesuche um Strafregisterauszug im Rahmen von hängigen Strafverfahren werden im automatisierten Register getrennt bearbeitet.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">2. Das Register dient der Unterstützung von Behörden des Bundes und der Kantone bei der Erfüllung folgender Aufgaben:</div></td>
+<td><div class="paragraph-text">2. Das Register dient der Unterstützung von Behörden des Bundes und der Kantone bei der Erfüllung folgender Aufgaben:</div></td>
+</tr>
+<tr><td><div class="buchstabe">a. Durchführung von Strafverfahren;</div></td>
+<td><div class="buchstabe">a. Durchführung von Strafverfahren;</div></td>
+</tr>
+<tr><td><div class="buchstabe">b. internationale Rechtshilfe- und Auslieferungsverfahren;</div></td>
+<td><div class="buchstabe">b. internationale Rechtshilfe- und Auslieferungsverfahren;</div></td>
+</tr>
+<tr><td><div class="buchstabe">c. Straf- und Massnahmenvollzug;</div></td>
+<td><div class="buchstabe">c. Straf- und Massnahmenvollzug;</div></td>
+</tr>
+<tr><td><div class="buchstabe">d. zivile und militärische Sicherheitsprüfungen;</div></td>
+<td><div class="buchstabe">d. zivile und militärische Sicherheitsprüfungen;</div></td>
+</tr>
+<tr><td><div class="buchstabe">e. Verhängung und Aufhebung von Fernhaltemassnahmen gegenüber Ausländern nach dem Bundesgesetz vom 26. März 1931 über Aufenthalt und Niederlassung der Ausländer sowie der übrigen Ausweisungen und Landesverweisungen;</div></td>
+<td><div class="buchstabe">e. Verhängung und Aufhebung von Fernhaltemassnahmen gegenüber Ausländern nach dem Bundesgesetz vom 26. März 1931 über Aufenthalt und Niederlassung der Ausländer sowie der übrigen Ausweisungen und Landesverweisungen;</div></td>
+</tr>
+<tr><td><div class="buchstabe">f. Prüfung der Asylwürdigkeit nach dem Asylgesetz vom 26. Juni 1998;</div></td>
+<td><div class="buchstabe">f. Prüfung der Asylwürdigkeit nach dem Asylgesetz vom 26. Juni 1998;</div></td>
+</tr>
+<tr><td><div class="buchstabe">g. Einbürgerungsverfahren;</div></td>
+<td><div class="buchstabe">g. Einbürgerungsverfahren;</div></td>
+</tr>
+<tr><td><div class="buchstabe">h. Erteilung und Entzug von Führer- oder Lernfahrausweisen nach dem Strassenverkehrsgesetz vom 19. Dezember 1958;</div></td>
+<td><div class="buchstabe">h. Erteilung und Entzug von Führer- oder Lernfahrausweisen nach dem Strassenverkehrsgesetz vom 19. Dezember 1958;</div></td>
+</tr>
+<tr><td><div class="buchstabe">i. Durchführung des konsularischen Schutzes;</div></td>
+<td><div class="buchstabe">i. Durchführung des konsularischen Schutzes;</div></td>
+</tr>
+<tr><td><div class="buchstabe">j. statistische Bearbeitung nach dem Bundesstatistikgesetz vom 9. Oktober 1992;</div></td>
+<td><div class="buchstabe">j. statistische Bearbeitung nach dem Bundesstatistikgesetz vom 9. Oktober 1992;</div></td>
+</tr>
+<tr><td><div class="buchstabe">k. Anordnung oder Aufhebung von Massnahmen des Kindes- oder Erwachsenenschutzes;</div></td>
+<td><div class="buchstabe">k. Anordnung oder Aufhebung von Massnahmen des Kindes- oder Erwachsenenschutzes;</div></td>
+</tr>
+<tr><td><div class="buchstabe">l. Ausschluss aus dem Zivildienst oder von der Zivildienstleistung nach dem Zivildienstgesetz vom 6. Oktober 1995;</div></td>
+<td><div class="buchstabe">l. Ausschluss aus dem Zivildienst oder von der Zivildienstleistung nach dem Zivildienstgesetz vom 6. Oktober 1995;</div></td>
+</tr>
+<tr><td><div class="buchstabe">m. Prüfung des Leumunds für bestimmte Einsätze nach dem Zivildienstgesetz;</div></td>
+<td><div class="buchstabe">m. Prüfung des Leumunds für bestimmte Einsätze nach dem Zivildienstgesetz;</div></td>
+</tr>
+<tr><td><div class="buchstabe">n. Prüfung einer Nichtrekrutierung oder Zulassung zur Rekrutierung, eines Ausschlusses aus der Armee oder Wiederzulassung zur Armee oder einer Degradation nach dem Militärgesetz vom 3. Februar 1995 (MG);</div></td>
+<td><div class="buchstabe">n. Prüfung einer Nichtrekrutierung oder Zulassung zur Rekrutierung, eines Ausschlusses aus der Armee oder Wiederzulassung zur Armee oder einer Degradation nach dem Militärgesetz vom 3. Februar 1995 (MG);</div></td>
+</tr>
+<tr><td><div class="buchstabe">o. Prüfung der Eignung für eine Beförderung oder Ernennung nach dem MG;</div></td>
+<td><div class="buchstabe">o. Prüfung der Eignung für eine Beförderung oder Ernennung nach dem MG;</div></td>
+</tr>
+<tr><td><div class="buchstabe">p. Prüfung von Hinderungsgründen für die Überlassung der persönlichen Waffe nach dem MG;</div></td>
+<td><div class="buchstabe">p. Prüfung von Hinderungsgründen für die Überlassung der persönlichen Waffe nach dem MG;</div></td>
+</tr>
+<tr><td><div class="buchstabe">q. Prüfung eines Ausschlusses vom Schutzdienst nach dem Bevölkerungs- und Zivilschutzgesetz vom 4. Oktober 2002.</div></td>
+<td><div class="buchstabe">q. Prüfung eines Ausschlusses vom Schutzdienst nach dem Bevölkerungs- und Zivilschutzgesetz vom 4. Oktober 2002.</div></td>
+</tr>
+<tr><td><div class="buchstabe">r. frühzeitiges Erkennen und Verhindern von Bedrohungen der inneren oder äusseren Sicherheit nach Artikel 6 Absatz 1 NDG;</div></td>
+<td><div class="buchstabe">r. frühzeitiges Erkennen und Verhindern von Bedrohungen der inneren oder äusseren Sicherheit nach Artikel 6 Absatz 1 NDG;</div></td>
+</tr>
+<tr><td><div class="buchstabe">s. Informationsvermittlung an Europol nach Artikel 355a, sofern die Daten von Europol für Zwecke nach Buchstabe r benötigt werden;</div></td>
+<td><div class="buchstabe">s. Informationsvermittlung an Europol nach Artikel 355a, sofern die Daten von Europol für Zwecke nach Buchstabe r benötigt werden;</div></td>
+</tr>
+<tr><td><div class="buchstabe">t. Prüfung von Fernhaltemassnahmen gegenüber Ausländerinnen und Ausländern nach dem Ausländergesetz vom 16. Dezember 2005 sowie Vorbereitung von Ausweisungsentscheiden nach Artikel 121 Absatz 2 der Bundesverfassung;</div></td>
+<td><div class="buchstabe">t. Prüfung von Fernhaltemassnahmen gegenüber Ausländerinnen und Ausländern nach dem Ausländergesetz vom 16. Dezember 2005 sowie Vorbereitung von Ausweisungsentscheiden nach Artikel 121 Absatz 2 der Bundesverfassung;</div></td>
+</tr>
+<tr><td class="changed"><div class="buchstabe">u. Beschaffung und Weitergabe von Informationen an ausländische Sicherheitsbehörden im Rahmen von Anfragen nach Artikel 12 Absatz 1 Buchstabe d NDG; Daten, deren Weitergabe nicht im Interesse der betroffenen Person ist, können nur mit deren ausdrücklicher Zustimmung weitergegeben werden<del>.</del></div></td>
+<td class="changed"><div class="buchstabe">u. Beschaffung und Weitergabe von Informationen an ausländische Sicherheitsbehörden im Rahmen von Anfragen nach Artikel 12 Absatz 1 Buchstabe d NDG; Daten, deren Weitergabe nicht im Interesse der betroffenen Person ist, können nur mit deren ausdrücklicher Zustimmung weitergegeben werden<ins>;</ins></div></td>
+</tr>
+<tr><td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+<td class="inserted"><ins><div class="buchstabe">v. Abklärung des Sicherheitsrisikos im Rahmen der Zuverlässigkeitsüberprüfungen nach Artikel 108b des Luftfahrtgesetzes vom 21. Dezember 1948 (LFG).</div></ins></td>
+</tr>
+<tr class="article-title"><td><p class="artikel-name">Art. 367</p></td>
+<td><p class="artikel-name">Art. 367</p></td>
+</tr>
+<tr><td><div class="paragraph-text">1. Folgende Behörden bearbeiten im Register Personendaten über Urteile nach Artikel 366 Absätze 1–3:</div></td>
+<td><div class="paragraph-text">1. Folgende Behörden bearbeiten im Register Personendaten über Urteile nach Artikel 366 Absätze 1–3:</div></td>
+</tr>
+<tr><td><div class="buchstabe">a. das Bundesamt für Justiz;</div></td>
+<td><div class="buchstabe">a. das Bundesamt für Justiz;</div></td>
+</tr>
+<tr><td><div class="buchstabe">b. die Strafjustizbehörden;</div></td>
+<td><div class="buchstabe">b. die Strafjustizbehörden;</div></td>
+</tr>
+<tr><td><div class="buchstabe">c. die Militärjustizbehörden;</div></td>
+<td><div class="buchstabe">c. die Militärjustizbehörden;</div></td>
+</tr>
+<tr><td><div class="buchstabe">d. die Strafvollzugsbehörden;</div></td>
+<td><div class="buchstabe">d. die Strafvollzugsbehörden;</div></td>
+</tr>
+<tr><td><div class="buchstabe">e. die Koordinationsstellen der Kantone.</div></td>
+<td><div class="buchstabe">e. die Koordinationsstellen der Kantone.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">2. Folgende Behörden dürfen durch ein Abrufverfahren Einsicht in die Personendaten über Urteile nach Artikel 366 Absätze 1, 2 und 3 Buchstaben a und b nehmen:</div></td>
+<td><div class="paragraph-text">2. Folgende Behörden dürfen durch ein Abrufverfahren Einsicht in die Personendaten über Urteile nach Artikel 366 Absätze 1, 2 und 3 Buchstaben a und b nehmen:</div></td>
+</tr>
+<tr><td><div class="buchstabe">a. die Behörden nach Absatz 1;</div></td>
+<td><div class="buchstabe">a. die Behörden nach Absatz 1;</div></td>
+</tr>
+<tr><td><div class="buchstabe">b. die Bundesanwaltschaft;</div></td>
+<td><div class="buchstabe">b. die Bundesanwaltschaft;</div></td>
+</tr>
+<tr><td><div class="buchstabe">c. das Bundesamt für Polizei im Rahmen von gerichtspolizeilichen Ermittlungsverfahren;</div></td>
+<td><div class="buchstabe">c. das Bundesamt für Polizei im Rahmen von gerichtspolizeilichen Ermittlungsverfahren;</div></td>
+</tr>
+<tr><td><div class="buchstabe">d. die Gruppe Verteidigung;</div></td>
+<td><div class="buchstabe">d. die Gruppe Verteidigung;</div></td>
+</tr>
+<tr><td><div class="buchstabe">e. das Staatssekretariat für Migration;</div></td>
+<td><div class="buchstabe">e. das Staatssekretariat für Migration;</div></td>
+</tr>
+<tr><td><div class="buchstabe">f. ...</div></td>
+<td><div class="buchstabe">f. ...</div></td>
+</tr>
+<tr><td><div class="buchstabe">g. die kantonalen Fremdenpolizeibehörden;</div></td>
+<td><div class="buchstabe">g. die kantonalen Fremdenpolizeibehörden;</div></td>
+</tr>
+<tr><td><div class="buchstabe">h. die für den Strassenverkehr zuständigen Behörden der Kantone;</div></td>
+<td><div class="buchstabe">h. die für den Strassenverkehr zuständigen Behörden der Kantone;</div></td>
+</tr>
+<tr><td><div class="buchstabe">i. die Bundesbehörden, die zuständig sind für die Durchführung von Personensicherheitsprüfungen im Sinne von Artikel 2 Absatz 2 Buchstabe a des Bundesgesetzes vom 21. März 1997 über Massnahmen zur Wahrung der inneren Sicherheit;</div></td>
+<td><div class="buchstabe">i. die Bundesbehörden, die zuständig sind für die Durchführung von Personensicherheitsprüfungen im Sinne von Artikel 2 Absatz 2 Buchstabe a des Bundesgesetzes vom 21. März 1997 über Massnahmen zur Wahrung der inneren Sicherheit;</div></td>
+</tr>
+<tr><td><div class="buchstabe">j. das Bundesamt für Zivildienst;</div></td>
+<td><div class="buchstabe">j. das Bundesamt für Zivildienst;</div></td>
+</tr>
+<tr><td><div class="buchstabe">k. die für Entscheide über den Ausschluss vom Schutzdienst zuständigen Stellen der Kantone;</div></td>
+<td><div class="buchstabe">k. die für Entscheide über den Ausschluss vom Schutzdienst zuständigen Stellen der Kantone;</div></td>
+</tr>
+<tr><td><div class="buchstabe">l. die Zeugenschutzstelle des Bundes gemäss dem Bundesgesetz vom 23. Dezember 2011 über den ausserprozessualen Zeugenschutz zur Erfüllung ihrer Aufgaben;</div></td>
+<td><div class="buchstabe">l. die Zeugenschutzstelle des Bundes gemäss dem Bundesgesetz vom 23. Dezember 2011 über den ausserprozessualen Zeugenschutz zur Erfüllung ihrer Aufgaben;</div></td>
+</tr>
+<tr><td class="changed"><div class="buchstabe">m. der NDB<del>.</del></div></td>
+<td class="changed"><div class="buchstabe">m. der NDB<ins>;</ins></div></td>
+</tr>
+<tr><td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+<td class="inserted"><ins><div class="buchstabe">n. die für die Abklärung des Sicherheitsrisikos nach Artikel 108c LFG zuständigen kantonalen Polizeistellen.</div></ins></td>
+</tr>
+<tr><td><div class="paragraph-text">2bis. Folgende Behörden dürfen durch ein Abrufverfahren auch Einsicht in die Personendaten über Urteile nach Artikel 366 Absatz 3 Buchstabe c nehmen:</div></td>
+<td><div class="paragraph-text">2bis. Folgende Behörden dürfen durch ein Abrufverfahren auch Einsicht in die Personendaten über Urteile nach Artikel 366 Absatz 3 Buchstabe c nehmen:</div></td>
+</tr>
+<tr><td><div class="buchstabe">a. die Gruppe Verteidigung zum Zwecke der Prüfung einer Nichtrekrutierung oder Zulassung zur Rekrutierung, eines Ausschlusses aus der Armee oder Wiederzulassung zur Armee oder einer Degradation nach dem MG, zur Prüfung von Hinderungsgründen für die Überlassung der persönlichen Waffe nach dem MG, zur Prüfung der Eignung für eine Beförderung oder Ernennung nach dem MG;</div></td>
+<td><div class="buchstabe">a. die Gruppe Verteidigung zum Zwecke der Prüfung einer Nichtrekrutierung oder Zulassung zur Rekrutierung, eines Ausschlusses aus der Armee oder Wiederzulassung zur Armee oder einer Degradation nach dem MG, zur Prüfung von Hinderungsgründen für die Überlassung der persönlichen Waffe nach dem MG, zur Prüfung der Eignung für eine Beförderung oder Ernennung nach dem MG;</div></td>
+</tr>
+<tr><td><div class="buchstabe">b. die Bundesbehörden, die zuständig sind für die Durchführung von Personensicherheitsprüfungen im Sinne von Artikel 2 Absatz 2 Buchstabe a des Bundesgesetzes vom 21. März 1997 über Massnahmen zur Wahrung der inneren Sicherheit;</div></td>
+<td><div class="buchstabe">b. die Bundesbehörden, die zuständig sind für die Durchführung von Personensicherheitsprüfungen im Sinne von Artikel 2 Absatz 2 Buchstabe a des Bundesgesetzes vom 21. März 1997 über Massnahmen zur Wahrung der inneren Sicherheit;</div></td>
+</tr>
+<tr><td><div class="buchstabe">c. Strafjustizbehörden zum Zwecke der Durchführung von Strafverfahren (Art. 365 Abs. 2 Bst. a);</div></td>
+<td><div class="buchstabe">c. Strafjustizbehörden zum Zwecke der Durchführung von Strafverfahren (Art. 365 Abs. 2 Bst. a);</div></td>
+</tr>
+<tr><td><div class="buchstabe">d. kantonale Koordinationsstellen und das Bundesamt für Justiz zur Erfüllung der gesetzlichen Aufgaben im Rahmen der Registerführung;</div></td>
+<td><div class="buchstabe">d. kantonale Koordinationsstellen und das Bundesamt für Justiz zur Erfüllung der gesetzlichen Aufgaben im Rahmen der Registerführung;</div></td>
+</tr>
+<tr><td><div class="buchstabe">e. Strafvollzugsbehörden für die Durchführung des Straf- und Massnahmenvollzuges (Art. 365 Abs. 2 Bst. c).</div></td>
+<td><div class="buchstabe">e. Strafvollzugsbehörden für die Durchführung des Straf- und Massnahmenvollzuges (Art. 365 Abs. 2 Bst. c).</div></td>
+</tr>
+<tr><td><div class="paragraph-text">2ter. Behörden nach den Absätzen 2 Buchstaben c–l und 2septies können Urteile, die eine Landesverweisung enthalten, so lange einsehen, als die betroffene Person mit der Landesverweisung belegt ist. Dauert die Frist nach Artikel 369 länger, so ist sie für die Dauer der Einsichtsmöglichkeit massgebend.</div></td>
+<td><div class="paragraph-text">2ter. Behörden nach den Absätzen 2 Buchstaben c–l und 2septies können Urteile, die eine Landesverweisung enthalten, so lange einsehen, als die betroffene Person mit der Landesverweisung belegt ist. Dauert die Frist nach Artikel 369 länger, so ist sie für die Dauer der Einsichtsmöglichkeit massgebend.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">2quater. Die für das Register zuständige Stelle des Bundes meldet der Gruppe Verteidigung für die Erfüllung der Aufgaben nach Artikel 365 Absatz 2 Buchstaben n–q laufend die folgenden neu in VOSTRA registrierten Daten von Stellungspflichtigen, Angehörigen der Armee sowie Schutzdienstpflichtigen:</div></td>
+<td><div class="paragraph-text">2quater. Die für das Register zuständige Stelle des Bundes meldet der Gruppe Verteidigung für die Erfüllung der Aufgaben nach Artikel 365 Absatz 2 Buchstaben n–q laufend die folgenden neu in VOSTRA registrierten Daten von Stellungspflichtigen, Angehörigen der Armee sowie Schutzdienstpflichtigen:</div></td>
+</tr>
+<tr><td><div class="buchstabe">a. Strafurteile wegen eines Verbrechens oder Vergehens;</div></td>
+<td><div class="buchstabe">a. Strafurteile wegen eines Verbrechens oder Vergehens;</div></td>
+</tr>
+<tr><td><div class="buchstabe">b. freiheitsentziehenden Massnahmen;</div></td>
+<td><div class="buchstabe">b. freiheitsentziehenden Massnahmen;</div></td>
+</tr>
+<tr><td><div class="buchstabe">c. Entscheide über die Nichtbewährung von Stellungspflichtigen und Angehörigen der Armee.</div></td>
+<td><div class="buchstabe">c. Entscheide über die Nichtbewährung von Stellungspflichtigen und Angehörigen der Armee.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">2quinquies. Gemeldet werden die Personalien der nach Absatz 2quater registrierten Schweizerinnen und Schweizer ab dem 17. Altersjahr. Stellt der Führungsstab der Armee fest, dass eine gemeldete Person stellungspflichtig oder Angehöriger der Armee ist, so meldet die für das Register zuständige Stelle auch die Strafdaten.</div></td>
+<td><div class="paragraph-text">2quinquies. Gemeldet werden die Personalien der nach Absatz 2quater registrierten Schweizerinnen und Schweizer ab dem 17. Altersjahr. Stellt der Führungsstab der Armee fest, dass eine gemeldete Person stellungspflichtig oder Angehöriger der Armee ist, so meldet die für das Register zuständige Stelle auch die Strafdaten.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">2sexies. Die Meldung und die Feststellung nach Absatz 2quinquies können über eine elektronische Schnittstelle zwischen dem Personalinformationssystem der Armee (PISA) und dem Register erfolgen.</div></td>
+<td><div class="paragraph-text">2sexies. Die Meldung und die Feststellung nach Absatz 2quinquies können über eine elektronische Schnittstelle zwischen dem Personalinformationssystem der Armee (PISA) und dem Register erfolgen.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">2septies. Das Bundesamt für Sport kann zum Zwecke der Leumundsprüfung im Hinblick auf die Erteilung oder den Entzug einer Anerkennung als «Jugend und Sport»-Kader auf schriftliches Gesuch Einsicht in Personendaten über Strafurteile nehmen.</div></td>
+<td><div class="paragraph-text">2septies. Das Bundesamt für Sport kann zum Zwecke der Leumundsprüfung im Hinblick auf die Erteilung oder den Entzug einer Anerkennung als «Jugend und Sport»-Kader auf schriftliches Gesuch Einsicht in Personendaten über Strafurteile nehmen.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">3. Der Bundesrat kann, wenn es die Anzahl der Auskunftsersuchen rechtfertigt, nach Anhörung des Eidgenössischen Datenschutz- und Öffentlichkeitsbeauftragten bis zur Inkraftsetzung der Rechtsgrundlagen in einem formellen Gesetz die Einsichtsrechte nach Absatz 2 auf weitere Justiz- und Verwaltungsbehörden des Bundes und der Kantone ausdehnen.</div></td>
+<td><div class="paragraph-text">3. Der Bundesrat kann, wenn es die Anzahl der Auskunftsersuchen rechtfertigt, nach Anhörung des Eidgenössischen Datenschutz- und Öffentlichkeitsbeauftragten bis zur Inkraftsetzung der Rechtsgrundlagen in einem formellen Gesetz die Einsichtsrechte nach Absatz 2 auf weitere Justiz- und Verwaltungsbehörden des Bundes und der Kantone ausdehnen.</div></td>
+</tr>
+<tr><td class="changed"><div class="paragraph-text">4. Personendaten über hängige Strafverfahren dürfen nur durch die Behörden nach Absatz 2 Buchstaben a–e, <del>j</del>, <del>l</del> und <del>m</del> bearbeitet werden.</div></td>
+<td class="changed"><div class="paragraph-text">4. Personendaten über hängige Strafverfahren dürfen nur durch die Behörden nach Absatz 2 Buchstaben a–e, <ins>i</ins>, <ins>j</ins> und <ins>l–n</ins> bearbeitet werden.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">4bis. ...</div></td>
+<td><div class="paragraph-text">4bis. ...</div></td>
+</tr>
+<tr><td><div class="paragraph-text">4ter. Das Bundesamt für Sport kann zum Zwecke der Leumundsprüfung im Hinblick auf die Erteilung oder die Sistierung einer Anerkennung als «Jugend und Sport»-Kader auf schriftliches Gesuch Einsicht in Personendaten über hängige Strafverfahren nehmen.</div></td>
+<td><div class="paragraph-text">4ter. Das Bundesamt für Sport kann zum Zwecke der Leumundsprüfung im Hinblick auf die Erteilung oder die Sistierung einer Anerkennung als «Jugend und Sport»-Kader auf schriftliches Gesuch Einsicht in Personendaten über hängige Strafverfahren nehmen.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">5. Jeder Kanton bestimmt für die Bearbeitung der Daten im Register eine Koordinationsstelle.</div></td>
+<td><div class="paragraph-text">5. Jeder Kanton bestimmt für die Bearbeitung der Daten im Register eine Koordinationsstelle.</div></td>
+</tr>
+<tr><td><div class="paragraph-text">6. Der Bundesrat legt die Einzelheiten fest, insbesondere:</div></td>
+<td><div class="paragraph-text">6. Der Bundesrat legt die Einzelheiten fest, insbesondere:</div></td>
+</tr>
+<tr><td><div class="buchstabe">a. die Verantwortung für die Datenbearbeitung;</div></td>
+<td><div class="buchstabe">a. die Verantwortung für die Datenbearbeitung;</div></td>
+</tr>
+<tr><td><div class="buchstabe">b. die Kategorien der zu erfassenden Daten und deren Aufbewahrungsfristen;</div></td>
+<td><div class="buchstabe">b. die Kategorien der zu erfassenden Daten und deren Aufbewahrungsfristen;</div></td>
+</tr>
+<tr><td><div class="buchstabe">c. die Zusammenarbeit mit den betroffenen Behörden;</div></td>
+<td><div class="buchstabe">c. die Zusammenarbeit mit den betroffenen Behörden;</div></td>
+</tr>
+<tr><td><div class="buchstabe">d. die Aufgaben der Koordinationsstellen;</div></td>
+<td><div class="buchstabe">d. die Aufgaben der Koordinationsstellen;</div></td>
+</tr>
+<tr><td><div class="buchstabe">e. das Auskunftsrecht und die übrigen Verfahrensrechte zum Schutze der betroffenen Personen;</div></td>
+<td><div class="buchstabe">e. das Auskunftsrecht und die übrigen Verfahrensrechte zum Schutze der betroffenen Personen;</div></td>
+</tr>
+<tr><td><div class="buchstabe">f. die Datensicherheit;</div></td>
+<td><div class="buchstabe">f. die Datensicherheit;</div></td>
+</tr>
+<tr><td><div class="buchstabe">g. die Behörden, welche Personendaten in schriftlicher Form melden, ins Register eingeben, abfragen oder denen Personendaten im Einzelfall bekannt gegeben werden können;</div></td>
+<td><div class="buchstabe">g. die Behörden, welche Personendaten in schriftlicher Form melden, ins Register eingeben, abfragen oder denen Personendaten im Einzelfall bekannt gegeben werden können;</div></td>
+</tr>
+<tr><td><div class="buchstabe">h. die elektronische Datenweitergabe an das Bundesamt für Statistik.</div></td>
+<td><div class="buchstabe">h. die elektronische Datenweitergabe an das Bundesamt für Statistik.</div></td>
+</tr>
+</tbody>
+
+    </table>
+
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Vergleichswebseite</p>
+  </footer>
+
+</body>
+
+</html>
