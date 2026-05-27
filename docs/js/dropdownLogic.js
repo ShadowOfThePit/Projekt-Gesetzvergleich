@@ -9,10 +9,14 @@ document.addEventListener('DOMContentLoaded', () => {
     // If none of the relevant controls are present, nothing to do
     if (!leftSelect || !rightSelect || !viewSelect || !viewSelect || !changeDocSubmitter || !changeComparisonSubmitter) return;
 
+    function getPath() {
+        return window.location.pathname.split("/").filter(Boolean);
+    }
+
     function changeDoc() {
         const viewDate = viewSelect.value;
-        const currentDoc = window.location.pathname.split("/").filter(Boolean)[0];
-        changeDocSubmitter.href = `/${currentDoc}/${viewDate}/`;
+        const currentPath = getPath();
+        changeDocSubmitter.href = `/${currentPath[0]}/${currentPath[1]}/${viewDate}/`;
     }
 
     // Called whenever a new date is selected in the comparer dropdown
@@ -27,9 +31,9 @@ document.addEventListener('DOMContentLoaded', () => {
             rightOpt.disabled = (rightOpt.value === leftDate);
 
 
-        const currentDoc = window.location.pathname.split("/").filter(Boolean)[0];
+        const currentPath = getPath();
         // Set redirect value of submit button
-        changeComparisonSubmitter.href = `/${currentDoc}/${leftDate}/${rightDate}/`;
+        changeComparisonSubmitter.href = `/${currentPath[0]}/${currentPath[1]}/${leftDate}/${rightDate}/`;
     }
 
     changeDoc();
