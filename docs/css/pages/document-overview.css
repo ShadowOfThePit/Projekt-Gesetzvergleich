@@ -29,24 +29,8 @@
     text-align: center;
 }
 
-.document-item,
-.compare-form,
-.change-form {
-    padding: 1.25rem;
-    border: 1px solid black;
-    border-radius: 12px;
-}
-
 .document-item {
     background: #f4f6f9;
-}
-
-.compare-form,
-.change-form {
-    background: var(--primary-lightest);
-}
-
-.document-item {
     display: flex;
     flex-direction: column;
     gap: 1vw;

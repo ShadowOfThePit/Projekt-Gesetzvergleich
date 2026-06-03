@@ -23,12 +23,9 @@ td {
     vertical-align: top;
 }
 
-.article-title {
+.title-row {
+    border-top: 2px solid black;
     font-size: 125%;
-}
-
-.article-title .artikel-name {
-    margin: 0.5em 0;
 }
 
 del {
@@ -55,4 +52,12 @@ ins {
     background: #faf6df;
 }
 
-/* .empty {} */
+.diff-message {
+    margin: 1rem 0;
+    padding: 0.75rem 1rem;
+    background-color: #fff3cd;
+    border: 1px solid #f0ad4e;
+    border-radius: 4px;
+    font-weight: 500;
+    color: #856404;
+}

@@ -1,0 +1,21 @@
+.is-collapsed {
+    display: none;
+}
+
+.collapser {
+    color: var(--secondary-color);
+    font-weight: bold;
+    background: transparent;
+    border: none;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-right: 0px;
+    padding-right: 0px;
+    cursor: pointer;
+
+    font-size: 1em;
+    line-height: 1;
+}

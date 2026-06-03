@@ -31,8 +31,8 @@ document.addEventListener('DOMContentLoaded', () => {
             rightOpt.disabled = (rightOpt.value === leftDate);
 
 
-        const currentPath = getPath();
         // Set redirect value of submit button
+        const currentPath = getPath();
         changeComparisonSubmitter.href = `/${currentPath[0]}/${currentPath[1]}/${leftDate}/${rightDate}/`;
     }
 

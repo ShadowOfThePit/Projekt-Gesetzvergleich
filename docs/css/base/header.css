@@ -6,20 +6,7 @@ header {
     background: var(--primary-color);
 }
 
-header nav {
-    display: flex;
-}
-
-header .current-page {
-    text-decoration: underline;
-}
-
-header .home-link > img {
-    margin-right: 1rem;
-}
-
-header div.header-titel {
-    flex: 1;
+header .header-titel {
     align-self: center;
     margin-right: 1rem;
     font-size: clamp(1.1rem, 2vw, 1.6rem);
@@ -27,17 +14,29 @@ header div.header-titel {
     text-align: right;
 }
 
+header nav {
+    display: flex;
+}
+
+header nav a.law-icon {
+    padding: 5px;
+}
+
 header nav a {
+    padding: 5px 15px;
+    border-radius: 0.5rem;
     display: flex;
     align-items: center;
-    margin: 5px;
-    padding-right: 10px;
     font-size: clamp(1.1rem, 2vw, 1.6rem);
     font-weight: bolder;
 }
 
 header nav a:hover {
     background: hsl(from var(--primary-color) h s calc(l + 20));
+    text-decoration: underline;
+}
+
+header .current-page {
     text-decoration: underline;
 }
 
@@ -51,7 +50,7 @@ header nav a:hover {
         /* spacing between links */
     }
 
-    header .home-link img {
+    header .law-icon img {
         margin-right: 0;
         margin-bottom: 0.5rem;
     }

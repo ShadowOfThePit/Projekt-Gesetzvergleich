@@ -11,24 +11,24 @@
 /* Artikel Containers */
 
 .buch-name,
-.abteilung-name,
-.titel-name,
+.abt-name,
+.tit-name,
 .preamble-title {
     margin: 1em 0;
     font-size: 2em;
 }
 
-.kapitel-name {
+.kap-name {
     margin: 1em 0;
     font-size: 1.6em;
 }
 
-.abschnitt-name {
+.abs-name {
     margin: 1em 0;
     font-size: 1.3em;
 }
 
-.level-name {
+.lvl-name {
     margin: 1em 0;
     font-size: 1.3em;
     font-weight: bold;
@@ -36,33 +36,33 @@
 
 /* Text Containers */
 
-.artikel-text,
-.paragraph-text,
-.buchstabe {
+.art-text,
+.par,
+.bst {
     margin-bottom: 0.5em;
 }
 
-.artikel-name {
+.art-name {
     margin: 1em 0;
     font-size: 1.2em;
     font-weight: bold;
 }
 
-.artikel-name,
-.artikel-name * {
+.art-name,
+.art-name * {
     color: var(--secondary-color);
 }
 
-.paragraph-text > span,
-.buchstabe > span {
+.par > span,
+.bst > span {
     padding-right: 0.3em;
 }
 
-.buchstabe {
+.bst {
     margin-left: 1em;
 }
 
-.buchstaben-liste {
+.bst-list {
     margin-top: 1em;
     margin-bottom: 1em;
     padding: 0px;
@@ -72,28 +72,4 @@
 p.p-list {
     margin: 0.25rem 0;
     padding-left: 1rem;
-}
-
-/* Collapser Button */
-
-.is-collapsed {
-    display: none;
-}
-
-.section-collapser {
-    color: var(--secondary-color);
-    font-weight: bold;
-    background: transparent;
-    border: none;
-
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-
-    margin-right: 0px;
-    padding-right: 0px;
-    cursor: pointer;
-
-    font-size: 1em;
-    line-height: 1;
 }

@@ -1,154 +1,16 @@
-<!DOCTYPE html>
-<html lang="de">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vergleichen</title>
-  <link rel="stylesheet" href="/Projekt-Gesetzvergleich/css/main.css">
-  <script src="/Projekt-Gesetzvergleich/js/dropdownLogic.js"></script>
-</head>
-
-<body>
-
-  <header>
-    <nav>
-      <a href="/Projekt-Gesetzvergleich/" class="home-link"><img src="/Projekt-Gesetzvergleich/images/LawIcon.png" alt="Recht und Gesetz" width="50" height="50">
-        <span class="home-text">Startseite</span>
-      </a>
-      <a href="/Projekt-Gesetzvergleich/Strafgesetzbuch">Gesetzesansicht</a>
-      <a href="/Projekt-Gesetzvergleich/Strafgesetzbuch/2024-01-01/2024-03-03" class="current-page">Dokumentenvergleich</a>
-    </nav>
-    <div class="header-titel">Dokumentenvergleich</div>
-  </header>
-
-  <main>
-
-    <h1>Dokumentvergleich <br />Schweizerisches Strafgesetzbuch</h1>
-    <h2>2026-01-01 ↔ 2025-08-01</h2>
-
-    <form class="change-form">
-      <div class="dropdown-selectors">
-        <label for="viewSelect">Dokument wechseln</label>
-        <select class="doc-select" id="viewSelect">
-          <option value="2020-02-01" selected>2020-02-01</option>
-<option value="2020-07-01">2020-07-01</option>
-<option value="2021-07-01">2021-07-01</option>
-<option value="2022-01-01">2022-01-01</option>
-<option value="2022-06-01">2022-06-01</option>
-<option value="2022-11-22">2022-11-22</option>
-<option value="2023-01-01">2023-01-01</option>
-<option value="2023-01-23">2023-01-23</option>
-<option value="2023-07-01">2023-07-01</option>
-<option value="2023-08-01">2023-08-01</option>
-<option value="2023-09-01">2023-09-01</option>
-<option value="2023-12-06">2023-12-06</option>
-<option value="2024-01-01">2024-01-01</option>
-<option value="2024-07-01">2024-07-01</option>
-<option value="2025-01-01">2025-01-01</option>
-<option value="2025-08-01">2025-08-01</option>
-<option value="2026-01-01">2026-01-01</option>
-
-        </select>
-      </div>
-
-      <a class="dropdown-submitter" id="submit-doc-change">
-        Wechseln
-      </a>
-    </form>
-
-    <form class="compare-form">
-
-      <div class="dropdown-selectors">
-        <label for="leftSelect">Dokument links</label>
-        <select class="doc-select" id="leftSelect">
-          <option value="2020-02-01">2020-02-01</option>
-<option value="2020-07-01">2020-07-01</option>
-<option value="2021-07-01">2021-07-01</option>
-<option value="2022-01-01">2022-01-01</option>
-<option value="2022-06-01">2022-06-01</option>
-<option value="2022-11-22">2022-11-22</option>
-<option value="2023-01-01">2023-01-01</option>
-<option value="2023-01-23">2023-01-23</option>
-<option value="2023-07-01">2023-07-01</option>
-<option value="2023-08-01">2023-08-01</option>
-<option value="2023-09-01">2023-09-01</option>
-<option value="2023-12-06">2023-12-06</option>
-<option value="2024-01-01">2024-01-01</option>
-<option value="2024-07-01">2024-07-01</option>
-<option value="2025-01-01">2025-01-01</option>
-<option value="2025-08-01">2025-08-01</option>
-<option value="2026-01-01" selected>2026-01-01</option>
-
-        </select>
-      </div>
-
-      <div class="dropdown-selectors">
-        <label for="rightSelect">Dokument rechts</label>
-        <select class="doc-select" id="rightSelect">
-          <option value="2020-02-01">2020-02-01</option>
-<option value="2020-07-01">2020-07-01</option>
-<option value="2021-07-01">2021-07-01</option>
-<option value="2022-01-01">2022-01-01</option>
-<option value="2022-06-01">2022-06-01</option>
-<option value="2022-11-22">2022-11-22</option>
-<option value="2023-01-01">2023-01-01</option>
-<option value="2023-01-23">2023-01-23</option>
-<option value="2023-07-01">2023-07-01</option>
-<option value="2023-08-01">2023-08-01</option>
-<option value="2023-09-01">2023-09-01</option>
-<option value="2023-12-06">2023-12-06</option>
-<option value="2024-01-01">2024-01-01</option>
-<option value="2024-07-01">2024-07-01</option>
-<option value="2025-01-01">2025-01-01</option>
-<option value="2025-08-01" selected>2025-08-01</option>
-<option value="2026-01-01">2026-01-01</option>
-
-        </select>
-      </div>
-      
-      <a class="dropdown-submitter" id="submit-comparison-change">
-        Vergleichen
-      </a>
-    </form>
-
-    <div class="change-revision button-container">
-      <a href="/Projekt-Gesetzvergleich/Strafgesetzbuch/2025-08-01/2025-01-01">← Vorherige Versionen vergleichen</a>
-<a href="/Projekt-Gesetzvergleich/Strafgesetzbuch/2025-08-01/2026-01-01">← Versionen tauschen →</a>
-<a class="disabled">Keine weitere Versionen</a>
-
-    </div>
-
-    <div class="change-doc-version-comparing button-container">
-      <a class="disabled">Aktuelle Version</a>
-<a class="disabled">Keine weitere Version</a>
-<a href="/Projekt-Gesetzvergleich/Strafgesetzbuch/2026-01-01/2025-01-01">← Vorherige Version</a>
-<a class="disabled">Aktuelle Version</a>
-
-    </div>
-
-    <table class="diff-table">
-      <thead><tr><th>2026-01-01</th>
+<!DOCTYPE html><html lang="de"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Projekt Gesetzvergleich</title><link rel="icon" type="image/svg+xml" href="/Projekt-Gesetzvergleich/favicon.svg" sizes="any"><link rel="stylesheet" href="/Projekt-Gesetzvergleich/css/main.css"><link rel="stylesheet" href="/Projekt-Gesetzvergleich/css/pages/doc-comparer.css"><link rel="stylesheet" href="/Projekt-Gesetzvergleich/css/documents/compare-form.css"><link rel="stylesheet" href="/Projekt-Gesetzvergleich/css/documents/legal-document.css"><script src="/Projekt-Gesetzvergleich/js/dropdownLogic.js"></script></head><body><header><nav><a href="/Projekt-Gesetzvergleich/" class="law-icon"><img src="/Projekt-Gesetzvergleich/images/SiteLawIcon.svg" alt="Recht und Gesetz" width="50" height="50"></a><a href="/Projekt-Gesetzvergleich/">Übersicht</a><a href="/Projekt-Gesetzvergleich/Strafgesetzbuch/">Gesetzesansicht</a><a href="/Projekt-Gesetzvergleich/Strafgesetzbuch/2020-02-01/2026-01-01/" class="current-page">Dokumentenvergleich</a></nav><div class="header-titel">Dokumentenvergleich</div></header><main><h1>Dokumentvergleich <br />Schweizerisches Strafgesetzbuch</h1><h2>2026-01-01 ↔ 2025-08-01</h2><form class="change-form"><div class="dropdown-selectors"><label for="viewSelect">Dokument wechseln</label><select class="doc-select" id="viewSelect"><option value=2020-02-01 selected>2020-02-01<option value=2020-07-01>2020-07-01<option value=2021-07-01>2021-07-01<option value=2022-01-01>2022-01-01<option value=2022-06-01>2022-06-01<option value=2022-11-22>2022-11-22<option value=2023-01-01>2023-01-01<option value=2023-01-23>2023-01-23<option value=2023-07-01>2023-07-01<option value=2023-08-01>2023-08-01<option value=2023-09-01>2023-09-01<option value=2023-12-06>2023-12-06<option value=2024-01-01>2024-01-01<option value=2024-07-01>2024-07-01<option value=2025-01-01>2025-01-01<option value=2025-08-01>2025-08-01<option value=2026-01-01>2026-01-01</select></div><a class="dropdown-submitter" id="submit-doc-change">Wechseln</a></form><form class="compare-form"><div class="dropdown-selectors"><label for="leftSelect">Dokument links</label><select class="doc-select" id="leftSelect"><option value=2020-02-01>2020-02-01<option value=2020-07-01>2020-07-01<option value=2021-07-01>2021-07-01<option value=2022-01-01>2022-01-01<option value=2022-06-01>2022-06-01<option value=2022-11-22>2022-11-22<option value=2023-01-01>2023-01-01<option value=2023-01-23>2023-01-23<option value=2023-07-01>2023-07-01<option value=2023-08-01>2023-08-01<option value=2023-09-01>2023-09-01<option value=2023-12-06>2023-12-06<option value=2024-01-01>2024-01-01<option value=2024-07-01>2024-07-01<option value=2025-01-01>2025-01-01<option value=2025-08-01>2025-08-01<option value=2026-01-01 selected>2026-01-01</select></div><div class="dropdown-selectors"><label for="rightSelect">Dokument rechts</label><select class="doc-select" id="rightSelect"><option value=2020-02-01>2020-02-01<option value=2020-07-01>2020-07-01<option value=2021-07-01>2021-07-01<option value=2022-01-01>2022-01-01<option value=2022-06-01>2022-06-01<option value=2022-11-22>2022-11-22<option value=2023-01-01>2023-01-01<option value=2023-01-23>2023-01-23<option value=2023-07-01>2023-07-01<option value=2023-08-01>2023-08-01<option value=2023-09-01>2023-09-01<option value=2023-12-06>2023-12-06<option value=2024-01-01>2024-01-01<option value=2024-07-01>2024-07-01<option value=2025-01-01>2025-01-01<option value=2025-08-01 selected>2025-08-01<option value=2026-01-01>2026-01-01</select></div><a class="dropdown-submitter" id="submit-comparison-change">Vergleichen</a></form><div class="change-revision button-container"><a href=/Projekt-Gesetzvergleich/Strafgesetzbuch/2025-08-01/2025-01-01/>← Vorherige Versionen vergleichen</a>
+<a href=/Projekt-Gesetzvergleich/Strafgesetzbuch/2025-08-01/2026-01-01/>← Versionen tauschen →</a>
+<a class=disabled>Keine weitere Versionen</a>
+</div><div class="change-doc-version-comparing button-container"><a class=disabled>Aktuelle Version</a>
+<a class=disabled>Keine weitere Version</a>
+<a href=/Projekt-Gesetzvergleich/Strafgesetzbuch/2026-01-01/2025-01-01/>← Vorherige Version</a>
+<a class=disabled>Aktuelle Version</a>
+</div><table class="diff-table"><thead><tr><th>2026-01-01</th>
 <th>2025-08-01</th>
 </tr>
 </thead>
-<tbody><tr class="article-title"><td class="deleted"><del><p class="artikel-name">Art. 181b</p></del></td>
-<td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
-</tr>
-<tr><td class="deleted"><del><div class="artikel-text">Wer jemanden auf eine Weise beharrlich verfolgt, belästigt oder bedroht, die geeignet ist, seine Lebensgestaltungsfreiheit erheblich zu beschränken, wird, auf Antrag, mit Freiheitsstrafe bis zu drei Jahren oder Geldstrafe bestraft.</div></del></td>
-<td class="empty" aria-label="In dieser Version nicht vorhanden"></td>
+<tbody><tr class=title-row><td class=deleted><del><p class=art-name>Art. 181b<div class=art-text>Wer jemanden auf eine Weise beharrlich verfolgt, belästigt oder bedroht, die geeignet ist, seine Lebensgestaltungsfreiheit erheblich zu beschränken, wird, auf Antrag, mit Freiheitsstrafe bis zu drei Jahren oder Geldstrafe bestraft.</div></del></td>
+<td class=empty aria-label=In dieser Version nicht vorhanden></td>
 </tr>
 </tbody>
-
-    </table>
-
-
-  </main>
-
-  <footer>
-    <p>&copy; 2026 Vergleichswebseite</p>
-  </footer>
-
-</body>
-
-</html>
+</table></main><footer><p>&copy; 2026 Vergleichswebseite, Esteban Venturello</p></footer></body></html>

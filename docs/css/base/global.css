@@ -59,3 +59,21 @@ a {
     text-decoration: none;
 }
 
+/* General Container */
+
+.document-item,
+.compare-form,
+.change-form {
+    padding: 1.25rem;
+    border: 1px solid black;
+    border-radius: 12px;
+}
+
+/* General Buttons */
+
+.document-item a,
+div.button-container > a,
+a.dropdown-submitter {
+    background: var(--primary-light-button);
+    border: 1px solid black;
+}

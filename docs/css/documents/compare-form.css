@@ -6,6 +6,7 @@
     align-items: center;
     gap: 1.25rem;
     margin: 0.5rem auto;
+    background: var(--primary-lightest);
 }
 
 .change-form {
