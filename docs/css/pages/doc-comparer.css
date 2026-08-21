@@ -28,6 +28,10 @@ td {
     font-size: 125%;
 }
 
+.title-row td div.art-text{
+    font-size: 80%;
+}
+
 del {
     white-space-collapse: preserve;
     background-color: lightcoral;
